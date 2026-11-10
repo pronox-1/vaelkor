@@ -1,0 +1,12 @@
+
+#starteroverlay {position:fixed!important;inset:0!important;display:flex!important;align-items:flex-start!important;justify-content:center!important;overflow-y:auto!important;padding:12px!important;z-index:99999!important}
+#starteroverlay.hidden{display:none!important}
+#starteroverlay>.modal{width:min(100%,550px)!important;max-height:none!important;min-height:0!important;overflow:visible!important;margin:0 auto!important;padding:14px!important}
+#starteroverlay h1{font-size:clamp(22px,6vw,32px)!important;margin:0 0 8px!important}
+#starteroverlay p.muted{font-size:14px!important;line-height:1.35!important;margin:0 0 12px!important}
+#starteroverlay #starters{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+#starteroverlay #starters .starter{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;min-height:92px!important;max-height:115px!important;padding:8px!important;overflow:hidden!important;touch-action:manipulation!important}
+#starteroverlay #starters .starter strong{font-size:16px!important;line-height:1.2!important}
+#starteroverlay #starters .starter small{font-size:12px!important;margin:5px 0!important}
+#starteroverlay #starters .starter span{font-size:12px!important;color:#f4cf80!important}
+@media(max-width:360px){#starteroverlay #starters{grid-template-columns:1fr!important}#starteroverlay #starters .starter{min-height:68px!important}}

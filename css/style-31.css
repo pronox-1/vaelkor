@@ -1,0 +1,39 @@
+
+:root{--vk-gold:#e9b965;--vk-dark:#071324}
+#fusionOverlay{background:linear-gradient(165deg,#091a30,#06101e 80%)!important;color:#f6f2e9!important}
+#fusionOverlay .fusionShell{background:linear-gradient(145deg,#0d2035,#091729 70%)!important;border:2px solid #b18b52!important;box-shadow:0 0 0 3px #08121e,0 0 30px #030912!important}
+#fusionOverlay .fusionTop{background:linear-gradient(90deg,#102b47,#0b192c)!important;border-bottom:1px solid #b68b50!important;padding:9px!important;color:#fff2d6}
+#fusionOverlay .fusionTop h2{font-family:Georgia,serif!important;font-size:clamp(19px,4.4vw,28px)!important;letter-spacing:.25px}
+#fusionOverlay .v9SectionLabel{background:linear-gradient(90deg,#122c44,#0e1d30)!important;border-left:3px solid #b28c55!important;color:#f9e4b9!important;padding:7px 10px!important;margin:8px 0 6px!important}
+#fusionOverlay .v9Encounter{background:radial-gradient(ellipse at 25% 40%,color-mix(in srgb,var(--element-color) 17%,#0d1b2e),#0b182b 80%)!important;border:2px solid var(--element-color)!important;box-shadow:inset 0 0 22px #0006,0 0 13px color-mix(in srgb,var(--element-color) 22%,transparent)!important;min-height:132px!important;padding:8px!important}
+#fusionOverlay .v9EncounterArt{background:#0b1729!important;height:128px!important;border:1px solid color-mix(in srgb,var(--element-color) 55%,#334a60)!important}
+#fusionOverlay .v9EncounterArt img{width:100%;height:100%;object-fit:cover!important}
+#fusionOverlay .vaelkorEyebrow{font-size:10px!important;letter-spacing:.7px;color:#f5d18a!important}
+#fusionOverlay .v9Encounter strong{font-family:Georgia,serif!important;font-size:clamp(18px,4vw,25px)!important;margin:3px 0!important}
+#fusionOverlay .vaelkorFighterInfo>div{margin:3px 0!important}
+#fusionOverlay .vaelkorHp{background:#061322!important;border:1px solid #698a8a!important;height:10px!important}
+#fusionOverlay .vaelkorHp span{background:linear-gradient(90deg,#20a985,#92f6bd)!important}
+#fusionOverlay .vaelkorTeamToggle{background:linear-gradient(90deg,#102940,#1b3a50)!important;border:1px solid #638eae!important;color:#e7f6ff!important;padding:9px!important;margin:7px 0!important}
+#fusionOverlay .v9ActionTitle{background:linear-gradient(90deg,#102a45,#173c4c)!important;border:1px solid #567b9a!important;margin-top:7px!important;padding:8px!important}
+#fusionOverlay .v9ActionArea{border-color:#a57d47!important;background:#081629!important;padding:6px!important}
+#fusionOverlay .v9HandScroll{padding:7px 3px 12px!important}
+#fusionOverlay .v9HandCard{position:relative;overflow:hidden;background:linear-gradient(165deg,color-mix(in srgb,var(--element-color) 28%,#0a1b31),#0b1526 75%)!important;border:2px solid var(--element-color)!important;border-radius:9px!important;box-shadow:inset 0 0 0 1px #ffffff25,0 3px 9px #0009!important;min-height:192px!important;gap:3px!important;padding:5px!important}
+#fusionOverlay .v9HandCard>strong{font-family:Georgia,serif!important;font-size:13px!important;min-height:29px!important;color:#fff4df!important}
+#fusionOverlay .v9CardTop{font-size:10px!important;color:#fff3d8!important}
+#fusionOverlay .v9CardTop b{background:#0b1728;border:1px solid #e7c077;border-radius:50%;padding:2px 4px}
+#fusionOverlay .v9CardSymbol{height:72px!important;padding:0!important;display:grid;place-items:center;background:radial-gradient(ellipse,#ffffff12,transparent 75%);border-top:1px solid #ffffff22;border-bottom:1px solid #ffffff22}
+#fusionOverlay .vkCardArt{height:72px;width:100%;object-fit:contain;filter:drop-shadow(0 0 8px var(--element-color))}
+#fusionOverlay .v9HandCard>small{font-size:9px!important;min-height:18px!important}
+#fusionOverlay .v9CardEffect{font-size:11px!important;color:#ffe0a0!important}
+#fusionOverlay .v9Controls button{background:linear-gradient(160deg,#28ba88,#0b7c72)!important;border:1px solid #8df9d1!important;color:#fff!important;box-shadow:0 0 9px #15a88c55!important}
+#fusionOverlay .v9Controls button:last-child{background:linear-gradient(160deg,#bb5847,#7c2538)!important;border-color:#ff9c7e!important}
+#fusionOverlay .vaelkorCombatLog{background:#0b1d32!important;border:1px solid #6d8caa!important;border-radius:12px!important;margin-top:8px!important}
+#fusionOverlay .vaelkorCombatLog h3{font-family:Georgia,serif!important;color:#f6d698!important}
+#fusionNav{background:linear-gradient(90deg,#0b1c30,#122d43)!important;border:2px solid #ac8650!important;box-shadow:0 -5px 20px #000b!important}
+#fusionNav button{background:linear-gradient(165deg,#1a354c,#0a1b2e)!important;border:1px solid #b78e52!important;border-radius:9px!important;color:#f7e7c9!important;box-shadow:inset 0 1px #ffffff18!important}
+#fusionOverlay .fusionCard{background:linear-gradient(150deg,#1a3149,#0c1a2e)!important;border-color:var(--element-color,#ac8650)!important}
+#fusionOverlay .fusionArtwork{background:radial-gradient(ellipse,#244560,#0c192a)!important}
+#fusionOverlay .fusionSpellArt{filter:drop-shadow(0 0 12px var(--element-color,#e6c07a))}
+#fusionOverlay .fusionMonsterTile{background:linear-gradient(135deg,#1b3048,#0d1c30)!important;border:1px solid var(--element-color)!important}
+#fusionOverlay .fusionMonsterPortrait img{object-fit:cover!important}
+@media(max-width:600px){#fusionOverlay .v9Encounter{grid-template-columns:112px minmax(0,1fr)!important;min-height:116px!important;gap:8px!important}#fusionOverlay .v9EncounterArt{height:116px!important}#fusionOverlay .v9Encounter strong{font-size:18px!important}#fusionOverlay .v9HandCard{min-height:186px!important}#fusionOverlay .v9CardSymbol,#fusionOverlay .vkCardArt{height:65px!important}#fusionOverlay .fusionShell{padding:8px!important}#fusionOverlay .v9SectionLabel{font-size:11px!important}}

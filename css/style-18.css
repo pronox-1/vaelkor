@@ -1,0 +1,7 @@
+
+#starteroverlay #starters{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+#starteroverlay #starters .starter{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;max-height:none!important;min-height:0!important;height:auto!important;padding:10px 7px 12px!important;gap:5px!important;overflow:visible!important;background:#243b50!important}
+#starteroverlay #starters .starter-art{display:block!important;width:100%!important;height:auto!important;aspect-ratio:1/1!important;max-width:190px!important;max-height:none!important;object-fit:contain!important;border-radius:12px!important;background:#021222!important}
+#starteroverlay #starters .starter strong{font-size:16px!important;line-height:1.2!important}
+#starteroverlay #starters .starter small{font-size:13px!important}
+#starteroverlay>.modal{max-height:calc(100dvh - 22px)!important;overflow-y:auto!important}

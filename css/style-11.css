@@ -1,0 +1,13 @@
+
+/* Card faces need room for the cost badge on narrow screens. */
+#fusionOverlay .fusionGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+#fusionOverlay .fusionGrid>.fusionCard{min-width:0!important;width:100%!important;box-sizing:border-box!important;padding:7px!important;overflow:hidden!important}
+#fusionOverlay .fusionCardFace{min-width:0!important;width:100%!important;box-sizing:border-box!important;overflow:hidden!important}
+#fusionOverlay .fusionCardHeading{display:grid!important;grid-template-columns:28px minmax(0,1fr) 38px!important;gap:4px!important;align-items:start!important;min-width:0!important;padding-right:0!important}
+#fusionOverlay .fusionCardType{min-width:0!important;overflow-wrap:anywhere!important;font-size:10px!important;line-height:1.2!important}
+#fusionOverlay .fusionCost{position:static!important;display:flex!important;align-items:center!important;justify-content:center!important;min-width:36px!important;width:36px!important;height:36px!important;box-sizing:border-box!important;font-size:15px!important;line-height:1!important;margin:0!important;z-index:1!important}
+#fusionOverlay .fusionCardFace>strong{overflow-wrap:anywhere!important;font-size:clamp(12px,3.3vw,17px)!important}
+#fusionOverlay .fusionArtwork{max-width:100%!important}
+#fusionOverlay .vaelkorPackResults .fusionGrid{align-items:start!important}
+@media(min-width:760px){#fusionOverlay .fusionGrid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))!important}}
+.vkLangLabel{display:inline-flex;align-items:center;gap:5px;border:1px solid #6985a0;background:#152d45;border-radius:10px;padding:5px 7px;color:#f5e7c7;font-size:12px;font-weight:700}.vkLangLabel select{border:0;border-radius:6px;background:#284661;color:#fff;font:inherit;padding:5px 3px;max-width:95px}@media(max-width:420px){.vkLangLabel{padding:4px}.vkLangLabel select{max-width:76px;font-size:11px}}

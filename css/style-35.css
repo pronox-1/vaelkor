@@ -1,0 +1,19 @@
+
+/* Combat fits the phone: monsters, hand, and actions have priority. */
+#fusionOverlay:not([hidden]):has(.v9Battle){position:fixed!important;inset:0!important;overflow:hidden!important;padding:4px 5px calc(76px + env(safe-area-inset-bottom,0px))!important}
+#fusionOverlay .v9Battle{height:100%;max-height:100%;overflow-y:auto;overscroll-behavior:contain;padding:6px 9px!important;scrollbar-width:thin}
+#fusionOverlay .v9Battle .fusionTop{margin-bottom:2px!important;padding-bottom:3px!important}
+#fusionOverlay .v9Battle .fusionTop h2{font-size:clamp(18px,4.7vw,25px)!important;margin:0!important}
+#fusionOverlay .v9Battle .v9SectionLabel{margin:3px 0!important;padding:5px 8px!important;font-size:12px!important}
+#fusionOverlay .v9Battle .v9Encounter{margin:3px 0!important;padding:6px!important}
+#fusionOverlay .v9Battle .v9EncounterArt{min-height:0!important}
+#fusionOverlay .v9Battle .vaelkorTeamToggle{margin:4px 0!important;padding:7px!important}
+#fusionOverlay .v9Battle .v9ActionTitle{margin:4px 0!important;padding:7px!important}
+#fusionOverlay .v9Battle .v9HandScroll{overflow-x:auto!important;overflow-y:hidden!important;max-width:100%}
+#fusionOverlay .v9Battle .v9HandCard{flex-shrink:0}
+#fusionOverlay .v9Battle .vaelkorCombatLog{display:none!important}
+#fusionOverlay .v9Battle.vkLogOpen .vaelkorCombatLog{display:block!important;max-height:28dvh;overflow-y:auto}
+#fusionOverlay .v9Battle .vkLogToggle{width:100%;margin:7px 0 3px;background:#213b52;color:#f4e3c5;border:1px solid #a88c5d;border-radius:10px;padding:9px;font-weight:700}
+/* Deck and collection never display the old monster navigation raster. */
+body:has(#vkDeckSwitch:not([hidden])) #fusionOverlay .fusionMenuTabs{display:none!important}
+@media(max-height:740px){#fusionOverlay .v9Battle .v9EncounterArt{max-height:95px!important}#fusionOverlay .v9Battle .v9SectionLabel{padding:3px 7px!important}}

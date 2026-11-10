@@ -1,0 +1,2 @@
+/* Kleine einheitliche Ausrichtung nach links unten; keine Änderung an den Sprite-Daten. */
+.vk-art-wrap>img{transform:none!important;object-fit:contain!important;object-position:center center!important;}

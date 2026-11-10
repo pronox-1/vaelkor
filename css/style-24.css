@@ -1,0 +1,23 @@
+
+/* v57: undo v56 combat layout overrides. They broke the existing encounter grid
+   and allowed artwork to determine enormous minimum column sizes. */
+#fusionOverlay .v9Battle .v9EncounterArt{
+  display:grid!important;place-items:center!important;
+  min-width:0!important;max-width:100%!important;
+  overflow:hidden!important;
+}
+#fusionOverlay .v9Battle .v9EncounterArt img{
+  display:block!important;
+  width:100%!important;height:100%!important;
+  min-width:0!important;min-height:0!important;
+  max-width:100%!important;max-height:100%!important;
+  object-fit:contain!important;object-position:center 44%!important;
+  transform:none!important;
+}
+#fusionOverlay .v9Battle .v9Encounter{
+  min-width:0!important;max-width:100%!important;
+  grid-template-columns:minmax(0,112px) minmax(0,1fr)!important;
+}
+#fusionOverlay .v9Battle .v9Encounter > *{min-width:0!important;max-width:100%!important}
+#fusionOverlay .v9Battle .vaelkorFighterInfo{min-width:0!important;overflow-wrap:anywhere!important}
+@media(max-width:380px){#fusionOverlay .v9Battle .v9Encounter{grid-template-columns:minmax(0,94px) minmax(0,1fr)!important}}

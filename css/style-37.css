@@ -1,0 +1,16 @@
+
+/* Only compact the card-battle screen on portrait phones; retain horizontal card scrolling. */
+@media (max-width:760px) and (orientation:portrait){
+ #fusionOverlay .v9Battle .v9HandCard{min-height:164px!important;gap:2px!important;padding:4px!important}
+ #fusionOverlay .v9Battle .v9CardSymbol{height:52px!important;padding:0!important}
+ #fusionOverlay .v9Battle .vkCardArt{height:52px!important;max-height:52px!important}
+ #fusionOverlay .v9Battle .v9HandCard>strong{min-height:24px!important;line-height:1.1!important}
+ #fusionOverlay .v9Battle .v9HandCard>small{min-height:15px!important;line-height:1.15!important}
+ #fusionOverlay .v9Battle .v9HandScroll{padding:3px 2px 5px!important}
+ #fusionOverlay .v9Battle .v9Hand{gap:6px!important}
+ #fusionOverlay .v9Battle .v9ActionArea{padding:5px 6px 4px!important;margin-top:5px!important;padding-bottom:4px!important}
+ #fusionOverlay .v9Battle .v9Controls{gap:7px!important;margin:3px 0 2px!important;padding:3px 0!important}
+ #fusionOverlay .v9Battle .v9Controls button{min-height:42px!important;padding:7px 5px!important}
+ #fusionOverlay .v9Battle .vkLogToggle{margin:5px 0 2px!important;padding:7px!important}
+ #fusionOverlay .v9Battle .v9SectionLabel{margin:5px 0 4px!important;padding:5px 7px!important}
+}

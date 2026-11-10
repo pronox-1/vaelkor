@@ -1,0 +1,20 @@
+
+#fusionOverlay .fusionMonsterTile{border-width:1px!important;background:linear-gradient(140deg,#20334c,#101e32)!important}
+#fusionOverlay .fusionMonsterTile .fusionStats{font-size:15px!important;color:#d7f3e5!important}
+#fusionOverlay .fusionMonsterTile strong{font-size:17px!important;overflow-wrap:anywhere!important}
+#fusionOverlay .fusionCardFace .fusionStats{color:#f3e2ad!important}
+#fusionOverlay .fusionCardFace small{overflow-wrap:anywhere!important}
+#fusionOverlay .vaelkorPackChoices{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+#fusionOverlay .vaelkorPack{min-width:0!important;box-sizing:border-box!important}
+@media(max-width:620px){
+ #fusionOverlay .fusionMonsterGrid{grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+ #fusionOverlay .fusionMonsterTile{display:grid!important;grid-template-columns:118px minmax(0,1fr)!important;gap:13px!important;align-items:center!important;padding:12px!important}
+ #fusionOverlay .fusionMonsterPortrait{width:118px!important;height:118px!important;min-height:118px!important}
+ #fusionOverlay .fusionMonsterPortrait svg{width:112px!important;height:112px!important}
+ #fusionOverlay .fusionMonsterTile>div:nth-child(2){gap:5px!important}
+ #fusionOverlay .fusionMonsterTile strong{font-size:17px!important;line-height:1.25!important}
+ #fusionOverlay .fusionMonsterTile .fusionElementName{font-size:13px!important}
+ #fusionOverlay .fusionMonsterTile small{font-size:12px!important}
+ #fusionOverlay .fusionMonsterTile .fusionStats{font-size:14px!important}
+}
+@media(max-width:365px){#fusionOverlay .fusionMonsterTile{grid-template-columns:96px minmax(0,1fr)!important}#fusionOverlay .fusionMonsterPortrait{width:96px!important;height:104px!important;min-height:104px!important}}

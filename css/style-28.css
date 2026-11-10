@@ -1,0 +1,28 @@
+
+/* v0.9 – klare Monster-/Aktionskarten-Trennung und mobiles Kampflayout */
+.v9Battle{max-width:860px!important;padding:12px!important}
+.v9SectionLabel{margin:12px 0 8px;padding:9px 11px;border-radius:10px;background:#294255;color:#f1fbff;font-size:13px;font-weight:800}
+.v9Encounter{display:grid;grid-template-columns:minmax(105px,37%) 1fr;align-items:center;gap:15px;border:2px solid var(--element-color);border-radius:18px;padding:12px;background:linear-gradient(120deg,#142536,#253b52);min-height:180px;box-shadow:0 4px 22px #0005}
+.v9EncounterArt{height:170px;display:grid;place-items:center;overflow:hidden;border-radius:12px;background:#0e1b2c}
+.v9EncounterArt img{width:100%;height:100%;object-fit:contain}
+.v9Encounter strong{font-size:clamp(18px,4vw,26px);display:block;line-height:1.2;margin-bottom:8px}.v9Encounter div div{margin:7px 0}
+.v9MissingArt{width:100%;height:100%;min-height:90px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;text-align:center;background:radial-gradient(circle at 50% 30%,var(--portrait-element),#102238 78%);padding:8px;color:#fff}
+.v9MissingArt span{font-size:clamp(42px,10vw,85px);filter:drop-shadow(0 4px 7px #0007)}.v9MissingArt b{font-size:13px}.v9MissingArt small{font-size:10px;opacity:.85}
+.v9Team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:8px 0}
+.v9Monster{display:flex;flex-direction:column;align-items:stretch;text-align:center;min-width:0;overflow:hidden;background:#1c3046;color:#fff;border:2px solid #426177;border-radius:12px;padding:4px;gap:3px}
+.v9Monster.v9Active{border-color:#72e8bb;box-shadow:0 0 0 2px #72e8bb44}.v9Monster.v9Dead{opacity:.43;filter:grayscale(1)}
+.v9MonsterArt{height:90px;border-radius:8px;overflow:hidden;background:#102035}.v9MonsterArt img{width:100%;height:100%;object-fit:contain}
+.v9MonsterArt .v9MissingArt{min-height:0}.v9MonsterArt .v9MissingArt span{font-size:30px}.v9MonsterArt .v9MissingArt b,.v9MonsterArt .v9MissingArt small{display:none}
+.v9MonsterData{display:flex;flex-direction:column;gap:3px}.v9MonsterData strong{font-size:11px;overflow-wrap:anywhere}.v9MonsterData small,.v9MonsterData span{font-size:10px;line-height:1.25}
+.v9EnemyTeam{display:none} /* Gegner wird oben bereits als großes Portrait dargestellt */
+.v9Guard{display:inline-block;background:#a96b2b;padding:5px 8px;border-radius:6px;font-weight:800}
+.v9ActionTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;background:#254659;padding:12px;border-radius:10px;margin-top:12px;font-size:14px}.v9ActionTitle span{color:#fff0ad;font-weight:900}
+.v9ActionArea{border:1px solid #44647b;border-radius:13px;padding:10px;margin-top:8px}.v9ActionArea p{font-size:12px;line-height:1.5;margin:2px 0 8px}
+.v9HandScroll{overflow-x:auto;overflow-y:hidden;padding:14px 4px 20px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.v9Hand{display:flex;align-items:stretch;justify-content:flex-start;gap:7px;width:max-content;min-width:100%}
+.v9HandCard{flex:0 0 118px;width:118px;min-height:185px;display:flex;flex-direction:column;align-items:stretch;gap:5px;padding:7px;border:2px solid var(--element-color);border-radius:13px;background:linear-gradient(155deg,#253d57,#111d30);color:#fff;text-align:left;scroll-snap-align:start;box-shadow:0 5px 10px #0004}
+.v9HandCard:active{transform:translateY(-7px)}.v9HandCard.v9Unavailable{opacity:.56;filter:saturate(.5)}
+.v9CardTop{display:flex;justify-content:space-between;gap:3px;font-size:10px}.v9CardTop b{font-size:13px;color:#ffda7e}
+.v9CardSymbol{text-align:center;font-size:29px;padding:3px}.v9HandCard>strong{font-size:13px;min-height:32px;line-height:1.2}.v9HandCard>small{font-size:9px;min-height:24px;opacity:.88}
+.v9CardEffect{font-size:12px;font-weight:800;margin-top:auto;color:#ffe3a0}.v9Controls{text-align:center;padding:8px}
+@media(max-width:600px){.v9Encounter{grid-template-columns:120px 1fr;min-height:150px;padding:8px;gap:9px}.v9EncounterArt{height:145px}.v9MonsterArt{height:65px}.v9MonsterData strong{font-size:10px}.v9MonsterData small,.v9MonsterData span{font-size:9px}.v9HandCard{width:105px;flex-basis:105px;min-height:175px}.v9Battle .fusionTop h2{font-size:20px}}

@@ -1,0 +1,7 @@
+
+/* Old MONORA battle modal is replaced by the card-based combat screen. */
+#battleoverlay{display:none!important}
+#fusionOverlay:not([hidden]){display:block!important;z-index:120010!important}
+#fusionOverlay .v9Battle .v9Controls{display:flex!important;flex-wrap:wrap!important;gap:8px!important}
+#fusionOverlay .v9Battle .v9Controls button{min-height:44px!important;touch-action:manipulation!important}
+#fusionOverlay .v9Battle .v9HandScroll{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}

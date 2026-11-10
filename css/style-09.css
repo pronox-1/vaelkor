@@ -1,0 +1,7 @@
+
+html{min-height:100%;background:#08172b}body{min-height:100vh;min-height:100dvh;overscroll-behavior-y:contain;padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}
+#fusionNav{bottom:env(safe-area-inset-bottom,0px)!important;padding-bottom:calc(7px + env(safe-area-inset-bottom,0px))!important;box-sizing:border-box}
+#fusionOverlay{height:100vh;height:100dvh;max-height:100dvh;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-bottom:env(safe-area-inset-bottom,0px)!important;box-sizing:border-box}
+#fusionOverlay .fusionShell{padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))!important}
+#fusionOverlay .v9Controls button{min-height:48px!important}
+@media(display-mode:standalone){body{padding-top:env(safe-area-inset-top,0px)}#fusionOverlay{padding-top:env(safe-area-inset-top,0px)!important}}

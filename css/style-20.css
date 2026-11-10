@@ -1,0 +1,5 @@
+
+#fusionOverlay .v9EncounterArt img,#fusionOverlay .fusionMonsterPortrait img,
+#fusionOverlay .v9MonsterArt img,#fusionOverlay .fusionMonsterTile img,
+#fusionOverlay .vkCardArt,#fusionOverlay .f8Portrait img,
+#fusionOverlay img[src^="data:image/webp"]{object-fit:contain!important;object-position:center center!important}

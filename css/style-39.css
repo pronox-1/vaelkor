@@ -1,0 +1,18 @@
+
+/* Remove only the redundant outermost battle frame; preserve fighter/card borders. */
+#fusionOverlay:not([hidden]):has(.v9Battle){padding-top:0!important;padding-bottom:0!important;}
+#fusionOverlay:not([hidden]):has(.v9Battle) .fusionShell{
+ border:0!important;border-top:0!important;border-bottom:0!important;
+ border-radius:0!important;box-shadow:none!important;outline:none!important;
+ margin:0 auto!important;padding:0!important;max-width:100%!important;
+ background:transparent!important;
+}
+#fusionOverlay:not([hidden]):has(.v9Battle) .v9Battle{
+ border:0!important;border-top:0!important;border-bottom:0!important;
+ border-radius:0!important;box-shadow:none!important;outline:none!important;
+ margin:0!important;padding:0 0 4px!important;max-width:none!important;
+}
+@media(max-width:760px){
+ #fusionOverlay:not([hidden]):has(.v9Battle){padding-left:0!important;padding-right:0!important;}
+ #fusionOverlay:not([hidden]):has(.v9Battle) .v9Battle>.fusionTop{margin-top:0!important;}
+}

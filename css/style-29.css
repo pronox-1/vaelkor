@@ -1,0 +1,19 @@
+
+/* v1.0 mobile navigation and cards */
+#fusionNav{z-index:110000!important;bottom:0!important;left:0!important;transform:none!important;width:100%!important;max-width:none!important;border-radius:14px 14px 0 0!important;padding:7px 9px calc(8px + env(safe-area-inset-bottom))!important}
+#fusionOverlay{z-index:100000!important;padding:12px 10px 110px!important;overflow-y:auto!important;overscroll-behavior:contain}
+#fusionOverlay[hidden]{display:none!important}
+#fusionOverlay .fusionShell{max-width:930px!important;margin:0 auto!important;padding:14px!important;border-radius:16px!important;min-height:0!important}
+#fusionOverlay .fusionTop{position:sticky;top:0;z-index:3;background:#192439;padding:8px 2px!important;display:flex;justify-content:space-between;align-items:center;gap:8px}
+#fusionOverlay .fusionTop h2{font-size:clamp(17px,4.4vw,25px)!important;margin:0!important}
+#fusionOverlay .fusionMenuTabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:12px 0 18px}
+#fusionOverlay .fusionMenuTabs button{padding:9px 3px!important;font-size:clamp(10px,2.8vw,14px)!important;min-width:0!important}
+#fusionOverlay .fusionDeckLayout{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+#fusionOverlay .fusionDeckRow{min-height:58px!important}
+#fusionOverlay .fusionMonsterTile img{object-fit:contain}
+#fusionOverlay .v9Battle .v9HandScroll{scrollbar-width:thin}
+#fusionOverlay .v9Battle .v9HandCard{min-width:104px;touch-action:manipulation}
+#fusionOverlay .v9Battle .v9Unavailable{opacity:.42}
+#fusionOverlay .v9Battle .v9SectionLabel{font-size:12px}
+#fusionOverlay .v9Battle .v9EncounterArt img{object-fit:contain}
+@media(max-width:620px){#fusionOverlay .fusionDeckLayout{grid-template-columns:1fr!important}#fusionOverlay .fusionCountGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}#fusionOverlay .fusionMonsterGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#fusionOverlay .v9Battle .v9HandCard{min-width:110px}}

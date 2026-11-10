@@ -1,0 +1,1 @@
+window.VaelkorShiny103={chance:1/500,multiplier:1.10,count:Object.keys(VK_SHINY_ART103).length,image:id=>VK_SHINY_ART103[id],original:id=>VK_CREATURE_ART[id]};

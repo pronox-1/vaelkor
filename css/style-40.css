@@ -1,0 +1,58 @@
+
+/* v76: one viewport layout for exploration. Menu and battle rules stay separate. */
+:root{--world-gold:#c6a466;--world-ink:#f5e6bf;--world-paper:#0d2530;--world-nav:70px}
+body{background:radial-gradient(ellipse at 50% 0,#193c40,#081722 75%)}
+#vkWindowHud{display:none!important}
+#world canvas#map{display:none!important}
+#world .mapwrap::before,#world .mapwrap::after{display:none!important;content:none!important}
+html:has(body.vk-exploring),body.vk-exploring{height:100%;overflow:hidden!important;overscroll-behavior:none}
+body.vk-exploring{padding:0!important}
+body.vk-exploring .wrap{display:grid!important;grid-template-rows:48px minmax(0,1fr)!important;gap:0!important;width:100%!important;max-width:1200px!important;height:calc(100dvh - var(--world-nav) - env(safe-area-inset-bottom,0px))!important;max-height:none!important;margin:0 auto!important;padding:0 12px!important;overflow:hidden!important}
+body.vk-exploring .wrap>header{position:static!important;display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important;gap:8px!important;width:100%!important;min-height:0!important;height:48px!important;margin:0!important;padding:5px 9px!important;border:0!important;border-bottom:1px solid #a58b51!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:hidden!important}
+body.vk-exploring .wrap>header>div:first-child{display:block!important;min-width:0!important;overflow:hidden!important}
+body.vk-exploring .wrap>header>div:first-child .small,body.vk-exploring .wrap>header .vkLangLabel,body.vk-exploring #vkLanguage{display:none!important}
+body.vk-exploring .logo{font:700 20px Georgia,serif!important;white-space:nowrap!important;color:#f2d394!important;letter-spacing:1px!important}
+body.vk-exploring .logo>span:first-child{color:#f2d394!important}
+body.vk-exploring .logo>span[style]{display:none!important}
+body.vk-exploring .wrap>header>div:last-child{display:flex!important;align-items:center!important;flex-wrap:nowrap!important;gap:7px!important}
+body.vk-exploring #coins{display:block!important;position:static!important;margin:0!important;padding:5px 9px!important;white-space:nowrap!important;font-size:12px!important;border:1px solid #657865!important;background:#183539!important}
+body.vk-exploring #fullscreenBtn{position:static!important;display:block!important;min-width:34px!important;width:34px!important;height:32px!important;padding:0!important;font-size:0!important;border:1px solid #657865!important;background:#183539!important;border-radius:9px!important;color:var(--world-ink)!important}
+body.vk-exploring #fullscreenBtn::after{content:'⛶';font-size:22px}
+body.vk-exploring #world{display:block!important;width:100%!important;min-width:0!important;height:100%!important;min-height:0!important;max-height:none!important;margin:0!important;padding:0!important;overflow:hidden!important}
+body.vk-exploring #world>.layout{display:block!important;height:100%!important;min-height:0!important;margin:0!important;padding:0!important}
+body.vk-exploring #world>.layout>.panel:first-child{position:relative!important;display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:28px minmax(0,1fr) 142px!important;align-items:center!important;justify-items:center!important;gap:4px!important;width:100%!important;height:100%!important;min-height:0!important;margin:0!important;padding:5px 0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:hidden!important}
+body.vk-exploring #world .hud{display:flex!important;position:static!important;grid-column:1!important;grid-row:1!important;align-items:center!important;justify-content:space-between!important;gap:6px!important;width:100%!important;max-width:620px!important;min-height:0!important;margin:0!important;padding:0 2px!important;color:#bdcaba!important}
+body.vk-exploring #world .hud .pill{background:transparent!important;border:0!important;padding:2px 0!important;font-size:11px!important;white-space:nowrap!important}
+body.vk-exploring #world .mapwrap{grid-column:1!important;grid-row:2!important;align-self:center!important;justify-self:center!important;position:relative!important;display:block!important;flex:none!important;width:var(--map-width,280px)!important;height:var(--map-height,355px)!important;min-height:0!important;max-height:none!important;max-width:100%!important;aspect-ratio:480/608!important;margin:0!important;padding:0!important;border:1px solid #b99a5a!important;border-radius:8px!important;background:#163a2a!important;box-shadow:0 8px 28px #0006!important;overflow:hidden!important;transform:none!important}
+body.vk-exploring #world #vkIntegratedWorld{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;min-height:0!important;max-height:none!important;max-width:none!important;aspect-ratio:auto!important;border:0!important;transform:none!important}
+body.vk-exploring #world .dpad{position:static!important;grid-column:1!important;grid-row:3!important;align-self:center!important;justify-self:center!important;display:grid!important;grid-template-columns:repeat(3,48px)!important;grid-template-rows:repeat(3,44px)!important;gap:3px!important;flex:none!important;width:auto!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;inset:auto!important;transform:none!important;filter:none!important;z-index:1!important}
+body.vk-exploring #world .dpad button{display:block!important;width:48px!important;height:44px!important;min-height:44px!important;padding:0!important;touch-action:none!important;user-select:none!important;-webkit-user-select:none!important;font:22px system-ui!important;border:1px solid #7f927d!important;border-radius:12px!important;background:linear-gradient(#294e4c,#153335)!important;box-shadow:0 3px 0 #071b22!important;color:#fff0ca!important}
+body.vk-exploring #world .dpad button.vkHeld{background:#547447!important;border-color:#e7c67f!important;box-shadow:0 1px 0 #071b22!important;transform:translateY(2px)!important}
+body.vk-exploring #world .panel>p.small{display:none!important}
+#vkWorldHint{display:none;font-size:12px;line-height:1.7;color:#bac4ae;text-align:center;max-width:160px}
+body.vk-exploring #fusionNav{display:grid!important;position:fixed!important;inset:auto 0 0!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;align-items:stretch!important;gap:5px!important;width:100%!important;height:calc(var(--world-nav) + env(safe-area-inset-bottom,0px))!important;min-height:0!important;margin:0!important;padding:7px max(7px,env(safe-area-inset-right,0px)) calc(7px + env(safe-area-inset-bottom,0px)) max(7px,env(safe-area-inset-left,0px))!important;border:0!important;border-top:1px solid #a58b51!important;border-radius:0!important;background:#0a1e28f5!important;box-shadow:0 -8px 25px #04131b55!important;z-index:110000!important}
+body.vk-exploring #fusionNav button{min-width:0!important;height:auto!important;padding:6px 3px!important;border-radius:9px!important;font-size:clamp(10px,2.8vw,14px)!important;background:#112c35!important;border:1px solid #536b65!important;color:#e9e2c9!important;white-space:nowrap!important}
+body.vk-exploring #fusionNav button.vkCurrent{background:#355548!important;border-color:#d6b56e!important;color:#fff0ca!important}
+@media(min-width:850px),(max-height:540px) and (min-width:560px){
+ body.vk-exploring #world>.layout>.panel:first-child{grid-template-columns:minmax(0,1fr) 174px!important;grid-template-rows:28px minmax(0,1fr)!important;gap:6px 20px!important;max-width:970px!important;margin:auto!important}
+ body.vk-exploring #world .hud{grid-column:1/3!important;max-width:none!important}
+ body.vk-exploring #world .mapwrap{grid-column:1!important;grid-row:2!important;justify-self:end!important}
+ body.vk-exploring #world .dpad{grid-column:2!important;grid-row:2!important;align-self:center!important;transform:translateY(-30px)!important}
+ body.vk-exploring #vkWorldHint{display:block;position:absolute;right:7px;top:calc(50% + 68px)}
+}
+@media(max-width:420px){body.vk-exploring .wrap{padding:0 6px!important}body.vk-exploring .logo{font-size:17px!important}}
+@media(max-height:540px){:root{--world-nav:54px}body.vk-exploring .wrap{grid-template-rows:40px minmax(0,1fr)!important}body.vk-exploring .wrap>header{height:40px!important}body.vk-exploring #world>.layout>.panel:first-child{grid-template-rows:22px minmax(0,1fr)!important}body.vk-exploring #vkWorldHint{display:none!important}}
+/* Global navigation must remain above collection/deck overlays. */
+body #fusionNav{z-index:120020!important}
+body:has(#fusionOverlay:not([hidden]) .v9Battle) #fusionNav{display:none!important}
+body.vk-exploring #world .dpad button svg{display:block;width:22px;height:22px;margin:auto;fill:currentColor;pointer-events:none}
+
+body:not(:has(#fusionOverlay:not([hidden]) .v9Battle)) #fusionNav{display:grid!important}
+/* Size from the viewport container itself, including immediately after rotation. */
+body.vk-exploring #world>.layout>.panel:first-child{container-type:size}
+body.vk-exploring #world .mapwrap{width:min(100cqw,calc((100cqh - 188px)*480/608))!important;height:auto!important;aspect-ratio:480/608!important}
+@media(min-width:850px),(max-height:540px) and (min-width:560px){body.vk-exploring #world .mapwrap{width:min(calc(100cqw - 194px),calc((100cqh - 44px)*480/608),640px)!important}}
+body.vk-exploring .wrap>header{grid-column:1!important;grid-row:1!important}
+body.vk-exploring #world{grid-column:1!important;grid-row:2!important}
+body.vk-exploring .wrap>#gameNotice{position:fixed!important;top:54px!important;left:50%!important;transform:translateX(-50%)!important;z-index:120030!important;width:min(92vw,560px)!important}
+

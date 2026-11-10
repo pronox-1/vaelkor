@@ -1,0 +1,39 @@
+
+/* VAELKOR v2.6: unified bright low-poly fantasy theme over original MONORA overworld */
+:root{--bg:#081322;--panel:#0d233a;--panel2:#183c54;--ink:#f7f7e9;--muted:#a9c6d9;--accent:#62e2ae;--gold:#f5c46d;--line:#a47e4a}
+body{background:radial-gradient(ellipse at 40% 0%,#134b64 0%,#081b30 48%,#06101d 100%)!important;color:#f2f5f8!important}
+.wrap{max-width:1140px}.top{padding:12px 15px;border:2px solid #bc965b;border-radius:17px;background:linear-gradient(120deg,#0a2139,#143e56 55%,#091b30);box-shadow:0 0 0 2px #142f48,0 8px 25px #0008}
+.logo{font-family:Georgia,serif;color:#f5d388;text-shadow:0 2px 8px #000}
+.panel,.modal,.item{border:1.5px solid #a58252!important;background:linear-gradient(150deg,#102d45,#0c1e33 68%,#102b41)!important;box-shadow:inset 0 0 0 1px #294d62,0 9px 24px #0005!important}
+.panel h2,.panel h3{color:#ffdda0;text-shadow:0 2px 4px #0006}
+nav button,.btn,.actions button{border:1.5px solid #bc965b!important;background:linear-gradient(145deg,#1a455e,#10253f)!important;color:#f7e7c6!important;box-shadow:inset 0 1px #ffffff21}
+nav button.active,.btn.primary{background:linear-gradient(140deg,#35b57c,#1d705d)!important;color:white!important}
+.monster,.fusionMonsterTile{background:linear-gradient(130deg,#203b54,#12283d)!important;border-color:#55748a!important}
+.portrait,.fusionMonsterPortrait{background:radial-gradient(circle at 45% 40%,#28536b,#09172b 75%)!important}
+.portrait svg,.fusionMonsterPortrait svg,.fusionCardMonsterImage svg,.f8Portrait svg,.v9FighterPortrait svg,.v9EncounterArt svg,.v9MonsterArt svg,.fusionArtwork svg,.vkCreatureIllustration{width:100%;height:100%;object-fit:contain;display:block}
+.mapwrap{border-color:#c19b5b!important;box-shadow:0 0 0 3px #193c54,0 10px 30px #0008!important}
+.dpad button{background:linear-gradient(135deg,#23556a,#15344d)!important;border:1px solid #6c9aaf!important;color:#f6edda!important}
+.tip{background:#1b3b4d!important;border-left-color:#e8b760!important}
+#fusionOverlay{z-index:80000!important;position:fixed!important;inset:0!important;overflow-y:auto!important;overscroll-behavior:contain!important;padding:8px 8px 22px!important;background:#071423f5!important}
+#fusionOverlay .fusionShell{background:linear-gradient(160deg,#0e2942,#07192c)!important;border:2px solid #bd965b!important;box-shadow:inset 0 0 0 2px #2b536b,0 12px 35px #000a!important}
+#fusionOverlay .v9Battle{padding-bottom:22px!important}
+#fusionOverlay .v9ActionArea{padding-bottom:14px!important}
+#fusionOverlay .v9Controls{display:flex!important;flex-wrap:wrap!important;gap:9px!important;padding:10px 0!important}
+#fusionOverlay .v9Controls button{min-height:46px!important;flex:1 1 130px!important}
+#fusionOverlay .v9HandScroll{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+#fusionOverlay .v9HandCard{flex-shrink:0!important}
+#fusionOverlay .vaelkorCombatLog{margin-bottom:12px!important}
+body:has(#fusionOverlay:not([hidden])) #fusionNav{display:none!important}
+body:has(#fusionOverlay:not([hidden])){padding-bottom:0!important}
+#fusionNav{border-color:#b38c52!important;background:#091c30f5!important}
+#fusionNav button{border-color:#b38c52!important;color:#f7e7c6!important}
+@media(max-width:560px){.wrap{padding:10px}.panel{padding:13px}.monster{gap:9px}.fusionMonsterTile{min-width:0}#fusionOverlay{padding:4px 4px 20px!important}#fusionOverlay .fusionShell{padding:11px!important}#fusionOverlay .v9Hand{gap:7px!important}#fusionOverlay .v9HandCard{min-width:120px!important}}
+.vkSets{border:1px solid #b79b57;border-radius:14px;padding:12px;margin:14px 0;background:#1c3047}.vkSetGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.vkSet{display:flex;flex-direction:column;gap:6px;padding:8px;border:1px solid #566b86;border-radius:10px}.vkSet small{color:#b7c7d9}.vkSet button{padding:8px 3px;border:1px solid #a18d55;border-radius:7px;background:#30455e;color:white}.vkCaptureGrid{display:flex;flex-wrap:wrap;gap:9px}.vkCaptureGrid button{flex:1;min-width:140px}.vkTutorialTarget{outline:3px solid #ffdd60!important;box-shadow:0 0 22px #ffdb59!important;animation:vkPulse 1s infinite alternate}.vkTutorialHint{background:#f8cf55;color:#192331;font-weight:900;border-radius:9px;padding:9px;text-align:center;margin:9px 0;animation:vkPulse 1s infinite alternate}@keyframes vkPulse{to{filter:brightness(1.3)}}@media(max-width:460px){.vkSetGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.vkSets{padding:8px;margin:8px 0}.vkSets h3{margin:0 0 4px;font-size:15px}.vkSets p{font-size:11px;line-height:1.3;margin:4px 0 7px}.vkSet{padding:5px 3px;gap:3px;min-width:0}.vkSet b{font-size:12px}.vkSet small{font-size:10px;line-height:1.2}.vkSet button{padding:6px 2px;font-size:11px;min-width:0}}
+
+/* v3.3: kompakte Set-Auswahl, auch bei schmalen Mobilgeräten */
+.vkSetGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:5px!important}
+.vkSets{padding:8px!important;margin:8px 0!important}
+.vkSet{padding:6px 4px!important;gap:4px!important;min-width:0!important}
+.vkSet small{font-size:10px!important;overflow-wrap:anywhere}
+.vkSet button{font-size:12px!important;padding:8px 2px!important;min-width:0!important;white-space:normal!important}
+@media(max-width:390px){.vkSet button{font-size:11px!important}}

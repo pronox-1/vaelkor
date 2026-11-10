@@ -1,0 +1,8 @@
+/* v77: larger exploration controls in browser fullscreen only. */
+html:fullscreen body.vk-exploring #world .dpad{grid-template-columns:repeat(3,56px)!important;grid-template-rows:repeat(3,52px)!important}
+html:fullscreen body.vk-exploring #world .dpad button{width:56px!important;height:52px!important;min-height:52px!important;border-radius:14px!important}
+html:fullscreen body.vk-exploring #world .dpad button svg{width:26px;height:26px}
+@media(max-width:849px) and (min-height:541px){
+ html:fullscreen body.vk-exploring #world>.layout>.panel:first-child{grid-template-rows:28px minmax(0,1fr) 166px!important}
+ html:fullscreen body.vk-exploring #world .mapwrap{width:min(100cqw,calc((100cqh - 212px)*480/608))!important}
+}

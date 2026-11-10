@@ -1,0 +1,10 @@
+#vkAppearance87[hidden]{display:none!important}
+#vkAppearance87{position:fixed;inset:0;z-index:30000;display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:24px 12px max(24px,env(safe-area-inset-bottom));background:#041220ed}
+.vkAppearancePanel87{width:min(100%,720px);margin:auto;padding:20px;border:1px solid #c69c55;border-radius:18px;background:#112b3e;color:#f9e6bc}
+.vkAppearancePanel87 h2{margin-top:0}.vkAppearancePanel87 p{color:#bfd2df}.vkAppearanceGrid87{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0}
+.vkAppearanceGrid87 button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px 6px;border:1px solid #5b9394;border-radius:12px;background:#17384b;color:#ffebc7;cursor:pointer}
+.vkAppearanceGrid87 img{height:118px;width:100%;object-fit:contain;image-rendering:pixelated}.vkAppearanceGrid87 strong{font:600 14px system-ui}
+.vkAppearancePanel87 [data-appearance-back87]{padding:10px 14px;border:1px solid #87aba5;border-radius:9px;background:#24495a;color:#fff3d7;font:600 14px system-ui;cursor:pointer}
+#fusionOverlay .v9Battle .vkTrainerHeading87{display:flex;align-items:center;gap:7px;min-width:0;font-size:clamp(15px,4.2vw,23px)!important}
+#fusionOverlay .vkTrainerHeading87 img{width:34px;height:39px;object-fit:contain;image-rendering:pixelated;flex:none}
+@media(max-width:520px){.vkAppearanceGrid87{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.vkAppearanceGrid87 img{height:112px}.vkAppearancePanel87{padding:16px}}

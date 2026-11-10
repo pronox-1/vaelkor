@@ -1,0 +1,2 @@
+function vkSwitchMonster94(i){const b=fusionBattle;if(!b||b.winner||b.discardPhase||!Number.isInteger(i)||i===b.hero.active||!(b.hero.team[i]?.hp>0))return false;if(b.hero.energy<3){b.log.push('🔄 Monsterwechsel benötigt 3 Energie.');renderFusionBattle();return false}b.hero.energy-=3;b.hero.switchUsed=true;b.hero.active=i;fusionTeamExpanded=false;b.log.push('🔄 Aktives Monster: '+displayName(b.hero.team[i].m)+' · 3 Energie · Zug beendet.');fusionEndTurn();return true}
+window.VaelkorSwitch94={cost:3,endsTurn:true,switchHero:vkSwitchMonster94};

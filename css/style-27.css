@@ -1,0 +1,5 @@
+
+.vaelkorDiscardNotice{padding:10px;background:#61472b;border:1px solid #e9b65b;border-radius:10px;font-weight:700;margin:8px 0}
+.vaelkorShinyArt{height:100%;width:100%;position:relative}
+.vaelkorShinyArt img{filter:none!important}
+.vaelkorShinyArt:after{content:'✦';position:absolute;top:3px;right:9px;color:#ffe579;font-size:30px;text-shadow:0 0 8px #fff,0 0 14px #f8bc35;pointer-events:none}

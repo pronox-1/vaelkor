@@ -1,0 +1,12 @@
+
+#fusionOverlay .fusionMonsterGrid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;align-items:stretch!important}
+#fusionOverlay .fusionMonsterTile{display:flex!important;flex-direction:column!important;gap:10px!important;min-width:0!important;min-height:0!important;padding:12px!important;border-radius:17px!important;box-sizing:border-box!important;overflow:hidden!important;box-shadow:inset 0 1px 0 #ffffff20,0 8px 20px #0004!important}
+#fusionOverlay .fusionMonsterTile>div:nth-child(2){min-width:0!important;width:100%!important;display:flex!important;flex-direction:column!important;gap:5px!important;overflow-wrap:anywhere!important;word-break:normal!important}
+#fusionOverlay .fusionMonsterPortrait{width:100%!important;height:130px!important;min-height:130px!important;max-width:none!important;display:flex!important;justify-content:center!important;align-items:center!important;border-radius:13px!important;background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--element-color) 26%,#172c44),#081827 78%)!important;overflow:hidden!important}
+#fusionOverlay .fusionMonsterPortrait svg{width:125px!important;height:125px!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important}
+#fusionOverlay .fusionMonsterTile strong{font-size:clamp(14px,3.7vw,18px)!important;line-height:1.22!important;display:block!important;overflow-wrap:anywhere!important}
+#fusionOverlay .fusionMonsterTile .fusionElementName{font-size:13px!important;line-height:1.35!important}
+#fusionOverlay .fusionMonsterTile small{font-size:12px!important;line-height:1.4!important;color:#e0d7bd!important}
+#fusionOverlay .fusionMonsterTile .fusionStats{font-size:14px!important;font-weight:700!important;line-height:1.4!important;white-space:normal!important}
+@media(min-width:720px){#fusionOverlay .fusionMonsterGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}#fusionOverlay .fusionMonsterPortrait{height:155px!important}}
+@media(max-width:350px){#fusionOverlay .fusionMonsterGrid{gap:7px!important}#fusionOverlay .fusionMonsterTile{padding:8px!important}#fusionOverlay .fusionMonsterPortrait{height:105px!important;min-height:105px!important}}

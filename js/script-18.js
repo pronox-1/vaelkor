@@ -1,0 +1,1 @@
+window.VAELKOR_VERSION=104;
