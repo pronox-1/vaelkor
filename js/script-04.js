@@ -184,28 +184,29 @@ try{if(window.AetherEngine?.BYID){
 for(const [de,en] of combatTranslations)dictionary.set(de,en);
 sorted.length=0;sorted.push(...dictionary.entries());sorted.sort((a,b)=>b[0].length-a[0].length);
 
-const original=new WeakMap(), last=new WeakMap();let language='de',busy=false,pending=false;
-function translate(str){
- if(!str.trim())return str;
- const exact=dictionary.get(str.trim());if(exact)return str.replace(str.trim(),exact);
- let out=str;
- // Translate full sentences first. For single words, enforce Unicode-aware word boundaries.
- // This prevents corrupt hybrids such as "Monstersrn" from "Monstern".
- for(const [de,en] of sorted){
-  if(!de||de===en)continue;
-  const escaped=de.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-  const starts=/^[\p{L}\p{N}]/u.test(de),ends=/[\p{L}\p{N}]$/u.test(de);
-  const pattern=(starts?'(?<![\\p{L}\\p{N}])':'')+escaped+(ends?'(?![\\p{L}\\p{N}])':'');
-  try{out=out.replace(new RegExp(pattern,'gu'),en)}catch(e){out=out.split(de).join(en)}
- }
- return out;
-}
-function nodeText(n){if(n.parentElement?.closest('#vkLanguage'))return;let current=n.nodeValue;if(!original.has(n)){original.set(n,current)}else if(last.has(n)&&current!==last.get(n)&&current!==original.get(n)){original.set(n,current)}let base=original.get(n),target=language==='en'?translate(base):base;if(current!==target)n.nodeValue=target;last.set(n,target)}
-function process(root){if(!root)return;if(root.nodeType===3){nodeText(root);return}if(root.nodeType!==1&&root.nodeType!==9)return;if(root.nodeType===1){if(['SCRIPT','STYLE','TEXTAREA','NOSCRIPT','CODE'].includes(root.tagName))return;for(const attr of ['title','aria-label','placeholder']){if(root.hasAttribute(attr)){let k='data-vk-orig-'+attr;let prev=root.getAttribute(k);let val=root.getAttribute(attr);if(prev===null||val!==(language==='en'?translate(prev):prev))root.setAttribute(k,val);let base=root.getAttribute(k);let next=language==='en'?translate(base):base;if(val!==next)root.setAttribute(attr,next)}}}let walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){return n.parentElement&&['SCRIPT','STYLE','TEXTAREA','NOSCRIPT','CODE'].includes(n.parentElement.tagName)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});let n;while(n=walker.nextNode())nodeText(n)}
-function update(){if(busy)return;busy=true;try{process(document.body);const caption=document.getElementById('vkLangCaption');if(caption && caption.textContent!==(language==='en'?'Language':'Sprache'))caption.textContent=language==='en'?'Language':'Sprache';document.documentElement.lang=language;}finally{busy=false}}
-function schedule(){if(pending||busy)return;pending=true;queueMicrotask(()=>{pending=false;update()})}
-const select=document.getElementById('vkLanguage');try{language=localStorage.getItem(KEY)==='en'?'en':'de'}catch(e){}select.value=language;
-select.addEventListener('change',()=>{language=select.value==='en'?'en':'de';try{localStorage.setItem(KEY,language)}catch(e){}update()});
-const observer=new MutationObserver(mutations=>{if(busy)return;let relevant=false;for(const m of mutations){if(m.type==='childList'||m.type==='characterData'||m.type==='attributes'){relevant=true;break}}if(relevant)schedule()});observer.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['title','aria-label','placeholder']});update();
-window.VaelkorLanguage={get:()=>language,set:(l)=>{select.value=l==='en'?'en':'de';select.dispatchEvent(new Event('change'))}};
+// Compile once; process changed subtrees only. No language work runs in the movement loop.
+const original=new WeakMap(),last=new WeakMap(),attributeState=new WeakMap(),cache=new Map(),dirty=new Set(),watched=new WeakMap(),canvases=new WeakSet();
+let language='de',pending=false,matcher=null,compiled=0,visited=0,flushes=0,fullScans=0;
+const SKIP=new Set(['SCRIPT','STYLE','TEXTAREA','NOSCRIPT','CODE','SVG','CANVAS','IMG','PICTURE','IFRAME']);
+const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+function compile(){for(const[de,en]of [...dictionary])if(de.length<65&&de!==de.toUpperCase())dictionary.set(de.toUpperCase(),en.toUpperCase());sorted.length=0;sorted.push(...dictionary.entries());sorted.sort((a,b)=>b[0].length-a[0].length);matcher=new RegExp(sorted.filter(([de,en])=>de&&de!==en).map(([de])=>(/^[\p{L}\p{N}]/u.test(de)?'(?<![\\p{L}\\p{N}])':'')+escape(de)+(/[\p{L}\p{N}]$/u.test(de)?'(?![\\p{L}\\p{N}])':'')).join('|'),'gu');compiled++;cache.clear();}
+function translate(str){if(typeof str!=='string'||!/[\p{L}]/u.test(str))return str;if(cache.has(str))return cache.get(str);const exact=dictionary.get(str.trim()),out=exact?str.replace(str.trim(),exact):str.replace(matcher,key=>dictionary.get(key)||key);if(cache.size>=1024)cache.delete(cache.keys().next().value);cache.set(str,out);return out;}
+function nodeText(n){const current=n.nodeValue;if(!original.has(n)||last.has(n)&&current!==last.get(n))original.set(n,current);const target=language==='en'?translate(original.get(n)):original.get(n);last.set(n,target);if(current!==target)n.nodeValue=target;}
+function attrs(el){let state=attributeState.get(el);if(!state){state={};attributeState.set(el,state);}for(const attr of ['title','aria-label','placeholder','alt']){if(!el.hasAttribute?.(attr))continue;const current=el.getAttribute(attr),old=state[attr];const base=!old||current!==old.last?current:old.base,target=language==='en'?translate(base):base;state[attr]={base,last:target};if(current!==target)el.setAttribute(attr,target);}}
+function process(root){const stack=[root];while(stack.length){const n=stack.pop();if(!n)continue;visited++;if(n.nodeType===3){nodeText(n);continue;}if(n.nodeType!==1&&n.nodeType!==9)continue;if(n.nodeType===1){if(n.id==='vkLanguage'||n.hasAttribute?.('data-no-translate'))continue;const tag=String(n.tagName||'').toUpperCase();if(SKIP.has(tag)){if(tag==='IFRAME')attachFrame(n);continue;}attrs(n);}const children=n.childNodes||[];for(let i=children.length-1;i>=0;i--)stack.push(children[i]);}}
+function schedule(root){if(!root||language!=='en')return;dirty.add(root);if(pending)return;pending=true;(window.requestAnimationFrame||((fn)=>setTimeout(fn,0)))(flush);}
+function flush(){pending=false;flushes++;const roots=[...dirty];dirty.clear();for(const root of roots){if(root.isConnected===false)continue;if(roots.some(other=>other!==root&&other.contains?.(root)))continue;process(root);}}
+function mutations(records){if(language!=='en')return;for(const m of records){if(m.type==='characterData'){if(last.get(m.target)!==m.target.nodeValue)schedule(m.target);}else if(m.type==='attributes'){const prior=attributeState.get(m.target)?.[m.attributeName];if(!prior||prior.last!==m.target.getAttribute(m.attributeName))schedule(m.target);}else if(m.type==='childList'){for(const n of m.addedNodes||[])schedule(n);}}}
+function watch(doc){if(!doc?.body||watched.has(doc))return;const observer=new MutationObserver(mutations);observer.observe(doc.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['title','aria-label','placeholder','alt']});watched.set(doc,observer);}
+const frames=new Set(),boundFrames=new WeakSet();
+function canvasText(frame){try{const win=frame.contentWindow,proto=win.CanvasRenderingContext2D?.prototype,contexts=proto?[proto]:Array.from(frame.contentDocument?.querySelectorAll?.('canvas')||[],canvas=>canvas.getContext('2d'));for(const ctx of contexts){if(!ctx||canvases.has(ctx))continue;canvases.add(ctx);for(const key of ['fillText','strokeText','measureText']){const fn=ctx[key];if(typeof fn==='function')ctx[key]=function(text,...args){return fn.call(this,language==='en'?translate(text):text,...args);};}}}catch(e){/* A cross-origin frame is not part of the embedded game. */}}
+function attachFrame(frame){if(frame.id!=='vkIntegratedWorld')return;if(!boundFrames.has(frame)){boundFrames.add(frame);frame.addEventListener('load',()=>attachFrame(frame));}try{const doc=frame.contentDocument;if(!doc?.body)return;frames.add(frame);canvasText(frame);watch(doc);doc.documentElement.lang=language;process(doc.body);}catch(e){}}
+function refreshCards(){let changed=false;try{for(const card of Object.values(window.AetherEngine?.BYID||{})){if(!card?.name||dictionary.has(card.name))continue;const name=translateCardName(card.name);if(name!==card.name){dictionary.set(card.name,name);changed=true;}}}catch(e){}if(changed)compile();}
+function update(){dirty.clear();fullScans++;process(document.body);const caption=document.getElementById('vkLangCaption');if(caption){const title=language==='en'?'Language':'Sprache';if(caption.textContent!==title)caption.textContent=title;const n=caption.firstChild;if(n){original.set(n,'Sprache');last.set(n,caption.textContent);}}document.documentElement.lang=language;for(const frame of frames){try{frame.contentDocument.documentElement.lang=language;process(frame.contentDocument.body);frame.contentWindow.VaelkorWildScene?.languageChanged?.();}catch(e){}}}
+const select=document.getElementById('vkLanguage');try{language=localStorage.getItem(KEY)==='en'?'en':'de'}catch(e){}if(select)select.value=language;
+select?.addEventListener('change',()=>{language=select.value==='en'?'en':'de';try{localStorage.setItem(KEY,language)}catch(e){}refreshCards();update();});
+for(const[de,en]of Object.entries(window.VaelkorLanguageCatalog||{}))dictionary.set(de,en);
+compile();watch(document);update();
+window.VaelkorLanguage={get:()=>language,set:l=>{if(select)select.value=l==='en'?'en':'de';language=l==='en'?'en':'de';try{localStorage.setItem(KEY,language)}catch(e){}refreshCards();update();},translate,refresh:()=>{refreshCards();update();},attachFrame,metrics:()=>({compiled,visited,flushes,fullScans,cacheSize:cache.size,cacheLimit:1024,dirty:dirty.size})};
+document.addEventListener('DOMContentLoaded',()=>{refreshCards();update();});
 })();

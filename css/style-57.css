@@ -1,0 +1,76 @@
+/* Unified, restrained card design: element != rarity != card type. */
+#fusionOverlay .fusionShell:not(.v9Battle) .fusionCardFace.vkDesignCard,
+#fusionOverlay .v9HandCard.vkDesignHand>.vkDesignCard{display:grid!important;grid-template-rows:24px 38px minmax(0,1fr) 34px 38px 24px!important;gap:4px!important;padding:8px!important;border:2px solid var(--rarity-color,#a6b0bb)!important;border-radius:11px!important;box-sizing:border-box!important;overflow:hidden!important;color:#edf0e8!important;background:#132832!important;text-align:left!important;position:relative}
+#fusionOverlay .fusionShell:not(.v9Battle) .fusionCardFace.vkDesignCard{height:292px!important;min-height:292px!important;max-height:292px!important}
+#fusionOverlay .vkDesignCard::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--vk-element,#b5c1c5);pointer-events:none}
+#fusionOverlay .vkDesignCard .vkCardHeader{grid-row:1!important;display:flex;align-items:center;justify-content:space-between;gap:4px;font:700 11px/1.2 system-ui;overflow:hidden;min-width:0}
+#fusionOverlay .vkDesignCard .vkCardElement{display:flex;align-items:center;gap:4px;min-width:0;color:var(--vk-element)}
+#fusionOverlay .vkDesignCard .vkCardElement i{font-style:normal;font-size:20px;line-height:1;flex-shrink:0}
+#fusionOverlay .vkDesignCard .vkCardElement b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-transform:uppercase;font-size:11px}
+#fusionOverlay .vkDesignCard .vkCardEnergy{color:#f7df9e;background:#253c42;border:1px solid #8b805b;border-radius:6px;white-space:nowrap;padding:3px 5px;font:800 13px/1 system-ui;flex-shrink:0}
+#fusionOverlay .vkDesignCard .vkCardEnergy small{font:700 9px system-ui}
+#fusionOverlay .fusionCardFace.vkDesignCard>.vkCardName{grid-row:2!important;font:700 15px/1.2 Georgia,serif!important;margin:0!important;color:#f6e9ce;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden!important;overflow-wrap:anywhere;align-self:center}
+#fusionOverlay .vkDesignCard .vkCardVisual{grid-row:3!important;min-height:0!important;display:grid;place-items:center;overflow:hidden;border-block:1px solid #60726844;background:#0e222a;border-radius:6px;padding:4px}
+#fusionOverlay .vkDesignCard .vkCardGlyph{font-size:46px;line-height:1;filter:none!important}
+#fusionOverlay .vkDesignCard .vkCardTeamArt{height:100%;width:100%;min-height:0;display:grid;place-items:center}
+#fusionOverlay .vkDesignCard .vkCardTeamArt img{width:100%!important;height:100%!important;object-fit:contain!important;max-height:100%!important}
+#fusionOverlay .vkDesignCard .vkCardRecipe{display:flex;flex-direction:column;justify-content:center;gap:2px;width:100%;height:100%;min-height:0;overflow:hidden}
+#fusionOverlay .vkDesignCard .vkRecipeGroup{display:flex;align-items:center;justify-content:center;gap:3px;min-height:0;flex:1;white-space:nowrap;color:#e2e7da;font:600 10px/1.1 system-ui}
+#fusionOverlay .vkDesignCard .vkRecipeGroup>span{display:inline-flex;align-items:center;gap:2px;min-width:0}
+#fusionOverlay .vkDesignCard .vkRecipeGroup i{font-size:18px;font-style:normal}
+#fusionOverlay .vkDesignCard .vkRecipeGroup>b{color:#f3d895}
+#fusionOverlay .vkDesignCard .vkRecipeGroup em{font-size:9px;font-style:normal;color:#b6c6c2}
+#fusionOverlay .vkDesignCard .vkRecipePlus{align-self:center;font:800 10px/.8 system-ui;color:#e7d092}
+#fusionOverlay .vkDesignCard .vkCardValue{grid-row:4!important;display:flex;align-items:center;justify-content:space-between;gap:4px;border-bottom:1px solid #7d92754d;padding:2px 1px;min-width:0}
+#fusionOverlay .vkDesignCard .vkCardValue>span{font:700 10px/1.1 system-ui;letter-spacing:.3px;color:#c0cfca}
+#fusionOverlay .vkDesignCard .vkCardValue>strong{font:800 20px/1 system-ui;color:#f8e6b5;white-space:nowrap}
+#fusionOverlay .vkDesignCard .vkCardEffect{grid-row:5!important;overflow:hidden;min-width:0;align-self:center}
+#fusionOverlay .vkDesignCard .vkCardEffectText{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font:12px/1.3 system-ui;color:#d0ddd5}
+#fusionOverlay .vkDesignCard .vkCardState{display:block;margin-top:2px;font:700 10px/1.15 system-ui;color:#cfbb94;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#fusionOverlay .vkDesignCard .vkCardFooter{grid-row:6!important;display:flex;align-items:center;justify-content:space-between;gap:4px;border-top:1px solid #64776766;padding-top:3px;font:600 9px/1.2 system-ui;color:#bfcac5;min-width:0}
+#fusionOverlay .vkDesignCard .vkCardFooter b{color:#d8cba5;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+#fusionOverlay .vkDesignCard .vkCardFooter>span{color:var(--rarity-color,#a6b0bb);flex-shrink:0}
+#fusionOverlay .vkDesignCard--team .vkCardFooter b{color:#a8d5d4}
+#fusionOverlay .vkDesignCard--synchro .vkCardFooter b{color:#d6bee7}
+#fusionOverlay .fusionGrid>.fusionCard:has(>.vkDesignCard){border:0!important;background:transparent!important}
+#fusionOverlay .fusionCard:has(.vkDesignCard):disabled,#fusionOverlay .v9HandCard.vkDesignHand:disabled{opacity:1!important;filter:none!important}
+#fusionOverlay .v9HandCard.vkDesignHand{display:block!important;padding:0!important;border:0!important;background:transparent!important}
+#fusionOverlay .v9HandCard.vkDesignHand>.vkDesignCard{height:100%!important;min-height:0!important;max-height:100%!important;width:100%!important;grid-template-rows:18px 26px minmax(0,1fr) 24px 28px 18px!important;gap:2px!important;padding:4px 5px!important}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkCardName{font-size:12px!important;line-height:1.1!important}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkCardGlyph{font-size:28px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkCardElement i{font-size:16px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkCardElement b{font-size:9px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkCardEnergy{font-size:11px;padding:2px 3px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkCardValue>strong{font-size:16px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkCardEffectText{-webkit-line-clamp:1;font-size:10px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkCardFooter{font-size:8px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkRecipeGroup{font-size:9px;gap:2px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkRecipeGroup i{font-size:14px}
+#fusionOverlay .vkDesignHand .vkDesignCard .vkRecipePlus{display:none}
+#fusionOverlay .vkDesignHand.vkDesignReady>.vkDesignCard{box-shadow:inset 0 0 0 1px #eed393}
+#fusionOverlay .vkDesignHand.vkDesignReady .vkCardState{color:#c4e9af}
+#fusionOverlay .vkDesignHand.vkSynReady>.vkDesignCard{box-shadow:inset 0 0 0 1px #e2c9f0,0 0 7px #c49fda55}
+#fusionOverlay .vkDesignHand:disabled>.vkDesignCard{background:#10232b!important}
+#fusionOverlay .vkDesignHand:disabled .vkCardVisual{background:#0b1d25}
+#fusionOverlay .fusionGrid>.fusionCard>small,#fusionOverlay .fusionTeamCardTile>small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.3}
+#fusionOverlay .vkPortraitFallback{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:#17313c;color:#cbd7cc;border:1px solid #617267;border-radius:9px;text-align:center}
+#fusionOverlay .vkPortraitFallback b{font-size:28px}#fusionOverlay .vkPortraitFallback small{font:10px/1.2 system-ui}
+#fusionOverlay .fusionShell.vkBattleLoading{min-height:min(320px,80dvh)!important;display:flex!important;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px}
+#fusionOverlay .vkBattleLoading h2{font:700 22px Georgia,serif;color:#efdbad}
+#fusionOverlay .vkPortraitLoadingMark{font-size:42px;color:#d8be7c}
+@media(max-width:600px){#fusionOverlay .fusionShell:not(.v9Battle) .fusionCardFace.vkDesignCard{height:246px!important;min-height:246px!important;max-height:246px!important;grid-template-rows:22px 32px minmax(0,1fr) 30px 36px 22px!important;gap:3px!important;padding:6px!important}#fusionOverlay .fusionShell:not(.v9Battle) .fusionCardFace.vkDesignCard>.vkCardName{font-size:13px!important}#fusionOverlay .vkDesignCard .vkCardGlyph{font-size:36px}#fusionOverlay .vkDesignCard .vkCardFooter{font-size:8px}#fusionOverlay .vkDesignCard .vkCardEffectText{font-size:11px}}
+#fusionOverlay .vkDesignHand .vkCardRecipe .vkRecipeGroup{flex:1;line-height:1}
+#fusionOverlay .vkDesignHand .vkCardRecipe .vkRecipeGroup i{font-size:12px}
+#fusionOverlay .vkDesignHand .vkCardRecipe{gap:0}
+#fusionOverlay .vkDesignHand .vkRecipeGroup+.vkRecipePlus+.vkRecipeGroup::before{content:'+';color:#e8d49b;font-weight:800}
+#fusionOverlay .vkDesignCard .vkRecipeGroup:has(em){font-size:9px;gap:2px}
+#fusionOverlay .vkDesignCard .vkRecipeGroup:has(em) i{font-size:14px}
+#fusionOverlay .vkDesignHand .vkRecipeGroup:has(em) i{font-size:12px}
+#fusionOverlay .fusionCard:has(>.vkDesignCard)>.vkDeckEffect103{display:none}
+#fusionOverlay .vkSynSlot87.vkCompactSynSlot{padding:8px;gap:5px;min-height:150px;border-color:var(--rarity-color,#a6b0bb);background:#132832;color:#edf0e8;justify-content:start}
+#fusionOverlay .vkCompactSynSlot .vkCompactCardHeader{display:flex;justify-content:space-between;align-items:center;gap:4px;font-size:11px;color:#efd59a}
+#fusionOverlay .vkCompactSynSlot>strong{font:700 13px/1.2 Georgia,serif}
+#fusionOverlay .vkCompactSynSlot .vkCompactRecipe{font:600 10px/1.3 system-ui;color:#d4ded5}
+#fusionOverlay .vkCompactSynSlot .vkCompactEffect{font:11px/1.3 system-ui;color:#d3dfd7;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#fusionOverlay .vkCompactSynSlot>small{font:9px/1.2 system-ui;color:var(--rarity-color,#a6b0bb)}
+#fusionOverlay .fusionCard.vkSynUnowned87:has(>.vkDesignCard){opacity:1!important;filter:none!important}

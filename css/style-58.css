@@ -1,0 +1,53 @@
+/* Design A: smooth luminous panels, living values, no baked-in text. */
+#fusionOverlay .fusionShell:not(.v9Battle) .fusionCardFace.vkDesignCard,
+#fusionOverlay .v9HandCard.vkDesignHand>.vkDesignCard{border-radius:15px!important;background:linear-gradient(155deg,color-mix(in srgb,var(--vk-element) 25%,#14212f),#10222d 80%)!important;border-color:var(--rarity-color,#a6b0bb)!important;box-shadow:inset 0 0 0 2px #ffffff0d,inset 0 0 24px #07101d55}
+#fusionOverlay .vkDesignCard::before{width:0}
+#fusionOverlay .vkDesignCard .vkCardHeader{border-bottom:1px solid color-mix(in srgb,var(--vk-element) 60%,transparent);padding-bottom:3px}
+#fusionOverlay .vkDesignCard .vkCardElement{color:#f2eee0}
+#fusionOverlay .vkDesignCard .vkCardEnergy{border-radius:8px;background:#172330bb;border-color:#8fa2a45e;box-shadow:inset 0 1px 3px #ffffff12}
+#fusionOverlay .vkDesignCard .vkCardVisual{background:radial-gradient(ellipse,color-mix(in srgb,var(--vk-element) 20%,transparent),transparent 72%);border:0;border-radius:9px}
+#fusionOverlay .vkDesignCard .vkCardGlyph{filter:drop-shadow(0 0 8px color-mix(in srgb,var(--vk-element) 50%,transparent))!important}
+#fusionOverlay .vkDesignCard .vkCardValue{border:1px solid color-mix(in srgb,var(--vk-element) 70%,#60737b);border-radius:8px;padding:4px 5px;background:linear-gradient(135deg,color-mix(in srgb,var(--vk-element) 34%,#17303e),#142a37);box-shadow:inset 0 1px 0 #ffffff22}
+#fusionOverlay .vkDesignCard .vkCardValue>span{color:#e9efeb;font-size:10px}
+#fusionOverlay .vkDesignCard .vkCardValue>strong{color:#fff0d2}
+#fusionOverlay .vkDesignCard .vkCardFooter{border-color:color-mix(in srgb,var(--vk-element) 45%,#546877)}
+#fusionOverlay .vkDesignCard .vkCardState{font-weight:800;text-transform:uppercase;letter-spacing:.4px}
+#fusionOverlay .v9HandCard.vkDesignHand{overflow:visible!important;position:relative;isolation:isolate}
+#fusionOverlay .v9HandCard.vkDesignReady::after{content:'';position:absolute;inset:-6px;pointer-events:none;border:14px solid transparent;border-image:url('../assets/images/design-a-ready-frame.png') 18% stretch;filter:drop-shadow(0 0 3px #ffb62c);z-index:2}
+#fusionOverlay .v9HandCard.vkDesignReady>.vkDesignCard{box-shadow:inset 0 0 0 2px #ffe6a4,0 0 6px #ffd65c,0 0 14px #ffa51c99!important}
+#fusionOverlay .v9HandCard.vkSynReady::after{filter:hue-rotate(145deg) saturate(1.15) drop-shadow(0 0 4px #55dffb)}
+#fusionOverlay .v9HandCard.vkSynReady>.vkDesignCard{box-shadow:inset 0 0 0 2px #bcf8ff,0 0 6px #63efff,0 0 15px #22c9ff99!important}
+#fusionOverlay .v9HandCard:disabled>.vkDesignCard{background:linear-gradient(150deg,#172735,#10212e)!important;box-shadow:inset 0 0 0 1px #52636e!important}
+#fusionOverlay .v9HandCard:disabled::after{content:none!important}
+#fusionOverlay .v9Battle .v9HandScroll{padding:9px 5px 11px!important}
+.vkGrowthStats{color:#d6e1d5;font:600 12px/1.5 system-ui;margin:5px 0 9px;padding:5px 8px;background:#17333d;border-radius:8px}
+.vkGenesPanel{margin-top:12px;padding:12px;border:1px solid #ac9567;border-radius:12px;background:#132e3b;color:#e6e6d6;font:13px/1.5 system-ui}
+.vkGenesPanel p{margin:6px 0}
+@media(prefers-reduced-motion:reduce){#fusionOverlay .vkDesignReady{animation:none!important}}
+#fusionOverlay .vkDesignCard[data-vk-element="Feuer"]{--vk-panel:#3d1c2a}
+#fusionOverlay .vkDesignCard[data-vk-element="Wasser"],#fusionOverlay .vkDesignCard[data-vk-element="Eis"]{--vk-panel:#103249}
+#fusionOverlay .vkDesignCard[data-vk-element="Natur"]{--vk-panel:#12382c}
+#fusionOverlay .vkDesignCard[data-vk-element="Blitz"]{--vk-panel:#373020}
+#fusionOverlay .vkDesignCard[data-vk-element="Erde"],#fusionOverlay .vkDesignCard[data-vk-element="Stein"]{--vk-panel:#312a2a}
+#fusionOverlay .vkDesignCard[data-vk-element="Dunkel"],#fusionOverlay .vkDesignCard[data-vk-element="Geist"],#fusionOverlay .vkDesignCard[data-vk-element="Psycho"]{--vk-panel:#2b2140}
+#fusionOverlay .vkDesignCard[data-vk-element="Licht"]{--vk-panel:#363326}
+#fusionOverlay .vkDesignCard[data-vk-element="Luft"]{--vk-panel:#19373f}
+#fusionOverlay .vkDesignCard[data-vk-element="Gift"]{--vk-panel:#283623}
+#fusionOverlay .vkDesignCard[data-vk-element="Stahl"]{--vk-panel:#26343e}
+#fusionOverlay .vkDesignCard[data-vk-element="Drache"]{--vk-panel:#38263b}
+#fusionOverlay .fusionShell:not(.v9Battle) .fusionCardFace.vkDesignCard,#fusionOverlay .v9HandCard.vkDesignHand>.vkDesignCard{background:linear-gradient(150deg,var(--vk-panel,#172b3a),#11202e)!important}
+#fusionOverlay .fusionCardFace.vkDesignCard>.vkCardName{font-family:system-ui!important;font-weight:800!important}
+#fusionOverlay .vkDesignCard .vkCardGlyphImage{display:block;width:80%;height:100%;max-width:86px;background:linear-gradient(145deg,#fff8d1,var(--vk-element) 55%,color-mix(in srgb,var(--vk-element) 70%,#203749));mask-image:var(--vk-glyph);-webkit-mask-image:var(--vk-glyph);mask-size:contain;-webkit-mask-size:contain;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;mask-position:center;-webkit-mask-position:center;filter:drop-shadow(0 0 5px var(--vk-element))}
+#fusionOverlay .vkDesignHand.vkDesignReady .vkCardState{display:block;border:1px solid #ffe6a0;border-radius:5px;background:#51370f;color:#fff0a9;text-align:center;font-size:9px;line-height:1.15;box-shadow:0 0 4px #ffc34c77;margin-top:1px}
+#fusionOverlay .vkDesignHand.vkSynReady .vkCardState{background:#0d4a60;border-color:#97f1ff;color:#ccfaff;box-shadow:0 0 4px #56dffb77}
+#fusionOverlay .vkDesignCard .vkSynVisual{display:flex;flex-direction:column;width:100%;height:100%;min-height:0;gap:3px}
+#fusionOverlay .vkSynEmblems{flex:1;min-height:16px;display:flex;align-items:center;justify-content:center;gap:5px;color:#c6e9f0}
+#fusionOverlay .vkSynEmblems>.vkCardGlyphImage{flex:1;max-width:52px;height:100%}
+#fusionOverlay .vkSynEmblems>b{font-size:13px}
+#fusionOverlay .vkSynVisual .vkCardRecipe{flex:0 0 auto;height:auto;gap:0;padding:2px;border:1px solid #58899c;background:#173b4d;border-radius:5px}
+#fusionOverlay .vkSynVisual .vkRecipeGroup{font-size:9px;line-height:1.2;gap:2px}
+#fusionOverlay .vkSynVisual .vkRecipeGroup i{font-size:11px}
+#fusionOverlay .vkSynVisual .vkRecipePlus{display:none}
+#fusionOverlay .vkSynVisual .vkRecipeGroup+.vkRecipePlus+.vkRecipeGroup::before{content:'+';font-weight:800;color:#e5d5a2}
+#fusionOverlay .vkDesignHand .vkSynEmblems{display:none}
+#fusionOverlay .vkDesignHand .vkSynVisual .vkCardRecipe{height:100%;border:0;background:transparent;padding:0}

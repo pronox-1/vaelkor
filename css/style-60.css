@@ -1,0 +1,185 @@
+/* Final supplied modular artwork. All coordinates share a 340×520 canvas. */
+#fusionOverlay .fusionShell .fusionCardFace.vkModularCard,
+#fusionOverlay .v9HandCard.vkDesignHand>.vkModularCard{
+ display:block!important;position:relative!important;container-type:inline-size;isolation:isolate;aspect-ratio:340/520!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;padding:0!important;border:0!important;border-radius:0!important;overflow:visible!important;background:transparent!important;box-shadow:none!important;color:#33271a!important;font-family:system-ui!important;
+}
+#fusionOverlay .vkModularCard::before{display:none!important}
+#fusionOverlay .vkModularCard>*{box-sizing:border-box;min-width:0;min-height:0;margin:0}
+#fusionOverlay .vkModularArt{position:absolute;left:7.8%;top:20.5%;width:84.4%;height:51%;overflow:hidden;border-radius:7%;background:#25262a;z-index:0}
+#fusionOverlay .vkModularBackground,#fusionOverlay .vkNeutralArt{display:block;width:100%;height:100%;object-fit:cover}
+#fusionOverlay .vkNeutralArt{background:radial-gradient(ellipse at 50% 65%,#79746a,#373936 55%,#161d23)}
+#fusionOverlay .vkModularFrame{position:absolute;inset:0;z-index:2;pointer-events:none;display:block;width:100%;height:100%;overflow:visible}
+#fusionOverlay .vkModularCard .vkCardVisual.vkModularEffects{position:absolute;left:23%;top:32%;width:54%;height:28%;display:flex!important;align-items:center;justify-content:center;gap:3%;padding:0!important;border:0!important;background:none!important;overflow:visible!important;z-index:1}
+#fusionOverlay .vkModularEffectImage{display:block;width:80%;height:100%;object-fit:contain;mask-image:var(--vk-effect);-webkit-mask-image:var(--vk-effect);mask-size:contain;-webkit-mask-size:contain;mask-repeat:no-repeat;-webkit-mask-repeat:no-repeat;mask-position:center;-webkit-mask-position:center;mask-mode:luminance;filter:drop-shadow(0 2px 2px #000b)}
+#fusionOverlay .vkModularEffects--pair .vkModularEffectImage{width:49%;height:76%}
+#fusionOverlay .vkModularEffects>.vkCardEffectIcon{width:60%;height:60%;color:#ffefbd;filter:drop-shadow(0 2px 2px #000)}
+#fusionOverlay .vkModularCard .vkCardHeader{position:absolute;inset:0;z-index:3;border:0;padding:0;background:none;overflow:visible;display:block;font:inherit}
+#fusionOverlay .vkModularCard .vkCardElement{position:absolute;left:9.7%;top:12.4%;width:14.1%;height:9.23%;display:grid;place-items:center;background:#101c22;border-radius:50%;border:0;gap:0!important;color:#f8df9b}
+#fusionOverlay .vkModularCard .vkCardElement img{width:90%;height:90%;object-fit:contain}
+#fusionOverlay .vkModularCard .vkCardElement>span{font-size:9cqw}
+#fusionOverlay .vkModularCard .vkCardElement>b{position:absolute;top:112%;left:-40%;width:180%;text-align:center;font:700 3cqw/1.1 system-ui!important;color:#f5e6ba;text-shadow:0 1px 2px #000;overflow:hidden}
+#fusionOverlay .vkModularCard .vkCardEnergy{position:absolute;left:83%;top:16%;width:11%;height:7%;display:flex;align-items:center;justify-content:center;gap:1px;border:1px solid #b9a580;border-radius:25%;background:#1a252b!important;color:#fff1bb!important;box-shadow:none;font:800 6cqw/1 system-ui!important;padding:0!important}
+#fusionOverlay .vkModularCard .vkCardEnergy small{font:600 3cqw/1 system-ui}
+#fusionOverlay .vkModularCard>.vkCardName{position:absolute;left:27%;top:16.3%;width:54%;height:7.8%;z-index:4;color:#f9eac5!important;font:800 4.1cqw/1.12 system-ui!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden!important;text-align:center;text-shadow:0 1px 2px #000}
+#fusionOverlay .vkModularCard .vkCardValue{position:absolute;left:11%;top:74.6%;width:78%;height:7.5%;z-index:4;display:flex;align-items:center;justify-content:space-between;border:0;border-bottom:1px solid #81643b55;border-radius:0;background:none!important;padding:0 2%!important;box-shadow:none;color:#392b1c}
+#fusionOverlay .vkModularCard .vkCardValue>span{font:800 3.6cqw/1 system-ui!important;color:#4a3722}
+#fusionOverlay .vkModularCard .vkCardValue>strong{font:800 6.2cqw/1 system-ui!important;color:#2f261a}
+#fusionOverlay .vkModularCard .vkCardEffect{position:absolute;left:12%;top:83%;width:76%;height:8%;z-index:4;overflow:hidden;display:block;align-self:auto}
+#fusionOverlay .vkModularCard .vkCardEffectText{font:600 3.2cqw/1.2 system-ui!important;color:#3e2d1d;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#fusionOverlay .vkModularCard .vkCardFooter{position:absolute;left:12%;top:91.3%;width:76%;height:4%;z-index:4;display:flex;justify-content:space-between;gap:4%;border:0;font:700 2.8cqw/1.2 system-ui!important;color:#44331e;overflow:hidden}
+#fusionOverlay .vkModularCard .vkCardFooter b{color:inherit;font:inherit;max-width:58%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+#fusionOverlay .vkModularCard .vkCardFooter span{white-space:nowrap}
+#fusionOverlay .vkModularCard>.vkCardRecipe{position:absolute;left:12%;top:61%;width:76%;height:8%;z-index:4;display:flex;align-items:center;justify-content:center;gap:3%;padding:2%;border-radius:5%;background:#10232de6;color:#f5e7ca;overflow:hidden}
+#fusionOverlay .vkModularCard .vkRecipeGroup{font:700 2.8cqw/1.05 system-ui!important;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2px;white-space:normal}
+#fusionOverlay .vkModularCard .vkRecipePlus{font:800 4cqw/1 system-ui;display:block!important}
+#fusionOverlay .vkModularCard .vkRecipeGroup::before{content:none!important}
+#fusionOverlay .vkModularCard .vkRecipeGroup em{font:inherit}
+#fusionOverlay .fusionCard:has(>.vkModularCard){height:auto!important;min-height:0!important;max-height:none!important;padding:0!important;border:0!important;background:none!important;overflow:visible!important}
+#fusionOverlay .fusionGrid,#fusionOverlay .fusionDeckList{align-items:start}
+#fusionOverlay .v9HandCard.vkDesignHand{aspect-ratio:340/520!important;height:auto!important;min-height:0!important;max-height:none!important;background:transparent!important}
+#fusionOverlay .v9HandCard.vkDesignReady::after{inset:6% 2% 1%;border:1px solid #eed791;border-radius:9%;border-image:none;opacity:.55;filter:none;box-shadow:0 0 5px #ffdc6b88;z-index:5}
+#fusionOverlay .v9HandCard.vkSynReady::after{border-color:#9ce8ed;box-shadow:0 0 5px #61e5ed88;filter:none}
+#fusionOverlay .v9HandCard.vkDesignReady>.vkModularCard,#fusionOverlay .v9HandCard:disabled>.vkModularCard,#fusionOverlay .v9HandCard.vkSynReady>.vkModularCard{background:none!important;box-shadow:none!important}
+#fusionOverlay .vkModularCard .vkCardState{display:none!important}
+#fusionOverlay .v9HandCard.vkDesignHand:hover:not(:disabled){filter:brightness(1.07)}
+#fusionOverlay .v9HandCard.vkDesignHand:focus-visible{outline:2px solid #f2d88e;outline-offset:3px;border-radius:8%}
+#fusionOverlay .v9Battle .v9HandScroll{padding-block:calc(9px + var(--vk-hand-space,0px)/2) calc(11px + var(--vk-hand-space,0px)/2)!important}
+/* Opaque parchment beneath the masked frame keeps text readable on every element. */
+#fusionOverlay .vkModularPaper{position:absolute;left:9%;top:73.6%;width:82%;height:20.4%;border-radius:8%;background:linear-gradient(115deg,#e3c99c,#c8ab7d);z-index:1;pointer-events:none}
+#fusionOverlay svg.vkModularEffectImage{mask-image:none;-webkit-mask-image:none;overflow:hidden}
+/* Minimum readable type sizes in the narrow hand; long prose remains in details. */
+#fusionOverlay .vkModularCard>.vkCardName{font-size:clamp(8px,4.1cqw,15px)!important;height:9%}
+#fusionOverlay .vkModularCard .vkCardElement>b{font-size:clamp(6px,3cqw,11px)!important}
+#fusionOverlay .vkModularCard .vkCardEnergy{font-size:clamp(11px,6cqw,23px)!important}
+#fusionOverlay .vkModularCard .vkCardEnergy small{font-size:clamp(6px,3cqw,11px)}
+#fusionOverlay .vkModularCard .vkCardValue>span{font-size:clamp(6px,3.6cqw,13px)!important}
+#fusionOverlay .vkModularCard .vkCardValue>strong{font-size:clamp(11px,6.2cqw,24px)!important}
+#fusionOverlay .vkModularCard .vkCardEffect{top:82.7%;height:8%}
+#fusionOverlay .vkModularCard .vkCardEffectText{font-size:clamp(7px,3.2cqw,12px)!important;line-height:1.1!important;-webkit-line-clamp:2}
+#fusionOverlay .vkModularCard .vkCardFooter{font-size:clamp(5.5px,2.8cqw,10px)!important}
+#fusionOverlay .vkModularCard .vkRecipeGroup{font-size:clamp(5.5px,2.8cqw,10px)!important}
+
+/* Card and hit target share exactly one canvas. Readiness follows its ornament silhouette. */
+#fusionOverlay .fusionCard:has(>.vkModularCard),
+#fusionOverlay .v9HandCard.vkDesignHand{padding:0!important;border:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;box-sizing:border-box!important;line-height:normal!important}
+#fusionOverlay .v9HandCard.vkDesignHand::before,
+#fusionOverlay .v9HandCard.vkDesignHand::after,
+#fusionOverlay .fusionCard:has(>.vkModularCard)::before,
+#fusionOverlay .fusionCard:has(>.vkModularCard)::after{content:none!important;display:none!important}
+#fusionOverlay .vkModularCard .vkModularFrame{left:0!important;top:0!important;right:auto!important;bottom:auto!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;transform:none!important;margin:0!important;padding:0!important;border:0!important}
+#fusionOverlay .v9HandCard.vkDesignReady .vkModularFrame{filter:drop-shadow(0 0 1.5px #edcc7b)}
+#fusionOverlay .v9HandCard.vkSynReady .vkModularFrame{filter:drop-shadow(0 0 1.5px #77dce5)}
+#fusionOverlay .v9HandCard.vkDesignHand:focus-visible .vkModularFrame{filter:brightness(1.2) drop-shadow(0 0 2px #fff0b4)}
+#fusionOverlay .v9HandCard:disabled .vkModularFrame{filter:none}
+/* Compact hand rhythm: never stretch the gap to consume spare fullscreen height. */
+#fusionOverlay .v9Battle .v9HandScroll{padding:calc(4px + var(--vk-hand-space,0px)/2) 4px calc(6px + var(--vk-hand-space,0px)/2)!important;gap:8px!important;background:transparent!important;box-shadow:none!important}
+#fusionOverlay .v9Battle .v9Hand,#fusionOverlay .v9Battle .vkSynCombatList87{gap:8px!important;background:transparent!important;box-shadow:none!important}
+#fusionOverlay .v9Battle .v9ActionArea{background:transparent!important;box-shadow:none!important}
+#fusionOverlay .v9Battle .v9HandScroll::before,#fusionOverlay .v9Battle .v9HandScroll::after{content:none!important;display:none!important}
+/* Full short effect sentences instead of ellipses; the detail dialog retains formulas. */
+#fusionOverlay .vkModularCard .vkCardValue{top:73.8%;height:5.5%}
+#fusionOverlay .vkModularCard .vkCardEffect{top:79.4%;height:12.7%;overflow:hidden}
+#fusionOverlay .vkModularCard .vkCardEffectText{display:block!important;-webkit-line-clamp:unset!important;font-size:clamp(8px,3.6cqw,13px)!important;line-height:1.05!important;color:#302216!important;text-overflow:clip!important;white-space:normal;overflow-wrap:normal}
+#fusionOverlay .vkModularCard .vkCardFooter{top:92.4%;height:4%;font-size:clamp(7.5px,3cqw,11px)!important;line-height:1!important;color:#3a2919}
+#fusionOverlay .vkModularCard .vkCardFooter b{max-width:none;flex:0 0 auto;text-overflow:clip}
+#fusionOverlay .vkModularCard .vkCardFooter span{font-size:inherit;white-space:nowrap}
+/* Keep rarity/type readable inside the illustration, leaving parchment for full short prose. */
+#fusionOverlay .vkModularCard .vkCardFooter{left:11%;top:66.5%;width:78%;height:5%;padding:1% 2%;border-radius:3px;background:#11232de8;color:#f7ebd3!important;font-size:clamp(8px,3cqw,11px)!important;line-height:1!important;align-items:center}
+#fusionOverlay .vkModularCard .vkCardFooter b{color:inherit!important}
+#fusionOverlay .vkModularCard .vkCardEffect{top:80%;height:13%}
+#fusionOverlay .vkModularCard .vkCardEffectText{line-height:1.04!important}
+#fusionOverlay .vkModularCard>.vkCardRecipe{top:58.5%;height:7.5%}
+/* The large illustration stays clear of the small round element socket. */
+#fusionOverlay .vkModularArt{mask-image:radial-gradient(circle at 10.6% -6.8%,transparent 8.8cqw,#000 9.1cqw);-webkit-mask-image:radial-gradient(circle at 10.6% -6.8%,transparent 8.8cqw,#000 9.1cqw)}
+/* Equipped deck cards use the exact shared renderer, with actions outside the artwork. */
+#fusionOverlay .fusionShell:not(.v9Battle) .vkModularDeckCard{display:block!important;grid-template-columns:none!important;padding:0!important;gap:0!important;border:0!important;outline:0!important;background:none!important;box-shadow:none!important;min-height:0!important;max-height:none!important;width:100%!important;overflow:visible!important;text-align:left}
+#fusionOverlay .vkModularDeckCard::before,#fusionOverlay .vkModularDeckCard::after{content:none!important}
+#fusionOverlay .vkModularDeckCard .vkDeckCardAction{display:block;padding:4px 2px;font:600 11px/1.3 system-ui!important;color:#e8dec8;text-align:center}
+#fusionOverlay .fusionShell:not(.v9Battle) .fusionDeckLayout .fusionDeckList{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;max-height:none!important;overflow:visible!important}
+@media(max-width:600px){#fusionOverlay .vkSynSlots87{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+/* Override the legacy row typography so deck cards match the combat renderer. */
+#fusionOverlay .fusionShell:not(.v9Battle) .vkModularCard>.vkCardName{font:800 clamp(8px,4.1cqw,15px)/1.12 system-ui!important}
+#fusionOverlay .fusionShell:not(.v9Battle) .vkModularCard .vkCardElement>b{font-size:clamp(6px,3cqw,11px)!important}
+#fusionOverlay .fusionShell:not(.v9Battle) .vkModularCard b.vkCardEnergy{font:800 clamp(11px,6cqw,23px)/1 system-ui!important}
+#fusionOverlay .fusionShell:not(.v9Battle) .vkModularCard .vkCardEnergy small{font:600 clamp(6px,3cqw,11px)/1 system-ui!important}
+#fusionOverlay .fusionShell:not(.v9Battle) .vkModularCard .vkCardFooter b{font:inherit!important}
+#fusionOverlay .vkModularCard .vkCardElement{background-color:#101c22!important;isolation:isolate}
+#fusionOverlay .vkModularDeckCard:focus-visible .vkModularFrame,#fusionOverlay .fusionCard:has(>.vkModularCard):focus-visible .vkModularFrame{filter:brightness(1.2) drop-shadow(0 0 2px #fff0b4)}
+/* Supplied Synchro atlas: two or three material sockets on the same card canvas. */
+#fusionOverlay .vkModularCard.vkDesignCard--synchro .vkModularArt{left:10%;top:26%;width:80%;height:45.5%;mask-image:none;-webkit-mask-image:none}
+#fusionOverlay .vkSynMaterialSockets{position:absolute;inset:0;pointer-events:none}
+#fusionOverlay .vkSynMaterialSocket{position:absolute;left:var(--vk-socket-x);top:var(--vk-socket-y);transform:translate(-50%,-50%);width:14.3%;height:9.35%;display:grid;place-items:center;border-radius:50%;background:#111b29;isolation:isolate}
+#fusionOverlay .vkSynMaterialSocket img{display:block;width:90%;height:90%;object-fit:contain}
+#fusionOverlay .vkSynMaterialSocket i{font-size:clamp(13px,9cqw,30px);font-style:normal;line-height:1}
+#fusionOverlay .vkSynMaterialSocket b{position:absolute;right:-12%;bottom:-5%;border-radius:3px;padding:1px 2px;background:#152335;color:#fff0b7;font:800 clamp(7px,3.3cqw,12px)/1 system-ui}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro>.vkCardName{left:12%;top:27.5%;width:76%;height:8%;font-size:clamp(8px,4cqw,15px)!important}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro .vkCardEnergy{left:85.5%;top:29%;width:10%;height:6.5%}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro .vkModularEffects{left:23%;top:36%;width:54%;height:22%}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro>.vkCardRecipe{left:12%;top:58.5%;width:76%;height:7.5%}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro .vkModularPaper{background:linear-gradient(115deg,#e0c3a0,#c2a17e)}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro .vkCardFooter{top:66.5%;background:#1d1631ed}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro>.vkCardName{width:68%}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro .vkCardEnergy{left:82.5%}
+#fusionOverlay .fusionShell:not(.v9Battle) .vkSynMaterialSocket>b{font:800 clamp(7px,3.3cqw,12px)/1 system-ui!important}
+
+/* Readiness belongs only to the required-energy badge, never the card ornament. */
+#fusionOverlay .v9HandCard.vkDesignHand .vkModularFrame,
+#fusionOverlay .v9HandCard.vkDesignHand:focus-visible .vkModularFrame,
+#fusionOverlay .vkModularDeckCard:focus-visible .vkModularFrame,
+#fusionOverlay .fusionCard:has(>.vkModularCard):focus-visible .vkModularFrame{filter:none!important}
+#fusionOverlay .v9HandCard.vkDesignHand:hover:not(:disabled){filter:none!important}
+#fusionOverlay .v9HandCard.vkDesignReady .vkCardEnergy{color:#fff4ba!important;border-color:#ffe59c!important;box-shadow:0 0 5px #f3cf6faa!important;background:#3d341b!important}
+#fusionOverlay .v9HandCard.vkSynReady .vkCardEnergy{color:#d6fbff!important;border-color:#a4f3fc!important;box-shadow:0 0 5px #66e5f0aa!important;background:#173944!important}
+#fusionOverlay .v9HandCard:disabled .vkCardEnergy{box-shadow:none!important;background:#1a252b!important;border-color:#8b805b!important}
+#fusionOverlay .v9HandCard:focus-visible .vkCardEnergy,#fusionOverlay .vkModularDeckCard:focus-visible .vkCardEnergy,#fusionOverlay .fusionCard:has(>.vkModularCard):focus-visible .vkCardEnergy{outline:2px solid #f6dea4;outline-offset:1px}
+#fusionOverlay .vkModularCard,#fusionOverlay .vkModularFrame{vertical-align:top!important;float:none!important;translate:none!important}
+.vkInnateStats{display:flex;gap:6px;flex-wrap:wrap;margin-top:3px;color:#e9e1cb;font:600 10px/1.25 system-ui}
+.vkGrowthStats>span{display:inline-block}
+/* Stronger than the legacy library/deck rules: no hidden 2px border or inner padding. */
+#fusionOverlay .fusionShell .fusionCardFace.vkDesignCard.vkModularCard{display:block!important;position:relative!important;left:0!important;top:0!important;width:100%!important;aspect-ratio:340/520!important;height:auto!important;min-height:0!important;max-height:none!important;box-sizing:border-box!important;padding:0!important;margin:0!important;border:0!important;outline:0!important;background:transparent!important;box-shadow:none!important;transform:none!important;translate:none!important}
+#fusionOverlay .fusionShell .v9HandCard.vkDesignHand,#fusionOverlay .fusionShell .v9HandCard.vkDesignHand:hover,#fusionOverlay .fusionShell .v9HandCard.vkDesignHand:focus-visible,#fusionOverlay .fusionShell .v9HandCard.vkDesignHand:active{padding:0!important;margin:0!important;border:0!important;box-shadow:none!important;transform:none!important;translate:none!important}
+/* A little tighter, with the energy badge softly breathing rather than flashing off. */
+#fusionOverlay .v9Battle .v9HandScroll,#fusionOverlay .v9Battle .v9Hand,#fusionOverlay .v9Battle .vkSynCombatList87{gap:6px!important}
+#fusionOverlay .v9HandCard.vkDesignReady .vkCardEnergy{--vk-energy-pulse:#f3cf6f;animation:vkEnergyPulse 1.8s ease-in-out infinite}
+#fusionOverlay .v9HandCard.vkSynReady .vkCardEnergy{--vk-energy-pulse:#66e5f0}
+@keyframes vkEnergyPulse{0%,100%{filter:brightness(1) drop-shadow(0 0 0 transparent)}50%{filter:brightness(1.18) drop-shadow(0 0 2px var(--vk-energy-pulse,#f3cf6f))}}
+#fusionOverlay .v9HandCard:disabled .vkCardEnergy{animation:none!important;filter:none!important}
+body[data-ui-motion="reduced"] #fusionOverlay .v9HandCard .vkCardEnergy{animation:none!important;filter:none!important}
+@media(prefers-reduced-motion:reduce){#fusionOverlay .v9HandCard .vkCardEnergy{animation:none!important;filter:none!important}}
+
+/* LP/AP/SP/HK/E share one compact, intrinsic-stat display everywhere. */
+.vkStatusIcon{display:inline-block!important;width:19px!important;height:19px!important;flex:0 0 19px;overflow:hidden;vertical-align:middle;pointer-events:none}
+.vkMonsterStats,#fusionOverlay .vkMonsterStats{display:flex!important;flex-wrap:wrap;gap:4px!important;min-width:0}
+.vkMonsterStat,#fusionOverlay .vkCombatStat.vkMonsterStat{display:inline-flex!important;align-items:center;gap:3px!important;padding:3px 5px!important;line-height:1.15!important;font:600 11px/1.15 system-ui!important;white-space:nowrap;border:1px solid #7c8a9470;border-radius:7px;background:#112b3d;color:#f2ead8}
+.vkMonsterStat b,#fusionOverlay .vkMonsterStat b{display:inline!important;font-size:12px!important;margin:0!important}
+.vkMonsterStat small,#fusionOverlay .vkMonsterStat small{display:inline!important;font-size:9px!important;color:#e1dccb!important;margin:0!important}
+.vkStatBonus{font-style:normal;color:#a8efd1;margin-left:1px}
+#fusionOverlay .vkCombatStats{display:flex!important;flex-wrap:wrap!important;gap:4px!important}
+#fusionOverlay .vkStatShield.vkMonsterStat{opacity:1!important;box-shadow:none!important;background:#142d40!important;border-color:#6798b4!important}
+#fusionOverlay .vkCurrentHp{color:#d4e2e7;font:600 10px/1.1 system-ui;text-align:right;margin-top:3px!important}
+#fusionOverlay .vkShieldBar{display:none!important}
+#fusionOverlay .vkShieldVisual{background:#113d6685!important;box-shadow:0 0 9px #6fd5ff35!important;border-color:#8dd9ff85!important}
+.vkMonsterDetails{min-width:0;margin:0 0 8px;border:1px solid #69808866;border-radius:12px;overflow:hidden;background:#112536}
+.vkMonsterDetails>summary{display:block;list-style:none;cursor:pointer;outline-offset:-3px}
+.vkMonsterDetails>summary::-webkit-details-marker{display:none}
+.vkMonsterDetails>summary:focus-visible{outline:2px solid #efd28d}
+.vkMonsterDetails>summary>.vkMonsterStats{padding:0 9px 6px}
+.vkGrowthToggle{display:block;padding:5px 9px;color:#dcca9a;font:600 11px/1.2 system-ui;text-align:right}
+.vkMonsterDetails[open] .vkGrowthToggle{color:#a8efd1}
+.vkGrowthDetails{padding:8px;color:#e9e3d2;font:12px/1.5 system-ui;border-top:1px solid #6e8b8b66;overflow-x:auto}
+.vkGrowthDetails p{margin:4px 0 8px}
+.vkGrowthDetails table{width:100%;border-collapse:collapse;text-align:left;font-size:11px}
+.vkGrowthDetails th,.vkGrowthDetails td{padding:5px 3px;border-bottom:1px solid #ffffff18;vertical-align:middle}
+.vkGrowthDetails th{font-weight:650;color:#f1dca7}
+#fusionOverlay .vkMonsterDetails .fusionMonsterTile{margin:0!important;border-radius:11px!important}
+#fusionOverlay .vkMonsterDetails .vkMonsterStats{width:100%}
+@media(max-width:360px){.vkStatusIcon{width:16px!important;height:16px!important;flex-basis:16px}.vkMonsterStat,#fusionOverlay .vkCombatStat.vkMonsterStat{padding:2px 3px!important;gap:2px!important}.vkGrowthDetails{padding:5px}}
+
+/* The visible SVG frame owns the silhouette, never the rectangular hand button. */
+#fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand,
+#fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand:hover,
+#fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand:focus-visible,
+#fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand:active,
+#fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand:disabled{background:none!important;border:0!important;outline:0!important;box-shadow:none!important;filter:none!important}
+#fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand::before,
+#fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand::after{content:none!important;display:none!important;box-shadow:none!important;filter:none!important}

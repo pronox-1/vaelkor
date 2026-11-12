@@ -1,0 +1,22 @@
+/* Give spare vertical room to the hand; the fitter measures only collapsed panels. */
+#fusionOverlay .fusionShell.v9Battle{--battle-card-w:126px}
+#fusionOverlay .v9Battle .v9HandCard{width:var(--battle-card-w)!important;min-width:var(--battle-card-w)!important;max-width:var(--battle-card-w)!important;flex:0 0 var(--battle-card-w)!important;height:var(--battle-card-h)!important;min-height:var(--battle-card-h)!important;max-height:var(--battle-card-h)!important}
+#fusionOverlay .v9Battle .vkSynCombatList87{display:flex!important;gap:12px!important;overflow-x:auto!important;padding:10px 7px 14px!important;align-items:flex-start}
+#fusionOverlay .vkCardEffectIcon{display:inline-flex;flex:0 0 18px;align-items:center;justify-content:center;width:18px;height:18px;color:#fff0cd}
+#fusionOverlay .vkCardEffectIcon svg{display:block;width:100%;height:100%;overflow:visible}
+#fusionOverlay .vkCardElement{gap:3px!important}
+#fusionOverlay .vkDesignHand .vkCardElement b{font-size:8px!important}
+#fusionOverlay .vkDesignHand .vkCardEnergy{font-size:10px!important;padding:2px!important}
+#fusionOverlay .vkDesignHand .vkCardHeader{overflow:visible}
+#fusionOverlay .vkDesignHand .vkCardEffectText{-webkit-line-clamp:2}
+#fusionOverlay:has(.v9Battle)[data-battle-expanded="false"]{overflow-y:hidden!important}
+#fusionOverlay:has(.v9Battle)[data-battle-expanded="true"]{overflow-y:auto!important}
+/* Readiness is conveyed by the frame; detailed reasons remain in the card dialog. */
+#fusionOverlay .vkDesignHand .vkCardState{display:none!important}
+#fusionOverlay .v9HandCard.vkDesignReady::after{opacity:.55;filter:drop-shadow(0 0 1px #ffb62c)}
+#fusionOverlay .v9HandCard.vkDesignReady>.vkDesignCard{box-shadow:inset 0 0 0 1px #f4d28a,0 0 4px #ffd65c88,0 0 7px #ffa51c44!important}
+#fusionOverlay .v9HandCard.vkSynReady::after{filter:hue-rotate(145deg) saturate(1.05) drop-shadow(0 0 1px #55dffb)}
+#fusionOverlay .v9HandCard.vkSynReady>.vkDesignCard{box-shadow:inset 0 0 0 1px #acf0f7,0 0 4px #63efff88,0 0 7px #22c9ff44!important}
+
+/* Collection and deck views always retain their own vertical scroll. */
+#fusionOverlay:not(:has(.v9Battle)){overflow-y:auto!important;touch-action:pan-y!important}

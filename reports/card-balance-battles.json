@@ -1,0 +1,4539 @@
+{
+  "seed": 24681357,
+  "fights": 180,
+  "grouped": {
+    "5": {
+      "fights": 45,
+      "averageRounds": 3.67,
+      "timeouts": 0,
+      "premiumWinRate": 0.5
+    },
+    "20": {
+      "fights": 45,
+      "averageRounds": 4.33,
+      "timeouts": 0,
+      "premiumWinRate": 0.5
+    },
+    "50": {
+      "fights": 45,
+      "averageRounds": 4.07,
+      "timeouts": 0,
+      "premiumWinRate": 0.5
+    },
+    "100": {
+      "fights": 45,
+      "averageRounds": 7.18,
+      "timeouts": 2,
+      "premiumWinRate": 0.467
+    }
+  },
+  "rows": [
+    {
+      "level": 5,
+      "element": "Feuer",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 25,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-0-0-attack-3",
+        "bal2-0-0-attack-2",
+        "bal2-0-0-attack-1",
+        "bal2-0-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Feuer · Angriff 1: 12 Schaden",
+        "🔥 Lavadrill: 3 Nachwirkung",
+        "🟢 Du · Feuer · Angriff 2: 4 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Feuer",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 28,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-0-2-attack-3",
+        "bal2-0-2-attack-2",
+        "bal2-0-2-attack-1",
+        "bal2-0-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Feuer · Angriff 1: 9 Schaden · 3 geblockt",
+        "🔴 Gegner · Feuer · Angriff 1: 12 Schaden",
+        "🟢 Du · Feuer · Angriff 2: 11 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Feuer",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 21,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-0-0-attack-3",
+        "bal2-0-0-attack-2",
+        "bal2-0-0-attack-1",
+        "bal2-0-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Feuer · Angriff 1: 14 Schaden",
+        "🔥 Lavadrill: 3 Nachwirkung",
+        "🟢 Du · Feuer · Angriff 2: 4 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Wasser",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 8,
+      "heroHp": 32,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-1-0-attack-2",
+        "spell-neutral-2",
+        "spell-neutral-6",
+        "bal2-1-0-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Wasser · Angriff 2: 17 Schaden · 9 geblockt",
+        "🌱 Korallin: +14 Regeneration",
+        "🟢 Du · Wasser · Angriff 2: 17 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Wasser",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 7,
+      "heroHp": 49,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-1-2-ward",
+        "bal2-1-2-attack-2",
+        "spell-neutral-7"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 2,
+      "tail": [
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Wasser · Angriff 1: 14 Schaden",
+        "🟢 Du · Wasser · Angriff 1: 7 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Wasser",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 30,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-1-0-attack-3",
+        "bal2-1-0-attack-2",
+        "bal2-1-0-attack-1",
+        "bal2-1-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Wasser · Angriff 1: 5 Schaden · 9 geblockt",
+        "🔴 Gegner · Wasser · Angriff 1: 14 Schaden",
+        "🟢 Du · Wasser · Angriff 2: 17 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Natur",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 7,
+      "actions": 11,
+      "heroHp": 20,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-2-0-attack-1",
+        "bal2-2-0-mend",
+        "bal2-2-0-attack-1",
+        "bal2-2-0-attack-3"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 1,
+      "tail": [
+        "🔴 Gegner · Natur · Angriff 2: 24 Schaden",
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Natur · Angriff 2: 1 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Natur",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 8,
+      "actions": 12,
+      "heroHp": 41,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 1,
+      "hand": [
+        "spell-neutral-6",
+        "bal2-2-2-mend",
+        "bal2-2-2-root",
+        "spell-neutral-8"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Natur · Angriff 2: 5 Schaden · 21 geblockt",
+        "🔴 Gegner · Natur · Angriff 2: 3 Schaden · 21 geblockt",
+        "🟢 Du · Natur · Angriff 1: 6 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Natur",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 9,
+      "heroHp": 16,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-2",
+        "bal2-2-0-attack-1",
+        "bal2-2-0-attack-1",
+        "spell-neutral-6"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Natur · Angriff 1: 13 Schaden",
+        "🔴 Gegner · Natur · Angriff 1: 13 Schaden",
+        "🟢 Du · Natur · Angriff 2: 5 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Blitz",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 6,
+      "heroHp": 41,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-3-0-attack-1",
+        "spell-neutral-8",
+        "bal2-3-0-attack-1",
+        "spell-neutral-11"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 1,
+      "tail": [
+        "🔴 Gegner · Kurzer Stoß: 8 Schaden · 2 geblockt",
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Blitz · Angriff 2: 11 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Blitz",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 6,
+      "heroHp": 41,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 1,
+      "hand": [
+        "spell-neutral-2",
+        "bal2-3-2-attack-1",
+        "spell-neutral-8",
+        "bal2-3-2-attack-3"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 1,
+      "tail": [
+        "🔴 Gegner · Kurzer Stoß: 8 Schaden · 2 geblockt",
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Blitz · Angriff 1: 5 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Blitz",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 30,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-3-0-attack-3",
+        "bal2-3-0-attack-2",
+        "bal2-3-0-attack-1",
+        "bal2-3-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Blitz · Angriff 1: 5 Schaden · 9 geblockt",
+        "🔴 Gegner · Blitz · Angriff 1: 14 Schaden",
+        "🟢 Du · Blitz · Angriff 2: 17 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Erde",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 8,
+      "heroHp": 45,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "bal2-4-0-attack-1",
+        "spell-neutral-11",
+        "bal2-4-0-attack-2"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Erde · Angriff 1: 0 Schaden · 11 geblockt",
+        "🔴 Gegner · Erde · Angriff 2: 13 Schaden · 11 geblockt",
+        "🟢 Du · Erde · Angriff 2: 22 Schaden · 1 geblockt"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Erde",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 7,
+      "heroHp": 58,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "bal2-4-2-ward",
+        "spell-neutral-8"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🔴 Gegner · Erde · Angriff 2: 0 Schaden · 24 geblockt",
+        "🟢 Du · Erde · Angriff 1: 13 Schaden",
+        "🟢 Du · Kurzer Stoß: 8 Schaden · 1 geblockt"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Erde",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 8,
+      "heroHp": 28,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-4-0-attack-1",
+        "bal2-4-0-ward",
+        "bal2-4-0-attack-1",
+        "spell-neutral-7"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Erde · Angriff 1: 0 Schaden · 11 geblockt",
+        "🔴 Gegner · Erde · Angriff 2: 15 Schaden · 11 geblockt",
+        "🟢 Du · Erde · Angriff 2: 4 Schaden · 14 geblockt"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Eis",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 35,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-5-0-attack-3",
+        "bal2-5-0-attack-2",
+        "bal2-5-0-attack-1",
+        "bal2-5-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Eis · Angriff 1: 2 Schaden · 10 geblockt",
+        "🔴 Gegner · Eis · Angriff 1: 12 Schaden",
+        "🟢 Du · Eis · Angriff 2: 17 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Eis",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 35,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-5-2-attack-3",
+        "bal2-5-2-attack-2",
+        "bal2-5-2-attack-1",
+        "bal2-5-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Eis · Angriff 1: 2 Schaden · 10 geblockt",
+        "🔴 Gegner · Eis · Angriff 1: 12 Schaden",
+        "🟢 Du · Eis · Angriff 2: 13 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Eis",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 31,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-5-0-attack-3",
+        "bal2-5-0-attack-2",
+        "bal2-5-0-attack-1",
+        "bal2-5-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Eis · Angriff 1: 4 Schaden · 10 geblockt",
+        "🔴 Gegner · Eis · Angriff 1: 14 Schaden",
+        "🟢 Du · Eis · Angriff 2: 17 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Dunkel",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 4,
+      "heroHp": 23,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [],
+      "deckLeft": 6,
+      "discardLeft": 10,
+      "tail": [
+        "🔴 Gegner · Dunkel · Angriff 1: 13 Schaden",
+        "🔴 Gegner · Dunkel · Angriff 1: 13 Schaden",
+        "🔥 Dunkelhirsch: 3 Nachwirkung"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Dunkel",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 4,
+      "heroHp": 49,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-6-2-dot"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🟢 Du · Dunkel · Angriff 1: 15 Schaden",
+        "🟢 Du · Dunkel · Lebensentzug: 13 Schaden",
+        "🟢 Du · Kurzer Stoß: 6 Schaden · 2 geblockt"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Dunkel",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 4,
+      "heroHp": 19,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [],
+      "deckLeft": 6,
+      "discardLeft": 10,
+      "tail": [
+        "🔴 Gegner · Dunkel · Angriff 1: 15 Schaden",
+        "🔴 Gegner · Dunkel · Angriff 1: 15 Schaden",
+        "🔥 Dunkelhirsch: 3 Nachwirkung"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Licht",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 10,
+      "heroHp": 23,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-7-0-attack-1",
+        "spell-neutral-7",
+        "bal2-7-0-attack-1",
+        "bal2-7-0-attack-2"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Licht · Angriff 1: 11 Schaden",
+        "🔴 Gegner · Licht · Angriff 1: 11 Schaden",
+        "🟢 Du · Licht · Angriff 2: 3 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Licht",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 8,
+      "heroHp": 45,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-2",
+        "bal2-7-2-attack-1",
+        "bal2-7-2-attack-1",
+        "bal2-7-2-attack-2"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Licht · Angriff 1: 13 Schaden",
+        "🔴 Gegner · Licht · Angriff 2: 13 Schaden · 11 geblockt",
+        "🟢 Du · Licht · Angriff 2: 12 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Licht",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 9,
+      "heroHp": 30,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-8",
+        "bal2-7-0-attack-1",
+        "spell-neutral-2"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Licht · Heilung: +12 LP",
+        "🔴 Gegner · Licht · Angriff 1: 13 Schaden",
+        "🟢 Du · Licht · Angriff 2: 13 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Geist",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 26,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-8-0-attack-3",
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-1",
+        "bal2-8-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Geist · Angriff 1: 5 Schaden · 9 geblockt",
+        "🔴 Gegner · Geist · Angriff 1: 14 Schaden",
+        "🟢 Du · Geist · Angriff 2: 7 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Geist",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 26,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-8-2-attack-3",
+        "bal2-8-2-attack-2",
+        "bal2-8-2-attack-1",
+        "bal2-8-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Geist · Angriff 1: 5 Schaden · 9 geblockt",
+        "🔴 Gegner · Geist · Angriff 1: 14 Schaden",
+        "🟢 Du · Geist · Angriff 2: 3 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Geist",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 22,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-8-0-attack-3",
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-1",
+        "bal2-8-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Geist · Angriff 1: 7 Schaden · 9 geblockt",
+        "🔴 Gegner · Geist · Angriff 1: 16 Schaden",
+        "🟢 Du · Geist · Angriff 2: 7 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Stein",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 8,
+      "heroHp": 45,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-8",
+        "spell-neutral-2",
+        "spell-neutral-6"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🔴 Gegner · Stein · Angriff 2: 13 Schaden · 11 geblockt",
+        "🟢 Du · Stein · Angriff 1: 11 Schaden",
+        "🟢 Du · Stein · Angriff 1: 10 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Stein",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 7,
+      "heroHp": 48,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 1,
+      "hand": [
+        "bal2-9-2-root",
+        "spell-neutral-8",
+        "bal2-9-2-ward",
+        "bal2-9-2-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Stein · Angriff 2: 3 Schaden · 23 geblockt",
+        "🔴 Gegner · Stein · Angriff 2: 10 Schaden · 14 geblockt",
+        "🟢 Du · Stein · Angriff 1: 13 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Stein",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 6,
+      "heroHp": 35,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-9-0-attack-1",
+        "spell-neutral-11",
+        "spell-neutral-7",
+        "bal2-9-0-attack-3"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 1,
+      "tail": [
+        "🔴 Gegner · Kurzer Stoß: 8 Schaden · 1 geblockt",
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Stein · Angriff 2: 4 Schaden · 14 geblockt"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Luft",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 26,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-10-0-attack-3",
+        "bal2-10-0-attack-2",
+        "bal2-10-0-attack-1",
+        "bal2-10-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Luft · Angriff 1: 5 Schaden · 9 geblockt",
+        "🔴 Gegner · Luft · Angriff 1: 14 Schaden",
+        "🟢 Du · Luft · Angriff 2: 7 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Luft",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 26,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-10-2-attack-3",
+        "bal2-10-2-attack-2",
+        "bal2-10-2-attack-1",
+        "bal2-10-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Luft · Angriff 1: 5 Schaden · 9 geblockt",
+        "🔴 Gegner · Luft · Angriff 1: 14 Schaden",
+        "🟢 Du · Luft · Angriff 2: 3 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Luft",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 22,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-10-0-attack-3",
+        "bal2-10-0-attack-2",
+        "bal2-10-0-attack-1",
+        "bal2-10-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Luft · Angriff 1: 7 Schaden · 9 geblockt",
+        "🔴 Gegner · Luft · Angriff 1: 16 Schaden",
+        "🟢 Du · Luft · Angriff 2: 7 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Gift",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 44,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-11-0-attack-3",
+        "bal2-11-0-attack-2",
+        "bal2-11-0-attack-1",
+        "bal2-11-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Gift · Angriff 1: 2 Schaden · 10 geblockt",
+        "🔴 Gegner · Gift · Angriff 1: 12 Schaden",
+        "🟢 Du · Gift · Angriff 2: 26 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Gift",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 4,
+      "heroHp": 34,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-11-2-attack-3",
+        "bal2-11-2-attack-2",
+        "bal2-11-2-attack-1",
+        "bal2-11-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Gift · Angriff 1: 12 Schaden",
+        "🔥 Toxinelf: 5 Nachwirkung",
+        "🟢 Du · Gift · Angriff 2: 3 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Gift",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 40,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-11-0-attack-3",
+        "bal2-11-0-attack-2",
+        "bal2-11-0-attack-1",
+        "bal2-11-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Gift · Angriff 1: 4 Schaden · 10 geblockt",
+        "🔴 Gegner · Gift · Angriff 1: 14 Schaden",
+        "🟢 Du · Gift · Angriff 2: 26 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Stahl",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 3,
+      "heroHp": 45,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "spell-neutral-2",
+        "bal2-12-0-ward"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Stahl · Angriff 1: 14 Schaden",
+        "🟢 Du · Stahl · Angriff 1: 14 Schaden",
+        "🟢 Du · Stahl · Durchdringung: 17 Schaden · 5 geblockt"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Stahl",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 4,
+      "heroHp": 45,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-12-2-ward"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🟢 Du · Stahl · Angriff 1: 16 Schaden",
+        "🟢 Du · Stahl · Durchdringung: 12 Schaden · 2 geblockt",
+        "🟢 Du · Kurzer Stoß: 1 Schaden · 2 geblockt"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Stahl",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 3,
+      "heroHp": 45,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "spell-neutral-2",
+        "bal2-12-0-ward"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Stahl · Angriff 1: 14 Schaden",
+        "🟢 Du · Stahl · Angriff 1: 14 Schaden",
+        "🟢 Du · Stahl · Durchdringung: 17 Schaden · 5 geblockt"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Drache",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 4,
+      "heroHp": 42,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-13-0-attack-3",
+        "bal2-13-0-attack-2",
+        "bal2-13-0-attack-1",
+        "bal2-13-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🟢 Du · Schutzzeichen: +10 Schild",
+        "🔴 Gegner · Drache · Angriff 2: 16 Schaden · 10 geblockt",
+        "🟢 Du · Drache · Angriff 2: 24 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Drache",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 4,
+      "heroHp": 35,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-13-2-attack-3",
+        "bal2-13-2-attack-2",
+        "bal2-13-2-attack-1",
+        "bal2-13-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🟢 Du · Kurzer Stoß: 10 Schaden · 2 geblockt",
+        "🔴 Gegner · Drache · Angriff 2: 23 Schaden · 3 geblockt",
+        "🟢 Du · Drache · Angriff 2: 20 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Drache",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 4,
+      "heroHp": 40,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-13-0-attack-3",
+        "bal2-13-0-attack-2",
+        "bal2-13-0-attack-1",
+        "bal2-13-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🟢 Du · Schutzzeichen: +10 Schild",
+        "🔴 Gegner · Drache · Angriff 2: 18 Schaden · 10 geblockt",
+        "🟢 Du · Drache · Angriff 2: 24 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Psycho",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 35,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-14-0-attack-3",
+        "bal2-14-0-attack-2",
+        "bal2-14-0-attack-1",
+        "bal2-14-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Psycho · Angriff 1: 2 Schaden · 10 geblockt",
+        "🔴 Gegner · Psycho · Angriff 1: 12 Schaden",
+        "🟢 Du · Psycho · Angriff 2: 17 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Psycho",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 35,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-14-2-attack-3",
+        "bal2-14-2-attack-2",
+        "bal2-14-2-attack-1",
+        "bal2-14-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Psycho · Angriff 1: 2 Schaden · 10 geblockt",
+        "🔴 Gegner · Psycho · Angriff 1: 12 Schaden",
+        "🟢 Du · Psycho · Angriff 2: 13 Schaden"
+      ]
+    },
+    {
+      "level": 5,
+      "element": "Psycho",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 31,
+      "enemyHp": 0,
+      "heroEnergy": 2,
+      "remaining": 0,
+      "hand": [
+        "bal2-14-0-attack-3",
+        "bal2-14-0-attack-2",
+        "bal2-14-0-attack-1",
+        "bal2-14-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Psycho · Angriff 1: 4 Schaden · 10 geblockt",
+        "🔴 Gegner · Psycho · Angriff 1: 14 Schaden",
+        "🟢 Du · Psycho · Angriff 2: 17 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Feuer",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 7,
+      "heroHp": 89,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "bal2-0-0-attack-2",
+        "bal2-0-0-attack-2",
+        "bal2-0-0-attack-1",
+        "bal2-0-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Feuer · Angriff 1: 5 Schaden · 11 geblockt",
+        "🔥 Lavadrill: 4 Nachwirkung",
+        "🟢 Du · Feuer · Angriff 3: 40 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Feuer",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 4,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "spell-neutral-2",
+        "bal2-0-2-rally"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Feuer · Angriff 1: 18 Schaden",
+        "🟢 Du · Feuer · Angriff 1: 18 Schaden",
+        "🟢 Du · Feuer · Nachwirkung: 40 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Feuer",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 7,
+      "heroHp": 67,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "bal2-0-0-attack-2",
+        "bal2-0-0-attack-2",
+        "bal2-0-0-attack-1",
+        "bal2-0-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Feuer · Angriff 1: 18 Schaden",
+        "🔥 Lavadrill: 4 Nachwirkung",
+        "🟢 Du · Feuer · Angriff 3: 16 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Wasser",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 8,
+      "heroHp": 83,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "bal2-1-0-attack-1",
+        "spell-neutral-8"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 2,
+      "tail": [
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Wasser · Angriff 2: 32 Schaden",
+        "🟢 Du · Wasser · Angriff 1: 6 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Wasser",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 8,
+      "heroHp": 83,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 1,
+      "hand": [
+        "bal2-1-2-ward",
+        "spell-neutral-6",
+        "spell-neutral-2"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 2,
+      "tail": [
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Wasser · Angriff 1: 17 Schaden",
+        "🟢 Du · Wasser · Angriff 1: 12 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Wasser",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 9,
+      "heroHp": 37,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-11",
+        "bal2-1-0-attack-1",
+        "bal2-1-0-attack-1",
+        "bal2-1-0-attack-2"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Wasser · Angriff 3: 46 Schaden · 6 geblockt",
+        "🌱 Korallin: +10 Regeneration",
+        "🟢 Du · Wasser · Angriff 3: 25 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Natur",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 12,
+      "heroHp": 51,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "bal2-2-0-attack-1",
+        "spell-neutral-11",
+        "bal2-2-0-attack-1",
+        "spell-neutral-2"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Natur · Angriff 3: 36 Schaden · 10 geblockt",
+        "🔴 Gegner · Natur · Angriff 1: 14 Schaden",
+        "🟢 Du · Natur · Angriff 3: 13 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Natur",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 11,
+      "heroHp": 101,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-2"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 3,
+      "tail": [
+        "🟢 Du · Natur · Angriff 1: 16 Schaden",
+        "🟢 Du · Natur · Angriff 1: 16 Schaden",
+        "🟢 Du · Natur · Angriff 2: 28 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Natur",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 12,
+      "heroHp": 69,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "bal2-2-0-root",
+        "bal2-2-0-attack-1",
+        "spell-neutral-11",
+        "bal2-2-0-attack-2"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Natur · Angriff 3: 16 Schaden · 33 geblockt",
+        "🔴 Gegner · Natur · Angriff 1: 16 Schaden",
+        "🟢 Du · Natur · Angriff 3: 43 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Blitz",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 8,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-3-0-attack-2",
+        "bal2-3-0-attack-2",
+        "bal2-3-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Blitz · Angriff 1: 0 Schaden · 15 geblockt",
+        "🟢 Du · Blitz · Angriff 3: 49 Schaden",
+        "🟢 Du · Blitz · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Blitz",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 8,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-3-2-attack-2",
+        "bal2-3-2-attack-2",
+        "bal2-3-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Blitz · Angriff 1: 0 Schaden · 15 geblockt",
+        "🟢 Du · Blitz · Angriff 3: 52 Schaden",
+        "🟢 Du · Blitz · Angriff 1: 6 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Blitz",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 8,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-3-0-attack-2",
+        "bal2-3-0-attack-2",
+        "bal2-3-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Blitz · Angriff 1: 0 Schaden · 17 geblockt",
+        "🟢 Du · Blitz · Angriff 3: 49 Schaden",
+        "🟢 Du · Blitz · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Erde",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 9,
+      "heroHp": 74,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 1,
+      "hand": [
+        "bal2-4-0-ward",
+        "spell-neutral-2",
+        "bal2-4-0-attack-1",
+        "bal2-4-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Erde · Angriff 2: 23 Schaden · 7 geblockt",
+        "🔴 Gegner · Erde · Angriff 1: 14 Schaden",
+        "🟢 Du · Erde · Angriff 2: 22 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Erde",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 11,
+      "heroHp": 75,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "bal2-4-2-ward",
+        "spell-neutral-6",
+        "spell-neutral-11",
+        "spell-neutral-8"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Erde · Angriff 2: 22 Schaden · 8 geblockt",
+        "🔴 Gegner · Erde · Angriff 1: 14 Schaden",
+        "🟢 Du · Erde · Angriff 3: 15 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Erde",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 28,
+      "actions": 48,
+      "heroHp": 39,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "bal2-4-0-root",
+        "spell-neutral-11",
+        "spell-neutral-7"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 2,
+      "tail": [
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Erde · Angriff 2: 30 Schaden",
+        "🟢 Du · Erde · Angriff 1: 9 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Eis",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 8,
+      "heroHp": 46,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "bal2-5-0-attack-2",
+        "spell-neutral-2",
+        "bal2-5-0-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "⚡ Betäubung abgewehrt oder fehlgeschlagen.",
+        "🔴 Gegner · Eis · Angriff 3: 37 Schaden · 12 geblockt",
+        "🟢 Du · Eis · Angriff 3: 15 Schaden · 15 geblockt"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Eis",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 9,
+      "heroHp": 50,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 2,
+      "hand": [
+        "spell-neutral-7",
+        "bal2-5-2-attack-1",
+        "bal2-5-2-attack-1",
+        "spell-neutral-11"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Eis · Angriff 1: 0 Schaden · 17 geblockt",
+        "🔴 Gegner · Eis · Angriff 3: 33 Schaden · 16 geblockt",
+        "🟢 Du · Eis · Angriff 1: 6 Schaden · 2 geblockt"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Eis",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 7,
+      "heroHp": 83,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "bal2-5-0-attack-1",
+        "bal2-5-0-attack-2",
+        "bal2-5-0-attack-1",
+        "bal2-5-0-attack-1"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 1,
+      "tail": [
+        "🔴 Gegner · Kurzer Stoß: 11 Schaden · 2 geblockt",
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Eis · Angriff 3: 15 Schaden · 4 geblockt"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Dunkel",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 6,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 8,
+      "tail": [
+        "🟢 Du · Dunkel · Nachwirkung: 15 Schaden",
+        "🟢 Du · Kurzer Stoß: 12 Schaden · 3 geblockt",
+        "🟢 Du · Dunkel · Lebensentzug: 16 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Dunkel",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 4,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "spell-neutral-2",
+        "bal2-6-2-drain"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Dunkel · Angriff 1: 19 Schaden",
+        "🟢 Du · Dunkel · Angriff 1: 19 Schaden",
+        "🟢 Du · Dunkel · Nachwirkung: 37 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Dunkel",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 6,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 8,
+      "tail": [
+        "🟢 Du · Dunkel · Nachwirkung: 15 Schaden",
+        "🟢 Du · Kurzer Stoß: 12 Schaden · 3 geblockt",
+        "🟢 Du · Dunkel · Lebensentzug: 16 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Licht",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 8,
+      "actions": 19,
+      "heroHp": 20,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "spell-neutral-6",
+        "bal2-7-0-attack-1",
+        "bal2-7-0-attack-2",
+        "bal2-7-0-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Licht · Angriff 1: 13 Schaden",
+        "🔴 Gegner · Licht · Angriff 1: 13 Schaden",
+        "🟢 Du · Licht · Angriff 3: 1 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Licht",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 13,
+      "heroHp": 72,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "bal2-7-2-attack-2",
+        "spell-neutral-6",
+        "bal2-7-2-attack-1",
+        "bal2-7-2-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Licht · Angriff 3: 26 Schaden · 17 geblockt",
+        "🔴 Gegner · Licht · Angriff 1: 13 Schaden",
+        "🟢 Du · Licht · Angriff 3: 27 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Licht",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 7,
+      "actions": 19,
+      "heroHp": 49,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-7-0-cleanse",
+        "spell-neutral-11",
+        "bal2-7-0-attack-1"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 2,
+      "tail": [
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Heilkräuter: +28 LP",
+        "🟢 Du · Licht · Angriff 2: 8 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Geist",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 5,
+      "heroHp": 85,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-8-0-weaken"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🟢 Du · Geist · Angriff 1: 18 Schaden",
+        "🟢 Du · Kurzer Stoß: 13 Schaden · 3 geblockt",
+        "🟢 Du · Geist · Lebensentzug: 18 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Geist",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 5,
+      "heroHp": 85,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-8-2-weaken"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🟢 Du · Geist · Angriff 1: 20 Schaden",
+        "🟢 Du · Kurzer Stoß: 13 Schaden · 3 geblockt",
+        "🟢 Du · Geist · Lebensentzug: 12 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Geist",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 5,
+      "heroHp": 85,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-8-0-weaken"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🟢 Du · Geist · Angriff 1: 18 Schaden",
+        "🟢 Du · Kurzer Stoß: 13 Schaden · 3 geblockt",
+        "🟢 Du · Geist · Lebensentzug: 18 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Stein",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 11,
+      "actions": 27,
+      "heroHp": 77,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-9-0-attack-1",
+        "bal2-9-0-attack-1",
+        "bal2-9-0-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🔴 Gegner · Stein · Angriff 1: 14 Schaden",
+        "🟢 Du · Stein · Schutz: +33 Schild",
+        "🟢 Du · Stein · Angriff 2: 4 Schaden · 16 geblockt"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Stein",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 12,
+      "heroHp": 75,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 2,
+      "hand": [
+        "spell-neutral-6",
+        "spell-neutral-2",
+        "bal2-9-2-root"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🔴 Gegner · Stein · Angriff 1: 14 Schaden",
+        "🟢 Du · Stein · Schutz: +19 Schild",
+        "🟢 Du · Stein · Angriff 1: 12 Schaden · 1 geblockt"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Stein",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 13,
+      "heroHp": 80,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-9-0-root",
+        "spell-neutral-11",
+        "bal2-9-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Stein · Angriff 1: 0 Schaden · 16 geblockt",
+        "🟢 Du · Stein · Angriff 2: 10 Schaden · 20 geblockt",
+        "🟢 Du · Stein · Angriff 2: 13 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Luft",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 7,
+      "heroHp": 65,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "bal2-10-0-attack-2",
+        "bal2-10-0-attack-2",
+        "bal2-10-0-attack-1",
+        "bal2-10-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Luft · Angriff 1: 2 Schaden · 16 geblockt",
+        "🔴 Gegner · Luft · Angriff 1: 18 Schaden",
+        "🟢 Du · Luft · Angriff 3: 18 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Luft",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 6,
+      "heroHp": 85,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-10-2-dodge",
+        "bal2-10-2-attack-3",
+        "bal2-10-2-attack-2",
+        "bal2-10-2-attack-2"
+      ],
+      "deckLeft": 2,
+      "discardLeft": 8,
+      "tail": [
+        "🟢 Du · Kurzer Stoß: 13 Schaden · 3 geblockt",
+        "🟢 Du · Luft · Nachziehen: Karten ziehen",
+        "🟢 Du · Luft · Angriff 1: 12 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Luft",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 7,
+      "heroHp": 59,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 1,
+      "hand": [
+        "bal2-10-0-attack-2",
+        "bal2-10-0-attack-2",
+        "bal2-10-0-attack-1",
+        "bal2-10-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Luft · Angriff 1: 6 Schaden · 14 geblockt",
+        "🔴 Gegner · Luft · Angriff 1: 20 Schaden",
+        "🟢 Du · Luft · Angriff 3: 18 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Gift",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 66,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "bal2-11-0-attack-2",
+        "bal2-11-0-attack-2",
+        "bal2-11-0-attack-1",
+        "bal2-11-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Gift · Angriff 1: 15 Schaden",
+        "🔥 Toxinelf: 8 Nachwirkung",
+        "🟢 Du · Gift · Angriff 3: 17 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Gift",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 6,
+      "heroHp": 66,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "bal2-11-2-attack-2",
+        "bal2-11-2-attack-2",
+        "bal2-11-2-attack-1",
+        "bal2-11-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Gift · Angriff 1: 15 Schaden",
+        "🔥 Toxinelf: 6 Nachwirkung",
+        "🟢 Du · Gift · Angriff 3: 15 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Gift",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 5,
+      "heroHp": 60,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "bal2-11-0-attack-2",
+        "bal2-11-0-attack-2",
+        "bal2-11-0-attack-1",
+        "bal2-11-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Gift · Angriff 1: 17 Schaden",
+        "🔥 Toxinelf: 8 Nachwirkung",
+        "🟢 Du · Gift · Angriff 3: 17 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Stahl",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 5,
+      "heroHp": 85,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-12-0-ward"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🟢 Du · Stahl · Angriff 1: 18 Schaden",
+        "🟢 Du · Stahl · Durchdringung: 28 Schaden · 6 geblockt",
+        "🟢 Du · Kurzer Stoß: 3 Schaden · 3 geblockt"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Stahl",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 5,
+      "heroHp": 85,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 1,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-12-2-ward"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🟢 Du · Stahl · Angriff 1: 20 Schaden",
+        "🟢 Du · Stahl · Durchdringung: 15 Schaden · 3 geblockt",
+        "🟢 Du · Kurzer Stoß: 10 Schaden · 3 geblockt"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Stahl",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 5,
+      "heroHp": 85,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6",
+        "bal2-12-0-ward"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🟢 Du · Stahl · Angriff 1: 18 Schaden",
+        "🟢 Du · Stahl · Durchdringung: 28 Schaden · 6 geblockt",
+        "🟢 Du · Kurzer Stoß: 3 Schaden · 3 geblockt"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Drache",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 6,
+      "heroHp": 80,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 1,
+      "hand": [
+        "bal2-13-0-attack-1",
+        "bal2-13-0-attack-2",
+        "bal2-13-0-attack-1",
+        "spell-neutral-2"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 1,
+      "tail": [
+        "🔴 Gegner · Heilkräuter: +24 LP",
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Drache · Angriff 2: 28 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Drache",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 6,
+      "heroHp": 80,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 0,
+      "hand": [
+        "bal2-13-2-attack-2",
+        "bal2-13-2-attack-2",
+        "bal2-13-2-attack-1",
+        "bal2-13-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Drache · Angriff 2: 16 Schaden · 16 geblockt",
+        "🔴 Gegner · Drache · Angriff 1: 15 Schaden",
+        "🟢 Du · Drache · Angriff 3: 49 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Drache",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 6,
+      "heroHp": 76,
+      "enemyHp": 0,
+      "heroEnergy": 3,
+      "remaining": 1,
+      "hand": [
+        "bal2-13-0-attack-1",
+        "bal2-13-0-attack-1",
+        "spell-neutral-11",
+        "spell-neutral-7"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 1,
+      "tail": [
+        "🔴 Gegner · Heilkräuter: +24 LP",
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Drache · Angriff 2: 28 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Psycho",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 8,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-14-0-attack-2",
+        "bal2-14-0-attack-2",
+        "bal2-14-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Psycho · Angriff 1: 0 Schaden · 15 geblockt",
+        "🟢 Du · Psycho · Angriff 3: 49 Schaden",
+        "🟢 Du · Psycho · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Psycho",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 8,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-14-2-attack-2",
+        "bal2-14-2-attack-2",
+        "bal2-14-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Psycho · Angriff 1: 0 Schaden · 15 geblockt",
+        "🟢 Du · Psycho · Angriff 3: 52 Schaden",
+        "🟢 Du · Psycho · Angriff 1: 6 Schaden"
+      ]
+    },
+    {
+      "level": 20,
+      "element": "Psycho",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 8,
+      "heroHp": 94,
+      "enemyHp": 0,
+      "heroEnergy": 4,
+      "remaining": 0,
+      "hand": [
+        "bal2-14-0-attack-2",
+        "bal2-14-0-attack-2",
+        "bal2-14-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Psycho · Angriff 1: 0 Schaden · 17 geblockt",
+        "🟢 Du · Psycho · Angriff 3: 49 Schaden",
+        "🟢 Du · Psycho · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Feuer",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 175,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 3,
+      "hand": [
+        "bal2-0-0-attack-2",
+        "bal2-0-0-attack-1",
+        "bal2-0-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔥 Lavadrill: 7 Nachwirkung",
+        "🟢 Du · Feuer · Angriff 3: 80 Schaden · 5 geblockt",
+        "🟢 Du · Feuer · Angriff 2: 19 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Feuer",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 179,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "bal2-0-2-attack-2",
+        "bal2-0-2-attack-2",
+        "bal2-0-2-attack-1",
+        "bal2-0-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🔥 Lavadrill: 12 Nachwirkung",
+        "🟢 Du · Feuer · Angriff 3: 40 Schaden · 5 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Feuer",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 169,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 3,
+      "hand": [
+        "bal2-0-0-attack-2",
+        "bal2-0-0-attack-1",
+        "bal2-0-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔥 Lavadrill: 7 Nachwirkung",
+        "🟢 Du · Feuer · Angriff 3: 80 Schaden · 5 geblockt",
+        "🟢 Du · Feuer · Angriff 2: 19 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Wasser",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 14,
+      "heroHp": 169,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 2,
+      "hand": [
+        "bal2-1-0-attack-1",
+        "bal2-1-0-attack-1"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 3,
+      "tail": [
+        "🟢 Du · Wasser · Angriff 3: 9 Schaden · 55 geblockt",
+        "🟢 Du · Wasser · Angriff 1: 20 Schaden",
+        "🟢 Du · Wasser · Angriff 1: 4 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Wasser",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 0,
+      "hand": [
+        "bal2-1-2-attack-1",
+        "bal2-1-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Wasser · Angriff 3: 67 Schaden",
+        "🟢 Du · Wasser · Angriff 2: 44 Schaden",
+        "🟢 Du · Wasser · Angriff 2: 36 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Wasser",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 15,
+      "heroHp": 169,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 2,
+      "hand": [
+        "spell-neutral-11"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 4,
+      "tail": [
+        "🟢 Du · Wasser · Angriff 2: 0 Schaden · 42 geblockt",
+        "🟢 Du · Wasser · Angriff 1: 0 Schaden · 20 geblockt",
+        "🟢 Du · Wasser · Angriff 1: 5 Schaden · 10 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Natur",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 18,
+      "heroHp": 144,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "spell-neutral-2",
+        "bal2-2-0-attack-2",
+        "bal2-2-0-root",
+        "spell-neutral-6"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Natur · Angriff 2: 40 Schaden",
+        "🔴 Gegner · Natur · Angriff 1: 19 Schaden",
+        "🟢 Du · Natur · Angriff 3: 55 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Natur",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 21,
+      "heroHp": 186,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 3,
+      "hand": [
+        "spell-neutral-11"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 9,
+      "tail": [
+        "🟢 Du · Natur · Angriff 1: 21 Schaden",
+        "🟢 Du · Natur · Angriff 1: 21 Schaden",
+        "🟢 Du · Kurzer Stoß: 11 Schaden · 3 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Natur",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 9,
+      "actions": 36,
+      "heroHp": 197,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 2,
+      "hand": [
+        "spell-neutral-2",
+        "bal2-2-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Natur · Heilung: +62 LP",
+        "🟢 Du · Natur · Angriff 2: 35 Schaden · 5 geblockt",
+        "🟢 Du · Natur · Angriff 2: 36 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Blitz",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 4,
+      "hand": [
+        "bal2-3-0-attack-2",
+        "bal2-3-0-attack-1",
+        "bal2-3-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "⚡ Trainer setzt diese Runde aus.",
+        "🟢 Du · Blitz · Angriff 3: 67 Schaden",
+        "🟢 Du · Blitz · Angriff 2: 31 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Blitz",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 3,
+      "hand": [
+        "bal2-3-2-attack-2",
+        "bal2-3-2-attack-1",
+        "bal2-3-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "⚡ Trainer setzt diese Runde aus.",
+        "🟢 Du · Blitz · Angriff 3: 70 Schaden",
+        "🟢 Du · Blitz · Angriff 2: 6 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Blitz",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 4,
+      "hand": [
+        "bal2-3-0-attack-2",
+        "bal2-3-0-attack-1",
+        "bal2-3-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "⚡ Trainer setzt diese Runde aus.",
+        "🟢 Du · Blitz · Angriff 3: 67 Schaden",
+        "🟢 Du · Blitz · Angriff 2: 31 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Erde",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 8,
+      "actions": 30,
+      "heroHp": 188,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 5,
+      "hand": [
+        "bal2-4-0-attack-2",
+        "spell-neutral-2",
+        "bal2-4-0-root",
+        "spell-neutral-8"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Erde · Angriff 3: 0 Schaden · 61 geblockt",
+        "🔴 Gegner · Erde · Angriff 2: 16 Schaden · 24 geblockt",
+        "🟢 Du · Erde · Angriff 3: 25 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Erde",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 23,
+      "heroHp": 189,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 4,
+      "hand": [
+        "spell-neutral-8",
+        "bal2-4-2-attack-2",
+        "bal2-4-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Schutzzeichen: +26 Schild",
+        "🟢 Du · Erde · Angriff 3: 13 Schaden · 17 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Erde",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 19,
+      "heroHp": 204,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 2,
+      "hand": [
+        "bal2-4-0-attack-1",
+        "bal2-4-0-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 8,
+      "tail": [
+        "🟢 Du · Erde · Angriff 3: 0 Schaden · 61 geblockt",
+        "🟢 Du · Erde · Angriff 2: 8 Schaden · 32 geblockt",
+        "🟢 Du · Erde · Angriff 1: 18 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Eis",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 16,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 4,
+      "hand": [
+        "spell-neutral-2",
+        "bal2-5-0-attack-1",
+        "bal2-5-0-attack-1",
+        "bal2-5-0-attack-2"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🟢 Du · Heilkräuter: +15 LP",
+        "⚡ Trainer setzt diese Runde aus.",
+        "🟢 Du · Eis · Angriff 3: 1 Schaden · 24 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Eis",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 0,
+      "hand": [
+        "bal2-5-2-attack-1",
+        "bal2-5-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Eis · Angriff 3: 67 Schaden",
+        "🟢 Du · Eis · Angriff 2: 44 Schaden",
+        "🟢 Du · Eis · Angriff 2: 32 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Eis",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 16,
+      "heroHp": 105,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 5,
+      "hand": [
+        "bal2-5-0-attack-1",
+        "bal2-5-0-attack-1",
+        "spell-neutral-2",
+        "bal2-5-0-attack-2"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Eis · Angriff 2: 44 Schaden",
+        "🔴 Gegner · Eis · Angriff 1: 22 Schaden",
+        "🟢 Du · Eis · Angriff 2: 1 Schaden · 33 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Dunkel",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 172,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "bal2-6-0-attack-2",
+        "bal2-6-0-attack-2",
+        "bal2-6-0-attack-1",
+        "bal2-6-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🔥 Dunkelhirsch: 7 Nachwirkung",
+        "🟢 Du · Dunkel · Angriff 3: 55 Schaden · 5 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Dunkel",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 7,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 3,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-6"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 8,
+      "tail": [
+        "🟢 Du · Dunkel · Nachwirkung: 70 Schaden",
+        "🟢 Du · Kurzer Stoß: 18 Schaden · 4 geblockt",
+        "🟢 Du · Dunkel · Lebensentzug: 18 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Dunkel",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 166,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "bal2-6-0-attack-2",
+        "bal2-6-0-attack-2",
+        "bal2-6-0-attack-1",
+        "bal2-6-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🔥 Dunkelhirsch: 7 Nachwirkung",
+        "🟢 Du · Dunkel · Angriff 3: 55 Schaden · 5 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Licht",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 7,
+      "actions": 30,
+      "heroHp": 161,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 1,
+      "hand": [],
+      "deckLeft": 11,
+      "discardLeft": 5,
+      "tail": [
+        "🟢 Du · Licht · Angriff 1: 18 Schaden",
+        "🟢 Du · Licht · Angriff 1: 18 Schaden",
+        "🟢 Du · Licht · Angriff 1: 10 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Licht",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 24,
+      "heroHp": 147,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "bal2-7-2-attack-2",
+        "bal2-7-2-cleanse",
+        "bal2-7-2-attack-2"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Licht · Reinigung: Reinigung",
+        "🟢 Du · Licht · Angriff 3: 61 Schaden",
+        "🟢 Du · Licht · Angriff 1: 18 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Licht",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 25,
+      "heroHp": 134,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 2,
+      "hand": [
+        "bal2-7-0-cleanse"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 14,
+      "tail": [
+        "🟢 Du · Licht · Angriff 3: 58 Schaden",
+        "🟢 Du · Kurzer Stoß: 13 Schaden · 3 geblockt",
+        "🟢 Du · Licht · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Geist",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 159,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-1",
+        "bal2-8-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Geist · Angriff 1: 7 Schaden · 13 geblockt",
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Geist · Angriff 3: 39 Schaden · 4 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Geist",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 9,
+      "heroHp": 144,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "bal2-8-2-attack-2",
+        "bal2-8-2-attack-2",
+        "bal2-8-2-attack-1",
+        "bal2-8-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Heilkräuter: +36 LP",
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Geist · Angriff 3: 54 Schaden · 4 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Geist",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 153,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-1",
+        "bal2-8-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Geist · Angriff 1: 13 Schaden · 9 geblockt",
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Geist · Angriff 3: 39 Schaden · 4 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Stein",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 24,
+      "heroHp": 204,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 0,
+      "hand": [],
+      "deckLeft": 1,
+      "discardLeft": 15,
+      "tail": [
+        "🟢 Du · Stein · Angriff 3: 0 Schaden · 61 geblockt",
+        "🟢 Du · Stein · Angriff 2: 18 Schaden · 22 geblockt",
+        "🟢 Du · Stein · Angriff 1: 10 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Stein",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 8,
+      "actions": 33,
+      "heroHp": 189,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 3,
+      "hand": [
+        "spell-neutral-8"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 9,
+      "tail": [
+        "🟢 Du · Stein · Angriff 2: 0 Schaden · 42 geblockt",
+        "🟢 Du · Stein · Angriff 2: 42 Schaden",
+        "🟢 Du · Kurzer Stoß: 5 Schaden · 3 geblockt"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Stein",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 21,
+      "heroHp": 204,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 3,
+      "hand": [
+        "spell-neutral-8",
+        "bal2-9-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Stein · Angriff 3: 0 Schaden · 61 geblockt",
+        "🟢 Du · Stein · Angriff 1: 16 Schaden · 3 geblockt",
+        "🟢 Du · Stein · Angriff 1: 12 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Luft",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 16,
+      "heroHp": 139,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 5,
+      "hand": [
+        "bal2-10-0-attack-1",
+        "bal2-10-0-attack-1",
+        "spell-neutral-8"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🔴 Gegner · Luft · Angriff 1: 5 Schaden · 20 geblockt",
+        "🟢 Du · Luft · Angriff 2: 3 Schaden · 49 geblockt",
+        "🟢 Du · Luft · Angriff 2: 36 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Luft",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 149,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 6,
+      "hand": [
+        "spell-neutral-7",
+        "spell-neutral-8",
+        "bal2-10-2-attack-1"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 2,
+      "tail": [
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Luft · Angriff 1: 23 Schaden · 4 geblockt",
+        "🟢 Du · Luft · Angriff 1: 27 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Luft",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 16,
+      "heroHp": 114,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 4,
+      "hand": [
+        "bal2-10-0-attack-1",
+        "bal2-10-0-dodge",
+        "bal2-10-0-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🔴 Gegner · Luft · Angriff 2: 5 Schaden · 49 geblockt",
+        "🟢 Du · Luft · Angriff 3: 25 Schaden · 54 geblockt",
+        "🟢 Du · Luft · Angriff 2: 14 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Gift",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 218,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 2,
+      "hand": [
+        "bal2-11-0-attack-2",
+        "bal2-11-0-attack-1",
+        "bal2-11-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔥 Toxinelf: 10 Nachwirkung",
+        "🟢 Du · Gift · Angriff 3: 67 Schaden",
+        "🟢 Du · Gift · Angriff 2: 39 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Gift",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 218,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 0,
+      "hand": [
+        "bal2-11-2-attack-1",
+        "bal2-11-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Gift · Angriff 3: 70 Schaden",
+        "🟢 Du · Gift · Angriff 2: 46 Schaden",
+        "🟢 Du · Gift · Angriff 2: 5 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Gift",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 212,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 2,
+      "hand": [
+        "bal2-11-0-attack-2",
+        "bal2-11-0-attack-1",
+        "bal2-11-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔥 Toxinelf: 10 Nachwirkung",
+        "🟢 Du · Gift · Angriff 3: 67 Schaden",
+        "🟢 Du · Gift · Angriff 2: 39 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Stahl",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 166,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 4,
+      "hand": [
+        "bal2-12-0-attack-2",
+        "bal2-12-0-attack-2",
+        "bal2-12-0-attack-1",
+        "bal2-12-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Stahl · Angriff 1: 0 Schaden · 25 geblockt",
+        "🔴 Gegner · Heilkräuter: +34 LP",
+        "🟢 Du · Stahl · Angriff 3: 67 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Stahl",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 9,
+      "heroHp": 166,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 4,
+      "hand": [
+        "bal2-12-2-attack-2",
+        "bal2-12-2-attack-2",
+        "bal2-12-2-attack-1",
+        "bal2-12-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Stahl · Angriff 1: 0 Schaden · 25 geblockt",
+        "🔴 Gegner · Heilkräuter: +34 LP",
+        "🟢 Du · Stahl · Angriff 3: 80 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Stahl",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 163,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 4,
+      "hand": [
+        "bal2-12-0-attack-2",
+        "bal2-12-0-attack-2",
+        "bal2-12-0-attack-1",
+        "bal2-12-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Stahl · Angriff 1: 3 Schaden · 24 geblockt",
+        "🔴 Gegner · Heilkräuter: +34 LP",
+        "🟢 Du · Stahl · Angriff 3: 67 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Drache",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 169,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 1,
+      "hand": [
+        "bal2-13-0-attack-2",
+        "bal2-13-0-attack-1",
+        "bal2-13-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Drache · Angriff 1: 21 Schaden",
+        "🟢 Du · Drache · Angriff 3: 76 Schaden",
+        "🟢 Du · Drache · Angriff 2: 19 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Drache",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 173,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 1,
+      "hand": [
+        "bal2-13-2-attack-2",
+        "bal2-13-2-attack-1",
+        "bal2-13-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Drache · Angriff 1: 21 Schaden",
+        "🟢 Du · Drache · Angriff 3: 76 Schaden",
+        "🟢 Du · Drache · Angriff 2: 11 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Drache",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 161,
+      "enemyHp": 0,
+      "heroEnergy": 6,
+      "remaining": 1,
+      "hand": [
+        "bal2-13-0-attack-2",
+        "bal2-13-0-attack-1",
+        "bal2-13-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Drache · Angriff 1: 23 Schaden",
+        "🟢 Du · Drache · Angriff 3: 76 Schaden",
+        "🟢 Du · Drache · Angriff 2: 19 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Psycho",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 1,
+      "hand": [
+        "bal2-14-0-attack-1",
+        "bal2-14-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Psycho · Angriff 3: 59 Schaden · 5 geblockt",
+        "🟢 Du · Psycho · Angriff 2: 42 Schaden",
+        "🟢 Du · Psycho · Angriff 2: 29 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Psycho",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 184,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 1,
+      "hand": [
+        "bal2-14-2-attack-1",
+        "bal2-14-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Psycho · Angriff 3: 62 Schaden · 5 geblockt",
+        "🟢 Du · Psycho · Angriff 2: 44 Schaden",
+        "🟢 Du · Psycho · Angriff 2: 25 Schaden"
+      ]
+    },
+    {
+      "level": 50,
+      "element": "Psycho",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 181,
+      "enemyHp": 0,
+      "heroEnergy": 7,
+      "remaining": 1,
+      "hand": [
+        "bal2-14-0-attack-1",
+        "bal2-14-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Psycho · Angriff 3: 59 Schaden · 5 geblockt",
+        "🟢 Du · Psycho · Angriff 2: 42 Schaden",
+        "🟢 Du · Psycho · Angriff 2: 29 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Feuer",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 12,
+      "heroHp": 322,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 6,
+      "hand": [
+        "bal2-0-0-attack-1",
+        "bal2-0-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Feuer · Angriff 3: 113 Schaden · 8 geblockt",
+        "🟢 Du · Feuer · Angriff 2: 80 Schaden",
+        "🟢 Du · Feuer · Angriff 2: 11 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Feuer",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 327,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 8,
+      "hand": [
+        "bal2-0-2-attack-2",
+        "bal2-0-2-attack-1",
+        "bal2-0-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔥 Lavadrill: 15 Nachwirkung",
+        "🟢 Du · Feuer · Angriff 3: 113 Schaden · 8 geblockt",
+        "🟢 Du · Feuer · Angriff 2: 8 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Feuer",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 12,
+      "heroHp": 316,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 6,
+      "hand": [
+        "bal2-0-0-attack-1",
+        "bal2-0-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Feuer · Angriff 3: 113 Schaden · 8 geblockt",
+        "🟢 Du · Feuer · Angriff 2: 80 Schaden",
+        "🟢 Du · Feuer · Angriff 2: 11 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Wasser",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 11,
+      "actions": 50,
+      "heroHp": 171,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 9,
+      "hand": [
+        "bal2-1-0-ward",
+        "bal2-1-0-attack-1",
+        "spell-neutral-6"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🌱 Korallin: +45 Regeneration",
+        "🟢 Du · Wasser · Angriff 3: 28 Schaden · 60 geblockt",
+        "🟢 Du · Wasser · Angriff 2: 44 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Wasser",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 21,
+      "heroHp": 144,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 8,
+      "hand": [
+        "spell-neutral-6",
+        "spell-neutral-7"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 8,
+      "tail": [
+        "🟢 Du · Wasser · Angriff 2: 41 Schaden · 19 geblockt",
+        "🟢 Du · Wasser · Angriff 1: 30 Schaden",
+        "🟢 Du · Wasser · Angriff 2: 49 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Wasser",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 20,
+      "heroHp": 203,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 9,
+      "hand": [
+        "bal2-1-0-attack-1",
+        "bal2-1-0-attack-1",
+        "bal2-1-0-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 7,
+      "tail": [
+        "🌱 Korallin: +23 Regeneration",
+        "🟢 Du · Heilkräuter: +70 LP",
+        "🟢 Du · Wasser · Angriff 2: 36 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Natur",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 17,
+      "actions": 68,
+      "heroHp": 387,
+      "enemyHp": 0,
+      "heroEnergy": 13,
+      "remaining": 7,
+      "hand": [
+        "bal2-2-0-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 9,
+      "tail": [
+        "🟢 Du · Schildwall: +59 Schild",
+        "🟢 Du · Natur · Angriff 3: 26 Schaden · 59 geblockt",
+        "🟢 Du · Natur · Angriff 2: 28 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Natur",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 7,
+      "actions": 28,
+      "heroHp": 351,
+      "enemyHp": 0,
+      "heroEnergy": 13,
+      "remaining": 8,
+      "hand": [
+        "spell-neutral-8"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 4,
+      "tail": [
+        "🟢 Du · Natur · Angriff 2: 58 Schaden",
+        "🟢 Du · Natur · Angriff 1: 29 Schaden",
+        "🟢 Du · Natur · Angriff 1: 28 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Natur",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 9,
+      "actions": 36,
+      "heroHp": 354,
+      "enemyHp": 0,
+      "heroEnergy": 13,
+      "remaining": 10,
+      "hand": [],
+      "deckLeft": 1,
+      "discardLeft": 15,
+      "tail": [
+        "🟢 Du · Natur · Angriff 1: 16 Schaden · 11 geblockt",
+        "🟢 Du · Natur · Angriff 1: 27 Schaden",
+        "🟢 Du · Natur · Angriff 1: 22 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Blitz",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 14,
+      "heroHp": 324,
+      "enemyHp": 0,
+      "heroEnergy": 13,
+      "remaining": 6,
+      "hand": [],
+      "deckLeft": 1,
+      "discardLeft": 15,
+      "tail": [
+        "🟢 Du · Blitz · Angriff 2: 64 Schaden",
+        "🟢 Du · Blitz · Angriff 1: 31 Schaden",
+        "🟢 Du · Blitz · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Blitz",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 13,
+      "heroHp": 334,
+      "enemyHp": 0,
+      "heroEnergy": 13,
+      "remaining": 7,
+      "hand": [
+        "bal2-3-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 14,
+      "tail": [
+        "🟢 Du · Blitz · Angriff 2: 66 Schaden",
+        "🟢 Du · Blitz · Angriff 2: 66 Schaden",
+        "🟢 Du · Blitz · Angriff 1: 8 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Blitz",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 14,
+      "heroHp": 318,
+      "enemyHp": 0,
+      "heroEnergy": 13,
+      "remaining": 6,
+      "hand": [],
+      "deckLeft": 1,
+      "discardLeft": 15,
+      "tail": [
+        "🟢 Du · Blitz · Angriff 2: 64 Schaden",
+        "🟢 Du · Blitz · Angriff 1: 31 Schaden",
+        "🟢 Du · Blitz · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Erde",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "timeout",
+      "rounds": 40,
+      "actions": 160,
+      "heroHp": 335,
+      "enemyHp": 167,
+      "heroEnergy": 11,
+      "remaining": 14,
+      "hand": [
+        "bal2-4-0-ward",
+        "spell-neutral-7",
+        "bal2-4-0-attack-1",
+        "bal2-4-0-attack-2",
+        "bal2-4-0-attack-2"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 5,
+      "tail": [
+        "🔴 Gegner · Erde · Angriff 2: 0 Schaden · 56 geblockt",
+        "🔴 Gegner · Erde · Angriff 2: 0 Schaden · 56 geblockt",
+        "🔴 Gegner · Erde · Angriff 1: 0 Schaden · 27 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Erde",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "timeout",
+      "rounds": 40,
+      "actions": 152,
+      "heroHp": 158,
+      "enemyHp": 149,
+      "heroEnergy": 11,
+      "remaining": 14,
+      "hand": [
+        "bal2-4-2-attack-1",
+        "bal2-4-2-ward",
+        "bal2-4-2-attack-1",
+        "bal2-4-2-attack-2",
+        "spell-neutral-11"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 5,
+      "tail": [
+        "🟢 Du · Erde · Angriff 2: 0 Schaden · 58 geblockt",
+        "🟢 Du · Erde · Angriff 1: 0 Schaden · 29 geblockt",
+        "Erde · Festsetzen: Festgesetzt: Angriffe gesperrt, Schutz und Heilung möglich."
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Erde",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 36,
+      "actions": 139,
+      "heroHp": 356,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 7,
+      "hand": [
+        "spell-neutral-11"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 14,
+      "tail": [
+        "🟢 Du · Heilkräuter: +50 LP",
+        "🟢 Du · Erde · Angriff 1: 27 Schaden",
+        "🟢 Du · Erde · Angriff 1: 23 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Eis",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 22,
+      "heroHp": 334,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 7,
+      "hand": [
+        "bal2-5-0-attack-2",
+        "spell-neutral-11"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 8,
+      "tail": [
+        "🟢 Du · Schildwall: +69 Schild",
+        "🟢 Du · Eis · Schutz: +34 Schild",
+        "🟢 Du · Eis · Angriff 2: 12 Schaden · 21 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Eis",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 4,
+      "actions": 17,
+      "heroHp": 313,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 7,
+      "hand": [
+        "spell-neutral-8",
+        "bal2-5-2-attack-1"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 3,
+      "tail": [
+        "🟢 Du · Eis · Angriff 3: 0 Schaden · 91 geblockt",
+        "🟢 Du · Eis · Angriff 1: 0 Schaden · 30 geblockt",
+        "🟢 Du · Eis · Angriff 1: 5 Schaden · 16 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Eis",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 5,
+      "actions": 23,
+      "heroHp": 313,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 8,
+      "hand": [
+        "spell-neutral-11"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 9,
+      "tail": [
+        "🟢 Du · Eis · Angriff 1: 0 Schaden · 28 geblockt",
+        "🟢 Du · Eis · Angriff 1: 0 Schaden · 28 geblockt",
+        "🟢 Du · Eis · Angriff 1: 12 Schaden · 16 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Dunkel",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 316,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 8,
+      "hand": [
+        "bal2-6-0-attack-2",
+        "bal2-6-0-attack-1",
+        "bal2-6-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔥 Dunkelhirsch: 11 Nachwirkung",
+        "🟢 Du · Dunkel · Angriff 3: 107 Schaden · 8 geblockt",
+        "🟢 Du · Dunkel · Angriff 2: 22 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Dunkel",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 316,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 10,
+      "hand": [
+        "bal2-6-2-attack-2",
+        "bal2-6-2-attack-2",
+        "bal2-6-2-attack-1",
+        "bal2-6-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🔥 Dunkelhirsch: 16 Nachwirkung",
+        "🟢 Du · Dunkel · Angriff 3: 77 Schaden · 8 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Dunkel",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 310,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 8,
+      "hand": [
+        "bal2-6-0-attack-2",
+        "bal2-6-0-attack-1",
+        "bal2-6-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔥 Dunkelhirsch: 11 Nachwirkung",
+        "🟢 Du · Dunkel · Angriff 3: 107 Schaden · 8 geblockt",
+        "🟢 Du · Dunkel · Angriff 2: 22 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Licht",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 10,
+      "actions": 47,
+      "heroHp": 92,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 7,
+      "hand": [],
+      "deckLeft": 11,
+      "discardLeft": 5,
+      "tail": [
+        "🟢 Du · Licht · Angriff 2: 43 Schaden · 9 geblockt",
+        "🟢 Du · Licht · Angriff 2: 52 Schaden",
+        "🟢 Du · Licht · Angriff 1: 20 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Licht",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 6,
+      "actions": 27,
+      "heroHp": 162,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 7,
+      "hand": [
+        "spell-neutral-11"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 14,
+      "tail": [
+        "🟢 Du · Licht · Angriff 2: 54 Schaden",
+        "🟢 Du · Licht · Angriff 1: 27 Schaden",
+        "🟢 Du · Licht · Angriff 1: 24 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Licht",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 8,
+      "actions": 35,
+      "heroHp": 101,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 8,
+      "hand": [
+        "bal2-7-0-attack-1",
+        "spell-neutral-11"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 8,
+      "tail": [
+        "🟢 Du · Schildwall: +69 Schild",
+        "🟢 Du · Schutzzeichen: +34 Schild",
+        "🟢 Du · Licht · Angriff 3: 3 Schaden · 69 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Geist",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 287,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 10,
+      "hand": [
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-1",
+        "bal2-8-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Geist · Angriff 1: 14 Schaden · 16 geblockt",
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Geist · Angriff 3: 106 Schaden · 6 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Geist",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 300,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 8,
+      "hand": [
+        "bal2-8-2-attack-2",
+        "bal2-8-2-attack-1",
+        "bal2-8-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Geist · Angriff 3: 115 Schaden · 6 geblockt",
+        "🟢 Du · Geist · Angriff 2: 19 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Geist",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 10,
+      "heroHp": 281,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 10,
+      "hand": [
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-2",
+        "bal2-8-0-attack-1",
+        "bal2-8-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🔴 Gegner · Geist · Angriff 1: 20 Schaden · 12 geblockt",
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Geist · Angriff 3: 106 Schaden · 6 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Stein",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 16,
+      "actions": 65,
+      "heroHp": 291,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 9,
+      "hand": [
+        "bal2-9-0-attack-1",
+        "bal2-9-0-attack-1"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 3,
+      "tail": [
+        "🟢 Du · Stein · Angriff 3: 81 Schaden · 4 geblockt",
+        "🟢 Du · Kurzer Stoß: 20 Schaden · 5 geblockt",
+        "🟢 Du · Stein · Angriff 2: 41 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Stein",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 8,
+      "actions": 31,
+      "heroHp": 375,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 13,
+      "hand": [
+        "bal2-9-2-attack-1",
+        "bal2-9-2-root",
+        "bal2-9-2-attack-3",
+        "bal2-9-2-attack-1"
+      ],
+      "deckLeft": 6,
+      "discardLeft": 6,
+      "tail": [
+        "🔴 Gegner · Stein · Angriff 3: 0 Schaden · 85 geblockt",
+        "🔴 Gegner · Stein · Angriff 2: 0 Schaden · 56 geblockt",
+        "🟢 Du · Kurzer Stoß: 12 Schaden · 5 geblockt"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Stein",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 13,
+      "actions": 52,
+      "heroHp": 336,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 11,
+      "hand": [
+        "spell-neutral-11"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 4,
+      "tail": [
+        "🟢 Du · Stein · Angriff 1: 0 Schaden · 27 geblockt",
+        "🟢 Du · Stein · Angriff 1: 8 Schaden · 19 geblockt",
+        "🟢 Du · Stein · Angriff 1: 17 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Luft",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 10,
+      "heroHp": 301,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 1,
+      "hand": [
+        "bal2-10-0-dodge",
+        "bal2-10-0-attack-2",
+        "bal2-10-0-attack-1",
+        "bal2-10-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🟢 Du · Luft · Nachziehen: Karten ziehen",
+        "🟢 Du · Luft · Angriff 3: 118 Schaden",
+        "🟢 Du · Luft · Angriff 2: 40 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Luft",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 10,
+      "heroHp": 301,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 2,
+      "hand": [
+        "bal2-10-2-dodge",
+        "bal2-10-2-attack-2",
+        "bal2-10-2-attack-1"
+      ],
+      "deckLeft": 2,
+      "discardLeft": 11,
+      "tail": [
+        "🟢 Du · Luft · Nachziehen: Karten ziehen",
+        "🟢 Du · Luft · Angriff 3: 121 Schaden",
+        "🟢 Du · Luft · Angriff 2: 31 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Luft",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 2,
+      "actions": 10,
+      "heroHp": 301,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 1,
+      "hand": [
+        "bal2-10-0-dodge",
+        "bal2-10-0-attack-2",
+        "bal2-10-0-attack-1",
+        "bal2-10-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 11,
+      "tail": [
+        "🟢 Du · Luft · Nachziehen: Karten ziehen",
+        "🟢 Du · Luft · Angriff 3: 118 Schaden",
+        "🟢 Du · Luft · Angriff 2: 40 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Gift",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 13,
+      "heroHp": 395,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 4,
+      "hand": [
+        "bal2-11-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 14,
+      "tail": [
+        "🟢 Du · Gift · Angriff 2: 64 Schaden",
+        "🟢 Du · Gift · Angriff 2: 64 Schaden",
+        "🟢 Du · Gift · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Gift",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 13,
+      "heroHp": 395,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 4,
+      "hand": [
+        "bal2-11-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 14,
+      "tail": [
+        "🟢 Du · Gift · Angriff 2: 66 Schaden",
+        "🟢 Du · Gift · Angriff 2: 66 Schaden",
+        "🟢 Du · Gift · Angriff 1: 33 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Gift",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 13,
+      "heroHp": 395,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 4,
+      "hand": [
+        "bal2-11-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 14,
+      "tail": [
+        "🟢 Du · Gift · Angriff 2: 64 Schaden",
+        "🟢 Du · Gift · Angriff 2: 64 Schaden",
+        "🟢 Du · Gift · Angriff 1: 15 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Stahl",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 301,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 7,
+      "hand": [
+        "bal2-12-0-attack-2",
+        "bal2-12-0-attack-1",
+        "bal2-12-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Stahl · Angriff 3: 110 Schaden · 8 geblockt",
+        "🟢 Du · Stahl · Angriff 2: 38 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Stahl",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 301,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 7,
+      "hand": [
+        "bal2-12-2-attack-2",
+        "bal2-12-2-attack-1",
+        "bal2-12-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Stahl · Angriff 3: 113 Schaden · 8 geblockt",
+        "🟢 Du · Stahl · Angriff 2: 58 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Stahl",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 11,
+      "heroHp": 301,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 7,
+      "hand": [
+        "bal2-12-0-attack-2",
+        "bal2-12-0-attack-1",
+        "bal2-12-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 12,
+      "tail": [
+        "🔴 Gegner · Energiesiegel: Energie erhalten",
+        "🟢 Du · Stahl · Angriff 3: 110 Schaden · 8 geblockt",
+        "🟢 Du · Stahl · Angriff 2: 38 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Drache",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 12,
+      "heroHp": 334,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 5,
+      "hand": [
+        "bal2-13-0-attack-1",
+        "bal2-13-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Drache · Angriff 3: 98 Schaden · 8 geblockt",
+        "🟢 Du · Drache · Angriff 2: 70 Schaden",
+        "🟢 Du · Drache · Angriff 2: 46 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Drache",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 12,
+      "heroHp": 339,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 5,
+      "hand": [
+        "bal2-13-2-attack-1",
+        "bal2-13-2-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Drache · Angriff 3: 98 Schaden · 8 geblockt",
+        "🟢 Du · Drache · Angriff 2: 70 Schaden",
+        "🟢 Du · Drache · Angriff 2: 38 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Drache",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 12,
+      "heroHp": 326,
+      "enemyHp": 0,
+      "heroEnergy": 11,
+      "remaining": 5,
+      "hand": [
+        "bal2-13-0-attack-1",
+        "bal2-13-0-attack-1"
+      ],
+      "deckLeft": 1,
+      "discardLeft": 13,
+      "tail": [
+        "🟢 Du · Drache · Angriff 3: 98 Schaden · 8 geblockt",
+        "🟢 Du · Drache · Angriff 2: 70 Schaden",
+        "🟢 Du · Drache · Angriff 2: 46 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Psycho",
+      "premium": false,
+      "premiumSide": null,
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 12,
+      "heroHp": 334,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 9,
+      "hand": [
+        "bal2-14-0-attack-1",
+        "bal2-14-0-attack-1",
+        "bal2-14-0-attack-1"
+      ],
+      "deckLeft": 0,
+      "discardLeft": 13,
+      "tail": [
+        "⚡ Trainer setzt diese Runde aus.",
+        "🟢 Du · Psycho · Angriff 2: 58 Schaden",
+        "🟢 Du · Psycho · Angriff 2: 51 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Psycho",
+      "premium": true,
+      "premiumSide": "hero",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 12,
+      "heroHp": 334,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 10,
+      "hand": [
+        "bal2-14-2-draw",
+        "bal2-14-2-attack-1",
+        "bal2-14-2-attack-1",
+        "spell-neutral-6"
+      ],
+      "deckLeft": 11,
+      "discardLeft": 1,
+      "tail": [
+        "⚡ Trainer setzt diese Runde aus.",
+        "🔀 Ablagestapel neu gemischt",
+        "🟢 Du · Psycho · Angriff 3: 80 Schaden"
+      ]
+    },
+    {
+      "level": 100,
+      "element": "Psycho",
+      "premium": true,
+      "premiumSide": "enemy",
+      "winner": "hero",
+      "rounds": 3,
+      "actions": 12,
+      "heroHp": 334,
+      "enemyHp": 0,
+      "heroEnergy": 12,
+      "remaining": 9,
+      "hand": [
+        "bal2-14-0-attack-1",
+        "bal2-14-0-attack-1",
+        "bal2-14-0-attack-1"
+      ],
+      "deckLeft": 0,
+      "discardLeft": 13,
+      "tail": [
+        "⚡ Trainer setzt diese Runde aus.",
+        "🟢 Du · Psycho · Angriff 2: 58 Schaden",
+        "🟢 Du · Psycho · Angriff 2: 51 Schaden"
+      ]
+    }
+  ],
+  "limits": [
+    "Seeded headless mirrors using real apply/turn/AI logic; neutral element/weather/level modifiers to isolate deck balance.",
+    "No player decision model or physical device benchmark. Synchro materials and effects are tested separately."
+  ]
+}

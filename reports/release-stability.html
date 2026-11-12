@@ -1,0 +1,32 @@
+<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VAELKOR · Releaseprüfung</title><style>body{max-width:850px;margin:24px auto;padding:16px;background:#102337;color:#eadfc5;font:15px/1.6 system-ui}a{color:#e6c98b}pre{white-space:pre-wrap}</style><a href="./">Zum Spiel</a><h1>Releaseprüfung</h1><p>179 unterschiedliche Tests abgedeckt · 1.299 Assets unverändert erhalten</p><pre># Release-Stabilisierung
+
+Basis: veröffentlichter Commit ee2f09d23bd1d003aca4f6d450ca5984f5d90311. Kartenbalance, Monsterwerte, Decks, Spielstände, Kartenverbindungen, Vorlagen und Bewegungssequenzen bleiben erhalten.
+
+## Gegnerbilder
+
+Bisher wurden Gegnerportraits erst beim Kampfstart angefordert. Nach dem Decodieren baute der Loader die gesamte Kampfansicht erneut auf. Das konnte beim erstmaligen Laden sichtbare Lücken beziehungsweise erneuten Bildaufbau verursachen.
+
+Die aktuelle Region wird nun während der Erkundung im Hintergrund vorbereitet: normale Begegnungen nach Spawnwahrscheinlichkeit zuerst, legendäre danach. Höchstens zwei Hintergrundladungen gleichzeitig; beim Regionswechsel wird die alte Warteschlange ersetzt. Die Warteschlange bleibt auf 128, erfolgreiche URL-Metadaten auf 256 begrenzt. Hintergrundbilder werden nicht dauerhaft als decodierte DOM-Bilder gehalten. Datensparmodus und sehr langsame 2G-Verbindungen deaktivieren diese Vorbereitung. Es werden keine Begegnungen ausgewürfelt und keine Zufallswerte verbraucht.
+
+Der bestehende Cache für tatsächlich verwendete Portraits bleibt bei 32 Bildern. Aktive Kampfbilder werden ausdrücklich mit hoher Priorität und eager geladen. Fertig decodierte Bildknoten werden unter Beibehaltung der bisherigen Darstellung direkt eingesetzt, statt das ganze Kampf-HTML erneut aufzubauen. Alte asynchrone Ergebnisse dürfen weiterhin keinen neuen Kampf verändern. Ladefehler, Timeout, sprachlich angepasste Ersatzanzeige und Wiederholen bleiben verfügbar. Kein blockierender Ladebildschirm; Spielstart und Kampfregeln bleiben synchron.
+
+## Vorsichtige Bereinigung
+
+11.571 Bytes unconditionally unerreichbarer alter prozeduraler Kreaturen-Zeichencode hinter der bereits vorhandenen festen Rückgabe wurden entfernt. Die aktive Portraitfunktion und deren Ersatzanzeige bleiben gleich. Andere Altfunktionen und technische Karteneinträge wurden wegen möglicher Kompatibilitätsverwendung erhalten. Es wurden keine Besitzdaten, Spielstände oder Bilder gelöscht.
+
+Alle 1.299 Asset-Dateien wurden per SHA-256 mit der vorher veröffentlichten Version verglichen: 0 entfernt, 0 verändert. Darunter bleiben Kartenmasken, Bildatlanten, Generator- und Innenraumvorlagen erhalten. Zusätzlich wurden sämtliche 1.297 Rasterbilder vollständig eingelesen/decodiert und die SVG-Datei als XML geprüft; keine Fehler. Es gibt keine bytegleichen Dateidubletten, die sich einfach entfernen ließen. Die Bestandsliste liegt in reports/release-asset-inventory.json. Ein neuer Test schützt diese Bestandsliste vor unbeabsichtigten Änderungen.
+
+## Prüfungen
+
+- Vollständiger bisheriger Repository-Lauf: 175/175 bestanden, einschließlich der langlaufenden Wildnisprüfung mit 30 Hauptkarten, allen Seitenketten, Rückwegen und stabilen Geometrien. Der Lauf dauerte rund sechs Minuten und wurde diesmal vollständig abgeschlossen.
+- Nach der Portraitänderung: 73/73 gezielte Regressionstests für aktuelle Bildanzeige, Kartenbalance, Sprache, Statusanzeigen, Vollbild, Weltbewegung und Speicher-/Kartenidentität bestanden.
+- Nach letzten Text- und Prüfergänzungen: 29/29 gezielte Tests bestanden. Insgesamt sind 179 unterschiedliche Tests über Gesamt- und Nachprüfungen abgedeckt: 175 bisherige plus 3 neue Portraittests und 1 Asset-Schutztest.
+- Die neuen Tests prüfen direktes Einsetzen decodierter Bilder ohne erneuten Kampfaufbau, unveränderte Bildattribute, zwei begrenzte Hintergrundladungen, Warteschlangenwechsel, begrenzte Metadaten, unveränderten Begegnungszufall und keine wiederholte Arbeit bei 100 Positionsmeldungen derselben Region.
+- Statische Dateiverweise und Deployment-Paket werden zusätzlich geprüft; die Download-ZIP wird mit CRC-Prüfung validiert.
+
+## Grenzen
+
+Die Laufzeitprüfungen verwenden den echten Spielcode mit DOM-/Canvas-Testdoubles. Eine reale Handy-Browser-Sichtprüfung oder Netzwerklatenzmessung ist hier nicht durchgeführt worden. Ein vollkommen kalter Erstaufruf, ungecachte Shiny-Bilder oder schlechte Verbindung können weiterhin Ladezeit benötigen. Die Vorbereitung reduziert diesen Bedarf, garantiert aber keine netzunabhängige Sofortanzeige.
+
+Die zuletzt dokumentierten zwei langen defensiven Level-100-Spiegelduelle aus der Balanceprüfung bleiben ein Feinbalancing-Thema; in diesem Stabilisierungsschritt wurden dafür keine neuen Kampfregeln eingeführt.
+</pre></html>

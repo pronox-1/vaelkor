@@ -51,7 +51,7 @@ sync();
 const frame=document.getElementById('vkIntegratedWorld');if(!frame)return;
 function relocate(x=null,y=null,fromTop=false){
  data.vkWorldX=x;data.vkWorldY=y;data.vkWorldFromTop=fromTop;
- frame.contentWindow?.postMessage({vkCommand:'initialize',sex:data.heroSex||'male',style:data.heroStyle,level:data.zone,x,y,fromTop,cleared:!!data.clearedZones?.[data.zone]},'*');save();
+ frame.contentWindow?.postMessage({vkCommand:'initialize',mapId:'main:'+data.zone,sex:data.heroSex||'male',style:data.heroStyle,level:data.zone,x,y,fromTop,cleared:!!data.clearedZones?.[data.zone]},'*');save();
 }
 const heal=document.getElementById('healbutton');if(heal)heal.onclick=()=>{
  const village=data.zone===1||data.zone%10===0;

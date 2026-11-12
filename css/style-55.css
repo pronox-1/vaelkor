@@ -1,0 +1,24 @@
+/* Compact two-column library/deck on phones; combat sizing stays separate. */
+@media(max-width:600px){
+ #fusionOverlay .fusionShell:not(.v9Battle){padding:10px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionGrid,
+ #fusionOverlay .fusionShell:not(.v9Battle) .vaelkorTeamBonus .fusionDeckList,
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionDeckLayout .fusionDeckList{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;max-height:none!important;overflow:visible!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) :is(.fusionCard,.fusionTeamCardTile){min-width:0!important;max-width:none!important;margin:0!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) :is(.fusionCardFace,.vkSynFace87){--library-card-h:252px;grid-template-rows:20px 32px 14px 62px 26px minmax(0,1fr) 16px!important;padding:6px!important;gap:3px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionCardFace>strong{font-size:12px!important;line-height:1.2!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionCardHeading{font-size:11px!important;grid-template-columns:18px minmax(0,1fr) 30px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionArtwork{height:62px!important;max-height:62px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionArtwork :is(svg,img,.fusionCardMonsterImage){max-height:60px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionCardFace>small{font-size:11px!important;-webkit-line-clamp:3}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionStats{font-size:10px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionElementName{font-size:10px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .vkSynFace87>svg{height:62px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .vkSynTitle87 strong{font-size:12px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) :is(.vkSynEffect87,.vkSynRequirements87){font-size:10px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionDeckRow{display:grid!important;grid-template-columns:20px minmax(0,1fr) auto!important;gap:4px!important;padding:7px!important;min-height:100px!important;align-content:start}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionDeckRow .fusionDeckGlyph{font-size:18px!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionDeckRow b{font-size:12px!important;overflow-wrap:anywhere}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionDeckRow :is(small,.vkDeckEffect103){font-size:10px!important;line-height:1.3!important}
+ #fusionOverlay .fusionShell:not(.v9Battle) .fusionCard>small{font-size:10px!important;padding:5px!important;line-height:1.3!important}
+}

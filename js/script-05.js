@@ -16,7 +16,7 @@
    const stats=document.createElement('div');stats.className='vk-starter-stats';
    const hpText=document.createElement('em');hpText.textContent='❤️ '+hp+'/'+hp+' LP';
    const atkText=document.createElement('em');atkText.textContent='⚔️ '+(Number.isFinite(attack)?attack:species.atk||2)+' Angriff';
-   const shield=document.createElement('em');shield.textContent='🛡️ 0 Block';stats.append(hpText,atkText,shield);
+   const shield=document.createElement('em');shield.textContent='🛡️ 0 Block';if(window.VaelkorStats)stats.innerHTML=VaelkorStats.statusBadges(fusionUnit(sample)).join('');else stats.append(hpText,atkText,shield);
    const bar=document.createElement('div');bar.className='vk-starter-hpbar';
    const pick=document.createElement('span');pick.className='vk-starter-pick';pick.textContent='⭐ Als Starter wählen';
    btn.replaceChildren(image,name,type,stats,bar,pick);

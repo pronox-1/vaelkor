@@ -1,0 +1,252 @@
+{
+  "js/script-02.js": [
+    {
+      "old": " return `<span class=\"vk-creature-empty\" aria-label=\"Kreaturenbild noch nicht hinterlegt\">✧</span>`;\n const sp=MS(m),type=sp.type||'Neutral',[base,light]=vkPalette(type),seed=vkSeed(m.id),variant=seed%7;\n const animal=String(sp.animal||'').toLowerCase(),name=String(displayName(m)||'').toLowerCase();\n const shiny=!!m.shiny;\n const main=shiny?`hsl(${(seed%270+160)%360} 88% 66%)`:base;\n const edge=shiny?'#fff0a0':light;\n const ink='#122034',shade='#263447';\n const path=(d,fill=main,stroke=edge,w=4)=>`<path d=\"${d}\" fill=\"${fill}\" stroke=\"${stroke}\" stroke-width=\"${w}\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>`;\n const ellipse=(x,y,rx,ry,fill=main)=>`<ellipse cx=\"${x}\" cy=\"${y}\" rx=\"${rx}\" ry=\"${ry}\" fill=\"${fill}\" stroke=\"${edge}\" stroke-width=\"4\"/>`;\n const eye=(x,y)=>`<ellipse cx=\"${x}\" cy=\"${y}\" rx=\"5\" ry=\"7\" fill=\"${ink}\"/><circle cx=\"${x-1.5}\" cy=\"${y-2}\" r=\"2\" fill=\"#fff\"/>`;\n const legs=(xs,y=155)=>xs.map(x=>path(`M${x-7} ${y}l-5 27 21 0 1-26`,main,edge,3)).join('');\n const horns=(x1=72,x2=133)=>path(`M${x1} 79 Q${x1-20} 49 ${x1-10} 27 Q${x1-3} 47 ${x1+10} 61 M${x2} 78 Q${x2+19} 47 ${x2+8} 25 Q${x2+3} 49 ${x2-8} 61`, 'none',edge,8);\n let kind='quadruped';\n if(/golem|konstrukt|automat|r[uü]stung|schmiede|statue/.test(name)||/golem/.test(animal))kind='golem';\n else if(/drache|dragon|wyrm|lindwurm/.test(animal+' '+name))kind='dragon';\n else if(/bison|b[uü]ffel|stier|ochse/.test(animal+' '+name))kind='bison';\n else if(/wildschwein|schwein|eber|boar/.test(animal+' '+name))kind='boar';\n else if(/b[aä]r|panda/.test(animal))kind='bear';\n else if(/fisch|hai|wal|rochen|karpfen/.test(animal+' '+name))kind='fish';\n else if(/otter/.test(animal))kind='otter';\n else if(/biber/.test(animal))kind='beaver';\n else if(/giraffe/.test(animal))kind='giraffe';\n else if(/affe|gorilla|lemur/.test(animal))kind='monkey';\n else if(/eule|rabe|adler|falke|vogel|kr[aä]he|papagei/.test(animal))kind='bird';\n else if(/fledermaus/.test(animal))kind='bat';\n else if(/schlange|kobra/.test(animal))kind='serpent';\n else if(/schildkr[oö]te/.test(animal))kind='turtle';\n else if(/krokodil|alligator/.test(animal))kind='croc';\n else if(/hirsch|reh|elch/.test(animal))kind='deer';\n else if(/frosch|kr[oö]te/.test(animal))kind='frog';\n else if(/gecko|echse|salamander/.test(animal))kind='lizard';\n else if(/igel|stachelschwein/.test(animal))kind='hedgehog';\n else if(/eichh[oö]rnchen/.test(animal))kind='squirrel';\n else if(/maulwurf|dachs/.test(animal))kind='mole';\n else if(/kaninchen|hase/.test(animal))kind='rabbit';\n else if(/wolf|fuchs|luchs|katze|hund/.test(animal))kind='quadruped';\n let a='';\n switch(kind){\n case 'golem': a=legs([70,139],150)+path('M54 84 77 53 100 67 122 46 151 66 173 97 153 153 66 153 45 110Z')+path('M60 99 23 115 31 145 61 137M161 99 193 114 188 148 159 139')+path('M80 78 109 89 143 74 132 120 91 123Z',shade)+eye(94,103)+eye(125,103)+path('M92 137 111 129 131 136','none',edge,3);break;\n case 'dragon': a=path('M87 126Q29 95 19 41Q61 51 105 98M124 125Q174 75 197 37Q192 109 153 145',main,edge,3)+path('M137 146Q190 146 188 178Q166 164 146 174','none',edge,13)+legs([93,140],154)+ellipse(116,136,52,33)+path('M102 112 113 68 134 46 153 65 165 88 151 111 135 122Z')+path('M120 72 115 46 132 60 141 40 149 69',edge,edge,2)+eye(144,88);break;\n case 'bison': a=legs([69,101,144,165])+ellipse(111,126,72,43)+ellipse(70,103,43,46)+path('M40 85Q17 63 28 41Q39 63 57 69M86 73Q115 47 103 31Q90 53 74 67',edge,edge,2)+ellipse(47,115,26,22,edge)+eye(59,100)+path('M169 116Q201 100 193 79','none',edge,7);break;\n case 'boar': a=legs([69,107,148,171])+ellipse(117,127,70,38)+path('M57 91 40 50 86 75 110 91Z')+ellipse(65,111,39,34)+ellipse(34,120,25,17,edge)+path('M51 119 43 145 65 130M82 121 91 144 75 131','#fff2d4','#fff2d4',2)+eye(69,105)+path('M175 117Q196 90 184 81','none',edge,6);break;\n case 'bear': a=legs([76,148])+ellipse(112,132,65,48)+ellipse(82,78,18,18)+ellipse(143,78,18,18)+ellipse(113,105,52,42)+ellipse(113,120,24,19,edge)+eye(94,103)+eye(132,103)+ellipse(113,117,7,5,ink);break;\n case 'fish': a=path('M160 111 200 75 197 152Z')+ellipse(102,111,72,43)+path('M89 78 112 38 139 81M87 142 111 175 136 145')+eye(61,104)+path('M47 124Q68 137 90 125','none',edge,3);break;\n case 'otter': a=path('M146 146Q183 141 191 169Q181 181 167 169L141 163','none',main,17)+path('M75 147 61 171 82 178 95 153M132 148 150 175 169 170 151 143')+path('M72 123Q79 101 100 94Q121 88 144 114L158 146 130 168 94 162Z')+path('M79 119 62 90 72 67 98 61 127 75 129 100 110 125Z')+ellipse(71,71,11,11)+ellipse(117,69,11,11)+path('M61 102 48 112 68 126 91 117 92 104Z',edge,edge,2)+ellipse(106,139,19,22,edge)+eye(83,90)+eye(111,89)+path('M52 112l9 3','none',ink,3)+path('M66 116l-25 1M67 121l-21 9','none',edge,2);break;\n case 'beaver': a=path('M149 135Q188 131 196 168Q179 191 145 160',shade,edge,4)+legs([84,140])+ellipse(113,132,55,37)+ellipse(82,91,18,17)+ellipse(121,90,17,17)+ellipse(101,106,42,35)+ellipse(88,123,17,13,edge)+eye(89,101)+path('M91 129v14h10v-13M104 129v14h10v-13','#fff',edge,2);break;\n case 'giraffe': a=legs([79,145])+ellipse(117,141,52,27)+path('M74 128 70 67 85 43 105 63 103 130Z')+ellipse(88,51,25,22)+path('M71 35 65 15 72 10 80 33M98 34 107 14 114 19 105 43')+eye(82,50)+[90,119,143].map((x,i)=>`<circle cx=\"${x}\" cy=\"${119+i%2*17}\" r=\"8\" fill=\"${shade}\" opacity=\".7\"/>`).join('');break;\n case 'monkey': a=path('M148 135Q192 100 178 72Q162 48 148 79','none',edge,12)+legs([89,142])+ellipse(112,136,46,38)+ellipse(73,85,19,21)+ellipse(149,85,19,21)+ellipse(111,93,46,43)+ellipse(110,108,31,23,edge)+eye(94,92)+eye(129,92)+path('M102 118Q112 127 122 118','none',ink,3);break;\n case 'bird': a=path('M93 120Q22 57 17 131L89 157M127 121Q192 50 201 137L130 157')+legs([96,125],161)+ellipse(112,137,39,38)+ellipse(112,86,32,32)+path('M131 87 170 102 133 112Z',edge,edge,2)+eye(103,81)+path('M83 62 92 37 109 61 119 33 130 63',main,edge,3);break;\n case 'bat': a=path('M92 109 60 66 22 88 34 124 10 151 89 147M129 110 163 66 200 90 184 127 211 153 128 149')+ellipse(110,129,33,42)+path('M83 95 82 56 104 81 127 54 139 98Z')+eye(99,108)+eye(124,108);break;\n case 'serpent': a=path('M42 153Q35 100 88 114T141 155Q154 183 104 173Q134 160 119 143Q109 128 109 97L125 56 148 68 162 92 148 111 125 112','none',main,27)+path('M120 68 129 38 142 68')+eye(145,90)+path('M154 105l21 7 -20 4','none',edge,3);break;\n case 'turtle': a=legs([67,145])+ellipse(111,132,69,44,shade)+path('M45 126 75 83 139 83 177 126 144 156 77 156Z',main,edge,4)+path('M75 83 109 123 139 83M109 123 77 156M109 123 144 156','none',edge,3)+ellipse(171,112,26,24)+eye(178,107);break;\n case 'croc': a=path('M157 129 207 143 169 151')+legs([72,147])+ellipse(111,134,63,29)+path('M43 109 18 116 25 139 96 141 103 113Z')+eye(66,108)+path('M21 135 30 145 39 136 49 146 59 137 69 145', 'none','#fff',3);break;\n case 'deer': a=\n // Distinct deer silhouette: horizontal torso, long slender legs, narrow neck, muzzle, tall branching antlers.\n path('M154 125 Q176 115 182 101','none',edge,5)+\n path('M73 142 65 177 76 177 85 145 M95 145 92 177 104 177 108 147 M135 142 134 177 145 177 146 143 M155 136 162 175 173 175 166 133',main,edge,3)+\n path('M64 177l12 0M91 177l13 0M134 177l11 0M162 175l11 0','none',ink,5)+\n path('M61 112 91 101 139 106 166 123 156 142 126 151 78 148 59 132Z')+\n path('M63 116 68 83 72 64 86 57 100 69 97 91 91 116Z')+\n path('M67 73 48 58 52 79 70 87M89 67 110 52 105 78 93 87')+\n path('M66 69 76 54 94 57 103 76 93 94 73 97 57 86Z')+\n path('M62 81 37 89 43 103 66 100 79 89Z',edge,edge,2)+\n path('M76 55 64 37 58 16 M64 37 44 31 M64 37 47 47 M58 16 41 8 M58 16 74 6 M94 56 109 35 112 14 M109 35 131 23 M109 35 133 44 M112 14 96 6 M112 14 129 5','none',edge,5)+\n path('M91 112 123 119 146 114 131 138 105 138Z',shade,edge,2)+\n eye(80,75)+path('M41 95l6 2','none',ink,2)+(m.id==='sprig'?path('M44 31Q28 20 30 8Q46 11 44 31 M131 23Q148 8 157 13Q152 31 131 23',edge,edge,2):'');break;\n case 'frog': a=path('M60 142 30 169 69 176 87 151M146 142 174 168 136 176 125 152')+ellipse(111,137,63,38)+ellipse(75,95,21,22)+ellipse(143,95,21,22)+eye(75,94)+eye(143,94)+path('M89 141Q111 154 132 141','none',ink,3);break;\n case 'lizard': a=path('M143 140Q200 150 190 179Q171 165 151 166','none',edge,11)+legs([76,143])+ellipse(114,131,55,29)+path('M70 109 36 90 22 105 34 125 80 130Z')+eye(53,103)+path('M88 106 105 72 119 107 133 77 145 113',main,edge,3);break;\n case 'hedgehog': a=legs([77,140])+path('M49 137 39 111 57 108 50 85 75 94 80 69 103 87 121 63 140 91 164 82 167 109 183 124 154 159 68 156Z')+ellipse(86,127,36,30)+eye(72,122)+ellipse(51,140,11,8,edge);break;\n case 'squirrel': a=path('M137 151Q194 165 200 111Q207 61 173 40Q148 23 137 61Q170 55 174 91Q179 117 147 119L128 131Z',main,edge,5)+path('M150 72 169 59 183 83 181 111 166 125 155 119 171 96Z',edge,edge,2)+path('M78 148 68 181 85 181 94 158M121 151 128 180 143 179 140 149',main,edge,3)+ellipse(110,136,39,42)+path('M84 116 77 70 97 86 119 62 137 102Z')+path('M81 77 73 49 96 65 107 74 125 52 132 86Z')+ellipse(103,102,35,30)+ellipse(78,118,16,14,edge)+ellipse(103,144,20,27,edge)+path('M122 126 147 141 140 153 120 143','none',main,12)+eye(93,96)+eye(120,98)+path('M72 118l7 2','none',ink,3)+path('M87 119Q101 129 111 119','none',ink,2);break;\n case 'mole': a=path('M62 145 21 148 45 166 76 155M148 145 190 148 169 167 138 157')+ellipse(110,137,65,40)+ellipse(91,103,44,32)+ellipse(59,117,18,13,edge)+eye(94,103);break;\n case 'rabbit': a=legs([87,141])+ellipse(115,140,49,32)+path('M70 89 57 25 77 17 93 79M112 83 126 20 146 26 133 96')+ellipse(101,104,42,33)+eye(92,99)+ellipse(121,121,12,9,edge);break;\n default: a=legs([81,145])+ellipse(115,138,53,31)+path('M151 135Q190 117 176 85','none',edge,12)+path('M67 94 53 48 91 73 121 53 149 96Z')+ellipse(106,105,44,36)+eye(93,102)+eye(124,102)+ellipse(109,124,11,7,edge);\n }\n const motifs=type==='Feuer'?path('M27 160Q15 138 33 114Q32 140 46 137Q55 159 37 179',edge,edge,2):type==='Wasser'?`<path d=\"M22 158Q43 137 55 158Q61 181 34 182M163 51Q183 29 193 57\" fill=\"none\" stroke=\"${edge}\" stroke-width=\"6\"/>`:type==='Natur'?path('M21 120Q22 91 55 88Q54 119 21 120M166 48Q174 22 197 31Q187 53 166 48',edge,edge,2):type==='Blitz'||type==='Elektro'?path('M25 54 48 43 38 71 60 65 28 107 38 79 19 83',edge,edge,2):type==='Stein'||type==='Erde'?path('M24 170 37 148 54 167 69 153 79 180 25 180Z',shade,edge,3):type==='Eis'?path('M27 53 35 27 46 51 63 44 50 67 61 81 38 73 23 87 28 65',edge,edge,2):'';\n const unique=`<g opacity=\".65\"><circle cx=\"${20+seed%34}\" cy=\"${28+seed%19}\" r=\"${3+variant}\" fill=\"${edge}\"/><path d=\"M${167+variant} ${160-variant}l${7+variant} -12 9 13 -8 13Z\" fill=\"${main}\"/></g>`;\n return `<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 210\" role=\"img\" aria-label=\"${kind}\"><defs><radialGradient id=\"bg\"><stop stop-color=\"${main}\" stop-opacity=\".32\"/><stop offset=\"1\" stop-color=\"#091625\" stop-opacity=\"0\"/></radialGradient></defs><rect width=\"220\" height=\"210\" fill=\"#0b1729\"/><circle cx=\"110\" cy=\"101\" r=\"104\" fill=\"url(#bg)\"/><ellipse cx=\"110\" cy=\"185\" rx=\"83\" ry=\"11\" fill=\"#030915\" opacity=\".7\"/>${motifs}${a}<g opacity=\".24\" style=\"mix-blend-mode:screen\" fill=\"${edge}\"><polygon points=\"81,118 104,97 112,141\"/><polygon points=\"116,140 146,105 158,139\"/><polygon points=\"88,153 114,135 130,158\"/><polygon points=\"89,85 108,74 102,105\"/></g><g opacity=\".15\" fill=\"#061322\"><polygon points=\"113,141 143,124 133,157\"/><polygon points=\"80,118 94,143 69,151\"/></g>${unique}<path d=\"M31 192Q110 183 189 192\" fill=\"none\" stroke=\"${main}\" stroke-width=\"2\" opacity=\".65\"/>${shiny?`<g fill=\"${edge}\"><path d=\"M22 28l5 11 11 5-11 5-5 11-5-11-11-5 11-5Z\"/><path d=\"M188 75l4 9 9 4-9 4-4 9-4-9-9-4 9-4Z\"/></g>`:''}</svg>`;",
+      "new": " return `<span class=\"vk-creature-empty\" aria-label=\"Kreaturenbild noch nicht hinterlegt\">✧</span>`;\n"
+    },
+    {
+      "old": "fusion.deck=fusion.deck.filter(id=>DD.BYID[id] && DD.BYID[id].kind==='spell');",
+      "new": "fusion.deck=fusion.deck.filter(id=>DD.BYID[id] && DD.BYID[id].kind==='spell'||/^bal2-(?:[0-9]|1[0-4])-(?:[0-4]-(?:attack-[1-3]|dot|rally|renew|ward|mend|root|stun|weave|drain|cleanse|weaken|dodge|draw|pierce|strike)|(?:rare|epic)-binding)$/.test(id));"
+    },
+    {
+      "old": "if(u.dot?.turns>0)badges.push",
+      "new": "if(u.rootTurns>0)badges.push('<span class=\"vkCombatStat vkStatDebuff\">⛓ Festgesetzt</span>');if(u.dot?.turns>0)badges.push"
+    },
+    {
+      "old": "let allowed=!b.discardPhase&&!!unit&&c.cost<=p.energy&&(!c.element||c.element===unit.element);",
+      "new": "let allowed=!b.discardPhase&&!!unit&&c.cost<=p.energy&&(!c.element||c.element===unit.element)&&(!window.VaelkorBalance?.canPlay||VaelkorBalance.canPlay(b,c,'hero'));"
+    },
+    {
+      "old": "<div class=\"vkShieldVisual\" aria-hidden=\"true\">🛡️<span>",
+      "new": "<div class=\"vkShieldVisual\" role=\"status\" aria-label=\"Aktiver Schild: ${shield}\">${window.VaelkorStats?VaelkorStats.statusIcon('sp'):'🛡️'}<span>"
+    },
+    {
+      "old": "<span>♥ ${u.hp}/${u.max} · ⚔ ${u.atk}</span>",
+      "new": "<div class=\"vkMonsterStats\">${window.VaelkorStats?VaelkorStats.statusBadges(u,side).join(''):'♥ '+u.hp+'/'+u.max+' · ⚔ '+u.atk}</div><small>${u.hp}/${u.max} LP verbleibend</small>"
+    },
+    {
+      "old": "<div class=\"vaelkorHp\" role=\"progressbar\"",
+      "new": "<div class=\"vkCurrentHp\">${u.hp}/${u.max} LP verbleibend</div><div class=\"vaelkorHp\" role=\"progressbar\""
+    },
+    {
+      "old": "${fesc(fusionEnemyIntentText(b))}${e.ward?' · 🛡 '+e.ward+' Schutz':''}",
+      "new": "${fesc(fusionEnemyIntentText(b))}"
+    },
+    {
+      "old": "<div class=\"v9SectionLabel\">🟢 DEIN MONSTER · 🛡 ${p.ward} Schutz</div>",
+      "new": "<div class=\"v9SectionLabel\">🟢 DEIN MONSTER</div>"
+    },
+    {
+      "old": "const badges=[`<span class=\"vkCombatStat vkStatHp\" title=\"${vkUiText('Lebenspunkte')}\">❤️ <b>${u.hp}/${u.max}</b><small>${vkUiText('LP')}</small></span>`,`<span class=\"vkCombatStat vkStatAtk\" title=\"${vkUiText('Angriffswert')}\">⚔️ <b>${u.atk}</b><small>${vkUiText('Angriff')}</small></span>`,`<span class=\"vkCombatStat vkStatShield ${shield?'vkStatActive':'vkStatEmpty'}\" title=\"${vkUiText('Aktiver Schutzschild')}\">🛡️ <b>${shield}</b><small>${vkUiText('Block')}</small></span>`];if(state.energyBonus>0)badges.push(`<span class=\"vkCombatStat vkStatEnergy\" title=\"${vkUiText('Zusätzliche Energie pro Runde')}\">◆ <b>+${state.energyBonus}</b><small>${vkUiText('Energie')}</small></span>`);",
+      "new": "const badges=window.VaelkorStats?VaelkorStats.statusBadges(u,state):[`<span class=\"vkCombatStat vkStatHp\" title=\"${vkUiText('Lebenspunkte')}\">❤️ <b>${u.hp}/${u.max}</b><small>${vkUiText('LP')}</small></span>`,`<span class=\"vkCombatStat vkStatAtk\" title=\"${vkUiText('Angriffswert')}\">⚔️ <b>${u.atk}</b><small>${vkUiText('Angriff')}</small></span>`,`<span class=\"vkCombatStat vkStatShield ${shield?'vkStatActive':'vkStatEmpty'}\" title=\"${vkUiText('Aktiver Schutzschild')}\">🛡️ <b>${shield}</b><small>${vkUiText('Block')}</small></span>`];"
+    },
+    {
+      "old": " baby.hp=maxhp(baby);",
+      "new": " if(window.VaelkorStats)baby.vkGenesA1=VaelkorStats.inherit(a,b,baby);\n baby.hp=maxhp(baby);"
+    },
+    {
+      "old": " b.enemy.maxHp=b.enemy.hp;",
+      "new": " if(window.VaelkorStats)b.hero.energy=VaelkorStats.roundEnergy(b,'hero');\n b.enemy.maxHp=b.enemy.hp;"
+    },
+    {
+      "old": "x.uid===$('parentA')?.value",
+      "new": "String(x.uid)===String($('parentA')?.value)"
+    },
+    {
+      "old": "x.uid===$('parentB')?.value",
+      "new": "String(x.uid)===String($('parentB')?.value)"
+    },
+    {
+      "old": "const vkBattleImageUrls=new Map();",
+      "new": "var vkBattleImageUrls=vkBattleImageUrls||new Map();"
+    },
+    {
+      "old": "const VK_SHINY_ART103=",
+      "new": "var VK_SHINY_ART103="
+    },
+    {
+      "old": "function vkBattleImageUrl(id,shiny=false){\n const original=shiny?VK_SHINY_ART103[id]:VK_CREATURE_ART[id];",
+      "new": "function vkBattleImageUrl(id,shiny=false){\n if(!vkBattleImageUrls)vkBattleImageUrls=new Map();\n const original=shiny?(VK_SHINY_ART103?.[id]||VK_CREATURE_ART[id]):VK_CREATURE_ART[id];"
+    }
+  ],
+  "js/script-11.js": [
+    {
+      "old": "fusionCategory=c=>['strike','pierce','dot','drain'].includes(c.effect)",
+      "new": "fusionCategory=c=>['strike','pierce','dot','drain','stun'].includes(c.effect)"
+    },
+    {
+      "old": "c.effect==='pierce'?Math.min(raw,(target.ward||0)*.2):Math.min(raw,target.ward||0)",
+      "new": "c.effect==='pierce'?Math.min(target.ward||0,raw*.2):Math.min(raw,target.ward||0)"
+    },
+    {
+      "old": "c.effect==='pierce'?Math.floor(shield*.2):shield",
+      "new": "c.effect==='pierce'?Math.floor(n*.2):shield"
+    },
+    {
+      "old": "u.dot=null;actor.weakened=0;",
+      "new": "u.dot=null;u.rootTurns=0;actor.weakened=0;"
+    },
+    {
+      "old": "const chance=[.30,.35,.40,.50,.60][r(c)];",
+      "new": "const chance=window.VaelkorBalance?.stunChance?VaelkorBalance.stunChance(c):[.30,.35,.40,.50,.60][r(c)];"
+    },
+    {
+      "old": "if(c.effect==='drain')value+=Math.min(u.max-u.hp,raw*.4);",
+      "new": "if(c.effect==='drain')value+=Math.min(u.max-u.hp,window.VaelkorStats?VaelkorStats.drainSupport(c,u,Math.max(0,value)):raw*.4);"
+    },
+    {
+      "old": "if(c.effect==='drain')u.hp=Math.min(u.max,u.hp+Math.ceil(hit.dealt*.40));",
+      "new": "if(c.effect==='drain')u.hp=Math.min(u.max,u.hp+(window.VaelkorStats?VaelkorStats.drainSupport(c,u,hit.dealt):Math.ceil(hit.dealt*.40)));"
+    },
+    {
+      "old": " const q=context(c,b,sideName),u=q.u;if(!u)return c.desc||'';const extra=utilityShield(c)?' · +'+utilityShield(c)+' Schild':'';const heal=support(c,u,'heal'),shield=support(c,u,'shield');",
+      "new": " const q=context(c,b,sideName),u=q.u;if(!u)return c.desc||'';const extra=utilityShield(c,u)?' · +'+utilityShield(c,u)+' Schild':'';const heal=support(c,u,'heal'),shield=support(c,u,'shield');"
+    },
+    {
+      "old": " return (value+utilityShield(c))/Math.max(1,c.cost);",
+      "new": " return (value+utilityShield(c,u))/Math.max(1,c.cost);"
+    },
+    {
+      "old": " addShield(actor,u,utilityShield(c));if(!['strike','pierce','dot','drain','mend','ward','stun'].includes(c.effect))b.log.push(prefix+' · '+c.name+': '+(VK_EFFECT_DE[c.effect]||c.effect));fusionCheck(b);return true;",
+      "new": " addShield(actor,u,utilityShield(c,u));if(!['strike','pierce','dot','drain','mend','ward','stun'].includes(c.effect))b.log.push(prefix+' · '+c.name+': '+(VK_EFFECT_DE[c.effect]||c.effect));fusionCheck(b);return true;"
+    },
+    {
+      "old": "function utilityShield(c){return utility.has(c.effect)?r(c):0}",
+      "new": "function utilityShield(c,u){return utility.has(c.effect)?(window.VaelkorStats?VaelkorStats.utilityShield(c,u):r(c)):0}"
+    },
+    {
+      "old": "Math.max(1,Math.round(raw()*.22))",
+      "new": "(window.VaelkorStats?VaelkorStats.dot(b,c,sideName):Math.max(1,Math.round(raw()*.22)))"
+    },
+    {
+      "old": "30-u.atk",
+      "new": "(window.VaelkorStats?Infinity:30-u.atk)"
+    },
+    {
+      "old": "||u.atk>=30",
+      "new": "||(!window.VaelkorStats&&u.atk>=30)"
+    },
+    {
+      "old": "Math.round(raw*.22)*(v.dot?1:1.5)",
+      "new": "(window.VaelkorStats?VaelkorStats.dot(b,c,sideName):Math.round(raw*.22))*(v.dot?1:1.5)"
+    },
+    {
+      "old": "function support(c,u,kind){const base=",
+      "new": "function support(c,u,kind){if(window.VaelkorStats)return VaelkorStats.support(c,u,kind);const base="
+    }
+  ],
+  "js/script-15.js": [
+    {
+      "old": "attackEffects=new Set(['strike','pierce','dot','drain'])",
+      "new": "attackEffects=new Set(['strike','pierce','dot','drain','stun'])"
+    },
+    {
+      "old": "maxRank=lv>=22?4:lv>=13?3:lv>=6?2:0",
+      "new": "maxRank=lv>=60?4:lv>=35?3:lv>=15?2:lv>=7?1:0"
+    },
+    {
+      "old": "DD.register(catalog);",
+      "new": "DD.register(catalog);\nif(window.VaelkorBalanceCatalog)VaelkorBalanceCatalog.register(DD,VaelkorCards,ELEMENTS,catalog);"
+    },
+    {
+      "old": "u.dot=null;actor.weakened=0;",
+      "new": "u.dot=null;u.rootTurns=0;actor.weakened=0;"
+    },
+    {
+      "old": "Math.random()<(.25+.05*r)",
+      "new": "Math.random()<(window.VaelkorBalance?.synStunChance?VaelkorBalance.synStunChance(c):(.25+.05*r))"
+    },
+    {
+      "old": "  else if(effect==='mend')",
+      "new": "  else if(effect==='root'&&window.VaelkorBalance)VaelkorBalance.rootTarget(b,side);\n  else if(effect==='mend')"
+    },
+    {
+      "old": "if(actor.stun)return{ready:false,reason:'Aktives Team ist betäubt'};",
+      "new": "if(actor.stun)return{ready:false,reason:'Aktives Team ist betäubt'};\n if(window.VaelkorBalance?.canPlay&&!VaelkorBalance.canPlay(b,c,side))return{ready:false,reason:'Festgesetzt: keine Angriffe oder Synchros'};"
+    },
+    {
+      "old": "function starter(element){const idx=",
+      "new": "function starter(element){if(window.VaelkorBalance?.cardVersion===2)return VaelkorBalance.starter(element);const idx="
+    },
+    {
+      "old": "else if(effect==='drain')u.hp=Math.min(u.max,u.hp+Math.ceil(hit.dealt*(.18+.03*r)));",
+      "new": "else if(effect==='drain')u.hp=Math.min(u.max,u.hp+(window.VaelkorStats?Math.min(hit.dealt,VaelkorStats.synSupport(b,c,side,'heal',amount,.18+.03*r)):Math.ceil(hit.dealt*(.18+.03*r))));"
+    },
+    {
+      "old": "function rawDamage(b,c,side='hero',materials=null){",
+      "new": "function rawDamage(b,c,side='hero',materials=null){\n if(window.VaelkorStats)return VaelkorStats.synDamage(b,c,side,materials);"
+    },
+    {
+      "old": "function effectText(c,damage){",
+      "new": "function effectText(c,damage,ap=null,legacy=false,b=null,side='hero'){if(window.VaelkorStats&&!legacy)return VaelkorStats.synergyEffectText(c,damage,ap,b,side);"
+    },
+    {
+      "old": "Math.max(1,Math.round(amount*(.13+.02*r)))",
+      "new": "(window.VaelkorStats?VaelkorStats.dot(b,c,side):Math.max(1,Math.round(amount*(.13+.02*r))))"
+    },
+    {
+      "old": "e.energy=Math.min(9,3+(e.energyBonus||0));",
+      "new": "e.energy=window.VaelkorStats?VaelkorStats.roundEnergy(b,'enemy'):Math.min(9,3+(e.energyBonus||0));"
+    },
+    {
+      "old": "b.hero.energy=Math.min(9,3+(b.hero.energyBonus||0));",
+      "new": "b.hero.energy=window.VaelkorStats?VaelkorStats.roundEnergy(b,'hero'):Math.min(9,3+(b.hero.energyBonus||0));"
+    },
+    {
+      "old": "for(const c of catalog){c.cost=",
+      "new": "const materialPolicy=window.VaelkorSynchroPolicy?VaelkorSynchroPolicy.restrict(catalog):null;\nfor(const c of catalog){c.cost="
+    },
+    {
+      "old": "function migrate(){\n",
+      "new": "function migrate(){\n if(window.VaelkorSynchroPolicy)VaelkorSynchroPolicy.migrate(fusion,data,materialPolicy);\n"
+    },
+    {
+      "old": "const options=catalog.filter(c=>c.rarity===tier);",
+      "new": "const options=window.VaelkorSynchroPolicy?VaelkorSynchroPolicy.pool(catalog,tier):catalog.filter(c=>c.rarity===tier);"
+    },
+    {
+      "old": "\n})();",
+      "new": "\nif(materialPolicy&&VaelkorSynchroPolicy.migrate(fusion,data,materialPolicy)){migrate();fusionSave();}\n})();"
+    },
+    {
+      "old": "  else if(effect==='mend')u.hp=Math.min(u.max,u.hp+Math.max(1,Math.round(amount*(.18+.03*r))));",
+      "new": "  else if(effect==='mend')u.hp=Math.min(u.max,u.hp+(window.VaelkorStats?VaelkorStats.synSupport(b,c,side,'heal',amount,.18+.03*r):Math.max(1,Math.round(amount*(.18+.03*r)))));"
+    },
+    {
+      "old": "  else if(effect==='ward')actor.ward=Math.min(Math.max(45,Math.round(u.max*.8+10)),(actor.ward||0)+Math.max(1,Math.round(amount*(.18+.03*r))));",
+      "new": "  else if(effect==='ward')actor.ward=Math.min(Math.max(45,Math.round(u.max*.8+10)),(actor.ward||0)+(window.VaelkorStats?VaelkorStats.synSupport(b,c,side,'shield',amount,.18+.03*r):Math.max(1,Math.round(amount*(.18+.03*r)))));"
+    },
+    {
+      "old": "  else if(effect==='renew')u.renew={heal:Math.max(u.renew?.heal||0,Math.max(1,Math.round(amount*(.10+.015*r)))),turns:2};",
+      "new": "  else if(effect==='renew')u.renew={heal:Math.max(u.renew?.heal||0,(window.VaelkorStats?VaelkorStats.synSupport(b,c,side,'heal',amount,.10+.015*r):Math.max(1,Math.round(amount*(.10+.015*r))))),turns:2};"
+    }
+  ],
+  "js/script-17.js": [
+    {
+      "old": " fusionContext={tutorial:true,training:true,lesson:kind,",
+      "new": " if(window.VaelkorStats)b.guide.steps=VaelkorStats.tutorialSteps(kind,b.guide.steps,b);\n fusionContext={tutorial:true,training:true,lesson:kind,"
+    }
+  ],
+  "js/script-16.js": [
+    {
+      "old": "<div class=\"vkSynCombatPanel87\"><div class=\"vkSynMaterialMode87\">Material: <button data-syn-mode87=\"save\" class=\"'+(b.synergyMaterialMode==='save'?'selected':'')+'\">Schwächere zuerst</button><button data-syn-mode87=\"power\" class=\"'+(b.synergyMaterialMode==='power'?'selected':'')+'\">Stärkere zuerst</button></div><div class=\"vkSynCombatList87\">",
+      "new": "<div class=\"vkSynCombatPanel87\"><div class=\"vkSynCombatList87\">"
+    },
+    {
+      "old": "Synergien gesammelt. Benötigt werden",
+      "new": "Synergien gesammelt. Maximal 3 Opferkarten pro Synchro. Benötigt werden"
+    }
+  ],
+  "js/script-04.js": [
+    {
+      "old": "const original=new WeakMap(), last=new WeakMap();let language='de',busy=false,pending=false;\nfunction translate(str){\n if(!str.trim())return str;\n const exact=dictionary.get(str.trim());if(exact)return str.replace(str.trim(),exact);\n let out=str;\n // Translate full sentences first. For single words, enforce Unicode-aware word boundaries.\n // This prevents corrupt hybrids such as \"Monstersrn\" from \"Monstern\".\n for(const [de,en] of sorted){\n  if(!de||de===en)continue;\n  const escaped=de.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\\\$&');\n  const starts=/^[\\p{L}\\p{N}]/u.test(de),ends=/[\\p{L}\\p{N}]$/u.test(de);\n  const pattern=(starts?'(?<![\\\\p{L}\\\\p{N}])':'')+escaped+(ends?'(?![\\\\p{L}\\\\p{N}])':'');\n  try{out=out.replace(new RegExp(pattern,'gu'),en)}catch(e){out=out.split(de).join(en)}\n }\n return out;\n}\nfunction nodeText(n){if(n.parentElement?.closest('#vkLanguage'))return;let current=n.nodeValue;if(!original.has(n)){original.set(n,current)}else if(last.has(n)&&current!==last.get(n)&&current!==original.get(n)){original.set(n,current)}let base=original.get(n),target=language==='en'?translate(base):base;if(current!==target)n.nodeValue=target;last.set(n,target)}\nfunction process(root){if(!root)return;if(root.nodeType===3){nodeText(root);return}if(root.nodeType!==1&&root.nodeType!==9)return;if(root.nodeType===1){if(['SCRIPT','STYLE','TEXTAREA','NOSCRIPT','CODE'].includes(root.tagName))return;for(const attr of ['title','aria-label','placeholder']){if(root.hasAttribute(attr)){let k='data-vk-orig-'+attr;let prev=root.getAttribute(k);let val=root.getAttribute(attr);if(prev===null||val!==(language==='en'?translate(prev):prev))root.setAttribute(k,val);let base=root.getAttribute(k);let next=language==='en'?translate(base):base;if(val!==next)root.setAttribute(attr,next)}}}let walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){return n.parentElement&&['SCRIPT','STYLE','TEXTAREA','NOSCRIPT','CODE'].includes(n.parentElement.tagName)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});let n;while(n=walker.nextNode())nodeText(n)}\nfunction update(){if(busy)return;busy=true;try{process(document.body);const caption=document.getElementById('vkLangCaption');if(caption && caption.textContent!==(language==='en'?'Language':'Sprache'))caption.textContent=language==='en'?'Language':'Sprache';document.documentElement.lang=language;}finally{busy=false}}\nfunction schedule(){if(pending||busy)return;pending=true;queueMicrotask(()=>{pending=false;update()})}\nconst select=document.getElementById('vkLanguage');try{language=localStorage.getItem(KEY)==='en'?'en':'de'}catch(e){}select.value=language;\nselect.addEventListener('change',()=>{language=select.value==='en'?'en':'de';try{localStorage.setItem(KEY,language)}catch(e){}update()});\nconst observer=new MutationObserver(mutations=>{if(busy)return;let relevant=false;for(const m of mutations){if(m.type==='childList'||m.type==='characterData'||m.type==='attributes'){relevant=true;break}}if(relevant)schedule()});observer.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['title','aria-label','placeholder']});update();\nwindow.VaelkorLanguage={get:()=>language,set:(l)=>{select.value=l==='en'?'en':'de';select.dispatchEvent(new Event('change'))}};\n})();\n",
+      "new": "// Compile once; process changed subtrees only. No language work runs in the movement loop.\nconst original=new WeakMap(),last=new WeakMap(),attributeState=new WeakMap(),cache=new Map(),dirty=new Set(),watched=new WeakMap(),canvases=new WeakSet();\nlet language='de',pending=false,matcher=null,compiled=0,visited=0,flushes=0,fullScans=0;\nconst SKIP=new Set(['SCRIPT','STYLE','TEXTAREA','NOSCRIPT','CODE','SVG','CANVAS','IMG','PICTURE','IFRAME']);\nconst escape=s=>s.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\\\$&');\nfunction compile(){for(const[de,en]of [...dictionary])if(de.length<65&&de!==de.toUpperCase())dictionary.set(de.toUpperCase(),en.toUpperCase());sorted.length=0;sorted.push(...dictionary.entries());sorted.sort((a,b)=>b[0].length-a[0].length);matcher=new RegExp(sorted.filter(([de,en])=>de&&de!==en).map(([de])=>(/^[\\p{L}\\p{N}]/u.test(de)?'(?<![\\\\p{L}\\\\p{N}])':'')+escape(de)+(/[\\p{L}\\p{N}]$/u.test(de)?'(?![\\\\p{L}\\\\p{N}])':'')).join('|'),'gu');compiled++;cache.clear();}\nfunction translate(str){if(typeof str!=='string'||!/[\\p{L}]/u.test(str))return str;if(cache.has(str))return cache.get(str);const exact=dictionary.get(str.trim()),out=exact?str.replace(str.trim(),exact):str.replace(matcher,key=>dictionary.get(key)||key);if(cache.size>=1024)cache.delete(cache.keys().next().value);cache.set(str,out);return out;}\nfunction nodeText(n){const current=n.nodeValue;if(!original.has(n)||last.has(n)&&current!==last.get(n))original.set(n,current);const target=language==='en'?translate(original.get(n)):original.get(n);last.set(n,target);if(current!==target)n.nodeValue=target;}\nfunction attrs(el){let state=attributeState.get(el);if(!state){state={};attributeState.set(el,state);}for(const attr of ['title','aria-label','placeholder','alt']){if(!el.hasAttribute?.(attr))continue;const current=el.getAttribute(attr),old=state[attr];const base=!old||current!==old.last?current:old.base,target=language==='en'?translate(base):base;state[attr]={base,last:target};if(current!==target)el.setAttribute(attr,target);}}\nfunction process(root){const stack=[root];while(stack.length){const n=stack.pop();if(!n)continue;visited++;if(n.nodeType===3){nodeText(n);continue;}if(n.nodeType!==1&&n.nodeType!==9)continue;if(n.nodeType===1){if(n.id==='vkLanguage'||n.hasAttribute?.('data-no-translate'))continue;const tag=String(n.tagName||'').toUpperCase();if(SKIP.has(tag)){if(tag==='IFRAME')attachFrame(n);continue;}attrs(n);}const children=n.childNodes||[];for(let i=children.length-1;i>=0;i--)stack.push(children[i]);}}\nfunction schedule(root){if(!root||language!=='en')return;dirty.add(root);if(pending)return;pending=true;(window.requestAnimationFrame||((fn)=>setTimeout(fn,0)))(flush);}\nfunction flush(){pending=false;flushes++;const roots=[...dirty];dirty.clear();for(const root of roots){if(root.isConnected===false)continue;if(roots.some(other=>other!==root&&other.contains?.(root)))continue;process(root);}}\nfunction mutations(records){if(language!=='en')return;for(const m of records){if(m.type==='characterData'){if(last.get(m.target)!==m.target.nodeValue)schedule(m.target);}else if(m.type==='attributes'){const prior=attributeState.get(m.target)?.[m.attributeName];if(!prior||prior.last!==m.target.getAttribute(m.attributeName))schedule(m.target);}else if(m.type==='childList'){for(const n of m.addedNodes||[])schedule(n);}}}\nfunction watch(doc){if(!doc?.body||watched.has(doc))return;const observer=new MutationObserver(mutations);observer.observe(doc.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['title','aria-label','placeholder','alt']});watched.set(doc,observer);}\nconst frames=new Set(),boundFrames=new WeakSet();\nfunction canvasText(frame){try{const win=frame.contentWindow,proto=win.CanvasRenderingContext2D?.prototype,contexts=proto?[proto]:Array.from(frame.contentDocument?.querySelectorAll?.('canvas')||[],canvas=>canvas.getContext('2d'));for(const ctx of contexts){if(!ctx||canvases.has(ctx))continue;canvases.add(ctx);for(const key of ['fillText','strokeText','measureText']){const fn=ctx[key];if(typeof fn==='function')ctx[key]=function(text,...args){return fn.call(this,language==='en'?translate(text):text,...args);};}}}catch(e){/* A cross-origin frame is not part of the embedded game. */}}\nfunction attachFrame(frame){if(frame.id!=='vkIntegratedWorld')return;if(!boundFrames.has(frame)){boundFrames.add(frame);frame.addEventListener('load',()=>attachFrame(frame));}try{const doc=frame.contentDocument;if(!doc?.body)return;frames.add(frame);canvasText(frame);watch(doc);doc.documentElement.lang=language;process(doc.body);}catch(e){}}\nfunction refreshCards(){let changed=false;try{for(const card of Object.values(window.AetherEngine?.BYID||{})){if(!card?.name||dictionary.has(card.name))continue;const name=translateCardName(card.name);if(name!==card.name){dictionary.set(card.name,name);changed=true;}}}catch(e){}if(changed)compile();}\nfunction update(){dirty.clear();fullScans++;process(document.body);const caption=document.getElementById('vkLangCaption');if(caption){const title=language==='en'?'Language':'Sprache';if(caption.textContent!==title)caption.textContent=title;const n=caption.firstChild;if(n){original.set(n,'Sprache');last.set(n,caption.textContent);}}document.documentElement.lang=language;for(const frame of frames){try{frame.contentDocument.documentElement.lang=language;process(frame.contentDocument.body);frame.contentWindow.VaelkorWildScene?.languageChanged?.();}catch(e){}}}\nconst select=document.getElementById('vkLanguage');try{language=localStorage.getItem(KEY)==='en'?'en':'de'}catch(e){}if(select)select.value=language;\nselect?.addEventListener('change',()=>{language=select.value==='en'?'en':'de';try{localStorage.setItem(KEY,language)}catch(e){}refreshCards();update();});\nfor(const[de,en]of Object.entries(window.VaelkorLanguageCatalog||{}))dictionary.set(de,en);\ncompile();watch(document);update();\nwindow.VaelkorLanguage={get:()=>language,set:l=>{if(select)select.value=l==='en'?'en':'de';language=l==='en'?'en':'de';try{localStorage.setItem(KEY,language)}catch(e){}refreshCards();update();},translate,refresh:()=>{refreshCards();update();},attachFrame,metrics:()=>({compiled,visited,flushes,fullScans,cacheSize:cache.size,cacheLimit:1024,dirty:dirty.size})};\ndocument.addEventListener('DOMContentLoaded',()=>{refreshCards();update();});\n})();\n"
+    }
+  ],
+  "js/script-05.js": [
+    {
+      "old": "stats.append(hpText,atkText,shield);",
+      "new": "if(window.VaelkorStats)stats.innerHTML=VaelkorStats.statusBadges(fusionUnit(sample)).join('');else stats.append(hpText,atkText,shield);"
+    }
+  ]
+}

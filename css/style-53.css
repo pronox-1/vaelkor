@@ -1,0 +1,17 @@
+/* Shared controls include the bottom nav and dynamically inserted menu tabs. */
+:root{color-scheme:dark}
+body :is(button,select,input[type="button"],input[type="submit"]){background-color:#193443;color:#f4e5c5;border:1px solid #738073;border-radius:10px;font:inherit}
+body :is(nav,#fusionNav,.fusionMenuTabs,.vkShopTabs,.vkSynTabs87,[role="tablist"]) :is(button,[role="tab"]){background:linear-gradient(#24414a,#132d39)!important;color:#f4e5c5!important;border:1px solid #77816c!important;min-height:42px;min-width:0;overflow-wrap:anywhere}
+body :is(nav,#fusionNav,.fusionMenuTabs,.vkShopTabs,.vkSynTabs87,[role="tablist"]) :is(button.active,button.selected,button.vkCurrent,button[aria-selected="true"],[role="tab"][aria-selected="true"]){background:linear-gradient(#526049,#314336)!important;border-color:#dfbf78!important;color:#fff0c5!important;box-shadow:inset 0 0 0 1px #c9aa6255}
+body select option,body select optgroup{background:#132c39;color:#f4e5c5}
+body button:focus-visible,body select:focus-visible{outline:3px solid #edc878;outline-offset:2px}
+body button:disabled{cursor:not-allowed}body button:not(:disabled):hover{filter:brightness(1.1)}
+/* Only one icon, regardless of older responsive rules. */
+body.vk-exploring #fullscreenBtn::before{content:none!important;display:none!important}
+body.vk-exploring #fullscreenBtn::after{content:'⛶';display:block;font:22px/1 system-ui}
+body.vk-exploring #fullscreenBtn[aria-pressed="true"]::after{content:'⤢'}
+html.vk-expanded{position:fixed;inset:0;width:100%;height:100%;overflow:hidden}
+html.vk-expanded body{height:100%;overflow-y:auto;overscroll-behavior:none}
+html.vk-expanded:has(body.vk-exploring) body{overflow:hidden}
+html.vk-expanded #fusionOverlay{height:100dvh!important}
+@media(max-width:600px){body :is(nav,#fusionNav,.fusionMenuTabs,.vkShopTabs,.vkSynTabs87) button{touch-action:manipulation}}

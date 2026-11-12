@@ -1,0 +1,7 @@
+/* Quality pass: readable reference values and visible keyboard/touch states. */
+.vkPreviewReference{margin:8px 0 12px;padding:8px 10px;border:1px solid #64745f;border-left:3px solid #ceb278;border-radius:8px;background:#122e37;color:#cfdbcc;font-size:12px;line-height:1.45;overflow-wrap:anywhere}
+#fusionOverlay .fusionShell:not(.v9Battle) button:focus-visible{outline:3px solid #f1d18c!important;outline-offset:2px}
+#fusionOverlay .fusionShell:not(.v9Battle) button:disabled{opacity:.55}
+#fusionOverlay .fusionShell:not(.v9Battle) :is(input,select){min-width:0;max-width:100%;color-scheme:dark}
+@media(prefers-reduced-motion:reduce){#fusionOverlay .fusionShell:not(.v9Battle) *,#vkOptions *{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
+#fusionOverlay .fusionShell:not(.v9Battle) :is(.fusionMenuTabs button,.vkReadCards,select),#vkOptions button{min-height:44px!important}

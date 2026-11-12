@@ -1,0 +1,26 @@
+<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Design A und AP – Prüfbericht</title><style>body{max-width:850px;margin:24px auto;padding:16px;background:#10232c;color:#eee1c8;font:16px/1.6 system-ui}a{color:#efcc82}pre{white-space:pre-wrap;font:inherit}</style><a href="./">Zum Spiel</a> · <a href="karten-design.html">Design ansehen</a> · <a href="reports/ap-growth.csv">AP-Tabelle herunterladen</a><pre># Design A, Angriffspunkte und Zucht
+
+Design A verwendet einen generierten transparenten Rahmen, goldene Spielbarkeitsbeleuchtung, cyanfarbene Synchro-Beleuchtung und einheitliche Elementzeichen. Sammlung, Teamkarten und Synchros verwenden dieselbe Darstellung. Die kompakte Hand und zwei Spalten im mobilen Deck bleiben erhalten.
+
+## Berechnung
+
+Direkter Schaden vor Typ, Wetter, Level und Schwächung: gerundete Kartenbasis (2 × interner Kartenstärkefaktor × Seltenheit) + Energiekosten × aktuelle AP. Bei 1 E gilt der volle AP-Wert einmal; bei 2 E zweimal. Damit werden teurere Angriffe durch steigende AP nicht systematisch entwertet. Betäubungsangriffe behalten ihre 45-%-Trefferwirkung, weil sie zusätzlich Kontrolle bieten. Heilung und Schild werden nicht als Angriff behandelt.
+
+Beispiel mit 8 AP: 1-E-Angriff mit Basis 8 verursacht 16; 2-E-Nachwirkungsangriff mit Basis 12 verursacht 28 direkt und anschließend zweimal 5 (3 Basis + 25 % von 8 AP). Typ, Wetter, Level und Schutz können das Ergebnis verändern. Synchro-Angriffe haben eigene Basiswerte und einen Kombinationsbonus; Nachwirkungen verwenden ebenfalls 25 % AP. Vorschau und tatsächliche Anwendung verwenden dieselben Berechnungen.
+
+AP-Grundwert ist 4 plus Seltenheits- und Rollenanteil. Jede Art besitzt ein deterministisch aus ihrer ID abgeleitetes Intervall von 5–10 Leveln: floor((Level−1)/Intervall). Shiny-, Entwicklungs- und bestehende Starterboni bleiben berücksichtigt. Keine AP-Erhöhung auf jedem Level. Vollständige Werte für 239 Arten auf Level 1, 5, 10, 20, 50 und 100: reports/ap-growth.csv. Die sechs Intervalle enthalten 44, 43, 40, 34, 42 und 36 Arten.
+
+## Zucht und Speicherkompatibilität
+
+Neue Kinder speichern vkGenesA1 im bestehenden Monsterdatensatz. AP-, LP- und E-Anlagen werden jeweils unabhängig von einem der beiden Eltern gewählt. Geerbte Anlagen berücksichtigen die artspezifische Basis, jedoch keine trainierten Level, Shiny- oder Entwicklungsboni. Begrenzungen: AP −2..+3, LP −12..+18, E 0..+1 (Grundenergie 3, vererbbar bis 4). Positive/negative Mutationen: AP 12/4 %, LP 15/5 %, E 4/1 %. Bei Grenzen kann eine Mutation wirkungslos bleiben. Keine unbegrenzte Steigerung über Generationen. Das Zuchtfenster zeigt Anlagen getrennt von aktuellen Kampfwerten.
+
+Alte Monster ohne das Feld haben unveränderte LP und 3 E; ihre AP werden mit der neuen Wachstumskurve berechnet. Bestehende Eier bekommen deterministische Anlagen aus den gespeicherten Eltern, ohne erneute Zuchtkosten. Ein Fehler beim Auswählen numerischer Monster-IDs wurde behoben. Bestehendes Speicherformat Version 2 bleibt erhalten; keine zweite Speicherung. Tutorialkämpfe verändern weder Belohnungen noch eigenes Team und erklären AP, Nachwirkung und Anlagen.
+
+## Umsetzung und Prüfung
+
+Neue Module: js/combat/stat-rules.js und stats-integration.js. Neue Optik: css/style-58.css, assets/images/design-a-ready-frame.png. Angepasst: index.html, interface/card-design.js und update-ui.js. Kleine optionale Integrationshaken in script-02/11/15/17.js nutzen die vorhandenen Kampf-, Synchro-, Energie-, Zucht- und Tutorialfunktionen. Exakte Haken sind in tests/fixtures/ap-legacy-hooks.json dokumentiert; der Basistest prüft nach deren Rücknahme weiterhin die ursprünglichen Dateihashes. Keine Änderungen an Welt, Sprites oder Innenraumbewegung.
+
+Automatisierte Prüfungen führen den tatsächlichen Spielcode in einer isolierten Node-Laufzeit mit DOM-Ersatz aus: AP-Wachstum aller Arten, direkter Schaden und Nachwirkung, Synchro-Materialverbrauch und Vorschau, Vererbung über 1.000 Generationen, Zucht/Hatch/alte Eier, numerische IDs, Speicher-Roundtrip, Energie beider Seiten sowie beide vollständig durchspielbaren Tutorials. Der Katalogaudit umfasst 368 Kampfkarten, 90 Synchros und 239 Teamkartenvarianten. Er findet bei gleichem Element und gleicher Seltenheit keine direkt angreifende teurere Karte mit höchstens dem Schaden einer günstigeren. Das ist keine Gewinnraten-Simulation. Ein 10.000-Kinder-Stichprobenaudit liegt in reports/ap-growth.json.
+
+Browserdarstellung, echte Mobilgeräte, Framerate und subjektive Kampf-Schwierigkeit wurden in dieser Umgebung nicht geprüft; Browsersteuerung steht nicht zur Verfügung. Vorhandene Layouttests sind strukturelle und Laufzeitprüfungen mit DOM-Ersatz.
+</pre></html>

@@ -1,0 +1,63 @@
+/* Consistent menu scrolling and fixed card slots. World/canvas layout is preserved. */
+:root{--ui-gold:#c7a86c;--ui-line:#526976;--ui-panel:#112b3b;--battle-card-w:190px;--battle-card-h:286px;--library-card-w:208px;--library-card-h:344px}
+html{scrollbar-gutter:stable}body:not(.vk-exploring){height:auto!important;min-height:100dvh;overflow-x:hidden;overflow-y:auto!important}
+body:not(.vk-exploring) .wrap{min-width:0;max-width:1180px;padding:clamp(12px,2vw,24px);padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+body:not(.vk-exploring) .wrap>header.top,#fusionOverlay .fusionTop{position:static!important;inset:auto!important;transform:none!important;flex-wrap:wrap!important;min-width:0!important;z-index:auto!important}
+body.vk-ui-modal-open .wrap>header.top{visibility:hidden;pointer-events:none}
+#fusionOverlay{box-sizing:border-box!important;width:100%!important;height:100dvh!important;max-height:100dvh!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior-y:contain;padding:12px max(10px,env(safe-area-inset-left,0px)) calc(90px + env(safe-area-inset-bottom,0px))!important}
+#fusionOverlay:has(.v9Battle){padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))!important}
+#fusionOverlay .fusionShell{width:100%!important;max-width:1120px!important;min-width:0!important;height:auto!important;max-height:none!important;overflow:visible!important;margin-inline:auto!important}
+#fusionOverlay .fusionTop h2{overflow-wrap:anywhere;line-height:1.25!important}
+#fusionOverlay :is(section,.fusionDeckLayout,.fusionFilter,.fusionGrid,.v9HandScroll),.panel,.grid,.split>*,.vkHomeGrid>*{min-width:0;max-width:100%;box-sizing:border-box}
+#fusionOverlay :is(button,select,input),body:not(.vk-exploring) .panel :is(button,select,input),dialog :is(button,select,input){font:600 14px/1.35 system-ui;min-height:42px;max-width:100%;border-radius:10px;border:1px solid var(--ui-line);color:#f6e7c9;background:#1d3b4b;padding:9px 12px;overflow-wrap:anywhere;touch-action:manipulation}
+#fusionOverlay button:focus-visible,body button:focus-visible,dialog :is(button,select,input):focus-visible{outline:3px solid #f0cd83;outline-offset:2px}
+#fusionOverlay button:disabled,dialog button:disabled{cursor:default;opacity:.48}
+#fusionOverlay :is(.fusionFilters,.fusionFilter,.vkSynTabs87,.vkSynDeckSummary87,.vkSynMaterialMode87){flex-wrap:wrap!important;gap:8px}
+#fusionOverlay .fusionGrid{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(min(100%,var(--library-card-w)),var(--library-card-w)))!important;justify-content:start;gap:14px!important;align-items:start!important}
+#fusionOverlay .fusionCard{width:100%;min-width:0;align-self:start}
+#fusionOverlay :is(.fusionCardFace,.vkSynFace87){width:100%!important;min-width:0!important;height:var(--library-card-h)!important;min-height:var(--library-card-h)!important;max-height:var(--library-card-h)!important;box-sizing:border-box!important;display:grid!important;grid-template-rows:24px 38px 18px 90px 30px minmax(0,1fr) 24px!important;gap:5px!important;padding:10px!important;overflow:hidden!important;position:relative;border:2px solid var(--rarity-color,#a6b0bb)!important;border-radius:12px;background:linear-gradient(150deg,#21394b,#102030);text-align:left}
+#fusionOverlay :is(.fusionCardFace,.vkSynFace87)>*{min-height:0!important;min-width:0;max-width:100%;margin:0;overflow:hidden;box-sizing:border-box}
+#fusionOverlay .fusionCardFace>.fusionCardHeading{grid-row:1;grid-template-columns:24px minmax(0,1fr) 40px!important}
+#fusionOverlay .fusionCardFace>strong{grid-row:2;font-size:15px!important;line-height:1.25!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+#fusionOverlay .fusionCardFace>.fusionElementName{grid-row:3;white-space:nowrap;text-overflow:ellipsis;font-size:11px!important}
+#fusionOverlay .fusionCardFace>.fusionArtwork{grid-row:4;min-height:0!important;height:90px!important;max-height:90px!important;display:grid!important;place-items:center}
+#fusionOverlay .fusionCardFace>.fusionArtwork :is(svg,img,.fusionCardMonsterImage){max-height:86px!important;height:100%!important;object-fit:contain}
+#fusionOverlay .fusionCardFace>.fusionStats{grid-row:5;font-size:12px!important;line-height:1.2!important;flex-wrap:wrap;align-items:center;gap:4px}
+#fusionOverlay .fusionCardFace>small{grid-row:6;font-size:12px!important;line-height:1.35!important;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow-wrap:anywhere}
+#fusionOverlay .vkSynFace87>.vkSynTitle87{grid-row:1/3;align-items:start}
+#fusionOverlay .vkSynFace87 .vkSynTitle87 strong{font:700 15px/1.3 Georgia,serif;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#fusionOverlay .vkSynFace87>.vkSynRarity87{grid-row:3;font-size:10px!important}
+#fusionOverlay .vkSynFace87>svg{grid-row:4;width:100%;height:90px!important}
+#fusionOverlay .vkSynFace87>.vkSynRequirements87{grid-row:5;font-size:10px;padding:4px}
+#fusionOverlay .vkSynFace87>.vkSynEffect87{grid-row:6;font-size:12px;line-height:1.35}
+#fusionOverlay .vkSynFace87>small{grid-row:7;font-size:9px;line-height:1.2}
+#fusionOverlay .v9Battle .v9HandScroll{display:flex!important;align-items:stretch!important;gap:12px!important;overflow-x:auto!important;overflow-y:hidden!important;max-width:100%;padding:12px 5px 16px!important;scroll-snap-type:x proximity}
+#fusionOverlay .v9Battle .v9HandCard{width:var(--battle-card-w)!important;min-width:var(--battle-card-w)!important;max-width:var(--battle-card-w)!important;flex:0 0 var(--battle-card-w)!important;height:var(--battle-card-h)!important;min-height:var(--battle-card-h)!important;max-height:var(--battle-card-h)!important;box-sizing:border-box!important;display:grid!important;grid-template-rows:24px 78px 38px 14px minmax(0,1fr) 38px!important;gap:4px!important;padding:8px!important;border:2px solid var(--rarity-color,#a6b0bb)!important;overflow:hidden!important;position:relative;scroll-snap-align:start;transition:transform .12s,box-shadow .12s;transform-origin:center}
+#fusionOverlay .v9Battle .v9HandCard>*{min-width:0;min-height:0!important;max-width:100%;margin:0;overflow:hidden}
+#fusionOverlay .v9Battle .v9HandCard>.v9CardTop{grid-row:1;font-size:12px!important;align-items:center}
+#fusionOverlay .v9Battle .v9HandCard>.v9CardSymbol{grid-row:2;height:100%!important;min-height:0!important;display:grid;place-items:center}
+#fusionOverlay .v9Battle .v9HandCard .vkCardArt{width:100%;height:100%!important;max-height:78px!important;object-fit:contain}
+#fusionOverlay .v9Battle .v9HandCard>strong{grid-row:3;font:700 15px/1.25 Georgia,serif!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+#fusionOverlay .v9Battle .v9HandCard>.vaelkorTeamCardBadge{grid-row:4;position:static!important;font:700 9px/1.2 system-ui!important}
+#fusionOverlay .v9Battle .v9HandCard>small{grid-row:5;font-size:12px!important;line-height:1.3!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow-wrap:anywhere}
+#fusionOverlay .v9Battle .v9HandCard>.v9CardEffect{grid-row:6;font-size:12px!important;line-height:1.3!important;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+#fusionOverlay .v9Battle .v9HandCard:hover,#fusionOverlay .v9Battle .v9HandCard:focus-visible{transform:translateY(-3px);box-shadow:0 0 0 2px var(--rarity-color),0 6px 16px #0008!important}
+#fusionOverlay [data-vk-card-rarity="common"],#fusionOverlay [data-vk-card-rarity="uncommon"]{--rarity-color:#a6b0bb}
+#fusionOverlay [data-vk-card-rarity="rare"]{--rarity-color:#69a9ef}#fusionOverlay [data-vk-card-rarity="epic"]{--rarity-color:#bd85ed}#fusionOverlay [data-vk-card-rarity="legendary"]{--rarity-color:#e6bf62}
+.vkReadCards{margin:8px 0!important;width:auto!important;min-height:40px}
+#vkOptions,#vkCardDetails,dialog#vkInventory102,dialog#vkFountain104{box-sizing:border-box;width:min(620px,calc(100vw - 24px));max-width:calc(100vw - 24px);max-height:calc(100dvh - 32px - env(safe-area-inset-bottom,0px));overflow-y:auto;overflow-x:hidden;background:var(--ui-panel);color:#f5e6c9;border:1px solid var(--ui-gold);border-radius:16px;padding:20px;box-shadow:0 18px 60px #0008}
+#vkOptions::backdrop,#vkCardDetails::backdrop{background:#03111bdd}
+.vkDialogTop{display:flex;align-items:start;justify-content:space-between;gap:12px}.vkDialogTop h2{margin:0;font:700 clamp(19px,3vw,25px)/1.25 Georgia,serif}.vkDialogTop button{flex:0 0 auto}
+.vkOptionRows{display:grid;gap:12px;margin-top:18px}.vkOptionRows label{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.vkOptionRows input[type="file"]{width:100%;min-width:0}.vkOptionRows :is(p,small){overflow-wrap:anywhere;line-height:1.5}.vkOptionRows button{width:100%}
+#vkCardDetails select{width:100%;margin:14px 0}.vkDetailText{line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}.vkDetailArt{height:130px;display:grid;place-items:center}.vkDetailArt :is(img,svg){width:100%;max-height:130px;object-fit:contain}
+body[data-ui-motion="reduced"] *,body[data-ui-motion="reduced"] *::before,body[data-ui-motion="reduced"] *::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+@media(max-width:920px){#fusionOverlay .fusionDeckLayout{grid-template-columns:minmax(0,1fr)!important}.vkShopGrid{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))!important}}
+@media(max-width:600px){:root{--battle-card-w:148px;--battle-card-h:252px;--library-card-w:176px;--library-card-h:322px}#fusionOverlay .v9Battle .v9HandCard{grid-template-rows:22px 62px 34px 12px minmax(0,1fr) 36px!important}#fusionOverlay .v9Battle .v9HandCard>strong{font-size:13px!important}#fusionOverlay .v9Battle .v9HandCard>small{font-size:11px!important}#fusionOverlay .v9Battle .v9HandCard .vkCardArt{max-height:62px!important}#fusionOverlay .fusionGrid{gap:10px!important}#vkInventory102 .vkInvItem102{align-items:start;flex-wrap:wrap}#vkOptions,#vkCardDetails{padding:14px}}
+@media(max-width:600px){body.vk-exploring .wrap>header>div:last-child{gap:4px!important;min-width:0}body.vk-exploring .wrap>header .logo{max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}body.vk-exploring .wrap>header .logo>span:last-child{display:none}body.vk-exploring .wrap>header :is([data-ui-options],#fullscreenBtn){width:34px;min-width:34px;min-height:34px;padding:5px!important}body.vk-exploring .wrap>header #fullscreenBtn{font-size:0!important}body.vk-exploring .wrap>header #fullscreenBtn::before{content:'⛶';font:18px system-ui}body.vk-exploring .wrap>header #coins{max-width:82px;overflow:hidden;text-overflow:ellipsis;font-size:12px!important}}
+#fusionOverlay .vkSynCombatList87{align-items:stretch;gap:12px;padding:12px 5px 16px;scroll-snap-type:x proximity}#fusionOverlay .v9Battle .v9HandCard>.v9CardSymbol>svg{width:100%;height:100%;max-height:78px}#fusionOverlay .v9Battle .v9HandCard.vkSynCombatCard87 .v9CardTop span{font-size:11px}
+/* Non-native overlays own scrolling; their panels do not create a second vertical scroller. */
+.overlay{place-items:start center;align-content:start;overflow-y:auto}
+#starteroverlay .modal,#vkAppearance87 .vkAppearancePanel87,#vkGenderOverlay.show .vkGenderPanel,#vkSynergyIntro87 .vkSynergyIntroPanel87,.overlay>.modal{box-sizing:border-box;min-width:0;max-width:calc(100vw - 24px)!important;max-height:none!important;overflow:visible!important;border:1px solid var(--ui-gold)!important;border-radius:16px!important;background:var(--ui-panel)!important;color:#f5e6c9}
+#vkAppearance87,#vkGenderOverlay.show,#vkSynergyIntro87{align-items:flex-start!important;max-height:100dvh;overflow-y:auto!important;overflow-x:hidden!important;padding:18px 12px max(18px,env(safe-area-inset-bottom,0px))!important}
+#vkOptions h3,#vkCardDetails h3,.panel h2,.fusionShell h2{color:#f0d59c;overflow-wrap:anywhere}
+#fusionOverlay .fusionGrid>.fusionCard,#fusionOverlay .fusionGrid>.fusionTeamCardTile{padding:0!important;margin:0!important;max-width:none!important;box-sizing:border-box}

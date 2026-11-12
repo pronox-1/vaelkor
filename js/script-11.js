@@ -27,14 +27,14 @@ Object.assign(fusionPalette,{Psycho:['#ad77da','#f1deff','🔮']});
 Object.assign(VAELKOR_COLORS,{Blitz:['#e7b82b','#fff099'],Dunkel:['#9355d1','#edc9ff'],Luft:['#69b9bf','#dafaff'],Stahl:['#809cae','#e0edf5'],Psycho:['#ad77da','#f1deff'],Gift:['#91b638','#e8ffaf']});
 if(typeof vkCardArtCache!=='undefined')vkCardArtCache.clear();
 const utility=new Set(['stun','weaken','weave','rally','dodge','draw','handboost','cleanse','expose']);
-function utilityShield(c){return utility.has(c.effect)?r(c):0}
+function utilityShield(c,u){return utility.has(c.effect)?(window.VaelkorStats?VaelkorStats.utilityShield(c,u):r(c)):0}
 function shieldCap(u){return Math.max(45,Math.round(u.max*.8+10))}
-function support(c,u,kind){const base=(kind==='heal'?[0,5,11,18,26,35]:[0,6,12,19,27,36])[c.cost];return Math.max(1,Math.round((base+u.atk*(kind==='heal'?.35:.50)*c.cost)*mult(c)))}
+function support(c,u,kind){if(window.VaelkorStats)return VaelkorStats.support(c,u,kind);const base=(kind==='heal'?[0,5,11,18,26,35]:[0,6,12,19,27,36])[c.cost];return Math.max(1,Math.round((base+u.atk*(kind==='heal'?.35:.50)*c.cost)*mult(c)))}
 function addShield(side,u,n){const gain=Math.max(0,Math.min(n,shieldCap(u)-(side.ward||0)));side.ward=(side.ward||0)+gain;return gain}
 function applyHit(b,c,sideName,amount){
  const actor=b[sideName],target=b[sideName==='hero'?'enemy':'hero'],u=fusionActive(actor),v=fusionActive(target);if(!u||!v)return{dealt:0,dodged:false};
  let n=amount;if(target.dodge){target.dodge=Math.max(0,Number(target.dodge)-1);b.log.push('💨 Angriff ausgewichen!');return{dealt:0,dodged:true}}
- const shield=target.ward||0,blocked=Math.min(n,c.effect==='pierce'?Math.floor(shield*.2):shield);target.ward=Math.max(0,shield-blocked);n-=blocked;
+ const shield=target.ward||0,blocked=Math.min(n,c.effect==='pierce'?Math.floor(n*.2):shield);target.ward=Math.max(0,shield-blocked);n-=blocked;
  if(target.vulnerable&&n>0){n=Math.ceil(n*(1+(target.vulnerableScale||.20)));target.vulnerable--;if(!target.vulnerable)target.vulnerableScale=0}
  const dealt=Math.min(v.hp,n);v.hp=Math.max(0,v.hp-dealt);b.log.push((sideName==='hero'?'🟢 Du':'🔴 Gegner')+' · '+c.name+': '+dealt+' Schaden'+(blocked?' · '+blocked+' geblockt':''));
  if(target.reflect&&dealt>0){u.hp=Math.max(0,u.hp-Math.min(target.reflect,dealt));target.reflect=0}
@@ -51,32 +51,32 @@ vkApplyCard=function(b,c,sideName){
  actor.energy-=c.cost;const raw=()=>vkRawCardDamage(b,c,sideName),prefix=sideName==='hero'?'🟢 Du':'🔴 Gegner';
  if(['strike','pierce','dot','drain'].includes(c.effect)){
   const hit=applyHit(b,c,sideName,raw());
-  if(c.effect==='dot'&&!hit.dodged&&v?.hp>0)v.dot={damage:Math.max(v.dot?.damage||0,Math.max(1,Math.round(raw()*.22))),turns:Math.max(v.dot?.turns||0,2)};
-  if(c.effect==='drain')u.hp=Math.min(u.max,u.hp+Math.ceil(hit.dealt*.40));
+  if(c.effect==='dot'&&!hit.dodged&&v?.hp>0)v.dot={damage:Math.max(v.dot?.damage||0,(window.VaelkorStats?VaelkorStats.dot(b,c,sideName):Math.max(1,Math.round(raw()*.22)))),turns:Math.max(v.dot?.turns||0,2)};
+  if(c.effect==='drain')u.hp=Math.min(u.max,u.hp+(window.VaelkorStats?VaelkorStats.drainSupport(c,u,hit.dealt):Math.ceil(hit.dealt*.40)));
  }else if(c.effect==='mend'){const n=Math.min(u.max-u.hp,support(c,u,'heal'));u.hp+=n;b.log.push(prefix+' · '+c.name+': +'+n+' LP');}
  else if(c.effect==='ward'){const n=addShield(actor,u,support(c,u,'shield'));b.log.push(prefix+' · '+c.name+': +'+n+' Schild');}
  else if(c.effect==='stun'){
-  const hit=applyHit(b,c,sideName,Math.max(1,Math.round(raw()*.45)));const chance=[.30,.35,.40,.50,.60][r(c)];
+  const hit=applyHit(b,c,sideName,Math.max(1,Math.round(raw()*.45)));const chance=window.VaelkorBalance?.stunChance?VaelkorBalance.stunChance(c):[.30,.35,.40,.50,.60][r(c)];
   if(!hit.dodged&&!target.stunGuard&&Math.random()<chance){target.stun=1;target.stunGuard=2;b.log.push('⚡ Eine Runde betäubt.')}else b.log.push('⚡ Betäubung abgewehrt oder fehlgeschlagen.');
  }else if(c.effect==='weaken'){target.weakened=Math.max(target.weakened||0,c.power);target.weakenStrength=Math.max(target.weakenStrength||0,.20+.025*r(c));}
  else if(c.effect==='weave')actor.energyBonus=Math.min(3,(actor.energyBonus||0)+c.power);
- else if(c.effect==='rally'){const n=Math.max(0,Math.min(c.power,10-(u.rallyBonus||0),30-u.atk));u.atk+=n;u.rallyBonus=(u.rallyBonus||0)+n;}
+ else if(c.effect==='rally'){const n=Math.max(0,Math.min(c.power,10-(u.rallyBonus||0),(window.VaelkorStats?Infinity:30-u.atk)));u.atk+=n;u.rallyBonus=(u.rallyBonus||0)+n;}
  else if(c.effect==='reflect'){actor.reflect=Math.max(actor.reflect||0,Math.round(support(c,u,'shield')*.75));addShield(actor,u,Math.round(support(c,u,'shield')*.5));}
  else if(c.effect==='dodge')actor.dodge=Math.min(3,(Number(actor.dodge)||0)+c.power);
  else if(c.effect==='draw'){
   if(sideName==='hero')fusionDraw(b,Math.min(c.power,10-b.hand.length));
   else{actor.hand=actor.hand||[];for(let i=0;i<c.power&&actor.hand.length<10;i++){if(!actor.cardDeck?.length)actor.cardDeck=fusionEnemyShuffle((actor.cardDiscard||[]).splice(0));if(!actor.cardDeck.length)break;actor.hand.push(actor.cardDeck.pop())}}
  }else if(c.effect==='handboost'){if(sideName==='hero')b.handLimit=Math.min(9,b.handLimit+c.power);else actor.handLimit=Math.min(9,(actor.handLimit||5)+c.power);}
- else if(c.effect==='cleanse'){u.dot=null;actor.weakened=0;actor.weakenStrength=0;actor.stun=0;actor.vulnerable=0;actor.vulnerableScale=0;u.hp=Math.min(u.max,u.hp+Math.max(1,Math.round(support(c,u,'heal')*.4)));}
+ else if(c.effect==='cleanse'){u.dot=null;u.rootTurns=0;actor.weakened=0;actor.weakenStrength=0;actor.stun=0;actor.vulnerable=0;actor.vulnerableScale=0;u.hp=Math.min(u.max,u.hp+Math.max(1,Math.round(support(c,u,'heal')*.4)));}
  else if(c.effect==='renew')u.renew={heal:Math.max(u.renew?.heal||0,Math.max(1,Math.round(support(c,u,'heal')*.65))),turns:2};
  else if(c.effect==='expose'){target.vulnerable=Math.max(target.vulnerable||0,c.power);target.vulnerableScale=Math.max(target.vulnerableScale||0,.20+.03*r(c));}
  else if(c.effect==='purge'){target.ward=Math.max(0,(target.ward||0)-Math.round(support(c,u,'shield')*1.3));if(v){v.renew=null;if(v.rallyBonus){v.atk=Math.max(1,v.atk-v.rallyBonus);v.rallyBonus=0}}}
- addShield(actor,u,utilityShield(c));if(!['strike','pierce','dot','drain','mend','ward','stun'].includes(c.effect))b.log.push(prefix+' · '+c.name+': '+(VK_EFFECT_DE[c.effect]||c.effect));fusionCheck(b);return true;
+ addShield(actor,u,utilityShield(c,u));if(!['strike','pierce','dot','drain','mend','ward','stun'].includes(c.effect))b.log.push(prefix+' · '+c.name+': '+(VK_EFFECT_DE[c.effect]||c.effect));fusionCheck(b);return true;
 };
 function aiScore(c,b,sideName='enemy'){
  const actor=b[sideName],target=b[sideName==='hero'?'enemy':'hero'],u=fusionActive(actor),v=fusionActive(target);if(!u||!v)return -999;
  const raw=vkRawCardDamage(b,c,sideName),heal=support(c,u,'heal'),shield=support(c,u,'shield');let value=0;
- if(['strike','pierce','dot','drain'].includes(c.effect)){value=raw-(c.effect==='pierce'?Math.min(raw,(target.ward||0)*.2):Math.min(raw,target.ward||0));if(c.effect==='dot')value+=Math.round(raw*.22)*(v.dot?1:1.5);if(c.effect==='drain')value+=Math.min(u.max-u.hp,raw*.4);}
+ if(['strike','pierce','dot','drain'].includes(c.effect)){value=raw-(c.effect==='pierce'?Math.min(target.ward||0,raw*.2):Math.min(raw,target.ward||0));if(c.effect==='dot')value+=(window.VaelkorStats?VaelkorStats.dot(b,c,sideName):Math.round(raw*.22))*(v.dot?1:1.5);if(c.effect==='drain')value+=Math.min(u.max-u.hp,window.VaelkorStats?VaelkorStats.drainSupport(c,u,Math.max(0,value)):raw*.4);}
  else if(c.effect==='mend')value=Math.min(u.max-u.hp,heal)*1.1;
  else if(c.effect==='ward')value=Math.min(shield,Math.max(0,shieldCap(u)-(actor.ward||0)))*.85;
  else if(c.effect==='renew')value=u.renew?-5:Math.min(u.max-u.hp,heal*1.3)*.85;
@@ -85,13 +85,13 @@ function aiScore(c,b,sideName='enemy'){
  else if(c.effect==='expose')value=target.vulnerable?-4:c.power*3.0;
  else if(c.effect==='weaken')value=target.weakened?-5:Math.min(3,c.power)*6;
  else if(c.effect==='weave')value=(actor.energyBonus||0)>=3?-20:b.round<=3?15*c.power:4*c.power;
- else if(c.effect==='rally')value=(u.rallyBonus||0)>=10||u.atk>=30?-20:c.power*(b.round<=4?5:2);
+ else if(c.effect==='rally')value=(u.rallyBonus||0)>=10||(!window.VaelkorStats&&u.atk>=30)?-20:c.power*(b.round<=4?5:2);
  else if(c.effect==='draw')value=actor.energy<=c.cost?-20:c.power*4;
  else if(c.effect==='handboost')value=(sideName==='hero'?b.handLimit:actor.handLimit||5)>=9?-20:b.round<=3?c.power*8:2;
  else if(c.effect==='reflect')value=(actor.reflect||0)>0?-4:shield*1.05;
  else if(c.effect==='dodge')value=(actor.dodge||0)>=2?-5:c.power*10;
  else if(c.effect==='stun')value=raw*.45+(target.stunGuard?0:15*[.30,.35,.40,.50,.60][r(c)]);
- return (value+utilityShield(c))/Math.max(1,c.cost);
+ return (value+utilityShield(c,u))/Math.max(1,c.cost);
 }
 vkEnemyScore=(c,b)=>aiScore(c,b,'enemy');
 function enemyAct(b){
@@ -119,12 +119,12 @@ fusionResolveTurn=function(){
 };
 function context(c,b,sideName){if(b)return{b,side:b[sideName],u:fusionActive(b[sideName])};let u=data.team.length?fusionUnit(active()):{atk:5,max:60,hp:60,level:5,element:c.element||'Normal',damageScale:1};u={...u,hp:0};const other={...u,hp:99999,max:99999,element:'Normal'};const mock={hero:{team:[u],active:0,energy:9,ward:0},enemy:{team:[other],active:0,energy:9,ward:0}};return{b:mock,side:mock.hero,u};}
 window.vkCardEffectText=function(c,b=null,sideName='hero'){
- const q=context(c,b,sideName),u=q.u;if(!u)return c.desc||'';const extra=utilityShield(c)?' · +'+utilityShield(c)+' Schild':'';const heal=support(c,u,'heal'),shield=support(c,u,'shield');
+ const q=context(c,b,sideName),u=q.u;if(!u)return c.desc||'';const extra=utilityShield(c,u)?' · +'+utilityShield(c,u)+' Schild':'';const heal=support(c,u,'heal'),shield=support(c,u,'shield');
  if(['strike','pierce','dot','drain'].includes(c.effect)){const n=vkRawCardDamage(q.b,c,b?sideName:'hero');return '💥 ca. '+n+' Schaden'+(c.effect==='pierce'?' · 80 % Schilddurchdringung':c.effect==='dot'?' · 2× '+Math.max(1,Math.round(n*.22))+' Nachwirkung':c.effect==='drain'?' · 40 % Lebensentzug':'');}
  return ({mend:'♥ bis '+heal+' Heilung',ward:'🛡 '+shield+' Schild',stun:'⚡ '+Math.round([.30,.35,.40,.50,.60][r(c)]*100)+' % Betäubung · Trefferschaden',weaken:'❄ −'+Math.round((.20+.025*r(c))*100)+' % Schaden für '+c.power+' eigene Runde(n)',weave:'◆ +'+c.power+' Energie ab nächster Runde (max. +3)',rally:'⚔ +'+c.power+' Angriff für diesen Kampf (Bonus max. +10)',reflect:'🛡 '+Math.round(shield*.5)+' Schutz · bis '+Math.round(shield*.75)+' Gegenschaden',dodge:'💨 '+c.power+' Angriff(e) ausweichen',draw:'🃏 '+c.power+' Karten ziehen (bis 9 gleichzeitig)',handboost:'🃏 Starthand +'+c.power+' für diesen Kampf (bis 9)',cleanse:'✦ Negative Effekte entfernen · bis '+Math.round(heal*.4)+' LP',renew:'🌱 2× bis '+Math.round(heal*.65)+' Regeneration',expose:'🎯 +'+Math.round((.20+.03*r(c))*100)+' % Schaden für '+c.power+' Treffer',purge:'✧ Bis '+Math.round(shield*1.3)+' Schild, Angriffsstärkungen und Regeneration entfernen'}[c.effect]||c.desc)+extra;
 };
 const originalFc=fc;fc=function(c){let html=originalFc(c);if(c?.kind==='spell')html=html.replace(/<div class="fusionStats">[\s\S]*?<\/div>/,'<div class="fusionStats"><span>'+fesc(vkCardEffectText(c))+'</span></div>');return html};
-fusionCategory=c=>['strike','pierce','dot','drain'].includes(c.effect)?'attacks':'spells';
+fusionCategory=c=>['strike','pierce','dot','drain','stun'].includes(c.effect)?'attacks':'spells';
 const originalCardArt=vaelkorCardArt;vaelkorCardArt=function(c){if(!['cleanse','renew','expose','purge'].includes(c.effect))return originalCardArt(c);const colors=fpal(c.element);const icon={cleanse:'<path d="M90 20 140 64 124 132 90 152 56 132 40 64Z"/><path d="M65 86 83 105 116 67"/>',renew:'<path d="M42 128Q25 55 141 28Q147 126 60 142Z"/><path d="M90 64v65M58 97h64"/>',expose:'<circle cx="90" cy="88" r="48"/><circle cx="90" cy="88" r="17"/><path d="M90 16v40M90 120v40M18 88h40M122 88h40"/>',purge:'<path d="M90 20 145 44 133 111 90 153 47 111 35 44Z"/><path d="M122 24 79 77 104 84 61 147"/>'}[c.effect];return '<svg viewBox="0 0 180 175" aria-hidden="true"><g fill="'+colors[0]+'" fill-opacity=".30" stroke="'+colors[1]+'" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">'+icon+'</g></svg>'};
 window.VaelkorCards={version:81,hit:applyHit,added:newCards.length,effects:[...supported],score:aiScore,support,normalize,mult,audit:()=>({spells:DD.CARDS.filter(c=>c.kind==='spell'&&!c.teamAttack).length,byElement:Object.fromEntries([...ELEMENTS,null].map(e=>[e||'Neutral',DD.CARDS.filter(c=>c.kind==='spell'&&!c.teamAttack&&c.element===e).length]))})};
 })();

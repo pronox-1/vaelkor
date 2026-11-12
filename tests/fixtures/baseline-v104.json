@@ -1,0 +1,33 @@
+{
+  "sourceCommit": "be00288ae7f00c50c19f0520958e334d44e6dcd9",
+  "indexHash": "88309e5b4146d00bacb114a88c4635c9838860886c0b995cb8c525fbf96090f5",
+  "scriptHashes": {
+    "script-11.js": "70af28101365e520d583bb42aa16b62e3dc4346a66700a90087e8f4c86088e3b",
+    "script-03.js": "ffc353e94d34356484b7afc4de66c27fb7a0514c705723c60e23b1b585bfbfaa",
+    "script-13.js": "7b548c017b8c57df8d4a222d01a4c7e63f484e893607f62fa68c631d07ec04a4",
+    "script-06.js": "758770161177cbce4d9d39ec5e90cbd1ba0f7c550a069fbbc712780789aededb",
+    "script-23.js": "e6160a56307dfc82c4f9cbcacad34cae6d5c709ac184b327208d75f2822f000e",
+    "script-19.js": "bb204158619d4e27994f56f40138d18769c7f83644cc89710b57554854dcc02d",
+    "script-05.js": "a317948b135f90cfdc540ea43cc1ae040c0215bf6c1a4c61c20bd7e45ceab596",
+    "script-22.js": "b5cbf7ef5dd261c2a2eb5eca3cf319d577806afc78c4004bb7b0582b0eb51eb2",
+    "script-04.js": "2600849ea9bf62f47d3a410b08d9e2f0997a5ee453b02d32ae0f2868ecc83dcb",
+    "script-20.js": "eec278973b592eb5ddf087c6eebd0e16434079e8681946a98e9253867bbff578",
+    "script-08.js": "6e27fa724b8252442af522331515838444230b602114b5a268011f700af0d57e",
+    "script-01.js": "ec54eb51071b084d8407df1d4616bf10308f684eb91d5a0bd41678731e94cd8c",
+    "script-16.js": "9133b4c411e114bec714b3a2a587cfde3c6906cf8a90ec340bd48254baef789a",
+    "script-14.js": "8a57a25ab5402213d384fc5d25bd51970531634e4c937e12e9da99eb7d826a42",
+    "script-15.js": "1908f7041779fc08e2c645a3b0c2a9a27e67db09f6b96e932559cb4e66b9bd3f",
+    "script-17.js": "ac1222724fb5d7837ae52bdd27d3cff3e21eb2f210762ebdba9a1d8171f41737",
+    "script-09.js": "80ca80aeadf016e2fbdd0b50593495d0ebb474386626d8398269f43c0fea7196",
+    "script-21.js": "d13f80a3680ab470bb7016c977cfb6e627cfb189f8b6fdc066fad92bb9ace8f0",
+    "script-02.js": "236b473c4ce43789e5939f191a8c940a960ceb0ad4f1c196a4f1117b9365b001",
+    "script-18.js": "c3c320fc2fa07429ef46bccda9227800845903a4279b5a27e2d5dc31deb76eb9",
+    "script-07.js": "a773fbd5aa57fd7b22b5f5c244451c6b36b434cbfeea8870a9a1114a71d8b22e",
+    "script-10.js": "8d60bda889267cdc1e2fd238490c052c38176b38e85c2aa70b21ae8971d3b917",
+    "script-12.js": "925e5e8f329294f53b341538f56b8c5cf2d2b91f35b2495c501201510a1363ee"
+  },
+  "indoorAdvanceTail": "if(wasMoving||animFrom)a.phase=(a.phase+dt/HERO_FRAME_MS92)%4;else{const rest=a.phase%2;if(rest>1e-7){a.phase=(a.phase+Math.min(dt/HERO_FRAME_MS92,2-rest))%4;if(Math.abs(a.phase-Math.round(a.phase))<1e-7)a.phase=Math.round(a.phase)%4;}}}",
+  "heroFrameFunction": "function vkHeroFrame87(){const indoor=vkHeroContext92(),actor=HERO_ACTORS87[heroStyle],images=actorImages87(heroStyle),moving=!!animFrom,index=indoor||moving?Math.floor(heroAnimation92.phase+1e-7)%4:0,frames=indoor?images.indoor[heroFacing]:images.walk[heroFacing];let frame=frames[index];if(!frame.im.complete||!frame.im.naturalWidth)frame=frames.find((f,i)=>i%2===0&&f.im.complete&&f.im.naturalWidth)||frame;return{actor,moving,index,frame,indoor,poseSet:indoor?'indoor':'outdoor',pose:moving?'walk':'stand',height:indoor?60:34};}",
+  "actorHash": "c4d4de80e47d9a4fafaee1dccc3fb2fd32ec6a5250f197d62f0db50b9e6dcef6",
+  "wildlandsOutsideAnimationHash": "bcef2741e34c34f72d34952df6b1dee997e96a466e21cd258458fc55673bdcac"
+}

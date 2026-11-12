@@ -1,0 +1,36 @@
+/* Height budget belongs to the battle viewport; expanded content may grow below it. */
+#fusionOverlay:not([hidden]):has(.v9Battle){padding: max(3px,env(safe-area-inset-top,0px)) max(4px,env(safe-area-inset-right,0px)) max(3px,env(safe-area-inset-bottom,0px)) max(4px,env(safe-area-inset-left,0px))!important;overflow-y:auto!important;overscroll-behavior:contain}
+#fusionOverlay .fusionShell.v9Battle{zoom:var(--vk-battle-scale,1);height:auto!important;min-height:0!important;max-height:none!important;margin:0 auto!important;padding:5px 7px!important;overflow:visible!important;--battle-card-h:180px;--battle-card-w:148px}
+#fusionOverlay .v9Battle .fusionTop{gap:5px!important;margin:0!important;padding:0 0 3px!important}
+#fusionOverlay .v9Battle .fusionTop h2{font-size:18px!important;line-height:1.15!important}
+#fusionOverlay .v9Battle .fusionTop button{min-height:30px!important;padding:3px 8px!important}
+#fusionOverlay .v9Battle .v9SectionLabel{margin:2px 0!important;padding:3px 6px!important;font-size:11px!important;line-height:1.25!important}
+#fusionOverlay .vkBattleArena{display:grid;grid-template-columns:minmax(0,1fr);gap:3px}
+#fusionOverlay .vkBattleSide{min-width:0}
+#fusionOverlay .v9Battle .v9Encounter{min-height:0!important;margin:0!important;padding:4px!important;grid-template-columns:84px minmax(0,1fr)!important;gap:7px!important}
+#fusionOverlay .v9Battle .v9EncounterArt{height:84px!important;min-height:0!important;max-height:84px!important}
+#fusionOverlay .v9Battle .vaelkorFighterInfo>strong{font-size:16px!important;line-height:1.2!important}
+#fusionOverlay .v9Battle :is(.vaelkorEyebrow,.vkFighterElement){font-size:10px!important;line-height:1.2!important;margin:2px 0!important}
+#fusionOverlay .v9Battle .vkCombatStats{gap:3px!important;margin:3px 0!important}
+#fusionOverlay .v9Battle .vkCombatStat{min-height:20px!important;padding:2px 4px!important;font-size:11px!important}
+#fusionOverlay .v9Battle .vkCombatStat small{font-size:9px!important}
+#fusionOverlay .v9Battle :is(.vaelkorTeamToggle,.vkLogToggle,.vkSynToggle87){min-height:30px!important;margin:3px 0!important;padding:5px 7px!important;font-size:12px!important;line-height:1.2!important}
+#fusionOverlay .v9Battle .v9ActionTitle{margin:2px 0!important;padding:4px 6px!important;font-size:12px!important}
+#fusionOverlay .v9Battle .v9ActionArea{margin:2px 0!important;padding:3px!important}
+#fusionOverlay .v9Battle .v9HandScroll{padding:3px 2px 6px!important}
+#fusionOverlay .v9Battle .v9Hand{gap:8px!important}
+#fusionOverlay .v9Battle .v9HandCard{grid-template-rows:18px 40px 28px 10px minmax(0,1fr) 28px!important;gap:2px!important;padding:5px!important}
+#fusionOverlay .v9Battle .v9HandCard>strong{font-size:12px!important;line-height:1.15!important}
+#fusionOverlay .v9Battle .v9HandCard>small{font-size:10px!important;line-height:1.15!important;-webkit-line-clamp:2}
+#fusionOverlay .v9Battle .v9CardEffect{font-size:11px!important;line-height:1.2!important}
+#fusionOverlay .v9Battle .v9HandCard :is(.vkCardArt,.v9CardSymbol>svg){max-height:40px!important}
+#fusionOverlay .v9Battle .v9Controls{margin:2px 0!important;padding:0!important;gap:6px!important;flex-wrap:nowrap!important}
+#fusionOverlay .v9Battle .v9Controls button{min-height:34px!important;padding:5px 8px!important;font-size:12px!important}
+#fusionOverlay .v9Battle .vkReadCards{min-height:26px!important;margin:2px 0!important;padding:3px 7px!important;font-size:11px!important}
+#fusionOverlay .v9Battle .vkSynBattle87{margin:0!important;padding:0!important}
+/* Expanded lists use the outer scroll container instead of another trapped scroller. */
+#fusionOverlay .v9Battle.vkLogOpen .vaelkorCombatLog{max-height:none!important;overflow:visible!important}
+#fusionOverlay .v9Battle .vaelkorTeamPanel{max-height:none!important;overflow:visible!important}
+#fusionOverlay .v9Battle.vkBattleMeasuring :is(.vaelkorTeamPanel,.vaelkorCombatLog,.vkSynCombatPanel87,details[open]>:not(summary)){display:none!important}
+@media(min-width:700px),(orientation:landscape){#fusionOverlay .vkBattleArena{grid-template-columns:repeat(2,minmax(0,1fr))}#fusionOverlay .fusionShell.v9Battle{max-width:1100px!important}}
+#fusionOverlay .v9Battle .v9HandCard>.v9CardSymbol{height:100%!important;min-height:0!important;max-height:40px!important}

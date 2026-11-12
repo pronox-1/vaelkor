@@ -1,0 +1,10 @@
+# Stabilitätskorrektur: Scrollen und sofortiger Kampfstart
+
+- Scrollsperren sind ausschließlich an einen Container mit tatsächlicher .v9Battle gebunden. Beim Verlassen des Kampfes wird data-battle-expanded entfernt. Sammlung, Deck und andere Menüs behalten explizit vertikales Scrollen. Die Welt verwendet weiterhin ihre eigene vorhandene, feste Ansicht.
+- Kampfkarten und Synchro-Kampfkarten sind 126 px breit. Die zweispaltige Decksammlung bleibt unverändert. Die im letzten Update eingeführte variable Kartenhöhe bleibt erhalten.
+- Der blockierende Bildschirm „Kampf wird vorbereitet“ ist entfernt. Die echten Kampfregeln und die erste Anzeige laufen sofort synchron. Bilder werden weiterhin vorab und im Hintergrund geladen/dekodiert; das eigene Team wird bereits beim Start des Moduls vorgewärmt. Verzögerte oder fehlgeschlagene Bilder verhindern weder Kampfstart noch Bedienung. Fehlerersatz, erneutes Laden, begrenzter Cache und Schutz vor veralteten Rückrufen bleiben erhalten.
+- Statuszeilen bleiben ausgeblendet, Gold-/Cyan-Leuchten bleibt dezent. AP, Zucht, Tutorials, Sonnenmarkt und Karawanenzelt bleiben enthalten.
+
+Prüfung: 77 gezielte automatische Tests bestanden. Automatische Tests des tatsächlichen Spielcodes mit DOM/Canvas-Ersatz. Abgedeckt sind sofortige Anzeige bei ausstehenden Bildern, erneutes Zeichnen nach dem Laden, veraltete Rückrufe, Bildfehler, unveränderte Kampfinitialisierung, Rückkehr zu scrollbaren Menüs, Höhenbudget, schmalere Karten sowie die letzten AP-, Tutorial-, Zucht-, Welt-, Zelt-, Save- und UI-Änderungen. Echte Handy-Sichtprüfung und manuelle Vorstellung wurden in dieser Umgebung nicht durchgeführt; Browsersteuerung ist nicht verfügbar.
+
+ZIP verwenden: vollständig entpacken, dann index.html öffnen. Alle Dateien/Unterordner zusammen behalten. Bestehende Spielstände befinden sich im Browserspeicher des jeweiligen Ursprungs; ein lokal geöffnetes Spiel verwendet einen anderen Ursprung als die Website. Für Übertragung die vorhandene Sicherungs-/Importfunktion verwenden.

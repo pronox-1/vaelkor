@@ -51,6 +51,7 @@ function start(kind='basic',options={}){
  }
  const enemy=unit('Feuer',99);enemy.max=isSyn?900:45;enemy.hp=enemy.max;
  const b={hero:{team:types.map((t,i)=>unit(t,i)),active,energy:isSyn?6:3,energyBonus:isSyn?3:0,ward:0,switchUsed:false,synergyDeck:synergies.slice(),synergyCooldowns:{}},enemy:{team:[enemy],active:0,energy:0,ward:0,hand:[],cardDeck:[],cardDiscard:[],plan:[],synergyDeck:[],synergyCooldowns:{},trainingDamage:isSyn?2:8},deck:starterDeckForPractice(initialHand),hand:initialHand.slice(),discard:[],handLimit:Math.max(5,initialHand.length),round:1,log:['🎓 Übungskampf · Leihteam und Übungskarten · keine Belohnungen und keine Verluste.'],winner:null,discardPhase:false,synergyMaterialMode:'save',guide:{kind,steps,index:0,completed:false,before,auto:!!options.auto,returnTo:options.returnTo||(options.auto?'world':'help'),lastFocus:-1}};
+ if(window.VaelkorStats)b.guide.steps=VaelkorStats.tutorialSteps(kind,b.guide.steps,b);
  fusionContext={tutorial:true,training:true,lesson:kind,enemy:enemy.m,trainer:false,legend:false};battle=fusionContext;fusionBattle=b;fusionTeamExpanded=false;fusionSelected=null;fusionOverlay.hidden=false;document.getElementById('battleoverlay').classList.add('hidden');renderFusionBattle();return true;
 }
 function starterDeckForPractice(hand){const base=[...hand];const normals=DD.CARDS.filter(c=>syn.isCombat(c)&&!c.element&&c.rarity==='common');let n=0;while(base.length<16){const c=normals[n++%normals.length];if(base.filter(id=>id===c.id).length<3)base.push(c.id)}return fusionEnemyShuffle(base.slice(hand.length));}
