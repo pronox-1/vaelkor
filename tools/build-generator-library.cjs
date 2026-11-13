@@ -1,0 +1,9 @@
+const fs=require('node:fs');
+const catalog=require('../js/world/generator-catalog.js'),supplied=require('../js/world/supplied-art.js');
+const html=JSON.parse(fs.readFileSync('js/script-09.js','utf8').match(/frame\.srcdoc=("(?:\\.|[^"\\])*")/)[1]),legacy=JSON.parse(html.match(/const VK_INTERIOR_LIBRARY91=(\{[^\n]+\});/)[1]);
+const rows=[];for(const a of Object.values(catalog.assets))rows.push({id:a.id,view:a.view,contexts:a.contexts,category:a.image.split('/').slice(2,-1).join('/'),image:a.image,source:a.source,sha256:a.sha256});
+for(const[set,pack]of Object.entries(supplied.sets))for(const item of pack.items||[])rows.push({id:item.id,view:'indoor',contexts:[/arena/.test(set)?'arena':/temple|nature/.test(set)?'natureTemple':set],category:item.category||'decoration',atlas:pack.image,sourceRect:item.rect});
+for(const a of Object.values(legacy.assets))if(a.image)rows.push({id:a.id,view:'indoor',contexts:[a.set||'building'],category:a.category||'template',image:a.image});
+const expansion=JSON.parse(html.match(/const VK_EXPANSION_LIBRARY=(\{[^\n]+\});/)[1]);for(const[biome,pack]of Object.entries(expansion))for(const[id,a]of Object.entries(pack.assets))if(a.ready)rows.push({id:'biome:'+biome+':'+id,view:'outdoor',contexts:[biome],category:a.tile?'outdoor/terrain':'outdoor/'+(/house|tent|temple|shrine/.test(id)?'buildings':/tree|bush|palm|flower|grass|fern/.test(id)?'nature':'decoration'),atlas:pack.image,sourceRect:a.rect});
+const decor=JSON.parse(html.match(/const vkNewAtlasData=(\{[^\n]+\});/)[1]);for(const[id,image]of Object.entries(decor))rows.push({id:'world:'+id,view:'outdoor',contexts:['town','wilderness'],category:'outdoor/legacy',image});
+const data={version:137,stableRuntimeCatalog:'js/world/generator-catalog.js',originalsRetained:true,entries:rows};fs.writeFileSync('assets/generator/library.json',JSON.stringify(data,null,2)+'\n');console.log('Indexed generator records:',rows.length);

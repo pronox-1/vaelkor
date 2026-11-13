@@ -13,10 +13,10 @@
   {id:'wildlands-v1/lake-trail',waterKind:2,density:1,patchScale:1.1},
   {id:'wildlands-v1/dry-trail',waterKind:3,density:1.05,patchScale:1}
  ].map(t=>Object.freeze({...t,terrain:'existing-biome-grass',walkable:'existing-north-south-spine',obstacles:'off-road-with-existing-collision-buffer',objectPositions:'grass-away-from-road-and-buildings',exits:'plan-defined-with-validated-connectors'})));
- const defaults=Object.freeze({branchProbability:.5,bothProbability:.16,maxBranchLength:3});
+ const defaults=Object.freeze({branchProbability:.5,bothProbability:.16,maxBranchLength:2});
  function increment(text,delta=1){let n=BigInt(text)+BigInt(delta);if(n<1n)throw Error('No previous main map');return n.toString();}
  function info(id){const p=identity.parseId(id);if(p.type==='property')return {...p,ordinal:'1',level:1,wildLevel:0,isTown:false};const ordinal=p.type==='main'?p.ordinal:p.type==='side'?identity.parseId(p.mainId).ordinal:null;if(!ordinal)throw Error('Interior generation is reserved for a later update');return {...p,ordinal,wildLevel:Math.max(0,Math.min(Number(ordinal)-1,Number.MAX_SAFE_INTEGER-1043)),level:Math.min(Number(ordinal),Number.MAX_SAFE_INTEGER-1042),isTown:p.type==='main'&&(ordinal==='1'||ordinal.endsWith('0'))};}
- function config(raw={}){const c={...defaults,...raw};for(const k of ['branchProbability','bothProbability'])if(!Number.isFinite(c[k])||c[k]<0||c[k]>1)throw Error('Invalid '+k);if(!Number.isInteger(c.maxBranchLength)||c.maxBranchLength<1||c.maxBranchLength>3)throw Error('Invalid branch length');return c;}
+ function config(raw={}){const c={...defaults,...raw};if(c.maxBranchLength===3)c.maxBranchLength=2;for(const k of ['branchProbability','bothProbability'])if(!Number.isFinite(c[k])||c[k]<0||c[k]>1)throw Error('Invalid '+k);if(!Number.isInteger(c.maxBranchLength)||c.maxBranchLength<1||c.maxBranchLength>3)throw Error('Invalid branch length');return c;}
  function plan(id,worldSeed,settings={}){
   const c=config(settings),m=info(id),random=tag=>identity.seedFor(worldSeed,identity.interiorId(id,tag))/4294967296;
   const exits={},branches={};
@@ -63,6 +63,8 @@
     }
     maps.setTemplate(id,p.templateId);maps.patchState(id,{wildlands:p});state=maps.getState(id);
    }
+   if(m.type==='main'&&Object.values(state.wildlands.branches||{}).some(n=>n>2)){const p={...state.wildlands,branches:{...state.wildlands.branches}};for(const side of Object.keys(p.branches))p.branches[side]=Math.min(2,p.branches[side]);maps.patchState(id,{wildlands:p});state=maps.getState(id);}
+   if(m.type==='side'&&state.wildlands.branch?.length>2){const p={...state.wildlands,branch:{...state.wildlands.branch,length:2},exits:{...state.wildlands.exits}};delete p.exits[m.side];if(m.index<2)p.exits[m.side]={mapId:identity.sideId(m.mainId,m.side,m.index+1),entry:identity.opposite(m.side)};maps.patchState(id,{wildlands:p});state=maps.getState(id);}
    if(state.wildlands.version!==VERSION)throw Error('Unknown Wildlands plan version');
    if(state.wildlands.wildLevel==null||id==='main:1'&&!state.wildlands.exits.south){const p={...state.wildlands,wildLevel:m.wildLevel,exits:{...state.wildlands.exits}};if(id==='main:1')p.exits.south={mapId:'property:gruenwald',entry:'north'};maps.patchState(id,{wildlands:p});state=maps.getState(id);}
    if(m.type==='property'&&!state.construction){maps.patchState(id,{construction:{version:1,reservedAreas:[{kind:'entrance',x:14,y:0,width:3,height:7}],buildableBounds:{x:3,y:6,width:24,height:28},buildings:[],decorations:[],paths:[],plants:[]}});state=maps.getState(id);}

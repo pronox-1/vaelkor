@@ -18,6 +18,7 @@
   }
  }
  for(const[i,element]of ELEMENTS.entries())if(!['Natur','Erde','Stein'].includes(element))for(const rarity of ['rare','epic'])cards.push({id:`bal2-${i}-${rarity}-binding`,name:element+' · Festsetzen',kind:'spell',element,rarity,cost:2,power:1,effect:'root',desc:'Festsetzen mit verringerter Chance; Schutz und Heilung bleiben möglich.'});
+ for(const element of ['Blitz','Dunkel','Psycho'])for(const rarity of ['uncommon','rare','epic','legendary'])cards.push({id:'energy136-'+element+'-'+rarity,name:element+' · Energieentzug',kind:'spell',element,rarity,cost:2,power:1,effect:'energy_down',balanceVersion:81,desc:'Senkt gegnerische Energie für diesen Kampf um 1; mindestens 1 Energie bleibt.'});
  DD.register(cards);
  const syn=[];const syneffect={dot:'dot',rally:'expose',renew:'renew',ward:'ward',mend:'mend',root:'root',stun:'shock',weave:'cleanse',drain:'drain',cleanse:'cleanse',weaken:'weaken',dodge:'dodge',draw:'expose',pierce:'pierce',strike:'pierce'};
  for(const[i,element]of ELEMENTS.entries())for(const[t,rarity]of tiers.entries()){

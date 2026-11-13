@@ -183,3 +183,38 @@ body[data-ui-motion="reduced"] #fusionOverlay .v9HandCard .vkCardEnergy{animatio
 #fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand:disabled{background:none!important;border:0!important;outline:0!important;box-shadow:none!important;filter:none!important}
 #fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand::before,
 #fusionOverlay .fusionShell.v9Battle .v9HandCard.vkDesignHand::after{content:none!important;display:none!important;box-shadow:none!important;filter:none!important}
+
+/* Monster-menu portraits share one matte and one rounded clipping boundary.
+   The 90% artwork scale remains unchanged; its wrapper must not draw a square. */
+.vkMonsterDetails .portrait,
+#fusionOverlay .vkMonsterDetails .fusionMonsterPortrait{
+ background:#081e34!important;
+ overflow:hidden!important;
+ isolation:isolate;
+}
+.vkMonsterDetails .portrait .vk-art-wrap,
+#fusionOverlay .vkMonsterDetails .fusionMonsterPortrait .vk-art-wrap{
+ background:transparent!important;
+ border-radius:inherit!important;
+ isolation:auto!important;
+}
+.vkMonsterDetails .portrait .vk-art-wrap>img,
+#fusionOverlay .vkMonsterDetails .fusionMonsterPortrait .vk-art-wrap>img{
+ border-radius:inherit!important;
+}
+
+/* A shared, roomier portrait viewport: no transformed rectangular image matte. */
+.vkMonsterDetails .portrait .vk-art-wrap,
+#fusionOverlay .vkMonsterDetails .fusionMonsterPortrait .vk-art-wrap{
+ width:84%!important;
+ height:84%!important;
+ flex:0 0 84%!important;
+ transform:none!important;
+ mix-blend-mode:lighten;
+}
+
+/* Keep a visible but narrower gap between neighboring hand cards. */
+#fusionOverlay .v9Battle .v9Hand{gap:4px!important}
+
+/* Keep full source detail in trainer portraits when reducing their size. */
+#fusionOverlay .vkTrainerHeading87 img{image-rendering:auto!important;object-fit:contain}

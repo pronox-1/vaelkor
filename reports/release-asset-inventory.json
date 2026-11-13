@@ -1,12 +1,203 @@
 {
-  "files": 1299,
-  "bytes": 79859470,
-  "reference": "Previous published release assets; compared byte-for-byte via SHA-256",
+  "files": 1396,
+  "bytes": 112513232,
+  "reference": "Previous published release; SHA-256 comparison with explicit changes only",
   "removedAssets": 0,
+  "retainedHostingAliases": 36,
+  "relocatedAssets": 0,
   "modifiedAssets": 0,
-  "policy": "All images, atlases, templates, masks and generator resources preserved. Identical bytes are review candidates only, not automatic deletion permission.",
+  "addedAssets": 0,
+  "relocations": [],
+  "modifications": [],
+  "additions": [],
+  "policy": "No ambiguous or unused-looking generator graphics are deleted. Relocations preserve bytes. Only explicitly declared changes are accepted.",
   "duplicateGroups": [],
   "inventory": [
+    {
+      "path": "breeding-134/1000120235.png",
+      "bytes": 615783,
+      "sha256": "d8119eab39c7b7f6fedc6e2e426e63605442737938308f3aa5c56f03de07144e"
+    },
+    {
+      "path": "breeding-134/1000120236.png",
+      "bytes": 644711,
+      "sha256": "b4b29b6de0ac6a058942a1be03fd1804d7362c282e1140e74bcb7f7aa59003c4"
+    },
+    {
+      "path": "breeding-134/1000120237.png",
+      "bytes": 695571,
+      "sha256": "35ac0ed4f6577ec8e17a893b2f74fe325f43a64bb7be7cfee7b730adc3763355"
+    },
+    {
+      "path": "breeding-134/exterior.webp",
+      "bytes": 2242414,
+      "sha256": "b6311564e17825fc225b9266b23029381267bd2d0eb05d5082e3225af5626a15"
+    },
+    {
+      "path": "breeding-134/indoor-down-0.webp",
+      "bytes": 27308,
+      "sha256": "24dc5358a811e753877d7a68f0dc22d5b1fbdcaf8e4f2b8c2b7f60824a196360"
+    },
+    {
+      "path": "breeding-134/indoor-down-1.webp",
+      "bytes": 24284,
+      "sha256": "e348b2ab0d0125c4eaa90a4e3ee153433686cd4bd459d167de0102856e44a93a"
+    },
+    {
+      "path": "breeding-134/indoor-down-2.webp",
+      "bytes": 23038,
+      "sha256": "f8ecbc395abcb2b4284e081d95da0a101c92a92951ed7b2a31ccbedb6bdb7f71"
+    },
+    {
+      "path": "breeding-134/indoor-down-3.webp",
+      "bytes": 24348,
+      "sha256": "0e2d11e768f999856d8e2f7b5beb9402f408892864398d9db5cac215f67d4a19"
+    },
+    {
+      "path": "breeding-134/indoor-left-0.webp",
+      "bytes": 20134,
+      "sha256": "7cf34b9080aae83d1c634be14882d6e8b5842eaa7c3216061c5f66f756d9ed4f"
+    },
+    {
+      "path": "breeding-134/indoor-left-1.webp",
+      "bytes": 20724,
+      "sha256": "346741a8e216929b57041788cdcc4865d5674fe219af0825f454c25329cc1d73"
+    },
+    {
+      "path": "breeding-134/indoor-left-2.webp",
+      "bytes": 20428,
+      "sha256": "ccbdddd45b90edea939f741d87d9a7a0b5ce8955532a15667ebbe117d3468713"
+    },
+    {
+      "path": "breeding-134/indoor-left-3.webp",
+      "bytes": 20290,
+      "sha256": "c54183b9c50e723a5685a2bc3bd1307c3638a924a4380a000d03dc875badb7c8"
+    },
+    {
+      "path": "breeding-134/indoor-right-0.webp",
+      "bytes": 20286,
+      "sha256": "33525b0815cfee1e1c56a7e8d7e8dfc15cf89742797664fead55c345b1322927"
+    },
+    {
+      "path": "breeding-134/indoor-right-1.webp",
+      "bytes": 20680,
+      "sha256": "e8b24dcd77d9a6e795f89821ff420145ef7a2d61f960d5b4041508aa051e6000"
+    },
+    {
+      "path": "breeding-134/indoor-right-2.webp",
+      "bytes": 20328,
+      "sha256": "6248647d15f2b942ad703a5bf8b4a3c9363f6fd085155fc2737664434f6fc46e"
+    },
+    {
+      "path": "breeding-134/indoor-right-3.webp",
+      "bytes": 20208,
+      "sha256": "cdfa0d3373ba6822feabf90adf9b4e7a948afefb0092d582d57cc1b384437acc"
+    },
+    {
+      "path": "breeding-134/indoor-up-0.webp",
+      "bytes": 27730,
+      "sha256": "61e6e7124c81b3c3e5d67d6b05803619769b21a55623b88cc2885cdfd8cd999b"
+    },
+    {
+      "path": "breeding-134/indoor-up-1.webp",
+      "bytes": 25512,
+      "sha256": "3086326e60225621c86f7ef0e820b2750a59b7655a0c56ae638e7f553677a863"
+    },
+    {
+      "path": "breeding-134/indoor-up-2.webp",
+      "bytes": 23822,
+      "sha256": "54a34c1cb09cdb1485971103c4061c0638890b7e760cdd73104677ffc68b8032"
+    },
+    {
+      "path": "breeding-134/indoor-up-3.webp",
+      "bytes": 25202,
+      "sha256": "dda40c52dac7e6188d4422568bb9b447aaf48acf667831dff2744edc8a1ab395"
+    },
+    {
+      "path": "breeding-134/interior.webp",
+      "bytes": 2339752,
+      "sha256": "29944e6ab43f84bcca6fadf86e4005375c8a1acc8706e5102bac12fb6dbe332c"
+    },
+    {
+      "path": "breeding-134/outdoor-down-0.webp",
+      "bytes": 11872,
+      "sha256": "0670ce827e81ee7af3ebe142a5266afcfe9f44bed227a55602990dd125657f50"
+    },
+    {
+      "path": "breeding-134/outdoor-down-1.webp",
+      "bytes": 11720,
+      "sha256": "bc94954fc01ff68d80cfdaca133fee8b2e690782033b55bfce84d5f3264f6bd8"
+    },
+    {
+      "path": "breeding-134/outdoor-down-2.webp",
+      "bytes": 11864,
+      "sha256": "ffc78fc829a8a9a5ca1cd66757cc5cf8a37aa24435188c970807ccf3c4fa5ce9"
+    },
+    {
+      "path": "breeding-134/outdoor-down-3.webp",
+      "bytes": 12490,
+      "sha256": "3062b7d8c8f86f07e8e758d1a1961067ee0f4ad2db22f7346e1f11011419acf5"
+    },
+    {
+      "path": "breeding-134/outdoor-left-0.webp",
+      "bytes": 12998,
+      "sha256": "a3bce59ab9bdf6702207160c77335daf31fa6550fd688214a2880fc0c08fe5e4"
+    },
+    {
+      "path": "breeding-134/outdoor-left-1.webp",
+      "bytes": 12798,
+      "sha256": "43c2228e9b9b521f794d97ede9e2b430c35b1798ae20237b5aa6b28502ca9ce0"
+    },
+    {
+      "path": "breeding-134/outdoor-left-2.webp",
+      "bytes": 13024,
+      "sha256": "f70024f7b202948aad2fd353d3335da820dfa8ef338d729a1085b01f7028a705"
+    },
+    {
+      "path": "breeding-134/outdoor-left-3.webp",
+      "bytes": 13000,
+      "sha256": "8a918f23b88149b9b4307dabe6f5e16355b341937bf8927a9a51ede0f28ffea7"
+    },
+    {
+      "path": "breeding-134/outdoor-right-0.webp",
+      "bytes": 12988,
+      "sha256": "36d3d6c0101cd0e9ce13ebeb6524a319e07183ae7cfb07d2a351c08013327c85"
+    },
+    {
+      "path": "breeding-134/outdoor-right-1.webp",
+      "bytes": 12752,
+      "sha256": "54f9465cdf76527d1ccc94d00daae3fa8c4316a7b5af68a35a2b13e011a93279"
+    },
+    {
+      "path": "breeding-134/outdoor-right-2.webp",
+      "bytes": 13126,
+      "sha256": "31719a588ac595a533204b35b2ad802ab464a815c804ddee0430bf2f28f2a4d6"
+    },
+    {
+      "path": "breeding-134/outdoor-right-3.webp",
+      "bytes": 12924,
+      "sha256": "ebbc6046841ea6b2ad0c07467fe4b8740dd2fd6ffd365bfa35691994e6406026"
+    },
+    {
+      "path": "breeding-134/outdoor-up-0.webp",
+      "bytes": 13158,
+      "sha256": "5dee52fa9b7fe59b8a01ca6eaabdabb7188a44675cd9ebaa08a06c3ce66fe6a8"
+    },
+    {
+      "path": "breeding-134/outdoor-up-1.webp",
+      "bytes": 13360,
+      "sha256": "7aecc89772f53646dab704c42a4f4e09c490bdfa222e48708b57866f4acb988f"
+    },
+    {
+      "path": "breeding-134/outdoor-up-2.webp",
+      "bytes": 13130,
+      "sha256": "2dc9ed612b4c6499d7d665bc66e7750bf4b0e5bdd427b4c4e2b61be480037bd4"
+    },
+    {
+      "path": "breeding-134/outdoor-up-3.webp",
+      "bytes": 13148,
+      "sha256": "f34a279c500f504888469d17cae0456a40e1d39f51b54db391bc04736477d279"
+    },
     {
       "path": "cards/effects/angriff_erhoehen_referenz.png",
       "bytes": 52769,
@@ -21,6 +212,11 @@
       "path": "cards/effects/angriff_senken_referenz.png",
       "bytes": 60047,
       "sha256": "7f1528355328e180f806ad9ac680a56a5c4e0fd83b22e0a39074c5fe7314bb50"
+    },
+    {
+      "path": "cards/effects/ausweichen.png",
+      "bytes": 1460477,
+      "sha256": "42e0a208c895503f277be6424eaf1231649d5d036a308a79bbad55195e92f46b"
     },
     {
       "path": "cards/effects/betaeubung_referenz.png",
@@ -46,6 +242,11 @@
       "path": "cards/effects/heilung_ueber_zeit_referenz.png",
       "bytes": 60151,
       "sha256": "f99e5b12fd96db9e5c1fe4ecd53b34a8a069d00f2db47e69bd6db418296bd725"
+    },
+    {
+      "path": "cards/effects/karten-ziehen.png",
+      "bytes": 873725,
+      "sha256": "ab088f0bdca4c3b4b12bdc5204d845faff426c60758ba1c3dbba7ba5a29f0f61"
     },
     {
       "path": "cards/effects/schaden_referenz.png",
@@ -211,6 +412,191 @@
       "path": "cards/synchro/frames.png",
       "bytes": 1923825,
       "sha256": "5f7b1ca9f8fd3b7232b28e45bd6f0368cece459d38fbbd771f89563f647183ce"
+    },
+    {
+      "path": "generator/indoor/arena/archery-target.webp",
+      "bytes": 107494,
+      "sha256": "153dad5854df9f411d1a1430ce051daf8c690a5a65f54dc457323d500c9032ce"
+    },
+    {
+      "path": "generator/indoor/arena/practice-rack.webp",
+      "bytes": 88848,
+      "sha256": "583d2af5a181e9b9cce1238e92a561deaae605dc0e274f1c45a195b8e485a1b1"
+    },
+    {
+      "path": "generator/indoor/arena/training-dummy.webp",
+      "bytes": 61892,
+      "sha256": "b905918f90b3304c8c4401383c39f37e1275becc87931c28c061c1ec62750a17"
+    },
+    {
+      "path": "generator/indoor/arena/trophy.webp",
+      "bytes": 74178,
+      "sha256": "4527276f89921aa3a4dc096a2d6b8380f0c74cdb6fa0ef470a24a9a78bbd7841"
+    },
+    {
+      "path": "generator/indoor/household/dining-table.webp",
+      "bytes": 92328,
+      "sha256": "ad0132abcf63078cfa6145424a89cf0026e325986694841b6e5737810c95876a"
+    },
+    {
+      "path": "generator/indoor/household/kitchen-bench.webp",
+      "bytes": 100510,
+      "sha256": "565eb4af1520973ce1f57db9c6e46778bf2d46a9c4cf0e3e6077b7fe22412a23"
+    },
+    {
+      "path": "generator/indoor/household/linen-shelf.webp",
+      "bytes": 101072,
+      "sha256": "8cd9521d6fb5835dfc86b4c3dc50f67261751475c99555196f76e2b50467e954"
+    },
+    {
+      "path": "generator/indoor/household/pantry.webp",
+      "bytes": 114850,
+      "sha256": "460a74175a421dcf95fad7dc988de84fd5eb8ed507353f96b812e9ffbc823834"
+    },
+    {
+      "path": "generator/indoor/household/sewing-basket.webp",
+      "bytes": 92002,
+      "sha256": "b2d388d9e4c4045b85fa0ab5e39003747126a25a2aad6d65b3ff1f40ae376200"
+    },
+    {
+      "path": "generator/indoor/household/stove.webp",
+      "bytes": 86976,
+      "sha256": "bed5c7e00974c5053f0638f78c41b3d61d368e8750d44f43cacdad273489ecb3"
+    },
+    {
+      "path": "generator/indoor/household/washstand.webp",
+      "bytes": 92798,
+      "sha256": "a14e8b513b6715dbc124d9b58f94cc896af96aa7d6de72cbdb93e1559f03f8fb"
+    },
+    {
+      "path": "generator/indoor/household/writing-desk.webp",
+      "bytes": 101046,
+      "sha256": "b39cf6cc91bbd13386f9bf9bb925068b97fbc6f838bb378661ccf9e8fab5f112"
+    },
+    {
+      "path": "generator/library.json",
+      "bytes": 187782,
+      "sha256": "6d74d81c6d5cabe78ae56cb0acf2ae28e2fc31a5565c4970e9a5baf198a7f0ac"
+    },
+    {
+      "path": "generator/outdoor/buildings/caravan.webp",
+      "bytes": 107990,
+      "sha256": "91b9706eee33ee0f5447a27c722eec93d6e3ad5219436bea427612347ad8682e"
+    },
+    {
+      "path": "generator/outdoor/buildings/chapel.webp",
+      "bytes": 107250,
+      "sha256": "eaf9adbd5f0561ff97cda578ad74e88f8b50d63eaf1ab195cd8bcf160426bb5f"
+    },
+    {
+      "path": "generator/outdoor/buildings/cottage.webp",
+      "bytes": 128384,
+      "sha256": "5601628d638cc84dd655f0f12e53d3c46ac9da1dfed09f09477c4b0f44989751"
+    },
+    {
+      "path": "generator/outdoor/buildings/ranger-hut.webp",
+      "bytes": 116168,
+      "sha256": "fe9d6771e499dd311057bab20ff70aceade6aec49b34d04b9941ba071a6d20f9"
+    },
+    {
+      "path": "generator/outdoor/camping/bedroll.webp",
+      "bytes": 85298,
+      "sha256": "c551d8681a95bb985abd246a505e6f5b242933ebae59437ed97346cd320d07fc"
+    },
+    {
+      "path": "generator/outdoor/camping/supply-cart.webp",
+      "bytes": 114340,
+      "sha256": "7e15b815161d7d6e5482399d857785ca0cfa607b33e68eec861a08ee794b760a"
+    },
+    {
+      "path": "generator/outdoor/nature/berry-bush.webp",
+      "bytes": 100184,
+      "sha256": "93ffd0d8661f0b18843db260db92d44b38bf4cc67bc1da66c74a3a79c3f8a127"
+    },
+    {
+      "path": "generator/outdoor/nature/fallen-log.webp",
+      "bytes": 79390,
+      "sha256": "418bf05c1552e931871fb57a467b07f8b6acb27c5320c72da656e061cae68ae7"
+    },
+    {
+      "path": "generator/outdoor/nature/fern-rocks.webp",
+      "bytes": 92092,
+      "sha256": "001d72ecaebdf5acf4cf8e115e1408b8326c57b25990b9f064765df4d8ee450b"
+    },
+    {
+      "path": "generator/outdoor/nature/hollow-stump.webp",
+      "bytes": 96724,
+      "sha256": "a77e83b3ec6a023539deed3ef2dbcb573781039fb4e3ace826e9efcf15779159"
+    },
+    {
+      "path": "generator/outdoor/nature/oasis-palm.webp",
+      "bytes": 95022,
+      "sha256": "d1c3dbb9302ec3ce06b001fe550fafa88bf5909f8081202feca061491e7abe7d"
+    },
+    {
+      "path": "generator/outdoor/nature/reeds.webp",
+      "bytes": 97036,
+      "sha256": "cf624bbbdf1e63d5411a748f9753fedeae5dcbd18a9c31e13cc97a3aae84498a"
+    },
+    {
+      "path": "generator/outdoor/ruins/broken-column.webp",
+      "bytes": 90152,
+      "sha256": "305478b5fa15ceeb8dcc85e73e8a969d900c741432d7aea36592b0cdf80991fe"
+    },
+    {
+      "path": "generator/outdoor/ruins/ruined-arch.webp",
+      "bytes": 108790,
+      "sha256": "2f54fca85f2d2edfdb4ef3593ef2284eec5db436eaf7ff558e5bb97f73202648"
+    },
+    {
+      "path": "generator/outdoor/ruins/waystone.webp",
+      "bytes": 99470,
+      "sha256": "974026fd29706e8cfd805525da665d544b1a9f4a58bbf2395a06d670eca615c4"
+    },
+    {
+      "path": "generator/outdoor/ruins/woodland-shrine.webp",
+      "bytes": 111882,
+      "sha256": "1b8fea6d1ce86f9def4418fde5cdb7c2e577bdef47b2e6410d8a534a76b3dcbf"
+    },
+    {
+      "path": "generator/outdoor/town/borders/palisade.webp",
+      "bytes": 69686,
+      "sha256": "ee581ca5b5f16b2ecbbedae95f439ed59864f198b29f5358a8d9edd3ea6f5146"
+    },
+    {
+      "path": "generator/outdoor/town/borders/stone-wall.webp",
+      "bytes": 78750,
+      "sha256": "fd5d0505582c086471122178b15f3e3306b4f47395084365d077560e4eb059c2"
+    },
+    {
+      "path": "generator/outdoor/town/furniture/campfire.webp",
+      "bytes": 58102,
+      "sha256": "48af9064255852b2308445b91c3e78bf9c45cdb7b13b47eeae9ac352ea5f728e"
+    },
+    {
+      "path": "generator/outdoor/town/furniture/market-stall.webp",
+      "bytes": 107680,
+      "sha256": "b52441a820bb41d09080c4c19aeb86e5b73145c340a9f27c0eabede6cf9b190f"
+    },
+    {
+      "path": "generator/outdoor/town/furniture/noticeboard.webp",
+      "bytes": 87334,
+      "sha256": "5f2c199d6cd3e3e29f85200ab5a8e736f5f813159173f8692f6001bab500e29f"
+    },
+    {
+      "path": "generator/outdoor/town/furniture/planter.webp",
+      "bytes": 102364,
+      "sha256": "4326d6fe9f10a239e0ed99322cff07d9e6a58c32fc3cb9260f3f88bd09a539e4"
+    },
+    {
+      "path": "generator/outdoor/town/furniture/produce-cart.webp",
+      "bytes": 90870,
+      "sha256": "9fcade4ea7ba166c259cde43f9f7db741ef869fad647993808e2597245285bcb"
+    },
+    {
+      "path": "generator/outdoor/town/furniture/trough.webp",
+      "bytes": 86484,
+      "sha256": "e355f584642ed883fbc95d421802bea45ca0eff5282e30e9a9557b0f7472b0be"
     },
     {
       "path": "images/002407e2af24972dc807.webp",
@@ -6501,6 +6887,111 @@
       "path": "images/trail-wooden-arch.png",
       "bytes": 475314,
       "sha256": "3774ef1f67e784e3a63a6fa8285b1ed29b2a0222bcd38865998e0242fb33fdf9"
+    },
+    {
+      "path": "interiors/catalog.json",
+      "bytes": 36593,
+      "sha256": "671b71c24f4ab057eb4ae51a0098b12e66621a865b29a79d0873732d47d50e3c"
+    },
+    {
+      "path": "interiors/church-atlas.png",
+      "bytes": 2448335,
+      "sha256": "f614f9b88e691cf1a4a859ec37f4b85b52def1601fff48c3b5b04d691f98450d"
+    },
+    {
+      "path": "interiors/ruined-atlas.png",
+      "bytes": 2323717,
+      "sha256": "b59ded12cc564c52b4e07858c6e3c5c2a15014e6a8fd4a6d74ae57032ee252e6"
+    },
+    {
+      "path": "interiors/tent-atlas.png",
+      "bytes": 2185386,
+      "sha256": "28590f63e74c9415dc70d986b92886f134b96f17f25ae07f051339c3fc9ac3e7"
+    },
+    {
+      "path": "templates-127/arena-reference.jpg",
+      "bytes": 403304,
+      "sha256": "4e1cc2cbce311e0bbbb7c0b49ec0fbf7a827be8f74337876a3d493e4fe511ef9"
+    },
+    {
+      "path": "templates-127/arena.jpg",
+      "bytes": 424873,
+      "sha256": "dd968b3f2dcb6ab9192d1ea1c062fdac5ef41de3b5149f91ff99964fd2b0fa4b"
+    },
+    {
+      "path": "templates-127/building.jpg",
+      "bytes": 381945,
+      "sha256": "71e4f75a238d2fb8ede7074edb313d4b61748b0496ae40e0ea4fefb6a87262c5"
+    },
+    {
+      "path": "templates-127/catalog.json",
+      "bytes": 73533,
+      "sha256": "fc6062fd7c082de7f19040e75e8dc575d0e0f556096ea8f7862a34a68c3aabb4"
+    },
+    {
+      "path": "templates-127/nature-arches.jpg",
+      "bytes": 583845,
+      "sha256": "bcf1390f428eb47b3447aca01a5eda5f0cecbce09d2f02de61e573efb77552a9"
+    },
+    {
+      "path": "templates-127/nature-detail.jpg",
+      "bytes": 485540,
+      "sha256": "ea951501691759068500ab9d959e47e3c215b3f6e3bed983c51913bea21e078c"
+    },
+    {
+      "path": "templates-127/npc-large.jpg",
+      "bytes": 653978,
+      "sha256": "fa388e28154e82427c0dfc75b533dd24f39d84ca927cb279ffaa0518b81ff000"
+    },
+    {
+      "path": "templates-127/npc-small.jpg",
+      "bytes": 620441,
+      "sha256": "dea6499a8b480067423839fc57fc5f7e47f155867407a9bec752ce23f4d901dd"
+    },
+    {
+      "path": "templates-127/temple-reference.jpg",
+      "bytes": 550867,
+      "sha256": "7b2f16ec205b3b89cff9c0c2d57df68c35a54169f1f2e89e296c4bfa1c16f869"
+    },
+    {
+      "path": "templates-127/temple.jpg",
+      "bytes": 499148,
+      "sha256": "d2ce0080264f2cc660aa7c3e47019f8fcfb8efd63c018b4e201c8c4cbe95b6ba"
+    },
+    {
+      "path": "templates-129/catalog.json",
+      "bytes": 744,
+      "sha256": "67eb447d0a31a41d45cdcc4e5b84834a13fc28735c1f08ce0c3d1e8d887d810f"
+    },
+    {
+      "path": "templates-129/npc-indoor129.jpg",
+      "bytes": 389626,
+      "sha256": "6dbfccd4a61376d14775883e5b74e6d89a17866b83d2c3f46ae1cd7cd9047fe1"
+    },
+    {
+      "path": "templates-129/npc-outdoor129.jpg",
+      "bytes": 570438,
+      "sha256": "2d206192d37799949c4e8eabcdc1941904045299e7f6aab10a0df3ff978968a8"
+    },
+    {
+      "path": "templates-133/interior.png",
+      "bytes": 2231477,
+      "sha256": "6175432dc77c349f605599aac095d5eada0d7179c1b8ffb4fa3f08c093691713"
+    },
+    {
+      "path": "templates-133/nature.png",
+      "bytes": 2370061,
+      "sha256": "0b96b672ecc2ac71e0490dc82b8a848cdcee836722c694c8c4fdc4cb0e8728d7"
+    },
+    {
+      "path": "templates-133/town.png",
+      "bytes": 2353442,
+      "sha256": "61dd37697ecee9c7e5498639e90a54658953b328dc0b997333a682579c616a4a"
+    },
+    {
+      "path": "world/teleporter-arrow.webp",
+      "bytes": 12144,
+      "sha256": "7e9d3570e384fe6db01c3f5d2fdb7a95ef24c23c07ff97b19b1ed484eecf08cd"
     }
   ]
 }

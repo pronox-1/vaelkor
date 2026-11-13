@@ -1,5 +1,14 @@
 // BEGIN VAELKOR WILDLANDS SCENE BRIDGE v1
 // This fragment lives inside the existing iframe closure; it does not own a second map registry.
+function vkInteriorExitContains129(exit){return Math.abs(p.x-exit.x)<=.55&&p.y>=exit.y-.55&&p.y<=exit.y+1.6;}
+function vkExitBand131(q,x,y,width=.8,inner=.45){const along=(x-q.x)*q.dx+(y-q.y)*q.dy,across=Math.abs((x-q.x)*q.dy-(y-q.y)*q.dx);return across<=width+1e-6&&along<=inner+1e-6&&along>=-1.6;}
+function vkNearExit131(x,y){return Object.values(vkWildExits).find(q=>vkExitBand131(q,x,y,1.3,.8));}
+function vkWildGateContains129(q){
+ // A player may stand on integer coordinates after an old building return.
+ // Include that half-tile offset within the actual opening and keep the
+ // outward strip to the border so holding a direction cannot skip the timer.
+ return Math.abs(p.x-q.x)<=.5&&Math.abs(p.y-q.y)<=.5;
+}
 function vkWildService(){try{const api=window.parent.VaelkorWildlands;return api?.available?api:null;}catch(_){return null;}}
 function vkWildGuardBlocks(nx,ny){
  if(!guardian?.present||guardian.defeated)return false;
@@ -77,7 +86,7 @@ function vkTrailDecorate(plan){
   const returning=plan.type==='side'&&port!==plan.branch?.side;
   if(plan.id==='main:1'&&port==='next')style.variant='sign';if(plan.id==='main:1'&&port==='south')style.variant='sign';if(plan.type==='property')style.variant='plain';
   style.message=lib.message({port,targetId:plan.exits[port].mapId,targetTown:target.isTown,targetLabel:targetBiome.hub,biome,returning});
-  if(plan.id==='main:1'&&port==='next')style.message='Zur Wildnis';if(plan.exits[port].mapId==='property:gruenwald')style.message='Mein Grundstück';
+  if(plan.id==='main:1'&&port==='next')style.message='Zur Wildnis';if(plan.exits[port].mapId==='property:gruenwald')style.message='Arena und Grundstück';
   const edgeFrame=q.dx===0;if(edgeFrame)style.variant='arch';
   let placed=false;
   if(edgeFrame){const height=3*lib.arch.rect[3]/lib.arch.rect[2];objects.push({type:'vkDecor',asset:lib.arch.asset,transitionRect:lib.arch.rect,x:q.x,y:Math.min(H-.02,q.y+height/2),w:3,block:false,transitionPort:port,transitionEdgeFrame:true});placed=true;}
@@ -107,30 +116,37 @@ function vkTrailDecorate(plan){
  if(blocked){objects=objects.filter(o=>!o.transitionPort);for(const style of Object.values(vkTrailDecor))style.variant='plain';vkWildReachCache=null;}
 }
 function vkTrailUpgrade(plan){
- if(vkTrailVersion===2||!vkTrailLibrary())return;
+ if(vkTrailVersion===3||!vkTrailLibrary())return;
  objects=objects.filter(o=>!o.transitionPort);vkWildReachCache=null;
  const old=vkWildExits;vkWildExits=vkWildExitGeometry(plan);if(!townMode)for(const port of Object.keys(vkWildExits))if(old[port])vkWildExits[port]=vkWildExits[port].dx?old[port]:{...vkWildExits[port],x:old[port].x};
  if(townMode&&guardian?.present&&vkWildExits.next){const q=vkWildExits.next;guardian.x=q.x+q.dx*1.4;guardian.y=q.y+q.dy*1.4;}
- for(const q of Object.values(vkWildExits)){vkWildConnect(q,p);vkTrailExtendToBorder(q);}
- vkTrailDecor={};vkTrailDecorate(plan);vkTrailVersion=2;invalidateScene();requestWorldDraw96();
+ if(plan.type==='side'){
+   for(let y=0;y<H;y++)for(let x=0;x<W;x++)if(map[y][x]===types.PATH)map[y][x]=types.GRASS;
+   vkWildReachCache=null;const safe=[...vkWildReach(p)].map(k=>({x:k%W+.5,y:Math.floor(k/W)+.5})).sort((a,b)=>Math.hypot(a.x-15.5,a.y-19.5)-Math.hypot(b.x-15.5,b.y-19.5));const anchor=safe[0]||p;map[Math.floor(anchor.y)][Math.floor(anchor.x)]=types.PATH;vkWildReachCache=null;
+   for(const q of Object.values(vkWildExits))vkWildConnect(q,anchor);
+   for(const b of wildBuildings102)vkWildConnect(vkDoorPoint101(b),anchor);
+  }
+  for(const q of Object.values(vkWildExits)){vkWildConnect(q,p);vkTrailExtendToBorder(q);}
+ vkTrailDecor={};vkTrailDecorate(plan);vkTrailVersion=3;invalidateScene();requestWorldDraw96();
 }
 
+function vkNormalize136(){if(!townMode)return;for(const o of objects)if(/laterne|lantern/.test(o.asset||'')){o.type='vkDecor';o.asset='abenteuer_laterne';o.w=18/T;}const fountain=townProps.find(o=>o.kind==='fountain')||objects.find(o=>/dorfbrunnen/.test(o.asset||''));if(!fountain)return;objects=objects.filter(o=>!(/laterne|lantern/.test(o.asset||'')&&Math.hypot(o.x-fountain.x,o.y-fountain.y)<7));}
 const vkWildEngine={
- capture(){return{version:1,level,seed,map,objects,mapTheme,riverSide,entryX,exitX,roadCells,townMode,townBuildings,guardian,spawn:{...(interior&&returnPoint?returnPoint:p)},exits:vkWildExits,healPoints:healPoints102,townVersion:vkTownVersion,landscapeVersion:vkNatureVersion,houseVersion:vkHouseVersion,landscapeFeatures:vkLandscapeFeatures,facing:heroFacing,transitionVersion:vkTrailVersion,transitionDecor:vkTrailDecor,wildBuildings:wildBuildings102.map(({object102,...b})=>({...b,objectIndex:objects.indexOf(object102)}))};},
- generate(spec){vkWildSpec=spec;vkWildCurrentId=spec.id;vkWildExits={};vkTrailVersion=0;vkTrailDecor={};level=spec.level;vkTownVersion=0;vkNatureVersion=0;vkHouseVersion=0;vkLandscapeFeatures=[];if(spec.type==='property')vkBuildProperty(spec.seed);else vkLegacyBuildWL(spec.seed,false);if(spec.type==='side'){guardian=null;healPoints102=[];}else if(spec.cleared&&guardian)guardian.defeated=true;vkTownUpgrade(spec);vkGenerateLandscape(spec);},
+ capture(){return{version:1,qualityVersion:vkQualityVersion130,level,seed,map,objects,mapTheme,riverSide,entryX,exitX,roadCells,townMode,townBuildings,guardian,spawn:{...(interior&&returnPoint?returnPoint:p)},exits:vkWildExits,healPoints:healPoints102,townVersion:vkTownVersion,landscapeVersion:vkNatureVersion,houseVersion:vkHouseVersion,landscapeFeatures:vkLandscapeFeatures,facing:heroFacing,transitionVersion:vkTrailVersion,transitionDecor:vkTrailDecor,wildBuildings:wildBuildings102.map(({object102,...b})=>({...b,objectIndex:objects.indexOf(object102)}))};},
+ generate(spec){vkQualityVersion130=0;vkWildSpec=spec;vkWildCurrentId=spec.id;vkWildExits={};vkTrailVersion=0;vkTrailDecor={};level=spec.level;vkTownVersion=0;vkNatureVersion=0;vkHouseVersion=0;vkLandscapeFeatures=[];if(spec.type==='property')vkBuildProperty(spec.seed);else vkLegacyBuildWL(spec.seed,false);if(spec.type==='side'){guardian=null;healPoints102=[];}else if(spec.cleared&&guardian)guardian.defeated=true;vkTownUpgrade(spec);vkGenerateLandscape(spec);},
  prepare(plan){
   vkWildExits=vkWildExitGeometry(plan);
   if(plan.type==='side'){
    for(const o of objects)if(o.chest102&&!o.chest102.startsWith(plan.id+'|'))o.chest102=plan.id+'|'+o.chest102;
    for(const b of wildBuildings102)if(!b.lootId102.startsWith(plan.id+'|'))b.lootId102=plan.id+'|'+b.lootId102;
   }
-  vkTownUpgrade(plan);vkFixHouseAccess(plan);vkEnsureRestStop(plan);vkTrailUpgrade(plan);
+  vkTownUpgrade(plan);vkFixHouseAccess(plan);vkEnsureRestStop(plan);vkTrailUpgrade(plan);vkTownClearRoadPlants();vkPropertyArena(plan);vkNPCWorldPrepare134(plan);vkSuppliedTemple127(plan);vkWarmTown129();vkWorldQuality130(plan);vkNormalize136();vkWarmScene135();
   invalidateScene();requestWorldDraw96();
  },
- upgrade:plan=>{vkTownUpgrade(plan);vkFixHouseAccess(plan);vkEnsureRestStop(plan);vkTrailUpgrade(plan);},
+ upgrade:plan=>{vkTownUpgrade(plan);vkFixHouseAccess(plan);vkEnsureRestStop(plan);vkTrailUpgrade(plan);vkTownClearRoadPlants();vkPropertyArena(plan);vkNPCWorldPrepare134(plan);vkSuppliedTemple127(plan);vkWarmTown129();vkWorldQuality130(plan);vkNormalize136();vkWarmScene135();},
  restore(scene,plan){
   if(scene?.version!==1||scene.map?.length!==H||scene.map.some(row=>row.length!==W)||!Array.isArray(scene.objects)||scene.objects.length>1500)throw Error('Ungültige gespeicherte Karte');
-  vkHouseVersion=scene.houseVersion||0;vkTownVersion=scene.townVersion||0;vkNatureVersion=scene.landscapeVersion||1;vkLandscapeFeatures=scene.landscapeFeatures||[];
+  vkQualityVersion130=scene.qualityVersion||0;vkHouseVersion=scene.houseVersion||0;vkTownVersion=scene.townVersion||0;vkNatureVersion=scene.landscapeVersion||1;vkLandscapeFeatures=scene.landscapeFeatures||[];
   if(!vkWildService()?.currentId&&scene.facing)heroFacing=scene.facing;vkTrailVersion=scene.transitionVersion||0;vkTrailDecor=scene.transitionDecor||{};
   vkWildSpec=plan;vkWildCurrentId=plan.id;level=scene.level;seed=scene.seed;map=scene.map;objects=scene.objects;mapTheme=scene.mapTheme;riverSide=scene.riverSide;entryX=scene.entryX;exitX=scene.exitX;roadCells=scene.roadCells;townMode=scene.townMode;townBuildings=scene.townBuildings;guardian=scene.guardian;if(plan.cleared&&guardian)guardian.defeated=true;vkWildExits=scene.exits;healPoints102=scene.healPoints;wildBuildings102=scene.wildBuildings.map(({objectIndex,...b})=>({...b,object102:objects[objectIndex]}));
   if(objects.some(o=>o.chest102))vkNewAtlasImages.loot_chest102=vkRoomImage91(CHEST_ASSET102);
@@ -145,13 +161,14 @@ const vkWildEngine={
   for(const b of [...townBuildings,...wildBuildings102]){const door=vkDoorPoint101(b);if(![...reachable].some(k=>Math.hypot(k%W+.5-door.x,Math.floor(k/W)+.5-door.y)<=.55))throw Error('Tür nicht erreichbar: '+b.name);}
  },
  place(entry,position,plan){
-  const gate=entry&&vkWildExits[entry],desired=gate?{x:gate.x+2*gate.dx,y:gate.y+2*gate.dy}:position;
+  const gate=entry&&vkWildExits[entry];let desired=gate?{x:gate.x+2*gate.dx,y:gate.y+2*gate.dy}:position;if(plan.id==='property:gruenwald'&&desired&&Number.isFinite(desired.x)&&Number.isFinite(desired.y)&&!pass(desired.x,desired.y))desired=wildBuildings102.find(b=>b.propertyArena126)?.returnPoint102||desired;
+  if(!gate&&desired&&Number.isFinite(desired.x)&&Number.isFinite(desired.y)){const near=vkNearExit131(desired.x,desired.y);if(near)desired={x:near.x+2*near.dx,y:near.y+2*near.dy};}
   if(desired&&Number.isFinite(desired.x)&&Number.isFinite(desired.y)){
    const reachable=vkWildReach(p),candidates=[...reachable].map(k=>({x:k%W+.5,y:Math.floor(k/W)+.5}));
    const safe=q=>Object.values(vkWildExits).every(g=>Math.hypot(g.x-q.x,g.y-q.y)>1)&&(!guardian?.present||guardian.defeated||Math.hypot(q.x-guardian.x,q.y-guardian.y)>1.4);
    candidates.sort((a,b)=>Math.hypot(a.x-desired.x,a.y-desired.y)-Math.hypot(b.x-desired.x,b.y-desired.y));const point=candidates.find(safe);if(!point)throw Error('Kein sicherer Eintrittspunkt');p={...point};
   }
-  status.textContent=plan.type==='property'?'Mein Grundstück · Freie Fläche für spätere Gebäude und Pflanzen':plan.isTown?vkWorldBiome().hub:vkWorldBiome().label+' · Wildnis '+plan.wildLevel+(guardian?.present&&!guardian.defeated?' · Ausgangswächter':'');
+  status.textContent=plan.type==='property'?'Südliches Gebiet (−1) · Arena und Grundstück':plan.isTown?vkWorldBiome().hub:vkWorldBiome().label+' · Wildnis '+plan.wildLevel+(guardian?.present&&!guardian.defeated?' · Ausgangswächter':'');
   target={...p};animFrom=null;animElapsed=STEP_MS;walkDistance=0;heroAnimation92.phase=0;heroAnimation92.outdoorMs=0;invalidateScene();requestWorldDraw96();
  },
  position:()=>({...p}),report:error=>{console.warn('VAELKOR Kartenwechsel abgebrochen:',error.message);status.textContent='Kartenwechsel abgebrochen: '+error.message;}
@@ -161,7 +178,9 @@ build=function(n,fromTop=false){const service=vkWildService();if(!vkWildInitiali
 const vkLegacyExitPointsWL=vkExitPoints103;
 vkExitPoints103=function(){return vkWildInitialized&&vkWildService()?.currentId&&!interior?Object.values(vkWildExits):vkLegacyExitPointsWL();};
 const vkLegacyDrawWL=draw;
-draw=function(){vkLegacyDrawWL();if(!interior&&vkWildSpec?.branch)pos.textContent+=' · Nebenweg '+vkWildSpec.branch.index+'/'+vkWildSpec.branch.length;};
+const vkTeleportImage136=new Image();vkTeleportImage136.fetchPriority='high';vkTeleportImage136.decoding='async';vkTeleportImage136.src='assets/world/teleporter-arrow.webp?design=137';vkTeleportImage136.onload=()=>{invalidateScene();requestWorldDraw96();};
+function vkPaintTeleporters136(){if(interior||!vkWildSpec)return; for(const q of Object.values(vkWildExits)){ctx.save();ctx.translate(q.x*T,q.y*T);ctx.rotate(Math.atan2(-q.dx,q.dy));ctx.imageSmoothingEnabled=false;if(vkTeleportImage136.complete&&vkTeleportImage136.naturalWidth)ctx.drawImage(vkTeleportImage136,-T/2,-T/2,T,T);else{ctx.fillStyle='#b8a17b';ctx.fillRect(-T/2,-T/2,T,T);ctx.fillStyle='#382d22';ctx.textAlign='center';ctx.fillText('▲',0,5);}ctx.restore();}}
+draw=function(){vkLegacyDrawWL();if(!interior&&vkWildSpec?.branch){const side=vkWildSpec.branch;pos.textContent=vkWorldBiome().label+' – Wildnis '+vkWildSpec.wildLevel+', Nebenweg '+(side.side==='left'?'links':'rechts')+' '+side.index;}};
 const vkTrailInteractBefore=document.querySelector('#interact').onclick;
 document.querySelector('#interact').onclick=()=>{if(!interior&&!battleActive&&!vkTransitionBusy100()){const sign=objects.find(o=>o.transitionSign&&Math.hypot(p.x-o.x,p.y-o.y)<1.85);if(sign){status.textContent=sign.transitionSign;window.parent.postMessage({vkWorld:'interact',kind:'expansion',message:sign.transitionSign},'*');return;}const landmark=objects.find(o=>o.landscapeHint&&Math.hypot(p.x-o.x,p.y-o.y)<2.2);if(landmark){status.textContent=landmark.landscapeHint;window.parent.postMessage({vkWorld:'interact',kind:'expansion',message:landmark.landscapeHint},'*');return;}}vkTrailInteractBefore();};
 window.VaelkorWildScene={attach(){if(!vkWildInitialized||!vkWildService()||vkWildService().currentId)return false;const ok=vkWildService().openLegacy(level,vkWildEngine,false,vkWildRequestedId,vkWildRequestedPosition);if(ok){vkWildRequestedId=null;vkWildRequestedPosition=null;}if(ok)window.parent.postMessage({vkWorld:'ready',mapId:vkWildCurrentId,level,x:p.x,y:p.y},'*');return ok;},languageChanged(){invalidateScene();requestWorldDraw96();},get id(){return vkWildCurrentId;},get exits(){return JSON.parse(JSON.stringify(vkWildExits));},capture:()=>JSON.parse(JSON.stringify(vkWildEngine.capture())),pass:(x,y)=>pass(x,y),travel:port=>vkWildService()?.travel(port,vkWildEngine),save:()=>vkWildService()?.saveCurrent(vkWildEngine),validate:()=>vkWildEngine.validate(vkWildSpec)};

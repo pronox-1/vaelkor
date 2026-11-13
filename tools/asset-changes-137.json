@@ -1,0 +1,6 @@
+{
+  "relocationsFile": "tools/generator-relocations-137.json",
+  "modified": ["assets/world/teleporter-arrow.webp"],
+  "added": ["assets/generator/library.json"],
+  "reason": "User requested a more readable teleporter design and thematic generator folders. Original template sheets and all other art remain byte-identical."
+}

@@ -1,0 +1,9260 @@
+{
+  "version": 137,
+  "stableRuntimeCatalog": "js/world/generator-catalog.js",
+  "originalsRetained": true,
+  "entries": [
+    {
+      "id": "gen133-interior-stove",
+      "view": "indoor",
+      "contexts": [
+        "house",
+        "tent"
+      ],
+      "category": "indoor/household",
+      "image": "assets/generator/indoor/household/stove.webp",
+      "source": "interior",
+      "sha256": "bed5c7e00974c5053f0638f78c41b3d61d368e8750d44f43cacdad273489ecb3"
+    },
+    {
+      "id": "gen133-interior-kitchen-bench",
+      "view": "indoor",
+      "contexts": [
+        "house",
+        "tent"
+      ],
+      "category": "indoor/household",
+      "image": "assets/generator/indoor/household/kitchen-bench.webp",
+      "source": "interior",
+      "sha256": "565eb4af1520973ce1f57db9c6e46778bf2d46a9c4cf0e3e6077b7fe22412a23"
+    },
+    {
+      "id": "gen133-interior-linen-shelf",
+      "view": "indoor",
+      "contexts": [
+        "house",
+        "tent"
+      ],
+      "category": "indoor/household",
+      "image": "assets/generator/indoor/household/linen-shelf.webp",
+      "source": "interior",
+      "sha256": "8cd9521d6fb5835dfc86b4c3dc50f67261751475c99555196f76e2b50467e954"
+    },
+    {
+      "id": "gen133-interior-sewing-basket",
+      "view": "indoor",
+      "contexts": [
+        "house",
+        "tent"
+      ],
+      "category": "indoor/household",
+      "image": "assets/generator/indoor/household/sewing-basket.webp",
+      "source": "interior",
+      "sha256": "b2d388d9e4c4045b85fa0ab5e39003747126a25a2aad6d65b3ff1f40ae376200"
+    },
+    {
+      "id": "gen133-interior-dining-table",
+      "view": "indoor",
+      "contexts": [
+        "house",
+        "tent"
+      ],
+      "category": "indoor/household",
+      "image": "assets/generator/indoor/household/dining-table.webp",
+      "source": "interior",
+      "sha256": "ad0132abcf63078cfa6145424a89cf0026e325986694841b6e5737810c95876a"
+    },
+    {
+      "id": "gen133-interior-pantry",
+      "view": "indoor",
+      "contexts": [
+        "house",
+        "tent"
+      ],
+      "category": "indoor/household",
+      "image": "assets/generator/indoor/household/pantry.webp",
+      "source": "interior",
+      "sha256": "460a74175a421dcf95fad7dc988de84fd5eb8ed507353f96b812e9ffbc823834"
+    },
+    {
+      "id": "gen133-interior-washstand",
+      "view": "indoor",
+      "contexts": [
+        "house",
+        "tent"
+      ],
+      "category": "indoor/household",
+      "image": "assets/generator/indoor/household/washstand.webp",
+      "source": "interior",
+      "sha256": "a14e8b513b6715dbc124d9b58f94cc896af96aa7d6de72cbdb93e1559f03f8fb"
+    },
+    {
+      "id": "gen133-interior-writing-desk",
+      "view": "indoor",
+      "contexts": [
+        "house",
+        "tent"
+      ],
+      "category": "indoor/household",
+      "image": "assets/generator/indoor/household/writing-desk.webp",
+      "source": "interior",
+      "sha256": "b39cf6cc91bbd13386f9bf9bb925068b97fbc6f838bb378661ccf9e8fab5f112"
+    },
+    {
+      "id": "gen133-interior-training-dummy",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "indoor/arena",
+      "image": "assets/generator/indoor/arena/training-dummy.webp",
+      "source": "interior",
+      "sha256": "b905918f90b3304c8c4401383c39f37e1275becc87931c28c061c1ec62750a17"
+    },
+    {
+      "id": "gen133-interior-practice-rack",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "indoor/arena",
+      "image": "assets/generator/indoor/arena/practice-rack.webp",
+      "source": "interior",
+      "sha256": "583d2af5a181e9b9cce1238e92a561deaae605dc0e274f1c45a195b8e485a1b1"
+    },
+    {
+      "id": "gen133-interior-archery-target",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "indoor/arena",
+      "image": "assets/generator/indoor/arena/archery-target.webp",
+      "source": "interior",
+      "sha256": "153dad5854df9f411d1a1430ce051daf8c690a5a65f54dc457323d500c9032ce"
+    },
+    {
+      "id": "gen133-interior-trophy",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "indoor/arena",
+      "image": "assets/generator/indoor/arena/trophy.webp",
+      "source": "interior",
+      "sha256": "4527276f89921aa3a4dc096a2d6b8380f0c74cdb6fa0ef470a24a9a78bbd7841"
+    },
+    {
+      "id": "gen133-town-cottage",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/buildings",
+      "image": "assets/generator/outdoor/buildings/cottage.webp",
+      "source": "town",
+      "sha256": "5601628d638cc84dd655f0f12e53d3c46ac9da1dfed09f09477c4b0f44989751"
+    },
+    {
+      "id": "gen133-town-ranger-hut",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/buildings",
+      "image": "assets/generator/outdoor/buildings/ranger-hut.webp",
+      "source": "town",
+      "sha256": "fe9d6771e499dd311057bab20ff70aceade6aec49b34d04b9941ba071a6d20f9"
+    },
+    {
+      "id": "gen133-town-chapel",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/buildings",
+      "image": "assets/generator/outdoor/buildings/chapel.webp",
+      "source": "town",
+      "sha256": "eaf9adbd5f0561ff97cda578ad74e88f8b50d63eaf1ab195cd8bcf160426bb5f"
+    },
+    {
+      "id": "gen133-town-caravan",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/buildings",
+      "image": "assets/generator/outdoor/buildings/caravan.webp",
+      "source": "town",
+      "sha256": "91b9706eee33ee0f5447a27c722eec93d6e3ad5219436bea427612347ad8682e"
+    },
+    {
+      "id": "gen133-town-noticeboard",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "property"
+      ],
+      "category": "outdoor/town/furniture",
+      "image": "assets/generator/outdoor/town/furniture/noticeboard.webp",
+      "source": "town",
+      "sha256": "5f2c199d6cd3e3e29f85200ab5a8e736f5f813159173f8692f6001bab500e29f"
+    },
+    {
+      "id": "gen133-town-trough",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "property"
+      ],
+      "category": "outdoor/town/furniture",
+      "image": "assets/generator/outdoor/town/furniture/trough.webp",
+      "source": "town",
+      "sha256": "e355f584642ed883fbc95d421802bea45ca0eff5282e30e9a9557b0f7472b0be"
+    },
+    {
+      "id": "gen133-town-produce-cart",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "property"
+      ],
+      "category": "outdoor/town/furniture",
+      "image": "assets/generator/outdoor/town/furniture/produce-cart.webp",
+      "source": "town",
+      "sha256": "9fcade4ea7ba166c259cde43f9f7db741ef869fad647993808e2597245285bcb"
+    },
+    {
+      "id": "gen133-town-planter",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "property"
+      ],
+      "category": "outdoor/town/furniture",
+      "image": "assets/generator/outdoor/town/furniture/planter.webp",
+      "source": "town",
+      "sha256": "4326d6fe9f10a239e0ed99322cff07d9e6a58c32fc3cb9260f3f88bd09a539e4"
+    },
+    {
+      "id": "gen133-town-stone-wall",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "property"
+      ],
+      "category": "outdoor/town/borders",
+      "image": "assets/generator/outdoor/town/borders/stone-wall.webp",
+      "source": "town",
+      "sha256": "fd5d0505582c086471122178b15f3e3306b4f47395084365d077560e4eb059c2"
+    },
+    {
+      "id": "gen133-town-palisade",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "property"
+      ],
+      "category": "outdoor/town/borders",
+      "image": "assets/generator/outdoor/town/borders/palisade.webp",
+      "source": "town",
+      "sha256": "ee581ca5b5f16b2ecbbedae95f439ed59864f198b29f5358a8d9edd3ea6f5146"
+    },
+    {
+      "id": "gen133-town-market-stall",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "property"
+      ],
+      "category": "outdoor/town/furniture",
+      "image": "assets/generator/outdoor/town/furniture/market-stall.webp",
+      "source": "town",
+      "sha256": "b52441a820bb41d09080c4c19aeb86e5b73145c340a9f27c0eabede6cf9b190f"
+    },
+    {
+      "id": "gen133-town-campfire",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "property"
+      ],
+      "category": "outdoor/town/furniture",
+      "image": "assets/generator/outdoor/town/furniture/campfire.webp",
+      "source": "town",
+      "sha256": "48af9064255852b2308445b91c3e78bf9c45cdb7b13b47eeae9ac352ea5f728e"
+    },
+    {
+      "id": "gen133-nature-fallen-log",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "image": "assets/generator/outdoor/nature/fallen-log.webp",
+      "source": "nature",
+      "sha256": "418bf05c1552e931871fb57a467b07f8b6acb27c5320c72da656e061cae68ae7"
+    },
+    {
+      "id": "gen133-nature-hollow-stump",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "image": "assets/generator/outdoor/nature/hollow-stump.webp",
+      "source": "nature",
+      "sha256": "a77e83b3ec6a023539deed3ef2dbcb573781039fb4e3ace826e9efcf15779159"
+    },
+    {
+      "id": "gen133-nature-fern-rocks",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "image": "assets/generator/outdoor/nature/fern-rocks.webp",
+      "source": "nature",
+      "sha256": "001d72ecaebdf5acf4cf8e115e1408b8326c57b25990b9f064765df4d8ee450b"
+    },
+    {
+      "id": "gen133-nature-berry-bush",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "image": "assets/generator/outdoor/nature/berry-bush.webp",
+      "source": "nature",
+      "sha256": "93ffd0d8661f0b18843db260db92d44b38bf4cc67bc1da66c74a3a79c3f8a127"
+    },
+    {
+      "id": "gen133-nature-broken-column",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/ruins",
+      "image": "assets/generator/outdoor/ruins/broken-column.webp",
+      "source": "nature",
+      "sha256": "305478b5fa15ceeb8dcc85e73e8a969d900c741432d7aea36592b0cdf80991fe"
+    },
+    {
+      "id": "gen133-nature-waystone",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/ruins",
+      "image": "assets/generator/outdoor/ruins/waystone.webp",
+      "source": "nature",
+      "sha256": "974026fd29706e8cfd805525da665d544b1a9f4a58bbf2395a06d670eca615c4"
+    },
+    {
+      "id": "gen133-nature-supply-cart",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/camping",
+      "image": "assets/generator/outdoor/camping/supply-cart.webp",
+      "source": "nature",
+      "sha256": "7e15b815161d7d6e5482399d857785ca0cfa607b33e68eec861a08ee794b760a"
+    },
+    {
+      "id": "gen133-nature-bedroll",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/camping",
+      "image": "assets/generator/outdoor/camping/bedroll.webp",
+      "source": "nature",
+      "sha256": "c551d8681a95bb985abd246a505e6f5b242933ebae59437ed97346cd320d07fc"
+    },
+    {
+      "id": "gen133-nature-reeds",
+      "view": "outdoor",
+      "contexts": [
+        "swamp",
+        "jungle"
+      ],
+      "category": "outdoor/nature",
+      "image": "assets/generator/outdoor/nature/reeds.webp",
+      "source": "nature",
+      "sha256": "cf624bbbdf1e63d5411a748f9753fedeae5dcbd18a9c31e13cc97a3aae84498a"
+    },
+    {
+      "id": "gen133-nature-oasis-palm",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/nature",
+      "image": "assets/generator/outdoor/nature/oasis-palm.webp",
+      "source": "nature",
+      "sha256": "d1c3dbb9302ec3ce06b001fe550fafa88bf5909f8081202feca061491e7abe7d"
+    },
+    {
+      "id": "gen133-nature-ruined-arch",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/ruins",
+      "image": "assets/generator/outdoor/ruins/ruined-arch.webp",
+      "source": "nature",
+      "sha256": "2f54fca85f2d2edfdb4ef3593ef2284eec5db436eaf7ff558e5bb97f73202648"
+    },
+    {
+      "id": "gen133-nature-woodland-shrine",
+      "view": "outdoor",
+      "contexts": [
+        "forest",
+        "jungle",
+        "swamp"
+      ],
+      "category": "outdoor/ruins",
+      "image": "assets/generator/outdoor/ruins/woodland-shrine.webp",
+      "source": "nature",
+      "sha256": "1b8fea6d1ce86f9def4418fde5cdb7c2e577bdef47b2e6410d8a534a76b3dcbf"
+    },
+    {
+      "id": "arena.wall",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        20,
+        35,
+        214,
+        230
+      ]
+    },
+    {
+      "id": "arena.wall-banner",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        239,
+        35,
+        126,
+        230
+      ]
+    },
+    {
+      "id": "arena.pillar",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        370,
+        35,
+        56,
+        230
+      ]
+    },
+    {
+      "id": "arena.wall-strip",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        429,
+        35,
+        105,
+        230
+      ]
+    },
+    {
+      "id": "arena.post",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        543,
+        35,
+        61,
+        230
+      ]
+    },
+    {
+      "id": "arena.wall-narrow",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        609,
+        35,
+        97,
+        230
+      ]
+    },
+    {
+      "id": "arena.post2",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        711,
+        35,
+        64,
+        230
+      ]
+    },
+    {
+      "id": "arena.beam",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        793,
+        35,
+        63,
+        230
+      ]
+    },
+    {
+      "id": "arena.cap",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        855,
+        35,
+        64,
+        230
+      ]
+    },
+    {
+      "id": "arena.wall-curve",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        929,
+        35,
+        240,
+        230
+      ]
+    },
+    {
+      "id": "arena.wall-curve2",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1186,
+        35,
+        216,
+        230
+      ]
+    },
+    {
+      "id": "arena.corner",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1410,
+        35,
+        122,
+        230
+      ]
+    },
+    {
+      "id": "arena.wall-short",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        18,
+        268,
+        159,
+        204
+      ]
+    },
+    {
+      "id": "arena.wall-slant",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        180,
+        268,
+        291,
+        204
+      ]
+    },
+    {
+      "id": "arena.arch",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        472,
+        268,
+        198,
+        204
+      ]
+    },
+    {
+      "id": "arena.post-long",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        674,
+        268,
+        61,
+        204
+      ]
+    },
+    {
+      "id": "arena.door",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        735,
+        268,
+        183,
+        204
+      ]
+    },
+    {
+      "id": "arena.wall-round",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        921,
+        268,
+        264,
+        204
+      ]
+    },
+    {
+      "id": "arena.wall-end",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1191,
+        268,
+        95,
+        204
+      ]
+    },
+    {
+      "id": "arena.wall-round2",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1320,
+        268,
+        211,
+        204
+      ]
+    },
+    {
+      "id": "arena.rail",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        18,
+        474,
+        156,
+        150
+      ]
+    },
+    {
+      "id": "arena.rail2",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        185,
+        474,
+        152,
+        150
+      ]
+    },
+    {
+      "id": "arena.rail-curved",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        355,
+        474,
+        244,
+        150
+      ]
+    },
+    {
+      "id": "arena.rail-end",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        605,
+        474,
+        98,
+        150
+      ]
+    },
+    {
+      "id": "arena.rail-joint",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        704,
+        474,
+        162,
+        150
+      ]
+    },
+    {
+      "id": "arena.bench",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        881,
+        474,
+        137,
+        150
+      ]
+    },
+    {
+      "id": "arena.stands",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1033,
+        474,
+        224,
+        150
+      ]
+    },
+    {
+      "id": "arena.stands-wide",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1266,
+        474,
+        264,
+        150
+      ]
+    },
+    {
+      "id": "arena.fire-pillar",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        14,
+        611,
+        90,
+        185
+      ]
+    },
+    {
+      "id": "arena.torch",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        111,
+        624,
+        57,
+        178
+      ]
+    },
+    {
+      "id": "arena.torch2",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        175,
+        624,
+        63,
+        178
+      ]
+    },
+    {
+      "id": "arena.fire-bowl",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        251,
+        624,
+        88,
+        178
+      ]
+    },
+    {
+      "id": "arena.banner",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        340,
+        624,
+        112,
+        178
+      ]
+    },
+    {
+      "id": "arena.curtain",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        454,
+        624,
+        149,
+        178
+      ]
+    },
+    {
+      "id": "arena.bricks",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        612,
+        624,
+        77,
+        178
+      ]
+    },
+    {
+      "id": "arena.cap-stone",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        695,
+        624,
+        77,
+        178
+      ]
+    },
+    {
+      "id": "arena.steps",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        776,
+        624,
+        137,
+        178
+      ]
+    },
+    {
+      "id": "arena.stairs",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        920,
+        624,
+        80,
+        178
+      ]
+    },
+    {
+      "id": "arena.floor-blood",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1019,
+        643,
+        143,
+        146
+      ]
+    },
+    {
+      "id": "arena.floor-craters",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1188,
+        643,
+        142,
+        146
+      ]
+    },
+    {
+      "id": "arena.floor-quarter",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1343,
+        624,
+        117,
+        178
+      ]
+    },
+    {
+      "id": "arena.floor-corner",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1462,
+        624,
+        68,
+        178
+      ]
+    },
+    {
+      "id": "arena.desk",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        15,
+        806,
+        218,
+        152
+      ]
+    },
+    {
+      "id": "arena.weapon-rack",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        240,
+        780,
+        220,
+        174
+      ]
+    },
+    {
+      "id": "arena.target",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        470,
+        806,
+        106,
+        152
+      ]
+    },
+    {
+      "id": "arena.chest",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        580,
+        806,
+        78,
+        152
+      ]
+    },
+    {
+      "id": "arena.crate",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        663,
+        806,
+        103,
+        152
+      ]
+    },
+    {
+      "id": "arena.barrel",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        769,
+        806,
+        90,
+        152
+      ]
+    },
+    {
+      "id": "arena.barrel2",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        859,
+        806,
+        103,
+        152
+      ]
+    },
+    {
+      "id": "arena.sack",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        964,
+        806,
+        74,
+        152
+      ]
+    },
+    {
+      "id": "arena.sack2",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1043,
+        806,
+        75,
+        152
+      ]
+    },
+    {
+      "id": "arena.barrel3",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1119,
+        806,
+        86,
+        152
+      ]
+    },
+    {
+      "id": "arena.barrel4",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1209,
+        806,
+        96,
+        152
+      ]
+    },
+    {
+      "id": "arena.stone-bench",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1318,
+        806,
+        116,
+        152
+      ]
+    },
+    {
+      "id": "arena.column",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1435,
+        806,
+        87,
+        152
+      ]
+    },
+    {
+      "id": "arena.floor",
+      "view": "indoor",
+      "contexts": [
+        "arena"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/arena.jpg",
+      "sourceRect": [
+        1020,
+        645,
+        132,
+        45
+      ]
+    },
+    {
+      "id": "temple.wall",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        16,
+        20,
+        228,
+        260
+      ]
+    },
+    {
+      "id": "temple.wall-narrow",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        251,
+        20,
+        127,
+        260
+      ]
+    },
+    {
+      "id": "temple.pillar",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        387,
+        20,
+        70,
+        260
+      ]
+    },
+    {
+      "id": "temple.wall-plain",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        466,
+        20,
+        106,
+        260
+      ]
+    },
+    {
+      "id": "temple.post",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        584,
+        20,
+        72,
+        260
+      ]
+    },
+    {
+      "id": "temple.wall-vines",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        664,
+        20,
+        108,
+        260
+      ]
+    },
+    {
+      "id": "temple.post2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        775,
+        20,
+        70,
+        260
+      ]
+    },
+    {
+      "id": "temple.cap",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        853,
+        20,
+        66,
+        260
+      ]
+    },
+    {
+      "id": "temple.wall-round",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        929,
+        20,
+        243,
+        260
+      ]
+    },
+    {
+      "id": "temple.wall-round2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1190,
+        20,
+        206,
+        260
+      ]
+    },
+    {
+      "id": "temple.corner",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1405,
+        20,
+        128,
+        260
+      ]
+    },
+    {
+      "id": "temple.wall-short",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        16,
+        278,
+        207,
+        226
+      ]
+    },
+    {
+      "id": "temple.arch",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        225,
+        278,
+        187,
+        226
+      ]
+    },
+    {
+      "id": "temple.door",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        413,
+        278,
+        187,
+        226
+      ]
+    },
+    {
+      "id": "temple.waterfall-arch",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        600,
+        278,
+        176,
+        226
+      ]
+    },
+    {
+      "id": "temple.niche",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        779,
+        278,
+        221,
+        226
+      ]
+    },
+    {
+      "id": "temple.statue",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1008,
+        260,
+        180,
+        244
+      ]
+    },
+    {
+      "id": "temple.wall-end",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1198,
+        278,
+        97,
+        226
+      ]
+    },
+    {
+      "id": "temple.wall-round3",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1317,
+        278,
+        216,
+        226
+      ]
+    },
+    {
+      "id": "temple.banner",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        20,
+        512,
+        100,
+        154
+      ]
+    },
+    {
+      "id": "temple.banner2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        123,
+        507,
+        111,
+        152
+      ]
+    },
+    {
+      "id": "temple.vine",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        241,
+        507,
+        99,
+        152
+      ]
+    },
+    {
+      "id": "temple.vine2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        340,
+        507,
+        99,
+        152
+      ]
+    },
+    {
+      "id": "temple.vine3",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        441,
+        507,
+        125,
+        152
+      ]
+    },
+    {
+      "id": "temple.vine4",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        568,
+        507,
+        76,
+        152
+      ]
+    },
+    {
+      "id": "temple.vine5",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        651,
+        507,
+        94,
+        152
+      ]
+    },
+    {
+      "id": "temple.flowers",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        748,
+        515,
+        107,
+        77
+      ]
+    },
+    {
+      "id": "temple.flowers2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        858,
+        519,
+        105,
+        71
+      ]
+    },
+    {
+      "id": "temple.sprig",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        974,
+        507,
+        65,
+        152
+      ]
+    },
+    {
+      "id": "temple.bush",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1039,
+        507,
+        106,
+        152
+      ]
+    },
+    {
+      "id": "temple.bush-large",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1150,
+        507,
+        139,
+        152
+      ]
+    },
+    {
+      "id": "temple.tree",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1300,
+        490,
+        232,
+        264
+      ]
+    },
+    {
+      "id": "temple.steps",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        235,
+        606,
+        175,
+        137
+      ]
+    },
+    {
+      "id": "temple.step",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        426,
+        606,
+        83,
+        137
+      ]
+    },
+    {
+      "id": "temple.stairs",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        524,
+        606,
+        165,
+        137
+      ]
+    },
+    {
+      "id": "temple.stairs-wide",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        704,
+        602,
+        181,
+        128
+      ]
+    },
+    {
+      "id": "temple.stone",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        902,
+        606,
+        80,
+        137
+      ]
+    },
+    {
+      "id": "temple.bench",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1005,
+        626,
+        164,
+        83
+      ]
+    },
+    {
+      "id": "temple.crate",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1194,
+        606,
+        91,
+        137
+      ]
+    },
+    {
+      "id": "temple.green-fire",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        12,
+        697,
+        88,
+        164
+      ]
+    },
+    {
+      "id": "temple.green-bowl",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        112,
+        697,
+        99,
+        164
+      ]
+    },
+    {
+      "id": "temple.candle",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        224,
+        697,
+        45,
+        164
+      ]
+    },
+    {
+      "id": "temple.candles",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        271,
+        697,
+        70,
+        164
+      ]
+    },
+    {
+      "id": "temple.torch",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        352,
+        697,
+        64,
+        164
+      ]
+    },
+    {
+      "id": "temple.floor",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        427,
+        777,
+        44,
+        47
+      ]
+    },
+    {
+      "id": "temple.floor2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        522,
+        760,
+        102,
+        224
+      ]
+    },
+    {
+      "id": "temple.floor-mark",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        619,
+        760,
+        102,
+        224
+      ]
+    },
+    {
+      "id": "temple.medallion",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        722,
+        768,
+        278,
+        205
+      ]
+    },
+    {
+      "id": "temple.pool",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1006,
+        734,
+        249,
+        230
+      ]
+    },
+    {
+      "id": "temple.waterfall",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1266,
+        760,
+        151,
+        224
+      ]
+    },
+    {
+      "id": "temple.floor-quarter",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        1416,
+        760,
+        106,
+        224
+      ]
+    },
+    {
+      "id": "temple.column",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        18,
+        867,
+        84,
+        118
+      ]
+    },
+    {
+      "id": "temple.flower-column",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        103,
+        867,
+        111,
+        118
+      ]
+    },
+    {
+      "id": "temple.jar",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        213,
+        867,
+        86,
+        118
+      ]
+    },
+    {
+      "id": "temple.barrel",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        294,
+        867,
+        89,
+        118
+      ]
+    },
+    {
+      "id": "temple.bottle",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/temple.jpg",
+      "sourceRect": [
+        381,
+        867,
+        39,
+        118
+      ]
+    },
+    {
+      "id": "nature-detail.window-tree",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        17,
+        12,
+        176,
+        234
+      ]
+    },
+    {
+      "id": "nature-detail.window-open",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        198,
+        12,
+        167,
+        234
+      ]
+    },
+    {
+      "id": "nature-detail.window-round",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        365,
+        12,
+        199,
+        234
+      ]
+    },
+    {
+      "id": "nature-detail.window-leaf",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        565,
+        12,
+        190,
+        234
+      ]
+    },
+    {
+      "id": "nature-detail.window-flower",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        760,
+        12,
+        169,
+        234
+      ]
+    },
+    {
+      "id": "nature-detail.niche",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        938,
+        12,
+        193,
+        234
+      ]
+    },
+    {
+      "id": "nature-detail.niche-leaf",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1126,
+        12,
+        200,
+        234
+      ]
+    },
+    {
+      "id": "nature-detail.niche-flowers",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1328,
+        12,
+        202,
+        234
+      ]
+    },
+    {
+      "id": "nature-detail.column",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        14,
+        251,
+        118,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.column-vine",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        136,
+        251,
+        95,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.column-leaf",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        236,
+        251,
+        111,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.column-birch",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        350,
+        251,
+        99,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.tree-column",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        449,
+        251,
+        117,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.column-twist",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        568,
+        251,
+        111,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.banner-tree",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        698,
+        251,
+        146,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.banner-leaf",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        847,
+        251,
+        131,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.leaf-drape",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        989,
+        251,
+        245,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.trellis",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1236,
+        251,
+        140,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.trellis2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1378,
+        251,
+        151,
+        223
+      ]
+    },
+    {
+      "id": "nature-detail.torch",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        17,
+        480,
+        99,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.sconce",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        122,
+        480,
+        55,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.green-lamp",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        182,
+        480,
+        86,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.lantern",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        276,
+        480,
+        90,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.lantern-vine",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        373,
+        480,
+        90,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.lantern-flower",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        466,
+        480,
+        95,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.lantern-lotus",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        566,
+        480,
+        132,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.fountain-wall",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        714,
+        480,
+        195,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.pool-bowl",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        908,
+        480,
+        201,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.fountain",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1111,
+        480,
+        122,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.fountain-cascade",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1236,
+        480,
+        150,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.flower-bowl",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1384,
+        480,
+        146,
+        157
+      ]
+    },
+    {
+      "id": "nature-detail.planter",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        20,
+        643,
+        185,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.planter-purple",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        210,
+        643,
+        170,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.planter-green",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        381,
+        643,
+        183,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.pot",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        571,
+        643,
+        138,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.vase",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        714,
+        643,
+        143,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.bottles",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        860,
+        643,
+        110,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.books",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        971,
+        643,
+        141,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.scroll",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1117,
+        643,
+        119,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.hanging-plant",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1239,
+        643,
+        136,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.vines",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1376,
+        643,
+        154,
+        134
+      ]
+    },
+    {
+      "id": "nature-detail.floor-medallion",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        20,
+        788,
+        205,
+        196
+      ]
+    },
+    {
+      "id": "nature-detail.floor-leaf",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        232,
+        788,
+        132,
+        196
+      ]
+    },
+    {
+      "id": "nature-detail.floor-flower",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        370,
+        788,
+        130,
+        196
+      ]
+    },
+    {
+      "id": "nature-detail.floor-vine",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        504,
+        788,
+        136,
+        196
+      ]
+    },
+    {
+      "id": "nature-detail.floor-leaf2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        645,
+        788,
+        131,
+        196
+      ]
+    },
+    {
+      "id": "nature-detail.ledge-leaf",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        796,
+        788,
+        125,
+        196
+      ]
+    },
+    {
+      "id": "nature-detail.floor-moss",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        935,
+        788,
+        243,
+        196
+      ]
+    },
+    {
+      "id": "nature-detail.flower-bed",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1184,
+        788,
+        176,
+        196
+      ]
+    },
+    {
+      "id": "nature-detail.flower-bed2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-detail.jpg",
+      "sourceRect": [
+        1362,
+        788,
+        168,
+        196
+      ]
+    },
+    {
+      "id": "nature-arches.arch-vines",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        8,
+        3,
+        263,
+        245
+      ]
+    },
+    {
+      "id": "nature-arches.arch-leaf",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        273,
+        3,
+        214,
+        245
+      ]
+    },
+    {
+      "id": "nature-arches.arch-wood",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        487,
+        3,
+        202,
+        245
+      ]
+    },
+    {
+      "id": "nature-arches.column",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        687,
+        3,
+        75,
+        245
+      ]
+    },
+    {
+      "id": "nature-arches.arch-wood2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        762,
+        3,
+        262,
+        245
+      ]
+    },
+    {
+      "id": "nature-arches.pillar",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1016,
+        3,
+        91,
+        245
+      ]
+    },
+    {
+      "id": "nature-arches.vines",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1107,
+        3,
+        151,
+        245
+      ]
+    },
+    {
+      "id": "nature-arches.wall-round",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1251,
+        3,
+        279,
+        245
+      ]
+    },
+    {
+      "id": "nature-arches.wall-column",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        9,
+        231,
+        108,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.column2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        117,
+        231,
+        98,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.wall-short",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        213,
+        231,
+        103,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.wall",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        318,
+        231,
+        154,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.wall2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        478,
+        231,
+        155,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.wall-tree",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        637,
+        231,
+        128,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.arch-round",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        763,
+        231,
+        218,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.statue",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        983,
+        231,
+        211,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.leaf-column",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1189,
+        231,
+        92,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.wall-round2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1284,
+        231,
+        247,
+        260
+      ]
+    },
+    {
+      "id": "nature-arches.banner",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        14,
+        470,
+        156,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.banner2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        170,
+        470,
+        126,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.banner3",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        296,
+        470,
+        127,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.vine",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        424,
+        470,
+        129,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.vine-purple",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        551,
+        470,
+        97,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.vine-long",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        642,
+        470,
+        107,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.plant",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        743,
+        470,
+        109,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.flower-pot",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        849,
+        470,
+        137,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.sprig",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        987,
+        470,
+        75,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.flowers",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1062,
+        470,
+        105,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.rock",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1165,
+        470,
+        148,
+        166
+      ]
+    },
+    {
+      "id": "nature-arches.leaf-shrine",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1312,
+        424,
+        216,
+        207
+      ]
+    },
+    {
+      "id": "nature-arches.green-fire",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        13,
+        607,
+        89,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.green-fire-column",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        100,
+        607,
+        139,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.candles",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        245,
+        607,
+        95,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.column-small",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        341,
+        607,
+        56,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.flower-box",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        395,
+        607,
+        133,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.pot",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        529,
+        607,
+        88,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.waterfall",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        582,
+        607,
+        191,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.banner4",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        767,
+        607,
+        89,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.cap",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        854,
+        607,
+        78,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.steps",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        934,
+        607,
+        159,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.wall-end",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1097,
+        607,
+        56,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.flowers2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1153,
+        607,
+        153,
+        222
+      ]
+    },
+    {
+      "id": "nature-arches.wall-low",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        7,
+        829,
+        145,
+        185
+      ]
+    },
+    {
+      "id": "nature-arches.floor",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        152,
+        829,
+        142,
+        185
+      ]
+    },
+    {
+      "id": "nature-arches.floor2",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        299,
+        829,
+        125,
+        185
+      ]
+    },
+    {
+      "id": "nature-arches.floor-mark",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        422,
+        829,
+        135,
+        185
+      ]
+    },
+    {
+      "id": "nature-arches.floor-tree",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        556,
+        829,
+        228,
+        185
+      ]
+    },
+    {
+      "id": "nature-arches.floor3",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        790,
+        829,
+        124,
+        185
+      ]
+    },
+    {
+      "id": "nature-arches.stairs",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        917,
+        829,
+        200,
+        185
+      ]
+    },
+    {
+      "id": "nature-arches.corner",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1112,
+        829,
+        92,
+        185
+      ]
+    },
+    {
+      "id": "nature-arches.tree",
+      "view": "indoor",
+      "contexts": [
+        "natureTemple"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/nature-arches.jpg",
+      "sourceRect": [
+        1208,
+        641,
+        322,
+        373
+      ]
+    },
+    {
+      "id": "building.wall",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        10,
+        17,
+        219,
+        235
+      ]
+    },
+    {
+      "id": "building.wall-banner",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        230,
+        17,
+        131,
+        235
+      ]
+    },
+    {
+      "id": "building.pillar",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        360,
+        17,
+        55,
+        235
+      ]
+    },
+    {
+      "id": "building.wall-window",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        414,
+        17,
+        111,
+        235
+      ]
+    },
+    {
+      "id": "building.pillar2",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        520,
+        17,
+        57,
+        235
+      ]
+    },
+    {
+      "id": "building.wall-window2",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        576,
+        17,
+        127,
+        235
+      ]
+    },
+    {
+      "id": "building.post",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        705,
+        17,
+        62,
+        235
+      ]
+    },
+    {
+      "id": "building.beam",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        778,
+        17,
+        61,
+        235
+      ]
+    },
+    {
+      "id": "building.brick",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        844,
+        17,
+        71,
+        235
+      ]
+    },
+    {
+      "id": "building.wall-round",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        915,
+        17,
+        232,
+        235
+      ]
+    },
+    {
+      "id": "building.wall-round2",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1172,
+        17,
+        215,
+        235
+      ]
+    },
+    {
+      "id": "building.corner",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1390,
+        17,
+        141,
+        235
+      ]
+    },
+    {
+      "id": "building.arch",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "architecture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        13,
+        257,
+        159,
+        171
+      ]
+    },
+    {
+      "id": "building.door",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        176,
+        257,
+        128,
+        171
+      ]
+    },
+    {
+      "id": "building.door-metal",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        307,
+        257,
+        131,
+        171
+      ]
+    },
+    {
+      "id": "building.window",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        459,
+        257,
+        109,
+        171
+      ]
+    },
+    {
+      "id": "building.window-shutters",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        574,
+        257,
+        148,
+        171
+      ]
+    },
+    {
+      "id": "building.window-diamond",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        728,
+        257,
+        108,
+        171
+      ]
+    },
+    {
+      "id": "building.window-round",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        842,
+        257,
+        105,
+        171
+      ]
+    },
+    {
+      "id": "building.torch",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        980,
+        257,
+        57,
+        171
+      ]
+    },
+    {
+      "id": "building.candles",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "light",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1054,
+        257,
+        96,
+        171
+      ]
+    },
+    {
+      "id": "building.painting",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1158,
+        257,
+        118,
+        171
+      ]
+    },
+    {
+      "id": "building.banner",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1287,
+        257,
+        111,
+        171
+      ]
+    },
+    {
+      "id": "building.portrait",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1407,
+        257,
+        107,
+        171
+      ]
+    },
+    {
+      "id": "building.floor-wood",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        14,
+        431,
+        161,
+        175
+      ]
+    },
+    {
+      "id": "building.floor-stone",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        180,
+        431,
+        169,
+        175
+      ]
+    },
+    {
+      "id": "building.rug-red",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "rug",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        360,
+        431,
+        172,
+        175
+      ]
+    },
+    {
+      "id": "building.rug-green",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "rug",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        537,
+        431,
+        146,
+        175
+      ]
+    },
+    {
+      "id": "building.rug-corner",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "rug",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        688,
+        431,
+        91,
+        175
+      ]
+    },
+    {
+      "id": "building.stairs",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        787,
+        431,
+        145,
+        175
+      ]
+    },
+    {
+      "id": "building.stairs-small",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        937,
+        431,
+        115,
+        175
+      ]
+    },
+    {
+      "id": "building.stairs-corner",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "floor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1060,
+        431,
+        147,
+        175
+      ]
+    },
+    {
+      "id": "building.firewood",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1164,
+        431,
+        115,
+        175
+      ]
+    },
+    {
+      "id": "building.fireplace",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1284,
+        431,
+        207,
+        175
+      ]
+    },
+    {
+      "id": "building.bed-red",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        11,
+        605,
+        98,
+        145
+      ]
+    },
+    {
+      "id": "building.bed-green",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        118,
+        605,
+        142,
+        145
+      ]
+    },
+    {
+      "id": "building.nightstand",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        261,
+        605,
+        74,
+        145
+      ]
+    },
+    {
+      "id": "building.chest",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        333,
+        605,
+        115,
+        145
+      ]
+    },
+    {
+      "id": "building.chest-metal",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        450,
+        605,
+        127,
+        145
+      ]
+    },
+    {
+      "id": "building.wardrobe",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        589,
+        605,
+        126,
+        145
+      ]
+    },
+    {
+      "id": "building.drawers",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        726,
+        605,
+        110,
+        145
+      ]
+    },
+    {
+      "id": "building.bookshelf",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        844,
+        605,
+        145,
+        145
+      ]
+    },
+    {
+      "id": "building.shelf",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        984,
+        605,
+        115,
+        145
+      ]
+    },
+    {
+      "id": "building.bench",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1100,
+        605,
+        92,
+        145
+      ]
+    },
+    {
+      "id": "building.table",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1190,
+        605,
+        152,
+        145
+      ]
+    },
+    {
+      "id": "building.table-round",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1339,
+        605,
+        117,
+        145
+      ]
+    },
+    {
+      "id": "building.stool",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1452,
+        605,
+        72,
+        145
+      ]
+    },
+    {
+      "id": "building.chair",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        53,
+        744,
+        77,
+        118
+      ]
+    },
+    {
+      "id": "building.chair-red",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        141,
+        744,
+        85,
+        118
+      ]
+    },
+    {
+      "id": "building.stool2",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        225,
+        744,
+        65,
+        118
+      ]
+    },
+    {
+      "id": "building.desk",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        278,
+        744,
+        148,
+        118
+      ]
+    },
+    {
+      "id": "building.dresser",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        423,
+        744,
+        139,
+        118
+      ]
+    },
+    {
+      "id": "building.pans",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        573,
+        744,
+        153,
+        118
+      ]
+    },
+    {
+      "id": "building.pot",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        726,
+        744,
+        88,
+        118
+      ]
+    },
+    {
+      "id": "building.sink",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        813,
+        744,
+        112,
+        118
+      ]
+    },
+    {
+      "id": "building.potions",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        930,
+        744,
+        143,
+        118
+      ]
+    },
+    {
+      "id": "building.barrel",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1083,
+        744,
+        101,
+        118
+      ]
+    },
+    {
+      "id": "building.crate",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1183,
+        744,
+        125,
+        118
+      ]
+    },
+    {
+      "id": "building.crates",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1310,
+        744,
+        107,
+        118
+      ]
+    },
+    {
+      "id": "building.box",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1423,
+        744,
+        100,
+        118
+      ]
+    },
+    {
+      "id": "building.plant",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        20,
+        866,
+        96,
+        126
+      ]
+    },
+    {
+      "id": "building.flowers",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        119,
+        866,
+        99,
+        126
+      ]
+    },
+    {
+      "id": "building.hanging-plant",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        218,
+        866,
+        99,
+        126
+      ]
+    },
+    {
+      "id": "building.plant-large",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        317,
+        866,
+        128,
+        126
+      ]
+    },
+    {
+      "id": "building.herbs",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "wall",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        451,
+        866,
+        185,
+        126
+      ]
+    },
+    {
+      "id": "building.sack",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        641,
+        866,
+        103,
+        126
+      ]
+    },
+    {
+      "id": "building.barrel2",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        744,
+        866,
+        105,
+        126
+      ]
+    },
+    {
+      "id": "building.barrel3",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        847,
+        866,
+        94,
+        126
+      ]
+    },
+    {
+      "id": "building.bucket",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        937,
+        866,
+        88,
+        126
+      ]
+    },
+    {
+      "id": "building.crate2",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1035,
+        866,
+        94,
+        126
+      ]
+    },
+    {
+      "id": "building.crate3",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1133,
+        866,
+        97,
+        126
+      ]
+    },
+    {
+      "id": "building.crate4",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "furniture",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1231,
+        866,
+        104,
+        126
+      ]
+    },
+    {
+      "id": "building.hay",
+      "view": "indoor",
+      "contexts": [
+        "building"
+      ],
+      "category": "decor",
+      "atlas": "assets/templates-127/building.jpg",
+      "sourceRect": [
+        1358,
+        866,
+        164,
+        126
+      ]
+    },
+    {
+      "id": "armory-000",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/32a0e9d6d7233b2fbb68.webp"
+    },
+    {
+      "id": "armory-001",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/8f558d49507aba652ceb.webp"
+    },
+    {
+      "id": "armory-002",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/a1ce7ca9b7575d3f3f33.webp"
+    },
+    {
+      "id": "armory-003",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/ebdbe95c3e9c9b12d9e2.webp"
+    },
+    {
+      "id": "armory-004",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/c94dba8439857289f435.webp"
+    },
+    {
+      "id": "armory-005",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/ab5092cfb31d5cc07677.webp"
+    },
+    {
+      "id": "armory-006",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/1302b79346fe256fc429.webp"
+    },
+    {
+      "id": "armory-007",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/14c7217460bfd5771a03.webp"
+    },
+    {
+      "id": "armory-008",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/dab3cfa8ee2376d47407.webp"
+    },
+    {
+      "id": "armory-009",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/62f895dd398818bb1cca.webp"
+    },
+    {
+      "id": "armory-010",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/7c43b8baddd3fe3299dc.webp"
+    },
+    {
+      "id": "armory-011",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/5e3a0cfb2ac7f5ebb45f.webp"
+    },
+    {
+      "id": "armory-012",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "wall",
+      "image": "assets/images/1d133879cacbc64c7ae8.webp"
+    },
+    {
+      "id": "armory-013",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/a117678258e100be2cc1.webp"
+    },
+    {
+      "id": "armory-014",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f6cfd0e9135356cc55a8.webp"
+    },
+    {
+      "id": "armory-015",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/2f88e6f461e78ce18ea7.webp"
+    },
+    {
+      "id": "armory-016",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/7051939a76fd84fad7fd.webp"
+    },
+    {
+      "id": "armory-017",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f48dbd1f5ce5dce81a5a.webp"
+    },
+    {
+      "id": "armory-018",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/e68d041e1b165ce190f8.webp"
+    },
+    {
+      "id": "armory-019",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/1ea78ef3247e2422485f.webp"
+    },
+    {
+      "id": "armory-020",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/a8e2d9e94181ce072102.webp"
+    },
+    {
+      "id": "armory-021",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/aa3b7cb254567b08d0ec.webp"
+    },
+    {
+      "id": "armory-022",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/ac5730b426b7f0bd5fc7.webp"
+    },
+    {
+      "id": "armory-023",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/fdc7fbe60b717cf5e592.webp"
+    },
+    {
+      "id": "armory-024",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/a653a8f3a4152c535750.webp"
+    },
+    {
+      "id": "armory-025",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/3519ae8bcf8aca856cd3.webp"
+    },
+    {
+      "id": "armory-026",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/e7be970fd9abe4d731b0.webp"
+    },
+    {
+      "id": "armory-027",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/da3986e78c1fd643eea1.webp"
+    },
+    {
+      "id": "armory-028",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/b5a33260bbe7e5294dbf.webp"
+    },
+    {
+      "id": "armory-029",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/3034a165f3fc3a37cde0.webp"
+    },
+    {
+      "id": "armory-030",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/4bc95063be1273fe78c8.webp"
+    },
+    {
+      "id": "armory-031",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/3162b53c2c1a94913d27.webp"
+    },
+    {
+      "id": "armory-032",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/041415bca28f203adac3.webp"
+    },
+    {
+      "id": "armory-033",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/027c2a89df2249d1ab7a.webp"
+    },
+    {
+      "id": "armory-034",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/bd69900998d59f6dacc5.webp"
+    },
+    {
+      "id": "armory-035",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/381c502038aba163d4d1.webp"
+    },
+    {
+      "id": "armory-036",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/5f4a75e9c1e9e353db92.webp"
+    },
+    {
+      "id": "armory-037",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/8d9d9e427d62a05b3586.webp"
+    },
+    {
+      "id": "armory-038",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/3ad28e26587438791c7b.webp"
+    },
+    {
+      "id": "armory-039",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/6f6f8c3c0a1e30cb0808.webp"
+    },
+    {
+      "id": "armory-040",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/694d0d56beb500575719.webp"
+    },
+    {
+      "id": "armory-041",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/3efcb78fba50e7d4396f.webp"
+    },
+    {
+      "id": "armory-042",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "floor",
+      "image": "assets/images/44a1c9a459b6c8dd3ca6.webp"
+    },
+    {
+      "id": "armory-043",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/b0cbb84a1021fdcd2190.webp"
+    },
+    {
+      "id": "armory-044",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/932f86fb2c75bc4c9166.webp"
+    },
+    {
+      "id": "armory-045",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/2790bee0bdb9e677f5bb.webp"
+    },
+    {
+      "id": "armory-046",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/72537fecc8d41c528672.webp"
+    },
+    {
+      "id": "armory-047",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/0d7ff290a8ed0f366c48.webp"
+    },
+    {
+      "id": "armory-048",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/1482ffc39a331bebc76f.webp"
+    },
+    {
+      "id": "armory-049",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/370909700a833ffda889.webp"
+    },
+    {
+      "id": "armory-050",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/856fe51e20fb81ec8b81.webp"
+    },
+    {
+      "id": "armory-051",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/c8ccfbbe99745f46f943.webp"
+    },
+    {
+      "id": "armory-052",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/0bf43c3c7ddb4dac1042.webp"
+    },
+    {
+      "id": "armory-053",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/911c071a873bacb891b7.webp"
+    },
+    {
+      "id": "armory-054",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/6b5df1aafef5edc6feac.webp"
+    },
+    {
+      "id": "armory-055",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/acedcdbfdf7bcf1d7255.webp"
+    },
+    {
+      "id": "armory-056",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/7e0a7e3ffb82ea2ab721.webp"
+    },
+    {
+      "id": "armory-057",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/9e52939dfea2e600612a.webp"
+    },
+    {
+      "id": "armory-058",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/918192d425c92c946136.webp"
+    },
+    {
+      "id": "armory-059",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/11aab117a396be83e2a4.webp"
+    },
+    {
+      "id": "armory-060",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f4f294bc39c5069d9d03.webp"
+    },
+    {
+      "id": "armory-061",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/2b3febd609838b718c4c.webp"
+    },
+    {
+      "id": "armory-062",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/25a0865cc0c5fb8daad2.webp"
+    },
+    {
+      "id": "armory-063",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/25e19671f548daf6b5fc.webp"
+    },
+    {
+      "id": "armory-064",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/0698e7657ef021b10144.webp"
+    },
+    {
+      "id": "armory-065",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/6d28354b05946ef6e7d8.webp"
+    },
+    {
+      "id": "armory-066",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/206bf4e647c87d68d82b.webp"
+    },
+    {
+      "id": "armory-067",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/fff72bb24c3b4bc7cf52.webp"
+    },
+    {
+      "id": "armory-068",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/ea12a286bbfc041c3560.webp"
+    },
+    {
+      "id": "armory-069",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/e455e3f3dae1f2794193.webp"
+    },
+    {
+      "id": "armory-070",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/d5871ef49ddbb33b61f1.webp"
+    },
+    {
+      "id": "armory-071",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/77ce342b54399b08b4ab.webp"
+    },
+    {
+      "id": "armory-072",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/678502716dda2fc028c0.webp"
+    },
+    {
+      "id": "armory-073",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/fccafcbb098f34b31559.webp"
+    },
+    {
+      "id": "armory-074",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/9f0cc155e02d405ac5b6.webp"
+    },
+    {
+      "id": "armory-075",
+      "view": "indoor",
+      "contexts": [
+        "armory"
+      ],
+      "category": "furniture",
+      "image": "assets/images/75cdda278a1877a533ea.webp"
+    },
+    {
+      "id": "house-000",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/fb4ae7bbb9db98a328ac.webp"
+    },
+    {
+      "id": "house-001",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/789426e9b93ca7d30615.webp"
+    },
+    {
+      "id": "house-002",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/2ebcc3b63bb067538628.webp"
+    },
+    {
+      "id": "house-003",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/136020c4aada467862fd.webp"
+    },
+    {
+      "id": "house-004",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/6a376d4579a4194661e4.webp"
+    },
+    {
+      "id": "house-005",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/3edddd26a2e9b6def3e0.webp"
+    },
+    {
+      "id": "house-006",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/1a87daddb7e80e275c1f.webp"
+    },
+    {
+      "id": "house-007",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/eed26c74a047d6965ec4.webp"
+    },
+    {
+      "id": "house-008",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/0f296c3ccdff808a02af.webp"
+    },
+    {
+      "id": "house-009",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/80416b2aeb8018013800.webp"
+    },
+    {
+      "id": "house-010",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/49ac8af8700641f5e5df.webp"
+    },
+    {
+      "id": "house-011",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/bd0b39723962101936cd.webp"
+    },
+    {
+      "id": "house-012",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "wall",
+      "image": "assets/images/e06b85410987708e6768.webp"
+    },
+    {
+      "id": "house-013",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/c1c5422c4123acc50e3b.webp"
+    },
+    {
+      "id": "house-014",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/233b042069026edfe858.webp"
+    },
+    {
+      "id": "house-015",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/cf5fd7257cf9d7c43a21.webp"
+    },
+    {
+      "id": "house-016",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/932059926fd3b3cfee49.webp"
+    },
+    {
+      "id": "house-017",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/587f5b8abb4e0473873a.webp"
+    },
+    {
+      "id": "house-018",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/5b308400e6343bd4bb90.webp"
+    },
+    {
+      "id": "house-019",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/202a8ff965b515283b49.webp"
+    },
+    {
+      "id": "house-020",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/789d66b8610cafad2bb1.webp"
+    },
+    {
+      "id": "house-021",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f95cc2f5a00e480bccde.webp"
+    },
+    {
+      "id": "house-022",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/bc3e6dca7e1fe1212814.webp"
+    },
+    {
+      "id": "house-023",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/c0fae6b8ca71933256e9.webp"
+    },
+    {
+      "id": "house-024",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/4bd3d62714b7429aee68.webp"
+    },
+    {
+      "id": "house-025",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/0c25de2b134ff1659efa.webp"
+    },
+    {
+      "id": "house-026",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/0968d5dd7306e36fe077.webp"
+    },
+    {
+      "id": "house-027",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/24cf667bd1824018908d.webp"
+    },
+    {
+      "id": "house-028",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/71d003152b560c2a5510.webp"
+    },
+    {
+      "id": "house-029",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/fb4362c22827f6bfe978.webp"
+    },
+    {
+      "id": "house-030",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/cec4bf5037f27632dbee.webp"
+    },
+    {
+      "id": "house-031",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/a8a7602f49ac705c22c8.webp"
+    },
+    {
+      "id": "house-032",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/57dc734d5809e024136e.webp"
+    },
+    {
+      "id": "house-033",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/5e2c4fc3d7c6e5656929.webp"
+    },
+    {
+      "id": "house-034",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/66e0b1290ffc3a5eafa8.webp"
+    },
+    {
+      "id": "house-035",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/d434b88388571e949dc6.webp"
+    },
+    {
+      "id": "house-036",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/742d8f03649eb5de1b5d.webp"
+    },
+    {
+      "id": "house-037",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "floor",
+      "image": "assets/images/ac37067ef7a1c0c01d14.webp"
+    },
+    {
+      "id": "house-038",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/b49e0bb94dbbf979d78f.webp"
+    },
+    {
+      "id": "house-039",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/bc98d0d072d637494d88.webp"
+    },
+    {
+      "id": "house-040",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/e9b857e92e3fc8b69bef.webp"
+    },
+    {
+      "id": "house-041",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/326d0431cd5560a9441e.webp"
+    },
+    {
+      "id": "house-042",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/c9c6ca466d01bc191c42.webp"
+    },
+    {
+      "id": "house-043",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/248f16f2638861ce395b.webp"
+    },
+    {
+      "id": "house-044",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/5916810998d0a2fd169a.webp"
+    },
+    {
+      "id": "house-045",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/1dbba4bef64c813c1c4b.webp"
+    },
+    {
+      "id": "house-046",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "floor",
+      "image": "assets/images/809eebc5667305e3f72a.webp"
+    },
+    {
+      "id": "house-047",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/759881ecacd3ca5d0372.webp"
+    },
+    {
+      "id": "house-048",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/2d837602dfb643f4b6a8.webp"
+    },
+    {
+      "id": "house-049",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/275ad3a045763947273a.webp"
+    },
+    {
+      "id": "house-050",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/d6dd44e7795b8b75d67d.webp"
+    },
+    {
+      "id": "house-051",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/1a49abe91e33d5f5bbd8.webp"
+    },
+    {
+      "id": "house-052",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/9fa91038f6a10dc6aa5c.webp"
+    },
+    {
+      "id": "house-053",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/abfd6257cc9329ab8f62.webp"
+    },
+    {
+      "id": "house-054",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/021090291179c214c15e.webp"
+    },
+    {
+      "id": "house-055",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/7dd3f7e350841adb498d.webp"
+    },
+    {
+      "id": "house-056",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/6296585f9a705b2f012b.webp"
+    },
+    {
+      "id": "house-057",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/9ca977cbf68823c55c79.webp"
+    },
+    {
+      "id": "house-058",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/eceb98dbba934c81302b.webp"
+    },
+    {
+      "id": "house-059",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f8e8e87e647fd4ae5f29.webp"
+    },
+    {
+      "id": "house-060",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "floor",
+      "image": "assets/images/c768bf6c4bc2152c7321.webp"
+    },
+    {
+      "id": "house-061",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "floor",
+      "image": "assets/images/fcf0d54e7f325ff3b0bf.webp"
+    },
+    {
+      "id": "house-062",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/2fb8874e1458d4e8f83c.webp"
+    },
+    {
+      "id": "house-063",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/3dc356c3ae14b98e1538.webp"
+    },
+    {
+      "id": "house-064",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/8a4a5a02318df23089ea.webp"
+    },
+    {
+      "id": "house-065",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/b025ba8fdd6c45c19a43.webp"
+    },
+    {
+      "id": "house-066",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/1a4e38f702c74e6d2e3f.webp"
+    },
+    {
+      "id": "house-067",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/cc3af5d9970602226843.webp"
+    },
+    {
+      "id": "house-068",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f387f783d625848c3ac4.webp"
+    },
+    {
+      "id": "house-069",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/7d3ba64a8696d2060be8.webp"
+    },
+    {
+      "id": "house-070",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/fb6305eacbfc3285f786.webp"
+    },
+    {
+      "id": "house-071",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/a07f89a29fa6f56cbcc2.webp"
+    },
+    {
+      "id": "house-072",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/b14cd59fa3cd4b254626.webp"
+    },
+    {
+      "id": "house-073",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/37d769159deb2d10ef35.webp"
+    },
+    {
+      "id": "house-074",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/b0ed2d0569ba455f89a8.webp"
+    },
+    {
+      "id": "house-075",
+      "view": "indoor",
+      "contexts": [
+        "house"
+      ],
+      "category": "furniture",
+      "image": "assets/images/c8eeda548a425333e9b3.webp"
+    },
+    {
+      "id": "shop-000",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/2e1d90bb39e917f8daa8.webp"
+    },
+    {
+      "id": "shop-001",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/99659ec1c3aa1e8a741d.webp"
+    },
+    {
+      "id": "shop-002",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/8af22dafa0c8c2f783fe.webp"
+    },
+    {
+      "id": "shop-003",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/2a06cf4fa60895855e8e.webp"
+    },
+    {
+      "id": "shop-004",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/a47e1840a17e530678a7.webp"
+    },
+    {
+      "id": "shop-005",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/c537f69bcf72313075a1.webp"
+    },
+    {
+      "id": "shop-006",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/47280c2a6d933d865f6f.webp"
+    },
+    {
+      "id": "shop-007",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/58b48cfa9779d1c1bc17.webp"
+    },
+    {
+      "id": "shop-008",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/3216a2fea2a6b8d46830.webp"
+    },
+    {
+      "id": "shop-009",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/2643d270a1ba19afb784.webp"
+    },
+    {
+      "id": "shop-010",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/a0def61e35891b3c7ac9.webp"
+    },
+    {
+      "id": "shop-011",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/5b5ccc9406629453f1d2.webp"
+    },
+    {
+      "id": "shop-012",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "wall",
+      "image": "assets/images/e8d8688d9e0b2d55a168.webp"
+    },
+    {
+      "id": "shop-013",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/56aaadbfbce0dcce67e6.webp"
+    },
+    {
+      "id": "shop-014",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/46b147f37df9afc0c5de.webp"
+    },
+    {
+      "id": "shop-015",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/9b543be4c9d1c6cbf2dd.webp"
+    },
+    {
+      "id": "shop-016",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/d6777f39132c3f3561c2.webp"
+    },
+    {
+      "id": "shop-017",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/9e8c7066dbb970bc5330.webp"
+    },
+    {
+      "id": "shop-018",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/80eb585ce47b4cff6f42.webp"
+    },
+    {
+      "id": "shop-019",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/70b632cb628a297f9313.webp"
+    },
+    {
+      "id": "shop-020",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f8c7c086806d9794de98.webp"
+    },
+    {
+      "id": "shop-021",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/e157dab848399da56667.webp"
+    },
+    {
+      "id": "shop-022",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/1136eb7d3fe00edfc457.webp"
+    },
+    {
+      "id": "shop-023",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/ba434d0ec4d6c525561c.webp"
+    },
+    {
+      "id": "shop-024",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/977afbfc314b8b4a91c2.webp"
+    },
+    {
+      "id": "shop-025",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/68314541012d05f87263.webp"
+    },
+    {
+      "id": "shop-026",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/22c973e22d44a1f161bc.webp"
+    },
+    {
+      "id": "shop-027",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/87541f2bac6d504ab831.webp"
+    },
+    {
+      "id": "shop-028",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/84cfaaca7dce8e130899.webp"
+    },
+    {
+      "id": "shop-029",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/566808c4d05cc874e69a.webp"
+    },
+    {
+      "id": "shop-030",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/3ea11d90d27e9aef0c06.webp"
+    },
+    {
+      "id": "shop-031",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/62003b5085884fb57c8d.webp"
+    },
+    {
+      "id": "shop-032",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/594e7f5afe635f09058f.webp"
+    },
+    {
+      "id": "shop-033",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/942d8ffdf51833ebea9c.webp"
+    },
+    {
+      "id": "shop-034",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/d126348786b087564af4.webp"
+    },
+    {
+      "id": "shop-035",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/5243f4796fc1d41a2e2c.webp"
+    },
+    {
+      "id": "shop-036",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "floor",
+      "image": "assets/images/3668019012f137bd332b.webp"
+    },
+    {
+      "id": "shop-037",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "floor",
+      "image": "assets/images/c320c59ce034898078d2.webp"
+    },
+    {
+      "id": "shop-038",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/aa5cc4e8a9ccc785ecdc.webp"
+    },
+    {
+      "id": "shop-039",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/faa065456c471722704f.webp"
+    },
+    {
+      "id": "shop-040",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/a8a85e6580462b0e5fde.webp"
+    },
+    {
+      "id": "shop-041",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/6ee483ce91739648b6c0.webp"
+    },
+    {
+      "id": "shop-042",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/b213ae37829e78282166.webp"
+    },
+    {
+      "id": "shop-043",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/83c51378ddcc0da569c1.webp"
+    },
+    {
+      "id": "shop-044",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f76803d50d003b8a36d3.webp"
+    },
+    {
+      "id": "shop-045",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/895daaf9133395218fde.webp"
+    },
+    {
+      "id": "shop-046",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/2e75eacbc5ae6662766d.webp"
+    },
+    {
+      "id": "shop-047",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/4b61eae88bcf603bc42d.webp"
+    },
+    {
+      "id": "shop-048",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/5a9d314618f13a2e4238.webp"
+    },
+    {
+      "id": "shop-049",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/0d503ac125bcddaeb1ec.webp"
+    },
+    {
+      "id": "shop-050",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/334394e289461b28608a.webp"
+    },
+    {
+      "id": "shop-051",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/b7513879c64204ead0ea.webp"
+    },
+    {
+      "id": "shop-052",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/e9b9dc02b72d1d93174d.webp"
+    },
+    {
+      "id": "shop-053",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/37299e15a70e4336f586.webp"
+    },
+    {
+      "id": "shop-054",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/cd4fc890a5cead58dd3c.webp"
+    },
+    {
+      "id": "shop-055",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/cc2e96ab742787f1b364.webp"
+    },
+    {
+      "id": "shop-056",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/7e9915f21e712a4bf962.webp"
+    },
+    {
+      "id": "shop-057",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/4ffb0e9cc14fadb3b00f.webp"
+    },
+    {
+      "id": "shop-058",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/0fe6afd41bc1692356a7.webp"
+    },
+    {
+      "id": "shop-059",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/c1aa72451e244a136523.webp"
+    },
+    {
+      "id": "shop-060",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/7352beb5f7a1c19faf60.webp"
+    },
+    {
+      "id": "shop-061",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/6f676fc1800bd4ac2eae.webp"
+    },
+    {
+      "id": "shop-062",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/7cae8fda2164cacb4079.webp"
+    },
+    {
+      "id": "shop-063",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/fa3e61b33a45ba51ff67.webp"
+    },
+    {
+      "id": "shop-064",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/4e91cb188e8440bc561d.webp"
+    },
+    {
+      "id": "shop-065",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/3ff346d356a7c7c7390f.webp"
+    },
+    {
+      "id": "shop-066",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/70b1701a475c05469f30.webp"
+    },
+    {
+      "id": "shop-067",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/759b404a6516e2d7e6a3.webp"
+    },
+    {
+      "id": "shop-068",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/22b23e24fcb445f72165.webp"
+    },
+    {
+      "id": "shop-069",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/7e7377b1ad19a31ae998.webp"
+    },
+    {
+      "id": "shop-070",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/9102f0bdf149f86c6f07.webp"
+    },
+    {
+      "id": "shop-071",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/d89decfdb2b5c133a660.webp"
+    },
+    {
+      "id": "shop-072",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/39145a6ff4a958a7be9e.webp"
+    },
+    {
+      "id": "shop-073",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/d11a870cbdf2706b1642.webp"
+    },
+    {
+      "id": "shop-074",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/d14367d0de42be00ff7c.webp"
+    },
+    {
+      "id": "shop-075",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/851bda4dbadaed6c2dcf.webp"
+    },
+    {
+      "id": "shop-076",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/2f0809dd6ea89c02f23b.webp"
+    },
+    {
+      "id": "shop-077",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/e489f645b72f88b3d5f7.webp"
+    },
+    {
+      "id": "shop-078",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/f0c3c3cd56a401423f2b.webp"
+    },
+    {
+      "id": "shop-079",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/2d2832aceb5556574682.webp"
+    },
+    {
+      "id": "shop-080",
+      "view": "indoor",
+      "contexts": [
+        "shop"
+      ],
+      "category": "furniture",
+      "image": "assets/images/19061f4ce4e4c748ce27.webp"
+    },
+    {
+      "id": "biome:forest:oak_dark",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        260,
+        4,
+        82,
+        89
+      ]
+    },
+    {
+      "id": "biome:forest:stump",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1284,
+        4,
+        77,
+        54
+      ]
+    },
+    {
+      "id": "biome:forest:log",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        4,
+        260,
+        76,
+        45
+      ]
+    },
+    {
+      "id": "biome:forest:stump_small",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        260,
+        260,
+        70,
+        42
+      ]
+    },
+    {
+      "id": "biome:forest:berries",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        516,
+        260,
+        64,
+        48
+      ]
+    },
+    {
+      "id": "biome:forest:flowers_gold",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        772,
+        260,
+        49,
+        45
+      ]
+    },
+    {
+      "id": "biome:forest:flowers_white",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1028,
+        260,
+        50,
+        48
+      ]
+    },
+    {
+      "id": "biome:forest:flowers_pink",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1284,
+        260,
+        55,
+        49
+      ]
+    },
+    {
+      "id": "biome:forest:mushroom_red",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        4,
+        516,
+        74,
+        47
+      ]
+    },
+    {
+      "id": "biome:forest:mushroom_blue",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        260,
+        516,
+        57,
+        47
+      ]
+    },
+    {
+      "id": "biome:forest:fern",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        516,
+        516,
+        56,
+        44
+      ]
+    },
+    {
+      "id": "biome:forest:grass",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        772,
+        516,
+        64,
+        49
+      ]
+    },
+    {
+      "id": "biome:forest:sign",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1028,
+        516,
+        60,
+        92
+      ]
+    },
+    {
+      "id": "biome:forest:notice",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1284,
+        516,
+        61,
+        82
+      ]
+    },
+    {
+      "id": "biome:forest:lantern",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        4,
+        772,
+        58,
+        92
+      ]
+    },
+    {
+      "id": "biome:forest:bench",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        260,
+        772,
+        79,
+        52
+      ]
+    },
+    {
+      "id": "biome:forest:barrel",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        516,
+        772,
+        63,
+        58
+      ]
+    },
+    {
+      "id": "biome:forest:fire",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1028,
+        772,
+        68,
+        63
+      ]
+    },
+    {
+      "id": "biome:forest:tent",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/buildings",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1284,
+        772,
+        156,
+        92
+      ]
+    },
+    {
+      "id": "biome:forest:cart",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        4,
+        1028,
+        88,
+        78
+      ]
+    },
+    {
+      "id": "biome:forest:altar",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        260,
+        1028,
+        71,
+        108
+      ]
+    },
+    {
+      "id": "biome:forest:rune_stone",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        516,
+        1028,
+        52,
+        102
+      ]
+    },
+    {
+      "id": "biome:forest:portal",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        772,
+        1028,
+        98,
+        106
+      ]
+    },
+    {
+      "id": "biome:forest:arch",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1028,
+        1028,
+        75,
+        89
+      ]
+    },
+    {
+      "id": "biome:forest:ground_a",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1236,
+        1220,
+        52,
+        47
+      ]
+    },
+    {
+      "id": "biome:forest:ground_b",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1294,
+        1220,
+        52,
+        46
+      ]
+    },
+    {
+      "id": "biome:forest:ground_c",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1352,
+        1220,
+        52,
+        46
+      ]
+    },
+    {
+      "id": "biome:forest:path",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1410,
+        1220,
+        49,
+        44
+      ]
+    },
+    {
+      "id": "biome:forest:water",
+      "view": "outdoor",
+      "contexts": [
+        "forest"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/804a455c139b94e172cf.webp",
+      "sourceRect": [
+        1468,
+        1220,
+        59,
+        62
+      ]
+    },
+    {
+      "id": "biome:jungle:palm",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        516,
+        4,
+        96,
+        127
+      ]
+    },
+    {
+      "id": "biome:jungle:palm_small",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        772,
+        4,
+        71,
+        99
+      ]
+    },
+    {
+      "id": "biome:jungle:red_plant",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1028,
+        4,
+        59,
+        61
+      ]
+    },
+    {
+      "id": "biome:jungle:pink_flowers",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1284,
+        4,
+        75,
+        65
+      ]
+    },
+    {
+      "id": "biome:jungle:fern",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        4,
+        260,
+        78,
+        60
+      ]
+    },
+    {
+      "id": "biome:jungle:violet_flowers",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        260,
+        260,
+        49,
+        49
+      ]
+    },
+    {
+      "id": "biome:jungle:rock",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        516,
+        260,
+        107,
+        87
+      ]
+    },
+    {
+      "id": "biome:jungle:spire",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        772,
+        260,
+        82,
+        76
+      ]
+    },
+    {
+      "id": "biome:jungle:arch",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1028,
+        260,
+        134,
+        91
+      ]
+    },
+    {
+      "id": "biome:jungle:fire",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        260,
+        516,
+        93,
+        99
+      ]
+    },
+    {
+      "id": "biome:jungle:bedroll",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        516,
+        516,
+        102,
+        56
+      ]
+    },
+    {
+      "id": "biome:jungle:crystal",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1028,
+        516,
+        93,
+        107
+      ]
+    },
+    {
+      "id": "biome:jungle:portal",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1284,
+        516,
+        144,
+        114
+      ]
+    },
+    {
+      "id": "biome:jungle:totem",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        4,
+        772,
+        93,
+        111
+      ]
+    },
+    {
+      "id": "biome:jungle:orchid",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        260,
+        772,
+        75,
+        104
+      ]
+    },
+    {
+      "id": "biome:jungle:ground_a",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1236,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:jungle:ground_b",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1294,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:jungle:ground_c",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1352,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:jungle:path",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1410,
+        964,
+        49,
+        48
+      ]
+    },
+    {
+      "id": "biome:jungle:water",
+      "view": "outdoor",
+      "contexts": [
+        "jungle"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/351944537ec6a38ad188.webp",
+      "sourceRect": [
+        1468,
+        964,
+        59,
+        61
+      ]
+    },
+    {
+      "id": "biome:volcano:ember_tree",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        4,
+        4,
+        108,
+        107
+      ]
+    },
+    {
+      "id": "biome:volcano:flame_tree",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        260,
+        4,
+        91,
+        86
+      ]
+    },
+    {
+      "id": "biome:volcano:dead_tree",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        516,
+        4,
+        86,
+        94
+      ]
+    },
+    {
+      "id": "biome:volcano:ember_shrub",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        772,
+        4,
+        95,
+        72
+      ]
+    },
+    {
+      "id": "biome:volcano:purple_fern",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1028,
+        4,
+        85,
+        65
+      ]
+    },
+    {
+      "id": "biome:volcano:rock",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        4,
+        260,
+        114,
+        85
+      ]
+    },
+    {
+      "id": "biome:volcano:spire",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        260,
+        260,
+        78,
+        82
+      ]
+    },
+    {
+      "id": "biome:volcano:arch",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        516,
+        260,
+        151,
+        92
+      ]
+    },
+    {
+      "id": "biome:volcano:forge",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1028,
+        260,
+        66,
+        97
+      ]
+    },
+    {
+      "id": "biome:volcano:hut",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1284,
+        260,
+        130,
+        119
+      ]
+    },
+    {
+      "id": "biome:volcano:tent",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/buildings",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        260,
+        516,
+        130,
+        66
+      ]
+    },
+    {
+      "id": "biome:volcano:rune_stone",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1028,
+        516,
+        97,
+        101
+      ]
+    },
+    {
+      "id": "biome:volcano:crystals",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1284,
+        516,
+        98,
+        94
+      ]
+    },
+    {
+      "id": "biome:volcano:mine_cart",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        4,
+        772,
+        82,
+        77
+      ]
+    },
+    {
+      "id": "biome:volcano:obelisk",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        260,
+        772,
+        68,
+        106
+      ]
+    },
+    {
+      "id": "biome:volcano:ground_a",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1236,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:volcano:ground_b",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1294,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:volcano:ground_c",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1352,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:volcano:path",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1410,
+        964,
+        49,
+        48
+      ]
+    },
+    {
+      "id": "biome:volcano:water",
+      "view": "outdoor",
+      "contexts": [
+        "volcano"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0cd84f6a0d2432cd7041.webp",
+      "sourceRect": [
+        1468,
+        964,
+        59,
+        61
+      ]
+    },
+    {
+      "id": "biome:desert:palm",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        4,
+        4,
+        101,
+        111
+      ]
+    },
+    {
+      "id": "biome:desert:palm_small",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        260,
+        4,
+        74,
+        87
+      ]
+    },
+    {
+      "id": "biome:desert:acacia",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        516,
+        4,
+        124,
+        113
+      ]
+    },
+    {
+      "id": "biome:desert:dead_tree",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        772,
+        4,
+        87,
+        96
+      ]
+    },
+    {
+      "id": "biome:desert:cactus",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1028,
+        4,
+        58,
+        91
+      ]
+    },
+    {
+      "id": "biome:desert:cactus_round",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1284,
+        4,
+        52,
+        67
+      ]
+    },
+    {
+      "id": "biome:desert:agave",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        4,
+        260,
+        64,
+        49
+      ]
+    },
+    {
+      "id": "biome:desert:desert_flowers",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        260,
+        260,
+        70,
+        48
+      ]
+    },
+    {
+      "id": "biome:desert:rock",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        516,
+        260,
+        97,
+        87
+      ]
+    },
+    {
+      "id": "biome:desert:spire",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        772,
+        260,
+        68,
+        91
+      ]
+    },
+    {
+      "id": "biome:desert:arch",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1028,
+        260,
+        156,
+        82
+      ]
+    },
+    {
+      "id": "biome:desert:mesa",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1284,
+        260,
+        202,
+        81
+      ]
+    },
+    {
+      "id": "biome:desert:fire",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        260,
+        516,
+        78,
+        73
+      ]
+    },
+    {
+      "id": "biome:desert:well",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        516,
+        516,
+        108,
+        96
+      ]
+    },
+    {
+      "id": "biome:desert:crystal",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        772,
+        516,
+        89,
+        106
+      ]
+    },
+    {
+      "id": "biome:desert:portal",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1028,
+        516,
+        140,
+        117
+      ]
+    },
+    {
+      "id": "biome:desert:obelisk",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1284,
+        516,
+        86,
+        127
+      ]
+    },
+    {
+      "id": "biome:desert:shrine",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/buildings",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        4,
+        772,
+        94,
+        117
+      ]
+    },
+    {
+      "id": "biome:desert:bones",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        260,
+        772,
+        142,
+        61
+      ]
+    },
+    {
+      "id": "biome:desert:ground_a",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1236,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:desert:ground_b",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1294,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:desert:ground_c",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1352,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:desert:path",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1410,
+        964,
+        49,
+        48
+      ]
+    },
+    {
+      "id": "biome:desert:water",
+      "view": "outdoor",
+      "contexts": [
+        "desert"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/0a4eb8d0ae7dfd4ec18a.webp",
+      "sourceRect": [
+        1468,
+        964,
+        59,
+        59
+      ]
+    },
+    {
+      "id": "biome:snow:pine",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        4,
+        4,
+        109,
+        143
+      ]
+    },
+    {
+      "id": "biome:snow:pine_small",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        260,
+        4,
+        54,
+        91
+      ]
+    },
+    {
+      "id": "biome:snow:pine_medium",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        516,
+        4,
+        85,
+        119
+      ]
+    },
+    {
+      "id": "biome:snow:dead_tree",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        772,
+        4,
+        85,
+        95
+      ]
+    },
+    {
+      "id": "biome:snow:snow_bush",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1028,
+        4,
+        79,
+        63
+      ]
+    },
+    {
+      "id": "biome:snow:snow_flowers",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1284,
+        4,
+        75,
+        52
+      ]
+    },
+    {
+      "id": "biome:snow:ice_arch",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        772,
+        260,
+        164,
+        90
+      ]
+    },
+    {
+      "id": "biome:snow:sled",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        260,
+        516,
+        80,
+        41
+      ]
+    },
+    {
+      "id": "biome:snow:portal",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1028,
+        516,
+        131,
+        109
+      ]
+    },
+    {
+      "id": "biome:snow:blue_fire",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1284,
+        516,
+        69,
+        105
+      ]
+    },
+    {
+      "id": "biome:snow:ground_a",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1236,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:snow:ground_b",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1294,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:snow:ground_c",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1352,
+        964,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:snow:path",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1410,
+        964,
+        49,
+        48
+      ]
+    },
+    {
+      "id": "biome:snow:water",
+      "view": "outdoor",
+      "contexts": [
+        "snow"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/597b548e8bce8d467e07.webp",
+      "sourceRect": [
+        1468,
+        964,
+        59,
+        61
+      ]
+    },
+    {
+      "id": "biome:mushroom:tree",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        4,
+        4,
+        118,
+        107
+      ]
+    },
+    {
+      "id": "biome:mushroom:tree_small",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        260,
+        4,
+        92,
+        103
+      ]
+    },
+    {
+      "id": "biome:mushroom:blue_tree",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        516,
+        4,
+        86,
+        82
+      ]
+    },
+    {
+      "id": "biome:mushroom:gold_tree",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        772,
+        4,
+        85,
+        64
+      ]
+    },
+    {
+      "id": "biome:mushroom:flowers",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        1028,
+        4,
+        73,
+        52
+      ]
+    },
+    {
+      "id": "biome:mushroom:grass",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        1284,
+        4,
+        71,
+        59
+      ]
+    },
+    {
+      "id": "biome:mushroom:rock",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        260,
+        260,
+        102,
+        81
+      ]
+    },
+    {
+      "id": "biome:mushroom:spire",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        516,
+        260,
+        82,
+        78
+      ]
+    },
+    {
+      "id": "biome:mushroom:arch",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        772,
+        260,
+        146,
+        90
+      ]
+    },
+    {
+      "id": "biome:mushroom:crystal",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        260,
+        516,
+        83,
+        106
+      ]
+    },
+    {
+      "id": "biome:mushroom:obelisk",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        772,
+        516,
+        70,
+        111
+      ]
+    },
+    {
+      "id": "biome:mushroom:ground_a",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        1236,
+        708,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:mushroom:ground_b",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        1294,
+        708,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:mushroom:ground_c",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        1352,
+        708,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:mushroom:path",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        1410,
+        708,
+        49,
+        48
+      ]
+    },
+    {
+      "id": "biome:mushroom:water",
+      "view": "outdoor",
+      "contexts": [
+        "mushroom"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/66ab16ccb02c29acdd79.webp",
+      "sourceRect": [
+        1468,
+        708,
+        59,
+        61
+      ]
+    },
+    {
+      "id": "biome:swamp:tree",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        4,
+        4,
+        124,
+        146
+      ]
+    },
+    {
+      "id": "biome:swamp:tree_small",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        260,
+        4,
+        86,
+        87
+      ]
+    },
+    {
+      "id": "biome:swamp:palm",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        516,
+        4,
+        100,
+        118
+      ]
+    },
+    {
+      "id": "biome:swamp:grass",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        1028,
+        4,
+        42,
+        48
+      ]
+    },
+    {
+      "id": "biome:swamp:fern",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/nature",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        1284,
+        4,
+        55,
+        38
+      ]
+    },
+    {
+      "id": "biome:swamp:rock",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        4,
+        260,
+        107,
+        80
+      ]
+    },
+    {
+      "id": "biome:swamp:spire",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        260,
+        260,
+        84,
+        80
+      ]
+    },
+    {
+      "id": "biome:swamp:arch",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        516,
+        260,
+        149,
+        89
+      ]
+    },
+    {
+      "id": "biome:swamp:tent",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/buildings",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        1028,
+        260,
+        107,
+        75
+      ]
+    },
+    {
+      "id": "biome:swamp:crystal",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        4,
+        516,
+        79,
+        106
+      ]
+    },
+    {
+      "id": "biome:swamp:obelisk",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        516,
+        516,
+        79,
+        119
+      ]
+    },
+    {
+      "id": "biome:swamp:rune_stone",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/decoration",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        772,
+        516,
+        94,
+        114
+      ]
+    },
+    {
+      "id": "biome:swamp:ground_a",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        1236,
+        708,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:swamp:ground_b",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        1294,
+        708,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:swamp:ground_c",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        1352,
+        708,
+        40,
+        36
+      ]
+    },
+    {
+      "id": "biome:swamp:path",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        1410,
+        708,
+        49,
+        48
+      ]
+    },
+    {
+      "id": "biome:swamp:water",
+      "view": "outdoor",
+      "contexts": [
+        "swamp"
+      ],
+      "category": "outdoor/terrain",
+      "atlas": "assets/images/389c076b46d53887155b.webp",
+      "sourceRect": [
+        1468,
+        708,
+        59,
+        61
+      ]
+    },
+    {
+      "id": "world:dorf_laterne",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/63324a0fd4996bba7a35.png"
+    },
+    {
+      "id": "world:dorf_wegweiser",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/5a7beea3930c850746ca.png"
+    },
+    {
+      "id": "world:dorf_zaun_oben",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/21ac6d40b6d5ecf74494.png"
+    },
+    {
+      "id": "world:dorf_zaun_unten",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/0ccd252e1e5a9ae2646e.png"
+    },
+    {
+      "id": "world:dorf_brunnen_stein",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/bb4c5db78552e9129466.png"
+    },
+    {
+      "id": "world:dorf_banner",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/007446daef30a16eb347.png"
+    },
+    {
+      "id": "world:dorf_haengelaterne",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/73dc90ba8985df4cd8d4.png"
+    },
+    {
+      "id": "world:abenteuer_haus_gross",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/a8fe809652e30a9e1591.png"
+    },
+    {
+      "id": "world:abenteuer_haus_stroh",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/024845143518ef36f70f.png"
+    },
+    {
+      "id": "world:abenteuer_haus_balkon",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/e61674375c901547b2c5.png"
+    },
+    {
+      "id": "world:abenteuer_haus_blau",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/091064aaa76d426e7523.png"
+    },
+    {
+      "id": "world:abenteuer_haus_rot",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/95436d550de3dad96a3a.png"
+    },
+    {
+      "id": "world:abenteuer_haus_turm",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/016accb8b18da6d9f32f.png"
+    },
+    {
+      "id": "world:abenteuer_arena",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/2d24e2c69d7c33663418.png"
+    },
+    {
+      "id": "world:abenteuer_kristallschrein",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/6812314b3d14420f2c46.png"
+    },
+    {
+      "id": "world:abenteuer_obststand",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/1187f6f79f9387896883.png"
+    },
+    {
+      "id": "world:abenteuer_ofen",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/8ca7c6ccbc25a019c25e.png"
+    },
+    {
+      "id": "world:abenteuer_zielscheiben",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/f948489916e1fb5a3d48.png"
+    },
+    {
+      "id": "world:abenteuer_waffenstaender",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/d2905aebd6e24fb12123.png"
+    },
+    {
+      "id": "world:abenteuer_kochstelle",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/96b9330ea013e173e659.png"
+    },
+    {
+      "id": "world:abenteuer_loewenstatue",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/e7fe53e3388aa911b6ef.png"
+    },
+    {
+      "id": "world:abenteuer_teich",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/8c3d836326ddbe82cf57.png"
+    },
+    {
+      "id": "world:abenteuer_vogelbrunnen",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/6bf2c4cf2e9ec4423bea.png"
+    },
+    {
+      "id": "world:abenteuer_blumenbogen",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/b07ef567b38f1ee6a5e0.png"
+    },
+    {
+      "id": "world:abenteuer_pavillon",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/0ea09099df87066815d5.png"
+    },
+    {
+      "id": "world:abenteuer_schaukel",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/d71d41ce8337fe6a65eb.png"
+    },
+    {
+      "id": "world:abenteuer_heuwagen",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/2a4d287b8ada878a9822.png"
+    },
+    {
+      "id": "world:abenteuer_dorfbrunnen",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/c61bbd78a408aaa03926.png"
+    },
+    {
+      "id": "world:abenteuer_anschlagtafel",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/bf102537199de425c8e1.png"
+    },
+    {
+      "id": "world:abenteuer_laterne",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/191d5784cfe5ae42d51a.png"
+    },
+    {
+      "id": "world:trail_wood_arch",
+      "view": "outdoor",
+      "contexts": [
+        "town",
+        "wilderness"
+      ],
+      "category": "outdoor/legacy",
+      "image": "assets/images/trail-wooden-arch.png"
+    }
+  ]
+}

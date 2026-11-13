@@ -1,0 +1,22 @@
+{
+  "version": 129,
+  "sheets": {
+    "npc-outdoor129": {
+      "image": "assets/templates-129/npc-outdoor129.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "green",
+      "sha256": "2d206192d37799949c4e8eabcdc1941904045299e7f6aab10a0df3ff978968a8",
+      "items": []
+    },
+    "npc-indoor129": {
+      "image": "assets/templates-129/npc-indoor129.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "green",
+      "sha256": "6dbfccd4a61376d14775883e5b74e6d89a17866b83d2c3f46ae1cd7cd9047fe1",
+      "items": []
+    }
+  },
+  "notes": "Original JPEG bytes preserved. Outdoor sheets supply four-direction walking; indoor sheet contains four roles in standing poses. Traveler indoors reuses the established source."
+}

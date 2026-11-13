@@ -1,7 +1,7 @@
 (function(){
 'use strict';if(window.VaelkorCards?.version===81)return;
 const rank={common:0,uncommon:1,rare:2,epic:3,legendary:4},rarityScale=[1,1.06,1.12,1.20,1.30];
-const supported=new Set(['strike','pierce','dot','drain','mend','ward','stun','weaken','weave','rally','reflect','dodge','draw','handboost','cleanse','renew','expose','purge']);
+const supported=new Set(['strike','pierce','dot','drain','mend','ward','stun','weaken','weave','energy_down','rally','reflect','dodge','draw','handboost','cleanse','renew','expose','purge']);
 const newCards=[],definitions=[['cleanse','Reinigung',1,'rare'],['renew','Regeneration',2,'rare'],['expose','Schwachstelle',1,'uncommon'],['purge','Entzauberung',2,'rare']];
 for(let i=0;i<ELEMENTS.length;i++)for(const [effect,label,cost,rarity]of definitions)newCards.push({id:`vk81-${i}-${effect}`,name:`${ELEMENTS[i]} · ${label}`,kind:'spell',element:ELEMENTS[i],order:fusionOrders[ELEMENTS[i]]||'thorn',cost,power:1,effect,rarity});
 const psychoSpecial=[['Gedankenfessel','weaken',1],['Traumblick','draw',2],['Astralfokus','rally',3],['Geistbruch','expose',3]];
@@ -15,18 +15,19 @@ function normalize(c){
  c.effect=({guard:'ward',silence:'weaken',haste:'draw',pulse:'ward'})[c.effect]||c.effect;
  if(!supported.has(c.effect))throw Error('Unbekannter Karteneffekt: '+c.effect);
  c.cost=Math.max(1,Math.min(5,Math.round(c.cost||1)));
+ if(c.effect==='energy_down'){c.cost=2;c.power=1;c.desc='Senkt gegnerische Energie um 1 für diesen Kampf; mindestens 1.';c.balanceVersion=81;return c;}
  if(c.effect==='weave'){c.cost=Math.max(2,c.cost);if(r(c)>=3)c.cost=Math.max(3,c.cost)}
  if(c.effect==='handboost'||c.effect==='dodge')c.cost=Math.max(2,c.cost);
  const cost=c.cost,base=budget(c);
  c.power=({strike:base,pierce:Math.round(base*.82),dot:Math.round(base*.68),drain:Math.round(base*.67),mend:[0,5,11,18,26,35][cost],ward:[0,6,12,19,27,36][cost],stun:Math.max(1,Math.round(base*.35)),weaken:Math.min(4,cost+Math.floor(r(c)/3)),weave:r(c)>=3&&cost>=3?2:Math.max(1,Math.floor(cost/2)),rally:Math.min(8,2*cost-1+Math.floor(r(c)/2)),reflect:[0,6,12,19,27,36][cost],dodge:Math.min(3,Math.max(1,cost-1)),draw:Math.min(6,2*cost-1+(r(c)>=2?1:0)),handboost:Math.min(4,Math.max(1,cost-1)),cleanse:1,renew:[0,5,11,18,26,35][cost],expose:Math.min(6,2*cost),purge:cost})[c.effect];
- c.balanceVersion=81;c.desc=(c.element?c.element+' · benötigt ein passendes aktives Monster. ':'Neutral · mit jedem Monster spielbar. ')+({strike:'Direkter Schaden.',pierce:'Ignoriert 80 % des gegnerischen Schilds.',dot:'Schaden plus zwei Runden Nachwirkung; stapelt nicht mehrfach.',drain:'Schaden und 40 % des verursachten Schadens als Heilung.',mend:'Sofortige Heilung bis zum LP-Maximum.',ward:'Schild bis zum kampfeigenen Schutzlimit.',stun:'Schaden und Chance auf eine Runde Betäubung; mit Kettenschutz.',weaken:'Verringert den Schaden für eine begrenzte Zahl eigener Runden.',weave:'Zusätzliche Energie ab der nächsten Runde; insgesamt höchstens +3.',rally:'Angriff für diesen Kampf; Bonus höchstens +10, Angriff höchstens 30.',reflect:'Schutz und einmaliger Gegenschaden.',dodge:'Weicht den nächsten Angriffen aus; höchstens drei Ladungen.',draw:'Zieht sofort Karten; höchstens neun Karten gleichzeitig.',handboost:'Mehr Karten zu Rundenbeginn; höchstens neun.',cleanse:'Entfernt Nachwirkung, Schwächung, Betäubung und Verwundbarkeit; kleine Heilung.',renew:'Heilt nach den nächsten zwei Runden; keine Wiederbelebung.',expose:'Die nächsten Treffer verursachen mehr Schaden.',purge:'Entfernt gegnerischen Schild sowie Regeneration und Angriffsstärkungen.'}[c.effect]);
+ c.balanceVersion=81;c.desc=(c.element?c.element+' · benötigt ein passendes aktives Monster. ':'Neutral · mit jedem Monster spielbar. ')+({strike:'Direkter Schaden.',pierce:'Ignoriert 80 % des gegnerischen Schilds.',dot:'Schaden plus zwei Runden Nachwirkung; stapelt nicht mehrfach.',drain:'Schaden und 40 % des verursachten Schadens als Heilung.',mend:'Sofortige Heilung bis zum LP-Maximum.',ward:'Schild bis zum kampfeigenen Schutzlimit.',stun:'Schaden und Chance auf eine Runde Betäubung; mit Kettenschutz.',weaken:'Verringert den Schaden für eine begrenzte Zahl eigener Runden.',weave:'Zusätzliche Energie sofort und pro Runde für diesen Kampf; insgesamt höchstens +3.',rally:'Angriff für diesen Kampf; Bonus höchstens +10, Angriff höchstens 30.',reflect:'Schutz und einmaliger Gegenschaden.',dodge:'Weicht den nächsten Angriffen aus; höchstens drei Ladungen.',draw:'Zieht sofort Karten; höchstens neun Karten gleichzeitig.',handboost:'Mehr Karten zu Rundenbeginn; höchstens neun.',cleanse:'Entfernt Nachwirkung, Schwächung, Betäubung und Verwundbarkeit; kleine Heilung.',renew:'Heilt nach den nächsten zwei Runden; keine Wiederbelebung.',expose:'Die nächsten Treffer verursachen mehr Schaden.',purge:'Entfernt gegnerischen Schild sowie Regeneration und Angriffsstärkungen.'}[c.effect]);
 }
 for(const c of DD.CARDS)normalize(c);
 Object.assign(VK_EFFECT_DE,{cleanse:'Reinigung',renew:'Regeneration',expose:'Schwachstelle',purge:'Entzauberung'});
 Object.assign(fusionPalette,{Psycho:['#ad77da','#f1deff','🔮']});
 Object.assign(VAELKOR_COLORS,{Blitz:['#e7b82b','#fff099'],Dunkel:['#9355d1','#edc9ff'],Luft:['#69b9bf','#dafaff'],Stahl:['#809cae','#e0edf5'],Psycho:['#ad77da','#f1deff'],Gift:['#91b638','#e8ffaf']});
 if(typeof vkCardArtCache!=='undefined')vkCardArtCache.clear();
-const utility=new Set(['stun','weaken','weave','rally','dodge','draw','handboost','cleanse','expose']);
+const utility=new Set(['stun','weaken','weave','energy_down','rally','dodge','draw','handboost','cleanse','expose']);
 function utilityShield(c,u){return utility.has(c.effect)?(window.VaelkorStats?VaelkorStats.utilityShield(c,u):r(c)):0}
 function shieldCap(u){return Math.max(45,Math.round(u.max*.8+10))}
 function support(c,u,kind){if(window.VaelkorStats)return VaelkorStats.support(c,u,kind);const base=(kind==='heal'?[0,5,11,18,26,35]:[0,6,12,19,27,36])[c.cost];return Math.max(1,Math.round((base+u.atk*(kind==='heal'?.35:.50)*c.cost)*mult(c)))}
@@ -59,7 +60,8 @@ vkApplyCard=function(b,c,sideName){
   const hit=applyHit(b,c,sideName,Math.max(1,Math.round(raw()*.45)));const chance=window.VaelkorBalance?.stunChance?VaelkorBalance.stunChance(c):[.30,.35,.40,.50,.60][r(c)];
   if(!hit.dodged&&!target.stunGuard&&Math.random()<chance){target.stun=1;target.stunGuard=2;b.log.push('⚡ Eine Runde betäubt.')}else b.log.push('⚡ Betäubung abgewehrt oder fehlgeschlagen.');
  }else if(c.effect==='weaken'){target.weakened=Math.max(target.weakened||0,c.power);target.weakenStrength=Math.max(target.weakenStrength||0,.20+.025*r(c));}
- else if(c.effect==='weave')actor.energyBonus=Math.min(3,(actor.energyBonus||0)+c.power);
+ else if(c.effect==='weave'){const n=Math.min(c.power,3-(actor.energyBonus||0));actor.energyBonus=(actor.energyBonus||0)+n;actor.energy+=n;}
+ else if(c.effect==='energy_down'){const minimum=1-(fusionActive(target)?.maxEnergy||2),old=target.energyBonus||0;target.energyBonus=Math.max(minimum,old-c.power);target.energy=Math.max(0,(target.energy||0)-(old-target.energyBonus));}
  else if(c.effect==='rally'){const n=Math.max(0,Math.min(c.power,10-(u.rallyBonus||0),(window.VaelkorStats?Infinity:30-u.atk)));u.atk+=n;u.rallyBonus=(u.rallyBonus||0)+n;}
  else if(c.effect==='reflect'){actor.reflect=Math.max(actor.reflect||0,Math.round(support(c,u,'shield')*.75));addShield(actor,u,Math.round(support(c,u,'shield')*.5));}
  else if(c.effect==='dodge')actor.dodge=Math.min(3,(Number(actor.dodge)||0)+c.power);
@@ -84,6 +86,7 @@ function aiScore(c,b,sideName='enemy'){
  else if(c.effect==='purge')value=Math.min(target.ward||0,shield*1.3)+(v.renew?v.renew.heal*v.renew.turns:0)+(v.rallyBonus||0)*3;
  else if(c.effect==='expose')value=target.vulnerable?-4:c.power*3.0;
  else if(c.effect==='weaken')value=target.weakened?-5:Math.min(3,c.power)*6;
+ else if(c.effect==='energy_down')value=(window.VaelkorStats?VaelkorStats.roundEnergy(b,sideName==='hero'?'enemy':'hero'):2)>1?(b.round<=3?15:8):-20;
  else if(c.effect==='weave')value=(actor.energyBonus||0)>=3?-20:b.round<=3?15*c.power:4*c.power;
  else if(c.effect==='rally')value=(u.rallyBonus||0)>=10||(!window.VaelkorStats&&u.atk>=30)?-20:c.power*(b.round<=4?5:2);
  else if(c.effect==='draw')value=actor.energy<=c.cost?-20:c.power*4;
@@ -121,7 +124,7 @@ function context(c,b,sideName){if(b)return{b,side:b[sideName],u:fusionActive(b[s
 window.vkCardEffectText=function(c,b=null,sideName='hero'){
  const q=context(c,b,sideName),u=q.u;if(!u)return c.desc||'';const extra=utilityShield(c,u)?' · +'+utilityShield(c,u)+' Schild':'';const heal=support(c,u,'heal'),shield=support(c,u,'shield');
  if(['strike','pierce','dot','drain'].includes(c.effect)){const n=vkRawCardDamage(q.b,c,b?sideName:'hero');return '💥 ca. '+n+' Schaden'+(c.effect==='pierce'?' · 80 % Schilddurchdringung':c.effect==='dot'?' · 2× '+Math.max(1,Math.round(n*.22))+' Nachwirkung':c.effect==='drain'?' · 40 % Lebensentzug':'');}
- return ({mend:'♥ bis '+heal+' Heilung',ward:'🛡 '+shield+' Schild',stun:'⚡ '+Math.round([.30,.35,.40,.50,.60][r(c)]*100)+' % Betäubung · Trefferschaden',weaken:'❄ −'+Math.round((.20+.025*r(c))*100)+' % Schaden für '+c.power+' eigene Runde(n)',weave:'◆ +'+c.power+' Energie ab nächster Runde (max. +3)',rally:'⚔ +'+c.power+' Angriff für diesen Kampf (Bonus max. +10)',reflect:'🛡 '+Math.round(shield*.5)+' Schutz · bis '+Math.round(shield*.75)+' Gegenschaden',dodge:'💨 '+c.power+' Angriff(e) ausweichen',draw:'🃏 '+c.power+' Karten ziehen (bis 9 gleichzeitig)',handboost:'🃏 Starthand +'+c.power+' für diesen Kampf (bis 9)',cleanse:'✦ Negative Effekte entfernen · bis '+Math.round(heal*.4)+' LP',renew:'🌱 2× bis '+Math.round(heal*.65)+' Regeneration',expose:'🎯 +'+Math.round((.20+.03*r(c))*100)+' % Schaden für '+c.power+' Treffer',purge:'✧ Bis '+Math.round(shield*1.3)+' Schild, Angriffsstärkungen und Regeneration entfernen'}[c.effect]||c.desc)+extra;
+ return ({mend:'♥ bis '+heal+' Heilung',ward:'🛡 '+shield+' Schild',stun:'⚡ '+Math.round([.30,.35,.40,.50,.60][r(c)]*100)+' % Betäubung · Trefferschaden',weaken:'❄ −'+Math.round((.20+.025*r(c))*100)+' % Schaden für '+c.power+' eigene Runde(n)',weave:'◆ +'+c.power+' Energie für diesen Kampf (max. +3)',energy_down:'◆ −'+c.power+' gegnerische Energie für diesen Kampf (mindestens 1)',rally:'⚔ +'+c.power+' Angriff für diesen Kampf (Bonus max. +10)',reflect:'🛡 '+Math.round(shield*.5)+' Schutz · bis '+Math.round(shield*.75)+' Gegenschaden',dodge:'💨 '+c.power+' Angriff(e) ausweichen',draw:'🃏 '+c.power+' Karten ziehen (bis 9 gleichzeitig)',handboost:'🃏 Starthand +'+c.power+' für diesen Kampf (bis 9)',cleanse:'✦ Negative Effekte entfernen · bis '+Math.round(heal*.4)+' LP',renew:'🌱 2× bis '+Math.round(heal*.65)+' Regeneration',expose:'🎯 +'+Math.round((.20+.03*r(c))*100)+' % Schaden für '+c.power+' Treffer',purge:'✧ Bis '+Math.round(shield*1.3)+' Schild, Angriffsstärkungen und Regeneration entfernen'}[c.effect]||c.desc)+extra;
 };
 const originalFc=fc;fc=function(c){let html=originalFc(c);if(c?.kind==='spell')html=html.replace(/<div class="fusionStats">[\s\S]*?<\/div>/,'<div class="fusionStats"><span>'+fesc(vkCardEffectText(c))+'</span></div>');return html};
 fusionCategory=c=>['strike','pierce','dot','drain','stun'].includes(c.effect)?'attacks':'spells';

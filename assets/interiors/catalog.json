@@ -1,0 +1,1803 @@
+{
+  "version": 1,
+  "source": "User templates, 2026-11-12; alpha sheets isolated with image-editing tool. Layouts assembled using the existing interior engine.",
+  "sets": {
+    "church": {
+      "image": "assets/interiors/church-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "items": [
+        {
+          "id": "church.wall",
+          "name": "wall",
+          "rect": [
+            20,
+            56,
+            252,
+            240
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.wall-narrow",
+          "name": "wall-narrow",
+          "rect": [
+            285,
+            57,
+            160,
+            240
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.pillar",
+          "name": "pillar",
+          "rect": [
+            463,
+            56,
+            70,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.wall-strip",
+          "name": "wall-strip",
+          "rect": [
+            548,
+            56,
+            73,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.post",
+          "name": "post",
+          "rect": [
+            636,
+            56,
+            70,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.corner",
+          "name": "corner",
+          "rect": [
+            722,
+            50,
+            92,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.cap",
+          "name": "cap",
+          "rect": [
+            824,
+            55,
+            81,
+            100
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.bricks",
+          "name": "bricks",
+          "rect": [
+            825,
+            175,
+            80,
+            124
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.cross-window",
+          "name": "cross-window",
+          "rect": [
+            914,
+            30,
+            205,
+            270
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.window",
+          "name": "window",
+          "rect": [
+            1123,
+            63,
+            104,
+            236
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.statue",
+          "name": "statue",
+          "rect": [
+            1233,
+            52,
+            126,
+            249
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "church.door",
+          "name": "door",
+          "rect": [
+            1361,
+            75,
+            166,
+            225
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.altar",
+          "name": "altar",
+          "rect": [
+            21,
+            330,
+            264,
+            216
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "church.lectern",
+          "name": "lectern",
+          "rect": [
+            300,
+            365,
+            121,
+            181
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "church.altar-cloth",
+          "name": "altar-cloth",
+          "rect": [
+            442,
+            395,
+            201,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "church.pew",
+          "name": "pew",
+          "rect": [
+            660,
+            371,
+            342,
+            174
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "church.pew-side",
+          "name": "pew-side",
+          "rect": [
+            1033,
+            372,
+            116,
+            173
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "church.runner",
+          "name": "runner",
+          "rect": [
+            1163,
+            317,
+            122,
+            318
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "church.rug",
+          "name": "rug",
+          "rect": [
+            1297,
+            347,
+            111,
+            232
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "church.rug-small",
+          "name": "rug-small",
+          "rect": [
+            1415,
+            389,
+            106,
+            135
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "church.banner",
+          "name": "banner",
+          "rect": [
+            18,
+            599,
+            143,
+            210
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.banner-small",
+          "name": "banner-small",
+          "rect": [
+            169,
+            599,
+            91,
+            201
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "church.column",
+          "name": "column",
+          "rect": [
+            278,
+            606,
+            90,
+            188
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "church.column-small",
+          "name": "column-small",
+          "rect": [
+            385,
+            653,
+            82,
+            143
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "church.lily",
+          "name": "lily",
+          "rect": [
+            482,
+            608,
+            131,
+            185
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "church.lily-small",
+          "name": "lily-small",
+          "rect": [
+            612,
+            650,
+            104,
+            146
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "church.plant",
+          "name": "plant",
+          "rect": [
+            715,
+            626,
+            130,
+            169
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "church.plant-small",
+          "name": "plant-small",
+          "rect": [
+            847,
+            647,
+            117,
+            148
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "church.candelabrum",
+          "name": "candelabrum",
+          "rect": [
+            964,
+            590,
+            106,
+            205
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "church.candle-tall",
+          "name": "candle-tall",
+          "rect": [
+            1070,
+            639,
+            58,
+            157
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "church.candle",
+          "name": "candle",
+          "rect": [
+            1141,
+            657,
+            70,
+            136
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "church.candle-low",
+          "name": "candle-low",
+          "rect": [
+            1217,
+            694,
+            70,
+            98
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "church.lantern",
+          "name": "lantern",
+          "rect": [
+            1307,
+            635,
+            91,
+            153
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "church.lantern-small",
+          "name": "lantern-small",
+          "rect": [
+            1424,
+            651,
+            90,
+            140
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "church.step",
+          "name": "step",
+          "rect": [
+            15,
+            875,
+            145,
+            91
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.steps",
+          "name": "steps",
+          "rect": [
+            168,
+            839,
+            204,
+            133
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.steps-wide",
+          "name": "steps-wide",
+          "rect": [
+            381,
+            831,
+            212,
+            145
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.floor",
+          "name": "floor",
+          "rect": [
+            640,
+            844,
+            102,
+            117
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.floor-large",
+          "name": "floor-large",
+          "rect": [
+            775,
+            841,
+            120,
+            124
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.floor-dark",
+          "name": "floor-dark",
+          "rect": [
+            923,
+            844,
+            101,
+            117
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.tile",
+          "name": "tile",
+          "rect": [
+            1039,
+            849,
+            97,
+            120
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.tile-small",
+          "name": "tile-small",
+          "rect": [
+            1145,
+            852,
+            96,
+            117
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.tile-square",
+          "name": "tile-square",
+          "rect": [
+            1250,
+            852,
+            95,
+            117
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "church.ledge",
+          "name": "ledge",
+          "rect": [
+            1349,
+            851,
+            175,
+            114
+          ],
+          "category": "wall",
+          "collision": false
+        }
+      ]
+    },
+    "tent": {
+      "image": "assets/interiors/tent-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "items": [
+        {
+          "id": "tent.wall",
+          "name": "wall",
+          "rect": [
+            24,
+            47,
+            207,
+            244
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.wall-narrow",
+          "name": "wall-narrow",
+          "rect": [
+            239,
+            49,
+            103,
+            241
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.wall-narrow2",
+          "name": "wall-narrow2",
+          "rect": [
+            350,
+            49,
+            111,
+            241
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.post",
+          "name": "post",
+          "rect": [
+            481,
+            48,
+            66,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.wall-strip",
+          "name": "wall-strip",
+          "rect": [
+            577,
+            48,
+            77,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.post2",
+          "name": "post2",
+          "rect": [
+            682,
+            48,
+            65,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.cap",
+          "name": "cap",
+          "rect": [
+            780,
+            48,
+            73,
+            83
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.bricks",
+          "name": "bricks",
+          "rect": [
+            777,
+            169,
+            87,
+            108
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "tent.curtain",
+          "name": "curtain",
+          "rect": [
+            888,
+            172,
+            144,
+            114
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.curtain2",
+          "name": "curtain2",
+          "rect": [
+            1043,
+            171,
+            133,
+            115
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.banner",
+          "name": "banner",
+          "rect": [
+            1190,
+            112,
+            140,
+            185
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.canopy",
+          "name": "canopy",
+          "rect": [
+            1342,
+            113,
+            176,
+            191
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.bed",
+          "name": "bed",
+          "rect": [
+            20,
+            316,
+            165,
+            260
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.nightstand",
+          "name": "nightstand",
+          "rect": [
+            204,
+            327,
+            100,
+            198
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.cupboard",
+          "name": "cupboard",
+          "rect": [
+            327,
+            322,
+            150,
+            203
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.shelf",
+          "name": "shelf",
+          "rect": [
+            497,
+            328,
+            142,
+            198
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.chest",
+          "name": "chest",
+          "rect": [
+            665,
+            364,
+            154,
+            137
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.barrel",
+          "name": "barrel",
+          "rect": [
+            841,
+            338,
+            131,
+            169
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.barrel-small",
+          "name": "barrel-small",
+          "rect": [
+            983,
+            366,
+            91,
+            129
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.sack",
+          "name": "sack",
+          "rect": [
+            1079,
+            357,
+            100,
+            138
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.bedroll",
+          "name": "bedroll",
+          "rect": [
+            1178,
+            369,
+            94,
+            129
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.rope",
+          "name": "rope",
+          "rect": [
+            1284,
+            346,
+            94,
+            166
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "tent.chair",
+          "name": "chair",
+          "rect": [
+            15,
+            596,
+            83,
+            143
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.table",
+          "name": "table",
+          "rect": [
+            100,
+            592,
+            184,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.stool",
+          "name": "stool",
+          "rect": [
+            294,
+            612,
+            90,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.stool-small",
+          "name": "stool-small",
+          "rect": [
+            383,
+            633,
+            77,
+            97
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.table-cloth",
+          "name": "table-cloth",
+          "rect": [
+            473,
+            590,
+            169,
+            144
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.bookshelf",
+          "name": "bookshelf",
+          "rect": [
+            657,
+            521,
+            154,
+            221
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.bookshelf2",
+          "name": "bookshelf2",
+          "rect": [
+            824,
+            525,
+            161,
+            217
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.reading-table",
+          "name": "reading-table",
+          "rect": [
+            997,
+            539,
+            152,
+            192
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "tent.book",
+          "name": "book",
+          "rect": [
+            1154,
+            586,
+            96,
+            78
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.mug",
+          "name": "mug",
+          "rect": [
+            1263,
+            572,
+            77,
+            87
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.jar",
+          "name": "jar",
+          "rect": [
+            1345,
+            567,
+            65,
+            83
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.jar2",
+          "name": "jar2",
+          "rect": [
+            1409,
+            578,
+            62,
+            73
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.jar3",
+          "name": "jar3",
+          "rect": [
+            1465,
+            576,
+            59,
+            75
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.scroll",
+          "name": "scroll",
+          "rect": [
+            1154,
+            665,
+            89,
+            76
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.scrolls",
+          "name": "scrolls",
+          "rect": [
+            1242,
+            665,
+            86,
+            76
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.map",
+          "name": "map",
+          "rect": [
+            1339,
+            651,
+            183,
+            97
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.plant",
+          "name": "plant",
+          "rect": [
+            14,
+            772,
+            136,
+            193
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.plant-small",
+          "name": "plant-small",
+          "rect": [
+            146,
+            782,
+            112,
+            149
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.grass",
+          "name": "grass",
+          "rect": [
+            103,
+            893,
+            60,
+            45
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.grass2",
+          "name": "grass2",
+          "rect": [
+            204,
+            892,
+            75,
+            46
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "tent.rug",
+          "name": "rug",
+          "rect": [
+            296,
+            757,
+            282,
+            205
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "tent.rug-runner",
+          "name": "rug-runner",
+          "rect": [
+            581,
+            758,
+            147,
+            204
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "tent.rug-small",
+          "name": "rug-small",
+          "rect": [
+            730,
+            794,
+            116,
+            145
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "tent.candelabrum",
+          "name": "candelabrum",
+          "rect": [
+            882,
+            773,
+            106,
+            191
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "tent.candle-tall",
+          "name": "candle-tall",
+          "rect": [
+            1001,
+            817,
+            70,
+            146
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "tent.candle",
+          "name": "candle",
+          "rect": [
+            1081,
+            837,
+            68,
+            122
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "tent.candle-low",
+          "name": "candle-low",
+          "rect": [
+            1160,
+            864,
+            84,
+            93
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "tent.lantern",
+          "name": "lantern",
+          "rect": [
+            1298,
+            810,
+            87,
+            142
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "tent.lantern2",
+          "name": "lantern2",
+          "rect": [
+            1410,
+            816,
+            92,
+            142
+          ],
+          "category": "light",
+          "collision": false
+        }
+      ]
+    },
+    "ruined": {
+      "image": "assets/interiors/ruined-atlas.png",
+      "width": 1536,
+      "height": 1024,
+      "items": [
+        {
+          "id": "ruined.wall",
+          "name": "wall",
+          "rect": [
+            24,
+            47,
+            207,
+            244
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.wall-narrow",
+          "name": "wall-narrow",
+          "rect": [
+            239,
+            49,
+            103,
+            241
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.wall-narrow2",
+          "name": "wall-narrow2",
+          "rect": [
+            350,
+            49,
+            111,
+            241
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.post",
+          "name": "post",
+          "rect": [
+            481,
+            48,
+            66,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.wall-strip",
+          "name": "wall-strip",
+          "rect": [
+            577,
+            48,
+            77,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.post2",
+          "name": "post2",
+          "rect": [
+            682,
+            48,
+            65,
+            242
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.cap",
+          "name": "cap",
+          "rect": [
+            780,
+            48,
+            73,
+            83
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.bricks",
+          "name": "bricks",
+          "rect": [
+            777,
+            169,
+            87,
+            108
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "ruined.curtain",
+          "name": "curtain",
+          "rect": [
+            888,
+            172,
+            144,
+            114
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.curtain2",
+          "name": "curtain2",
+          "rect": [
+            1043,
+            171,
+            133,
+            115
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.banner",
+          "name": "banner",
+          "rect": [
+            1190,
+            112,
+            140,
+            185
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.canopy",
+          "name": "canopy",
+          "rect": [
+            1342,
+            113,
+            176,
+            191
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.bed",
+          "name": "bed",
+          "rect": [
+            20,
+            316,
+            165,
+            260
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.nightstand",
+          "name": "nightstand",
+          "rect": [
+            204,
+            327,
+            100,
+            198
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.cupboard",
+          "name": "cupboard",
+          "rect": [
+            327,
+            322,
+            150,
+            203
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.shelf",
+          "name": "shelf",
+          "rect": [
+            497,
+            328,
+            142,
+            198
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.chest",
+          "name": "chest",
+          "rect": [
+            665,
+            364,
+            154,
+            137
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.barrel",
+          "name": "barrel",
+          "rect": [
+            841,
+            338,
+            131,
+            169
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.barrel-small",
+          "name": "barrel-small",
+          "rect": [
+            983,
+            366,
+            91,
+            129
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.sack",
+          "name": "sack",
+          "rect": [
+            1079,
+            357,
+            100,
+            138
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.bedroll",
+          "name": "bedroll",
+          "rect": [
+            1178,
+            369,
+            94,
+            129
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.rope",
+          "name": "rope",
+          "rect": [
+            1284,
+            346,
+            94,
+            166
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "ruined.chair",
+          "name": "chair",
+          "rect": [
+            15,
+            596,
+            83,
+            143
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.table",
+          "name": "table",
+          "rect": [
+            100,
+            592,
+            184,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.stool",
+          "name": "stool",
+          "rect": [
+            294,
+            612,
+            90,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.stool-small",
+          "name": "stool-small",
+          "rect": [
+            383,
+            633,
+            77,
+            97
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.table-cloth",
+          "name": "table-cloth",
+          "rect": [
+            473,
+            590,
+            169,
+            144
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.bookshelf",
+          "name": "bookshelf",
+          "rect": [
+            657,
+            521,
+            154,
+            221
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.bookshelf2",
+          "name": "bookshelf2",
+          "rect": [
+            824,
+            525,
+            161,
+            217
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.reading-table",
+          "name": "reading-table",
+          "rect": [
+            997,
+            539,
+            152,
+            192
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "ruined.book",
+          "name": "book",
+          "rect": [
+            1154,
+            586,
+            96,
+            78
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.mug",
+          "name": "mug",
+          "rect": [
+            1263,
+            572,
+            77,
+            87
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.jar",
+          "name": "jar",
+          "rect": [
+            1345,
+            567,
+            65,
+            83
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.jar2",
+          "name": "jar2",
+          "rect": [
+            1409,
+            578,
+            62,
+            73
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.jar3",
+          "name": "jar3",
+          "rect": [
+            1465,
+            576,
+            59,
+            75
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.scroll",
+          "name": "scroll",
+          "rect": [
+            1154,
+            665,
+            89,
+            76
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.scrolls",
+          "name": "scrolls",
+          "rect": [
+            1242,
+            665,
+            86,
+            76
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.map",
+          "name": "map",
+          "rect": [
+            1339,
+            651,
+            183,
+            97
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.plant",
+          "name": "plant",
+          "rect": [
+            14,
+            772,
+            136,
+            193
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.plant-small",
+          "name": "plant-small",
+          "rect": [
+            146,
+            782,
+            112,
+            149
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.grass",
+          "name": "grass",
+          "rect": [
+            103,
+            893,
+            60,
+            45
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.grass2",
+          "name": "grass2",
+          "rect": [
+            204,
+            892,
+            75,
+            46
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.rug",
+          "name": "rug",
+          "rect": [
+            296,
+            757,
+            282,
+            205
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "ruined.rug-runner",
+          "name": "rug-runner",
+          "rect": [
+            581,
+            758,
+            147,
+            204
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "ruined.rug-small",
+          "name": "rug-small",
+          "rect": [
+            730,
+            794,
+            116,
+            145
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "ruined.candelabrum",
+          "name": "candelabrum",
+          "rect": [
+            882,
+            773,
+            106,
+            191
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "ruined.candle-tall",
+          "name": "candle-tall",
+          "rect": [
+            1001,
+            817,
+            70,
+            146
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "ruined.candle",
+          "name": "candle",
+          "rect": [
+            1081,
+            837,
+            68,
+            122
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "ruined.candle-low",
+          "name": "candle-low",
+          "rect": [
+            1160,
+            864,
+            84,
+            93
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "ruined.lantern",
+          "name": "lantern",
+          "rect": [
+            1298,
+            810,
+            87,
+            142
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "ruined.lantern2",
+          "name": "lantern2",
+          "rect": [
+            1410,
+            816,
+            92,
+            142
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "ruined.debris",
+          "name": "debris",
+          "rect": [
+            153,
+            909,
+            133,
+            61
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "ruined.stones",
+          "name": "stones",
+          "rect": [
+            73,
+            926,
+            78,
+            43
+          ],
+          "category": "decor",
+          "collision": false
+        }
+      ]
+    }
+  }
+}

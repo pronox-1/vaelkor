@@ -6,6 +6,21 @@ function vkBuildProperty(n){
  for(let i=0;i<18;i++){const side=i%4,x=side===0?1.5:side===1?W-1.5:3+Math.floor(hash(i,4,701)*(W-6))+.5,y=side===2?H-2.5:5+Math.floor(hash(i,8,702)*(H-9))+.5;if(Math.abs(x-15.5)<2&&y<6)continue;objects.push({type:['tree','bush','rock','flower'][i%4],x,y,block:i%4!==3,radius:.25});}
  p={x:15.5,y:5.5};target={...p};animFrom=null;animElapsed=STEP_MS;steps=0;encounters=0;invalidateScene();status.textContent='Mein Grundstück · Freie Grasfläche für spätere Gebäude, Wege und Pflanzen.';
 }
+function vkPropertyArena(plan){
+ if(plan.id!=='property:gruenwald')return;
+ let object=objects.find(o=>o.propertyArena126);
+ if(!object){object={type:'vkDecor',asset:'abenteuer_arena',block:true,wildHouse102:true,propertyArena126:true};objects.push(object);}
+ if(object.arenaLayout133!==1||object.x!==6.5||object.y!==11||object.w!==12){
+  objects=objects.filter(o=>o===object||o.chest102||o.wildHouse102||o.playerPlaced||!(o.x>=.6&&o.x<=13.5&&o.y>=3&&o.y<=17));
+  Object.assign(object,{x:6.5,y:11,w:12,arenaLayout128:1,arenaLayout130:1,arenaLayout133:1});
+  // Only the old generated arena access strip is replaced. The northern exit,
+  // stable room identity and persistent loot/construction data remain intact.
+  for(let y=10;y<=21;y++)for(let x=5;x<=15;x++)if(cell(x,y)===types.PATH&&!wildBuildings102.some(b=>!b.propertyArena126&&Math.hypot(vkDoorPoint101(b).x-x-.5,vkDoorPoint101(b).y-y-.5)<2))map[y][x]=types.GRASS;
+  for(let y=0;y<=12;y++)map[y][15]=types.PATH;for(let x=6;x<=15;x++)map[12][x]=types.PATH;map[11][6]=types.PATH;
+ }
+ let building=wildBuildings102.find(b=>b.propertyArena126);if(!building){building={kind:'arena',name:'Arena von Grünwald',wild102:true,propertyArena126:true};wildBuildings102.push(building);}
+ Object.assign(building,{object102:object,doorPoint102:{x:6.5,y:11.5},returnPoint102:{x:6.5,y:12.5},x:.5,y:2.6,w:12,h:8.4});vkWildReachCache=null;if(!pass(p.x,p.y)){p={...building.returnPoint102};target={...p};animFrom=null;animElapsed=STEP_MS;}
+}
 function vkTownMoveDecor(o){
  const old={x:o.x,y:o.y},foot=collisionFootprint(o),radius=Math.min(1.8,Math.max(.4,foot.rx));const choices=[];
  for(let y=1;y<H-1;y++)for(let x=1;x<W-1;x++){
@@ -17,6 +32,17 @@ function vkTownMoveDecor(o){
  }
  choices.sort((a,b)=>Math.hypot(a.x-old.x,a.y-old.y)-Math.hypot(b.x-old.x,b.y-old.y));if(choices.length){o.x=choices[0].x;o.y=choices[0].y;o.townMovedVersion=1;}
 }
+function vkTownClearRoadPlants(){
+ if(!townMode||interior)return;
+ const vegetation=o=>['tree','pine','bush','flower'].includes(o.type)||['vkDecor','biomeDecor'].includes(o.type)&&/tree|pine|bush|flower|fern|grass|palm|oak|birch|blossom|berries|cactus|agave|mushroom|plant|baum|blum|busch|tanne|pflanz|gras/i.test(o.asset||'');
+ const before=objects.length;objects=objects.filter(o=>{
+  if(!vegetation(o)||o.chest102||o.wildHouse102||o.poi||o.transitionPort)return true;
+  const rx=Math.min(2,Math.max(.35,(o.w||0)*.35,o.radius||0)),ry=.4;
+  for(let y=Math.floor(o.y-ry);y<=Math.floor(o.y+ry);y++)for(let x=Math.floor(o.x-rx);x<=Math.floor(o.x+rx);x++)if(cell(x,y)===types.PATH||cell(x,y)===types.BRIDGE)return false;
+  return true;
+ });
+ if(before!==objects.length){vkWildReachCache=null;invalidateScene();}
+}
 function vkTownSafeSpawn(){
  const anchor={x:15.5,y:20.5},reachable=vkWildFlood(anchor);if(!reachable.size)throw Error('Dorfplatz ist nicht erreichbar');
  if(!pass(p.x,p.y)||!reachable.has(Math.floor(p.y)*W+Math.floor(p.x))){const choices=[...reachable].map(k=>({x:k%W+.5,y:Math.floor(k/W)+.5}));choices.sort((a,b)=>Math.hypot(a.x-p.x,a.y-p.y)-Math.hypot(b.x-p.x,b.y-p.y));p={...choices[0]};target={...p};animFrom=null;}
@@ -25,10 +51,17 @@ function vkRemoveChurchSpur(){
  let changed=false;for(let y=0;y<=12;y++)for(let x=0;x<=4;x++)if(map[y]?.[x]===types.PATH){map[y][x]=types.GRASS;changed=true;}
  if(changed){vkWildReachCache=null;invalidateScene();}return changed;
 }
+function vkHouseRoadRepair133(){
+ if(!townMode)return;let changed=false;
+ for(const b of townBuildings){const q=vkDoorPoint101(b);for(let y=Math.floor(q.y);y<=Math.ceil(q.y+2);y++)for(let x=Math.floor(q.x)-2;x<=Math.ceil(q.x)+2;x++){
+  if(cell(x,y)!==types.GRASS)continue;
+  if([[1,0],[-1,0],[0,1],[0,-1]].filter(([dx,dy])=>cell(x+dx,y+dy)===types.PATH).length>=3){map[y][x]=types.PATH;changed=true;}
+ }}if(changed){vkWildReachCache=null;invalidateScene();}
+}
 function vkTownUpgrade(plan){
  vkDesertTownUpgrade(plan);
  if(!townMode||!townBuildings.length)return;
- if(vkTownVersion===1){if(plan.id==='main:1')vkRemoveChurchSpur();return;}
+ if(vkTownVersion===1){if(plan.id==='main:1')vkRemoveChurchSpur();vkHouseRoadRepair133();return;}
  if(plan.id==='main:1'){
   const church=townBuildings.find(b=>b.kind==='church');if(church){church.x=2;church.y=2;}
   // Only the start village is rearranged. Fixed fountain, market and lamps stay put.
@@ -43,7 +76,7 @@ function vkTownUpgrade(plan){
  vkWildReachCache=null;
  for(const b of townBuildings){const q=vkDoorPoint101(b),x=Math.round(q.x-.5),first=Math.round(q.y-.5),last=Math.ceil(b.y+b.h+.6);for(let y=first;y<=last;y++)if(map[y]?.[x]!==undefined)map[y][x]=types.PATH;vkWildReachCache=null;vkWildConnect({x:x+.5,y:last+.5},{x:15.5,y:20.5});}
  if(plan.id==='main:1')vkRemoveChurchSpur();
- vkTownVersion=1;vkTrailVersion=0;vkWildReachCache=null;vkTownSafeSpawn();invalidateScene();
+ vkHouseRoadRepair133();vkTownVersion=1;vkTrailVersion=0;vkWildReachCache=null;vkTownSafeSpawn();invalidateScene();
 }
 function vkFeatureClearSpace(cx,cy){
  for(let y=cy-3;y<=cy+3;y++)for(let x=cx-3;x<=cx+3;x++)if(!ground(x,y)||vkWildHard(x+.5,y+.5))return false;
@@ -62,22 +95,24 @@ function vkGenerateLandscape(plan){
  if(kind==='rocks')for(const[dx,dy]of[[-1.5,-1.2],[1.4,-1.1],[1.7,1.5]]){if(!vkFeatureAdd('rock',cx+dx,cy+dy,1.6,true)&&!nearRoad(Math.floor(cx+dx),Math.floor(cy+dy)))objects.push({type:'rock',x:cx+dx,y:cy+dy,block:true,radius:.35,landscapeObject:true});}
  if(kind==='woodland')for(const[dx,dy]of[[-1.8,-1.8],[1.9,-1.5],[2,1.6],[-2,1.8]])vkFeatureAdd(vkBiomePick(biome.trees,Math.floor(dx+dy+10)),cx+dx,cy+dy,2.3,true);
  if(kind==='ruin'||kind==='discovery')vkFeatureAdd(['arch','ice_arch','rune_stone','altar','totem','obelisk'].find(a=>vkExpansionAsset(biome.key,a)),cx+1.7,cy-1.8,kind==='ruin'?2.2:1.6,true,kind==='ruin'?'rune':'altar');
- if(kind==='clearing'&&hash(level,4,944)<.65){const asset=biome.key==='snow'?'abenteuer_haus_blau':biome.key==='desert'?'abenteuer_haus_stroh':'abenteuer_haus_rot';objects=objects.filter(o=>!['tree','pine','bush','flower','rock'].includes(o.type)||Math.hypot(o.x-cx,o.y-cy)>3.8);objects.push({type:'vkDecor',asset,x:cx,y:cy-1,w:3.4,block:true,landscapeObject:true});}
+ if(kind==='clearing'&&hash(level,4,944)<.65){const extras=Object.values(window.parent.VaelkorGeneratorCatalog133?.assets||{}).filter(a=>a.kind==='building'&&a.contexts.includes(biome.key));const extra=extras[Math.floor(hash(level,2,1338)*extras.length)];const asset=extra?extra.id:biome.key==='snow'?'abenteuer_haus_blau':biome.key==='desert'?'abenteuer_haus_stroh':'abenteuer_haus_rot';objects=objects.filter(o=>!['tree','pine','bush','flower','rock'].includes(o.type)||Math.hypot(o.x-cx,o.y-cy)>3.8);objects.push({type:'vkDecor',asset,x:cx,y:cy-1,w:3.4,block:true,landscapeObject:true});}
  if(kind==='camp'){vkFeatureAdd('tent',cx+1.5,cy-1.8,2.4,true,'camp',vkExpansionAsset(biome.key,'tent')?biome.key:'forest');vkFeatureAdd('fire',cx-1.2,cy+.9,.9,false,'camp',vkExpansionAsset(biome.key,'fire')?biome.key:'forest');vkFeatureAdd('barrel',cx+2,cy+.9,.85,true,null,vkExpansionAsset(biome.key,'barrel')?biome.key:'forest');}
  for(const[dx,dy]of[[-2,-.6],[2.2,.4],[-.5,2.1]])vkFeatureAdd(vkBiomePick(biome.flowers,Math.floor(dx+dy+20)),cx+dx,cy+dy,.7,false);
  if(kind==='discovery'&&objects.every(o=>!o.block||Math.hypot(o.x-cx,o.y-(cy+1.4))>1.4)){vkNewAtlasImages.loot_chest102=vkRoomImage91(CHEST_ASSET102);objects.push({type:'vkDecor',asset:'loot_chest102',x:cx,y:cy+1.4,w:1.25,block:true,chest102:plan.id+':discovery:v1'});}
  vkLandscapeFeatures=[{version:1,kind,x:cx,y:cy}];vkWildReachCache=null;
 }
 function vkFixHouseAccess(plan){
- if(townMode||plan.type==='property'||vkHouseVersion===1)return;
+ if(townMode||plan.type==='property'||vkHouseVersion>=2)return;
  const fractions={abenteuer_haus_gross:.29,abenteuer_haus_stroh:.34,abenteuer_haus_balkon:.43,abenteuer_haus_blau:.34,abenteuer_haus_rot:.54,abenteuer_haus_turm:.31};
- for(const object of objects.filter(o=>/haus_/.test(o.asset||'')||o.type==='biomeDecor'&&o.asset==='hut')){
+ for(const object of objects.filter(o=>/haus_/.test(o.asset||'')||o.type==='biomeDecor'&&['hut','tent'].includes(o.asset)||window.parent.VaelkorGeneratorCatalog133?.assets[o.asset]?.kind==='building')){
   object.wildHouse102=true;let b=wildBuildings102.find(h=>h.object102===object);
   if(!b){b={kind:'house',name:'Wildnishaus '+(wildBuildings102.length+1),wild102:true,object102:object,doorPoint102:{x:object.x+object.w*((fractions[object.asset]??.5)-.5),y:object.y+.05},x:object.x-object.w/2,y:object.y-4,w:object.w,h:4,lootId102:(plan.type==='side'?plan.id+'|':'')+level+':house:'+object.asset+':'+object.x+':'+object.y};wildBuildings102.push(b);}
+  const extra=window.parent.VaelkorGeneratorCatalog133?.assets[object.asset];if(extra){b.kind=extra.interiorKind;b.name=({'cottage':'Waldhaus','ranger-hut':'Waldhüterhütte','chapel':'Wegkapelle','caravan':'Reisewagen'})[object.asset.replace('gen133-town-','')]||b.name;}
+  if(object.asset==='tent'){b.ruinedTent=true;b.name='Verlassenes Wildniszelt';}
   const raw=b.doorPoint102,trigger={x:Math.round(raw.x-.5)+.5,y:Math.round(raw.y-.5)+.5};if(Math.hypot(trigger.x-raw.x,trigger.y-raw.y)>.55)b.triggerPoint102=trigger;
   const gate=vkDoorPoint101(b);vkWildReachCache=null;vkWildConnect(gate,p);b.returnPoint102={x:Math.round(raw.x-.5)+.5,y:Math.round(object.y+1)+.5};vkWildConnect(b.returnPoint102,p);
  }
- vkHouseVersion=1;vkWildReachCache=null;
+ vkHouseVersion=2;vkWildReachCache=null;
 }
 function vkEnsureRestStop(plan){
  if(plan.type!=='main'||townMode||plan.wildLevel%10!==6||healPoints102.length)return;

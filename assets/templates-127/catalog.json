@@ -1,0 +1,3521 @@
+{
+  "version": 127,
+  "sets": {
+    "arena-reference": {
+      "image": "assets/templates-127/arena-reference.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "brown",
+      "sha256": "4e1cc2cbce311e0bbbb7c0b49ec0fbf7a827be8f74337876a3d493e4fe511ef9",
+      "items": []
+    },
+    "arena": {
+      "image": "assets/templates-127/arena.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "green",
+      "sha256": "dd968b3f2dcb6ab9192d1ea1c062fdac5ef41de3b5149f91ff99964fd2b0fa4b",
+      "items": [
+        {
+          "id": "arena.wall",
+          "name": "wall",
+          "rect": [
+            20,
+            35,
+            214,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-banner",
+          "name": "wall-banner",
+          "rect": [
+            239,
+            35,
+            126,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.pillar",
+          "name": "pillar",
+          "rect": [
+            370,
+            35,
+            56,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-strip",
+          "name": "wall-strip",
+          "rect": [
+            429,
+            35,
+            105,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.post",
+          "name": "post",
+          "rect": [
+            543,
+            35,
+            61,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-narrow",
+          "name": "wall-narrow",
+          "rect": [
+            609,
+            35,
+            97,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.post2",
+          "name": "post2",
+          "rect": [
+            711,
+            35,
+            64,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.beam",
+          "name": "beam",
+          "rect": [
+            793,
+            35,
+            63,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.cap",
+          "name": "cap",
+          "rect": [
+            855,
+            35,
+            64,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-curve",
+          "name": "wall-curve",
+          "rect": [
+            929,
+            35,
+            240,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-curve2",
+          "name": "wall-curve2",
+          "rect": [
+            1186,
+            35,
+            216,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.corner",
+          "name": "corner",
+          "rect": [
+            1410,
+            35,
+            122,
+            230
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-short",
+          "name": "wall-short",
+          "rect": [
+            18,
+            268,
+            159,
+            204
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-slant",
+          "name": "wall-slant",
+          "rect": [
+            180,
+            268,
+            291,
+            204
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.arch",
+          "name": "arch",
+          "rect": [
+            472,
+            268,
+            198,
+            204
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "arena.post-long",
+          "name": "post-long",
+          "rect": [
+            674,
+            268,
+            61,
+            204
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.door",
+          "name": "door",
+          "rect": [
+            735,
+            268,
+            183,
+            204
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "arena.wall-round",
+          "name": "wall-round",
+          "rect": [
+            921,
+            268,
+            264,
+            204
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-end",
+          "name": "wall-end",
+          "rect": [
+            1191,
+            268,
+            95,
+            204
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.wall-round2",
+          "name": "wall-round2",
+          "rect": [
+            1320,
+            268,
+            211,
+            204
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.rail",
+          "name": "rail",
+          "rect": [
+            18,
+            474,
+            156,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.rail2",
+          "name": "rail2",
+          "rect": [
+            185,
+            474,
+            152,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.rail-curved",
+          "name": "rail-curved",
+          "rect": [
+            355,
+            474,
+            244,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.rail-end",
+          "name": "rail-end",
+          "rect": [
+            605,
+            474,
+            98,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.rail-joint",
+          "name": "rail-joint",
+          "rect": [
+            704,
+            474,
+            162,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.bench",
+          "name": "bench",
+          "rect": [
+            881,
+            474,
+            137,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.stands",
+          "name": "stands",
+          "rect": [
+            1033,
+            474,
+            224,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.stands-wide",
+          "name": "stands-wide",
+          "rect": [
+            1266,
+            474,
+            264,
+            150
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.fire-pillar",
+          "name": "fire-pillar",
+          "rect": [
+            14,
+            611,
+            90,
+            185
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "arena.torch",
+          "name": "torch",
+          "rect": [
+            111,
+            624,
+            57,
+            178
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "arena.torch2",
+          "name": "torch2",
+          "rect": [
+            175,
+            624,
+            63,
+            178
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "arena.fire-bowl",
+          "name": "fire-bowl",
+          "rect": [
+            251,
+            624,
+            88,
+            178
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "arena.banner",
+          "name": "banner",
+          "rect": [
+            340,
+            624,
+            112,
+            178
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.curtain",
+          "name": "curtain",
+          "rect": [
+            454,
+            624,
+            149,
+            178
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.bricks",
+          "name": "bricks",
+          "rect": [
+            612,
+            624,
+            77,
+            178
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.cap-stone",
+          "name": "cap-stone",
+          "rect": [
+            695,
+            624,
+            77,
+            178
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.steps",
+          "name": "steps",
+          "rect": [
+            776,
+            624,
+            137,
+            178
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "arena.stairs",
+          "name": "stairs",
+          "rect": [
+            920,
+            624,
+            80,
+            178
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "arena.floor-blood",
+          "name": "floor-blood",
+          "rect": [
+            1019,
+            643,
+            143,
+            146
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "arena.floor-craters",
+          "name": "floor-craters",
+          "rect": [
+            1188,
+            643,
+            142,
+            146
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "arena.floor-quarter",
+          "name": "floor-quarter",
+          "rect": [
+            1343,
+            624,
+            117,
+            178
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "arena.floor-corner",
+          "name": "floor-corner",
+          "rect": [
+            1462,
+            624,
+            68,
+            178
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "arena.desk",
+          "name": "desk",
+          "rect": [
+            15,
+            806,
+            218,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.weapon-rack",
+          "name": "weapon-rack",
+          "rect": [
+            240,
+            780,
+            220,
+            174
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.target",
+          "name": "target",
+          "rect": [
+            470,
+            806,
+            106,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.chest",
+          "name": "chest",
+          "rect": [
+            580,
+            806,
+            78,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.crate",
+          "name": "crate",
+          "rect": [
+            663,
+            806,
+            103,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.barrel",
+          "name": "barrel",
+          "rect": [
+            769,
+            806,
+            90,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.barrel2",
+          "name": "barrel2",
+          "rect": [
+            859,
+            806,
+            103,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.sack",
+          "name": "sack",
+          "rect": [
+            964,
+            806,
+            74,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "arena.sack2",
+          "name": "sack2",
+          "rect": [
+            1043,
+            806,
+            75,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "arena.barrel3",
+          "name": "barrel3",
+          "rect": [
+            1119,
+            806,
+            86,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.barrel4",
+          "name": "barrel4",
+          "rect": [
+            1209,
+            806,
+            96,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.stone-bench",
+          "name": "stone-bench",
+          "rect": [
+            1318,
+            806,
+            116,
+            152
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "arena.column",
+          "name": "column",
+          "rect": [
+            1435,
+            806,
+            87,
+            152
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "arena.floor",
+          "name": "floor",
+          "rect": [
+            1020,
+            645,
+            132,
+            45
+          ],
+          "category": "floor",
+          "collision": false
+        }
+      ]
+    },
+    "temple-reference": {
+      "image": "assets/templates-127/temple-reference.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "brown",
+      "sha256": "7b2f16ec205b3b89cff9c0c2d57df68c35a54169f1f2e89e296c4bfa1c16f869",
+      "items": []
+    },
+    "temple": {
+      "image": "assets/templates-127/temple.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "green",
+      "sha256": "d2ce0080264f2cc660aa7c3e47019f8fcfb8efd63c018b4e201c8c4cbe95b6ba",
+      "items": [
+        {
+          "id": "temple.wall",
+          "name": "wall",
+          "rect": [
+            16,
+            20,
+            228,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.wall-narrow",
+          "name": "wall-narrow",
+          "rect": [
+            251,
+            20,
+            127,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.pillar",
+          "name": "pillar",
+          "rect": [
+            387,
+            20,
+            70,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.wall-plain",
+          "name": "wall-plain",
+          "rect": [
+            466,
+            20,
+            106,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.post",
+          "name": "post",
+          "rect": [
+            584,
+            20,
+            72,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.wall-vines",
+          "name": "wall-vines",
+          "rect": [
+            664,
+            20,
+            108,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.post2",
+          "name": "post2",
+          "rect": [
+            775,
+            20,
+            70,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.cap",
+          "name": "cap",
+          "rect": [
+            853,
+            20,
+            66,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.wall-round",
+          "name": "wall-round",
+          "rect": [
+            929,
+            20,
+            243,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.wall-round2",
+          "name": "wall-round2",
+          "rect": [
+            1190,
+            20,
+            206,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.corner",
+          "name": "corner",
+          "rect": [
+            1405,
+            20,
+            128,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.wall-short",
+          "name": "wall-short",
+          "rect": [
+            16,
+            278,
+            207,
+            226
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.arch",
+          "name": "arch",
+          "rect": [
+            225,
+            278,
+            187,
+            226
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "temple.door",
+          "name": "door",
+          "rect": [
+            413,
+            278,
+            187,
+            226
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "temple.waterfall-arch",
+          "name": "waterfall-arch",
+          "rect": [
+            600,
+            278,
+            176,
+            226
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "temple.niche",
+          "name": "niche",
+          "rect": [
+            779,
+            278,
+            221,
+            226
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.statue",
+          "name": "statue",
+          "rect": [
+            1008,
+            260,
+            180,
+            244
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "temple.wall-end",
+          "name": "wall-end",
+          "rect": [
+            1198,
+            278,
+            97,
+            226
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.wall-round3",
+          "name": "wall-round3",
+          "rect": [
+            1317,
+            278,
+            216,
+            226
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.banner",
+          "name": "banner",
+          "rect": [
+            20,
+            512,
+            100,
+            154
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.banner2",
+          "name": "banner2",
+          "rect": [
+            123,
+            507,
+            111,
+            152
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.vine",
+          "name": "vine",
+          "rect": [
+            241,
+            507,
+            99,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.vine2",
+          "name": "vine2",
+          "rect": [
+            340,
+            507,
+            99,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.vine3",
+          "name": "vine3",
+          "rect": [
+            441,
+            507,
+            125,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.vine4",
+          "name": "vine4",
+          "rect": [
+            568,
+            507,
+            76,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.vine5",
+          "name": "vine5",
+          "rect": [
+            651,
+            507,
+            94,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.flowers",
+          "name": "flowers",
+          "rect": [
+            748,
+            515,
+            107,
+            77
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.flowers2",
+          "name": "flowers2",
+          "rect": [
+            858,
+            519,
+            105,
+            71
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.sprig",
+          "name": "sprig",
+          "rect": [
+            974,
+            507,
+            65,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.bush",
+          "name": "bush",
+          "rect": [
+            1039,
+            507,
+            106,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.bush-large",
+          "name": "bush-large",
+          "rect": [
+            1150,
+            507,
+            139,
+            152
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.tree",
+          "name": "tree",
+          "rect": [
+            1300,
+            490,
+            232,
+            264
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "temple.steps",
+          "name": "steps",
+          "rect": [
+            235,
+            606,
+            175,
+            137
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.step",
+          "name": "step",
+          "rect": [
+            426,
+            606,
+            83,
+            137
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.stairs",
+          "name": "stairs",
+          "rect": [
+            524,
+            606,
+            165,
+            137
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.stairs-wide",
+          "name": "stairs-wide",
+          "rect": [
+            704,
+            602,
+            181,
+            128
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.stone",
+          "name": "stone",
+          "rect": [
+            902,
+            606,
+            80,
+            137
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.bench",
+          "name": "bench",
+          "rect": [
+            1005,
+            626,
+            164,
+            83
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "temple.crate",
+          "name": "crate",
+          "rect": [
+            1194,
+            606,
+            91,
+            137
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "temple.green-fire",
+          "name": "green-fire",
+          "rect": [
+            12,
+            697,
+            88,
+            164
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "temple.green-bowl",
+          "name": "green-bowl",
+          "rect": [
+            112,
+            697,
+            99,
+            164
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "temple.candle",
+          "name": "candle",
+          "rect": [
+            224,
+            697,
+            45,
+            164
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "temple.candles",
+          "name": "candles",
+          "rect": [
+            271,
+            697,
+            70,
+            164
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "temple.torch",
+          "name": "torch",
+          "rect": [
+            352,
+            697,
+            64,
+            164
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "temple.floor",
+          "name": "floor",
+          "rect": [
+            427,
+            777,
+            44,
+            47
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.floor2",
+          "name": "floor2",
+          "rect": [
+            522,
+            760,
+            102,
+            224
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.floor-mark",
+          "name": "floor-mark",
+          "rect": [
+            619,
+            760,
+            102,
+            224
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.medallion",
+          "name": "medallion",
+          "rect": [
+            722,
+            768,
+            278,
+            205
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.pool",
+          "name": "pool",
+          "rect": [
+            1006,
+            734,
+            249,
+            230
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "temple.waterfall",
+          "name": "waterfall",
+          "rect": [
+            1266,
+            760,
+            151,
+            224
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "temple.floor-quarter",
+          "name": "floor-quarter",
+          "rect": [
+            1416,
+            760,
+            106,
+            224
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "temple.column",
+          "name": "column",
+          "rect": [
+            18,
+            867,
+            84,
+            118
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "temple.flower-column",
+          "name": "flower-column",
+          "rect": [
+            103,
+            867,
+            111,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "temple.jar",
+          "name": "jar",
+          "rect": [
+            213,
+            867,
+            86,
+            118
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "temple.barrel",
+          "name": "barrel",
+          "rect": [
+            294,
+            867,
+            89,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "temple.bottle",
+          "name": "bottle",
+          "rect": [
+            381,
+            867,
+            39,
+            118
+          ],
+          "category": "decor",
+          "collision": false
+        }
+      ]
+    },
+    "nature-detail": {
+      "image": "assets/templates-127/nature-detail.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "brown",
+      "sha256": "ea951501691759068500ab9d959e47e3c215b3f6e3bed983c51913bea21e078c",
+      "items": [
+        {
+          "id": "nature-detail.window-tree",
+          "name": "window-tree",
+          "rect": [
+            17,
+            12,
+            176,
+            234
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.window-open",
+          "name": "window-open",
+          "rect": [
+            198,
+            12,
+            167,
+            234
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.window-round",
+          "name": "window-round",
+          "rect": [
+            365,
+            12,
+            199,
+            234
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.window-leaf",
+          "name": "window-leaf",
+          "rect": [
+            565,
+            12,
+            190,
+            234
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.window-flower",
+          "name": "window-flower",
+          "rect": [
+            760,
+            12,
+            169,
+            234
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.niche",
+          "name": "niche",
+          "rect": [
+            938,
+            12,
+            193,
+            234
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.niche-leaf",
+          "name": "niche-leaf",
+          "rect": [
+            1126,
+            12,
+            200,
+            234
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.niche-flowers",
+          "name": "niche-flowers",
+          "rect": [
+            1328,
+            12,
+            202,
+            234
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.column",
+          "name": "column",
+          "rect": [
+            14,
+            251,
+            118,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.column-vine",
+          "name": "column-vine",
+          "rect": [
+            136,
+            251,
+            95,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.column-leaf",
+          "name": "column-leaf",
+          "rect": [
+            236,
+            251,
+            111,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.column-birch",
+          "name": "column-birch",
+          "rect": [
+            350,
+            251,
+            99,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.tree-column",
+          "name": "tree-column",
+          "rect": [
+            449,
+            251,
+            117,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.column-twist",
+          "name": "column-twist",
+          "rect": [
+            568,
+            251,
+            111,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.banner-tree",
+          "name": "banner-tree",
+          "rect": [
+            698,
+            251,
+            146,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.banner-leaf",
+          "name": "banner-leaf",
+          "rect": [
+            847,
+            251,
+            131,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.leaf-drape",
+          "name": "leaf-drape",
+          "rect": [
+            989,
+            251,
+            245,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.trellis",
+          "name": "trellis",
+          "rect": [
+            1236,
+            251,
+            140,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.trellis2",
+          "name": "trellis2",
+          "rect": [
+            1378,
+            251,
+            151,
+            223
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.torch",
+          "name": "torch",
+          "rect": [
+            17,
+            480,
+            99,
+            157
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.sconce",
+          "name": "sconce",
+          "rect": [
+            122,
+            480,
+            55,
+            157
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.green-lamp",
+          "name": "green-lamp",
+          "rect": [
+            182,
+            480,
+            86,
+            157
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.lantern",
+          "name": "lantern",
+          "rect": [
+            276,
+            480,
+            90,
+            157
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.lantern-vine",
+          "name": "lantern-vine",
+          "rect": [
+            373,
+            480,
+            90,
+            157
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.lantern-flower",
+          "name": "lantern-flower",
+          "rect": [
+            466,
+            480,
+            95,
+            157
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.lantern-lotus",
+          "name": "lantern-lotus",
+          "rect": [
+            566,
+            480,
+            132,
+            157
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.fountain-wall",
+          "name": "fountain-wall",
+          "rect": [
+            714,
+            480,
+            195,
+            157
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-detail.pool-bowl",
+          "name": "pool-bowl",
+          "rect": [
+            908,
+            480,
+            201,
+            157
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-detail.fountain",
+          "name": "fountain",
+          "rect": [
+            1111,
+            480,
+            122,
+            157
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-detail.fountain-cascade",
+          "name": "fountain-cascade",
+          "rect": [
+            1236,
+            480,
+            150,
+            157
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-detail.flower-bowl",
+          "name": "flower-bowl",
+          "rect": [
+            1384,
+            480,
+            146,
+            157
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-detail.planter",
+          "name": "planter",
+          "rect": [
+            20,
+            643,
+            185,
+            134
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-detail.planter-purple",
+          "name": "planter-purple",
+          "rect": [
+            210,
+            643,
+            170,
+            134
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-detail.planter-green",
+          "name": "planter-green",
+          "rect": [
+            381,
+            643,
+            183,
+            134
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-detail.pot",
+          "name": "pot",
+          "rect": [
+            571,
+            643,
+            138,
+            134
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.vase",
+          "name": "vase",
+          "rect": [
+            714,
+            643,
+            143,
+            134
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.bottles",
+          "name": "bottles",
+          "rect": [
+            860,
+            643,
+            110,
+            134
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.books",
+          "name": "books",
+          "rect": [
+            971,
+            643,
+            141,
+            134
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.scroll",
+          "name": "scroll",
+          "rect": [
+            1117,
+            643,
+            119,
+            134
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.hanging-plant",
+          "name": "hanging-plant",
+          "rect": [
+            1239,
+            643,
+            136,
+            134
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.vines",
+          "name": "vines",
+          "rect": [
+            1376,
+            643,
+            154,
+            134
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.floor-medallion",
+          "name": "floor-medallion",
+          "rect": [
+            20,
+            788,
+            205,
+            196
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.floor-leaf",
+          "name": "floor-leaf",
+          "rect": [
+            232,
+            788,
+            132,
+            196
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.floor-flower",
+          "name": "floor-flower",
+          "rect": [
+            370,
+            788,
+            130,
+            196
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.floor-vine",
+          "name": "floor-vine",
+          "rect": [
+            504,
+            788,
+            136,
+            196
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.floor-leaf2",
+          "name": "floor-leaf2",
+          "rect": [
+            645,
+            788,
+            131,
+            196
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.ledge-leaf",
+          "name": "ledge-leaf",
+          "rect": [
+            796,
+            788,
+            125,
+            196
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.floor-moss",
+          "name": "floor-moss",
+          "rect": [
+            935,
+            788,
+            243,
+            196
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.flower-bed",
+          "name": "flower-bed",
+          "rect": [
+            1184,
+            788,
+            176,
+            196
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-detail.flower-bed2",
+          "name": "flower-bed2",
+          "rect": [
+            1362,
+            788,
+            168,
+            196
+          ],
+          "category": "decor",
+          "collision": false
+        }
+      ]
+    },
+    "nature-arches": {
+      "image": "assets/templates-127/nature-arches.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "brown",
+      "sha256": "bcf1390f428eb47b3447aca01a5eda5f0cecbce09d2f02de61e573efb77552a9",
+      "items": [
+        {
+          "id": "nature-arches.arch-vines",
+          "name": "arch-vines",
+          "rect": [
+            8,
+            3,
+            263,
+            245
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.arch-leaf",
+          "name": "arch-leaf",
+          "rect": [
+            273,
+            3,
+            214,
+            245
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.arch-wood",
+          "name": "arch-wood",
+          "rect": [
+            487,
+            3,
+            202,
+            245
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.column",
+          "name": "column",
+          "rect": [
+            687,
+            3,
+            75,
+            245
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.arch-wood2",
+          "name": "arch-wood2",
+          "rect": [
+            762,
+            3,
+            262,
+            245
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.pillar",
+          "name": "pillar",
+          "rect": [
+            1016,
+            3,
+            91,
+            245
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.vines",
+          "name": "vines",
+          "rect": [
+            1107,
+            3,
+            151,
+            245
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall-round",
+          "name": "wall-round",
+          "rect": [
+            1251,
+            3,
+            279,
+            245
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall-column",
+          "name": "wall-column",
+          "rect": [
+            9,
+            231,
+            108,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.column2",
+          "name": "column2",
+          "rect": [
+            117,
+            231,
+            98,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall-short",
+          "name": "wall-short",
+          "rect": [
+            213,
+            231,
+            103,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall",
+          "name": "wall",
+          "rect": [
+            318,
+            231,
+            154,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall2",
+          "name": "wall2",
+          "rect": [
+            478,
+            231,
+            155,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall-tree",
+          "name": "wall-tree",
+          "rect": [
+            637,
+            231,
+            128,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.arch-round",
+          "name": "arch-round",
+          "rect": [
+            763,
+            231,
+            218,
+            260
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.statue",
+          "name": "statue",
+          "rect": [
+            983,
+            231,
+            211,
+            260
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.leaf-column",
+          "name": "leaf-column",
+          "rect": [
+            1189,
+            231,
+            92,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall-round2",
+          "name": "wall-round2",
+          "rect": [
+            1284,
+            231,
+            247,
+            260
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.banner",
+          "name": "banner",
+          "rect": [
+            14,
+            470,
+            156,
+            166
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.banner2",
+          "name": "banner2",
+          "rect": [
+            170,
+            470,
+            126,
+            166
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.banner3",
+          "name": "banner3",
+          "rect": [
+            296,
+            470,
+            127,
+            166
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.vine",
+          "name": "vine",
+          "rect": [
+            424,
+            470,
+            129,
+            166
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.vine-purple",
+          "name": "vine-purple",
+          "rect": [
+            551,
+            470,
+            97,
+            166
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.vine-long",
+          "name": "vine-long",
+          "rect": [
+            642,
+            470,
+            107,
+            166
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.plant",
+          "name": "plant",
+          "rect": [
+            743,
+            470,
+            109,
+            166
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.flower-pot",
+          "name": "flower-pot",
+          "rect": [
+            849,
+            470,
+            137,
+            166
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.sprig",
+          "name": "sprig",
+          "rect": [
+            987,
+            470,
+            75,
+            166
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.flowers",
+          "name": "flowers",
+          "rect": [
+            1062,
+            470,
+            105,
+            166
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.rock",
+          "name": "rock",
+          "rect": [
+            1165,
+            470,
+            148,
+            166
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.leaf-shrine",
+          "name": "leaf-shrine",
+          "rect": [
+            1312,
+            424,
+            216,
+            207
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.green-fire",
+          "name": "green-fire",
+          "rect": [
+            13,
+            607,
+            89,
+            222
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.green-fire-column",
+          "name": "green-fire-column",
+          "rect": [
+            100,
+            607,
+            139,
+            222
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.candles",
+          "name": "candles",
+          "rect": [
+            245,
+            607,
+            95,
+            222
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.column-small",
+          "name": "column-small",
+          "rect": [
+            341,
+            607,
+            56,
+            222
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.flower-box",
+          "name": "flower-box",
+          "rect": [
+            395,
+            607,
+            133,
+            222
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.pot",
+          "name": "pot",
+          "rect": [
+            529,
+            607,
+            88,
+            222
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.waterfall",
+          "name": "waterfall",
+          "rect": [
+            582,
+            607,
+            191,
+            222
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "nature-arches.banner4",
+          "name": "banner4",
+          "rect": [
+            767,
+            607,
+            89,
+            222
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.cap",
+          "name": "cap",
+          "rect": [
+            854,
+            607,
+            78,
+            222
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.steps",
+          "name": "steps",
+          "rect": [
+            934,
+            607,
+            159,
+            222
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall-end",
+          "name": "wall-end",
+          "rect": [
+            1097,
+            607,
+            56,
+            222
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.flowers2",
+          "name": "flowers2",
+          "rect": [
+            1153,
+            607,
+            153,
+            222
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.wall-low",
+          "name": "wall-low",
+          "rect": [
+            7,
+            829,
+            145,
+            185
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.floor",
+          "name": "floor",
+          "rect": [
+            152,
+            829,
+            142,
+            185
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.floor2",
+          "name": "floor2",
+          "rect": [
+            299,
+            829,
+            125,
+            185
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.floor-mark",
+          "name": "floor-mark",
+          "rect": [
+            422,
+            829,
+            135,
+            185
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.floor-tree",
+          "name": "floor-tree",
+          "rect": [
+            556,
+            829,
+            228,
+            185
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.floor3",
+          "name": "floor3",
+          "rect": [
+            790,
+            829,
+            124,
+            185
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.stairs",
+          "name": "stairs",
+          "rect": [
+            917,
+            829,
+            200,
+            185
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.corner",
+          "name": "corner",
+          "rect": [
+            1112,
+            829,
+            92,
+            185
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "nature-arches.tree",
+          "name": "tree",
+          "rect": [
+            1208,
+            641,
+            322,
+            373
+          ],
+          "category": "architecture",
+          "collision": true
+        }
+      ]
+    },
+    "building": {
+      "image": "assets/templates-127/building.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "brown",
+      "sha256": "71e4f75a238d2fb8ede7074edb313d4b61748b0496ae40e0ea4fefb6a87262c5",
+      "items": [
+        {
+          "id": "building.wall",
+          "name": "wall",
+          "rect": [
+            10,
+            17,
+            219,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.wall-banner",
+          "name": "wall-banner",
+          "rect": [
+            230,
+            17,
+            131,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.pillar",
+          "name": "pillar",
+          "rect": [
+            360,
+            17,
+            55,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.wall-window",
+          "name": "wall-window",
+          "rect": [
+            414,
+            17,
+            111,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.pillar2",
+          "name": "pillar2",
+          "rect": [
+            520,
+            17,
+            57,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.wall-window2",
+          "name": "wall-window2",
+          "rect": [
+            576,
+            17,
+            127,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.post",
+          "name": "post",
+          "rect": [
+            705,
+            17,
+            62,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.beam",
+          "name": "beam",
+          "rect": [
+            778,
+            17,
+            61,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.brick",
+          "name": "brick",
+          "rect": [
+            844,
+            17,
+            71,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.wall-round",
+          "name": "wall-round",
+          "rect": [
+            915,
+            17,
+            232,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.wall-round2",
+          "name": "wall-round2",
+          "rect": [
+            1172,
+            17,
+            215,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.corner",
+          "name": "corner",
+          "rect": [
+            1390,
+            17,
+            141,
+            235
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.arch",
+          "name": "arch",
+          "rect": [
+            13,
+            257,
+            159,
+            171
+          ],
+          "category": "architecture",
+          "collision": true
+        },
+        {
+          "id": "building.door",
+          "name": "door",
+          "rect": [
+            176,
+            257,
+            128,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.door-metal",
+          "name": "door-metal",
+          "rect": [
+            307,
+            257,
+            131,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.window",
+          "name": "window",
+          "rect": [
+            459,
+            257,
+            109,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.window-shutters",
+          "name": "window-shutters",
+          "rect": [
+            574,
+            257,
+            148,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.window-diamond",
+          "name": "window-diamond",
+          "rect": [
+            728,
+            257,
+            108,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.window-round",
+          "name": "window-round",
+          "rect": [
+            842,
+            257,
+            105,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.torch",
+          "name": "torch",
+          "rect": [
+            980,
+            257,
+            57,
+            171
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "building.candles",
+          "name": "candles",
+          "rect": [
+            1054,
+            257,
+            96,
+            171
+          ],
+          "category": "light",
+          "collision": false
+        },
+        {
+          "id": "building.painting",
+          "name": "painting",
+          "rect": [
+            1158,
+            257,
+            118,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.banner",
+          "name": "banner",
+          "rect": [
+            1287,
+            257,
+            111,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.portrait",
+          "name": "portrait",
+          "rect": [
+            1407,
+            257,
+            107,
+            171
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.floor-wood",
+          "name": "floor-wood",
+          "rect": [
+            14,
+            431,
+            161,
+            175
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "building.floor-stone",
+          "name": "floor-stone",
+          "rect": [
+            180,
+            431,
+            169,
+            175
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "building.rug-red",
+          "name": "rug-red",
+          "rect": [
+            360,
+            431,
+            172,
+            175
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "building.rug-green",
+          "name": "rug-green",
+          "rect": [
+            537,
+            431,
+            146,
+            175
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "building.rug-corner",
+          "name": "rug-corner",
+          "rect": [
+            688,
+            431,
+            91,
+            175
+          ],
+          "category": "rug",
+          "collision": false
+        },
+        {
+          "id": "building.stairs",
+          "name": "stairs",
+          "rect": [
+            787,
+            431,
+            145,
+            175
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "building.stairs-small",
+          "name": "stairs-small",
+          "rect": [
+            937,
+            431,
+            115,
+            175
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "building.stairs-corner",
+          "name": "stairs-corner",
+          "rect": [
+            1060,
+            431,
+            147,
+            175
+          ],
+          "category": "floor",
+          "collision": false
+        },
+        {
+          "id": "building.firewood",
+          "name": "firewood",
+          "rect": [
+            1164,
+            431,
+            115,
+            175
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "building.fireplace",
+          "name": "fireplace",
+          "rect": [
+            1284,
+            431,
+            207,
+            175
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.bed-red",
+          "name": "bed-red",
+          "rect": [
+            11,
+            605,
+            98,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.bed-green",
+          "name": "bed-green",
+          "rect": [
+            118,
+            605,
+            142,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.nightstand",
+          "name": "nightstand",
+          "rect": [
+            261,
+            605,
+            74,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.chest",
+          "name": "chest",
+          "rect": [
+            333,
+            605,
+            115,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.chest-metal",
+          "name": "chest-metal",
+          "rect": [
+            450,
+            605,
+            127,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.wardrobe",
+          "name": "wardrobe",
+          "rect": [
+            589,
+            605,
+            126,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.drawers",
+          "name": "drawers",
+          "rect": [
+            726,
+            605,
+            110,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.bookshelf",
+          "name": "bookshelf",
+          "rect": [
+            844,
+            605,
+            145,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.shelf",
+          "name": "shelf",
+          "rect": [
+            984,
+            605,
+            115,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.bench",
+          "name": "bench",
+          "rect": [
+            1100,
+            605,
+            92,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.table",
+          "name": "table",
+          "rect": [
+            1190,
+            605,
+            152,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.table-round",
+          "name": "table-round",
+          "rect": [
+            1339,
+            605,
+            117,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.stool",
+          "name": "stool",
+          "rect": [
+            1452,
+            605,
+            72,
+            145
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.chair",
+          "name": "chair",
+          "rect": [
+            53,
+            744,
+            77,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.chair-red",
+          "name": "chair-red",
+          "rect": [
+            141,
+            744,
+            85,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.stool2",
+          "name": "stool2",
+          "rect": [
+            225,
+            744,
+            65,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.desk",
+          "name": "desk",
+          "rect": [
+            278,
+            744,
+            148,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.dresser",
+          "name": "dresser",
+          "rect": [
+            423,
+            744,
+            139,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.pans",
+          "name": "pans",
+          "rect": [
+            573,
+            744,
+            153,
+            118
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.pot",
+          "name": "pot",
+          "rect": [
+            726,
+            744,
+            88,
+            118
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "building.sink",
+          "name": "sink",
+          "rect": [
+            813,
+            744,
+            112,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.potions",
+          "name": "potions",
+          "rect": [
+            930,
+            744,
+            143,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.barrel",
+          "name": "barrel",
+          "rect": [
+            1083,
+            744,
+            101,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.crate",
+          "name": "crate",
+          "rect": [
+            1183,
+            744,
+            125,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.crates",
+          "name": "crates",
+          "rect": [
+            1310,
+            744,
+            107,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.box",
+          "name": "box",
+          "rect": [
+            1423,
+            744,
+            100,
+            118
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.plant",
+          "name": "plant",
+          "rect": [
+            20,
+            866,
+            96,
+            126
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "building.flowers",
+          "name": "flowers",
+          "rect": [
+            119,
+            866,
+            99,
+            126
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "building.hanging-plant",
+          "name": "hanging-plant",
+          "rect": [
+            218,
+            866,
+            99,
+            126
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "building.plant-large",
+          "name": "plant-large",
+          "rect": [
+            317,
+            866,
+            128,
+            126
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "building.herbs",
+          "name": "herbs",
+          "rect": [
+            451,
+            866,
+            185,
+            126
+          ],
+          "category": "wall",
+          "collision": false
+        },
+        {
+          "id": "building.sack",
+          "name": "sack",
+          "rect": [
+            641,
+            866,
+            103,
+            126
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "building.barrel2",
+          "name": "barrel2",
+          "rect": [
+            744,
+            866,
+            105,
+            126
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.barrel3",
+          "name": "barrel3",
+          "rect": [
+            847,
+            866,
+            94,
+            126
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.bucket",
+          "name": "bucket",
+          "rect": [
+            937,
+            866,
+            88,
+            126
+          ],
+          "category": "decor",
+          "collision": false
+        },
+        {
+          "id": "building.crate2",
+          "name": "crate2",
+          "rect": [
+            1035,
+            866,
+            94,
+            126
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.crate3",
+          "name": "crate3",
+          "rect": [
+            1133,
+            866,
+            97,
+            126
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.crate4",
+          "name": "crate4",
+          "rect": [
+            1231,
+            866,
+            104,
+            126
+          ],
+          "category": "furniture",
+          "collision": true
+        },
+        {
+          "id": "building.hay",
+          "name": "hay",
+          "rect": [
+            1358,
+            866,
+            164,
+            126
+          ],
+          "category": "decor",
+          "collision": false
+        }
+      ]
+    },
+    "npc-small": {
+      "image": "assets/templates-127/npc-small.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "green",
+      "sha256": "dea6499a8b480067423839fc57fc5f7e47f155867407a9bec752ce23f4d901dd",
+      "items": []
+    },
+    "npc-large": {
+      "image": "assets/templates-127/npc-large.jpg",
+      "width": 1536,
+      "height": 1024,
+      "matte": "green",
+      "sha256": "fa388e28154e82427c0dfc75b533dd24f39d84ca927cb279ffaa0518b81ff000",
+      "items": []
+    }
+  },
+  "npcRoles": [
+    "healer",
+    "cook",
+    "material",
+    "traveler",
+    "wizard"
+  ]
+}

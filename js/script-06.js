@@ -8,7 +8,7 @@ const overlay=document.getElementById('fusionOverlay');
 if(!nav||!world||!team||!overlay)return;
 const home=document.createElement('section');home.id='vkHome';home.className='hidden';
 home.innerHTML='<div class="panel"><h2>🏠 Startseite</h2><p class="muted">Deine Abenteuer, Einrichtungen und Spielbereiche an einem Ort.</p><div class="vkHomeGrid">'+
-[['shop','🛍️ Shop'],['breeding','🥚 Zucht'],['guide','📖 Monsterbuch'],['base','🏡 Basis'],['quests','🏆 Quests'],['help','❔ Hilfe & Tutorials'],['adventure','🧭 Dein Abenteuer']].map(([id,label])=>'<button class="vkHomeTile" data-vkhome="'+id+'">'+label+'</button>').join('')+'</div></div>';
+[['shop','🛍️ Shop'],['guide','📖 Monsterbuch'],['base','🏡 Basis'],['quests','🏆 Quests'],['help','❔ Hilfe & Tutorials'],['adventure','🧭 Dein Abenteuer']].map(([id,label])=>'<button class="vkHomeTile" data-vkhome="'+id+'">'+label+'</button>').join('')+'</div></div>';
 world.before(home);
 const adventure=world.querySelector('aside.panel');
 if(adventure){adventure.id='vkAdventurePanel';home.appendChild(adventure)}

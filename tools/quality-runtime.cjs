@@ -10,6 +10,7 @@ function load(options={}){
  if(options.stats!==false){vm.runInContext(fs.readFileSync('js/combat/stat-rules.js','utf8'),c);vm.runInContext(fs.readFileSync('js/combat/stats-integration.js','utf8'),c);}
  vm.runInContext(fs.readFileSync('js/interface/card-assets.js','utf8'),c);
  if(options.balance!==false&&options.stats!==false)vm.runInContext(fs.readFileSync('js/combat/element-balance.js','utf8'),c);
+ if(options.teamAccess!==false)vm.runInContext(fs.readFileSync('js/combat/team-access.js','utf8'),c);
  return c;
 }
 module.exports={load};

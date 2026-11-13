@@ -3,7 +3,7 @@ const identity=require('../js/world/map-registry.js'),{install:adapter}=require(
 const {fixture,embedded}=require('./helpers/embedded-world.cjs');
 test('deterministic branch rates and lengths with saved configuration',()=>{
  let count=0,both=0;const lengths=new Set();for(let n=1;n<=3000;n++){const p=core.plan('main:'+n,1042);if(Object.keys(p.branches).length)count++;if(Object.keys(p.branches).length===2)both++;for(const length of Object.values(p.branches))lengths.add(length);assert.equal(p.exits.next.mapId,'main:'+(n+1));}
- assert.ok(count>1350&&count<1650,count);assert.ok(both>100);assert.deepEqual([...lengths].sort(),[1,2,3]);assert.deepEqual(core.plan('main:21',1042),core.plan('main:21',1042));assert.deepEqual(core.plan('main:2',1042,{branchProbability:0}).branches,{});
+ assert.ok(count>1350&&count<1650,count);assert.ok(both>100);assert.deepEqual([...lengths].sort(),[1,2]);assert.deepEqual(core.plan('main:21',1042),core.plan('main:21',1042));assert.deepEqual(core.plan('main:2',1042,{branchProbability:0}).branches,{});
  assert.equal(core.plan('main:9007199254740993',1042).exits.next.mapId,'main:9007199254740994');
 });
 test('actual embedded game starts and captures original town without replacing systems',()=>{const f=fixture();const e=embedded(f);assert.equal(f.service.currentId,'main:1');assert.equal(e.scene.id,'main:1');assert.equal(f.maps.getState('main:1').scene.map.length,38);assert.ok(f.writes>0);e.scene.validate();});
@@ -22,7 +22,7 @@ test('30 main maps and all their side chains have free exits, exact returns and 
   }
   if(n<30)assert.equal(e.scene.travel('next'),true,'next main '+n);
  }
- assert.deepEqual([...lengths].sort(),[1,2,3]);assert.ok(variants.has('plain'));assert.ok(variants.has('sign'));assert.ok(variants.has('rocks'));assert.ok(variants.has('arch'),'rare wooden arch is actually placed');
+ assert.deepEqual([...lengths].sort(),[1,2]);assert.ok(variants.has('plain'));assert.ok(variants.has('sign'));assert.ok(variants.has('rocks'));assert.ok(variants.has('arch'),'rare wooden arch is actually placed');
  for(let n=30;n>1;n--){assert.equal(e.scene.travel('previous'),true);assert.equal(e.scene.id,'main:'+(n-1));}
  assert.equal(e.scene.travel('previous'),false);
 });
@@ -85,7 +85,7 @@ test('natural trails reach all four map edges and physical opposite entries with
 test('old cached towns migrate exits once without regenerating buildings, seeds or treasure state',()=>{
  const f=fixture({zone:10,maxZone:10,adventureChests102:{'9:outdoor':true}}),e=embedded(f),saved=JSON.parse(JSON.stringify(f.data)),scene=saved.mapRegistry.maps['main:10'].state.scene;
  const seed=scene.seed,buildings=JSON.stringify(scene.townBuildings);scene.transitionVersion=0;scene.transitionDecor={};scene.objects=scene.objects.filter(o=>!o.transitionPort);scene.exits.next={x:scene.entryX+.5,y:36.5,dx:0,dy:-1};scene.exits.previous={x:1.5,y:2.5,dx:0,dy:1};
- const next=fixture(saved),n=embedded(next);assert.equal(n.scene.exits.next.dy,1);assert.equal(n.scene.exits.previous.dy,-1);assert.equal(n.scene.capture().seed,seed);assert.equal(JSON.stringify(n.scene.capture().townBuildings),buildings);assert.equal(next.data.adventureChests102['9:outdoor'],true);assert.equal(n.scene.capture().transitionVersion,2);const before=geometry(n.scene.capture());n.initialize();assert.equal(geometry(n.scene.capture()),before);
+ const next=fixture(saved),n=embedded(next);assert.equal(n.scene.exits.next.dy,1);assert.equal(n.scene.exits.previous.dy,-1);assert.equal(n.scene.capture().seed,seed);assert.equal(JSON.stringify(n.scene.capture().townBuildings),buildings);assert.equal(next.data.adventureChests102['9:outdoor'],true);assert.equal(n.scene.capture().transitionVersion,3);const before=geometry(n.scene.capture());n.initialize();assert.equal(geometry(n.scene.capture()),before);
 });
 test('facing is retained across linked maps and reload',()=>{
  const f=fixture({zone:2,maxZone:2}),e=embedded(f);e.key('ArrowLeft');e.advance(1);e.key('ArrowLeft',true);e.advance(200);assert.equal(e.scene.capture().facing,'left');assert.equal(e.scene.travel('next'),true);assert.equal(e.scene.capture().facing,'left');const reloaded=fixture(JSON.parse(JSON.stringify(f.data))),r=embedded(reloaded);assert.equal(r.scene.capture().facing,'left');
