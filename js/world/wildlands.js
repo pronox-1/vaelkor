@@ -97,13 +97,46 @@
     engine.report?.(error);return false;
    }finally{busy=false;}
   }
+  async function openAsync(id,engine,entry=null,position=null){
+   world();if(busy)return false;cancelPosition();busy=true;
+   const previousId=activeId,previous=previousId?clone(engine.capture()):null;
+   if(previous)previous.level=info(previousId).level;
+   const w=world(),before={zone:w.zone,vkMapId:w.vkMapId,vkWorldX:w.vkWorldX,vkWorldY:w.vkWorldY,trainerCleared:w.trainerCleared,vkWorldFromTop:w.vkWorldFromTop};
+   engine.beginAsync?.();
+   try{
+    await engine.yieldAsync?.();
+    if(w.wildlandsLegacyFrontier==null)w.wildlandsLegacyFrontier=Math.max(w.zone||1,w.maxZone||1);
+    remember(engine);const destination=ensure(id);
+    const scenePlan={...destination.plan,cleared:destination.plan.type==='main'&&!!w.clearedZones?.[destination.plan.level]};
+    if(destination.scene){engine.restore(clone(destination.scene),scenePlan);await (engine.upgradeAsync?engine.upgradeAsync(scenePlan):engine.upgrade?.(scenePlan));}
+    else {await (engine.generateAsync?engine.generateAsync({...scenePlan,seed:destination.record.seed}):engine.generate({...scenePlan,seed:destination.record.seed}));await (engine.prepareAsync?engine.prepareAsync(scenePlan):engine.prepare(scenePlan));}
+    engine.validate(destination.plan);
+    engine.place(entry,position,destination.plan);
+    await engine.renderAsync?.();
+    const scene=clone(engine.capture());maps.patchState(id,{scene});
+    activeId=id;w.vkMapId=id;w.zone=destination.plan.level;w.vkWorldFromTop=false;
+    w.trainerCleared=!!scene.guardian?.defeated;const point=engine.position();w.vkWorldX=point.x;w.vkWorldY=point.y;
+    if(options.persist()===false)throw Error('Spielstand konnte nicht gespeichert werden (Speicher voll?).');
+    return true;
+   }catch(error){
+    activeId=previousId;Object.assign(w,before);
+    if(previous)engine.restore(previous,maps.getState(previousId).wildlands);
+    engine.report?.(error);return false;
+   }finally{busy=false;engine.endAsync?.();}
+  }
   function travel(port,engine){
    world();if(busy||!activeId)return false;const source=ensure(activeId),link=source.plan.exits[port];if(!link)return false;
    const target=ensure(link.mapId),back=target.plan.exits[link.entry];
    if(!back||back.mapId!==activeId||back.entry!==port)throw Error('Planned exit has no matching return');
    maps.connect(activeId,port,link.mapId,link.entry);return open(link.mapId,engine,link.entry);
   }
-  return Object.freeze({available:true,templates,ensure,open,travel,flushPositions,
+  function travelAsync(port,engine){
+   world();if(busy||!activeId)return false;const source=ensure(activeId),link=source.plan.exits[port];if(!link)return false;
+   const target=ensure(link.mapId),back=target.plan.exits[link.entry];
+   if(!back||back.mapId!==activeId||back.entry!==port)throw Error('Planned exit has no matching return');
+   maps.connect(activeId,port,link.mapId,link.entry);return openAsync(link.mapId,engine,link.entry);
+  }
+  return Object.freeze({available:true,templates,ensure,open,openAsync,travel,travelAsync,flushPositions,
    persistPosition(){world();if(positionTimer===null)positionTimer=schedule(()=>{positionTimer=null;options.persist();},750);},
    openLegacy(level,engine,fromTop=false,requestedId=null,requestedPosition=null){
     const w=world(),saved=w.vkMapId;let id=identity.mainId(level);

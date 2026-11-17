@@ -1,0 +1,363 @@
+{
+  "approvedRelease": 176,
+  "approval": "Das ist sehr gut, nun wende das bei allen Reittieren an und behalte es als Vorlage f\u00fcr zuk\u00fcnftige",
+  "date": "2026-11-16",
+  "scope": "Seitlicher Vier-Posen-Trab",
+  "profile": {
+    "set": "mount176:horse-brown",
+    "referenceHeight": 176.5085574572127,
+    "anchor": 128,
+    "foot": 210.93398533007334,
+    "saddle": [
+      0.55,
+      0.36
+    ],
+    "frames": [
+      {
+        "rect": [
+          2,
+          2,
+          256,
+          256
+        ],
+        "bounds": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "width": 256,
+        "height": 256,
+        "anchor": 128,
+        "foot": 210.93398533007334,
+        "torsoDelta154": [
+          0,
+          0
+        ]
+      },
+      {
+        "rect": [
+          262,
+          2,
+          256,
+          256
+        ],
+        "bounds": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "width": 256,
+        "height": 256,
+        "anchor": 128,
+        "foot": 210.93398533007334,
+        "torsoDelta154": [
+          0,
+          0
+        ]
+      },
+      {
+        "rect": [
+          522,
+          2,
+          256,
+          256
+        ],
+        "bounds": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "width": 256,
+        "height": 256,
+        "anchor": 128,
+        "foot": 210.93398533007334,
+        "torsoDelta154": [
+          0,
+          0
+        ]
+      },
+      {
+        "rect": [
+          2,
+          262,
+          256,
+          256
+        ],
+        "bounds": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "width": 256,
+        "height": 256,
+        "anchor": 128,
+        "foot": 210.93398533007334,
+        "torsoDelta154": [
+          0,
+          0
+        ]
+      }
+    ],
+    "idle": {
+      "rect": [
+        262,
+        262,
+        256,
+        256
+      ],
+      "bounds": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "width": 256,
+      "height": 256,
+      "anchor": 128,
+      "foot": 210.93398533007334,
+      "torsoDelta154": [
+        0,
+        0
+      ]
+    },
+    "source": "four-complete-trot-poses-176",
+    "views": [
+      "indoor",
+      "outdoor"
+    ],
+    "directions": [
+      "left",
+      "right"
+    ],
+    "hind175": true,
+    "trot176": true,
+    "previous176": {
+      "set": "mount175:horse-brown",
+      "referenceHeight": 176.5085574572127,
+      "anchor": 128,
+      "foot": 210.93398533007334,
+      "saddle": [
+        0.55,
+        0.36
+      ],
+      "frames": [
+        {
+          "rect": [
+            2,
+            2,
+            256,
+            256
+          ],
+          "bounds": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "width": 256,
+          "height": 256,
+          "anchor": 128,
+          "foot": 210.93398533007334,
+          "torsoDelta154": [
+            0,
+            0
+          ]
+        },
+        {
+          "rect": [
+            262,
+            2,
+            256,
+            256
+          ],
+          "bounds": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "width": 256,
+          "height": 256,
+          "anchor": 128,
+          "foot": 210.93398533007334,
+          "torsoDelta154": [
+            0,
+            0
+          ]
+        },
+        {
+          "rect": [
+            522,
+            2,
+            256,
+            256
+          ],
+          "bounds": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "width": 256,
+          "height": 256,
+          "anchor": 128,
+          "foot": 210.93398533007334,
+          "torsoDelta154": [
+            0,
+            0
+          ]
+        },
+        {
+          "rect": [
+            2,
+            262,
+            256,
+            256
+          ],
+          "bounds": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "width": 256,
+          "height": 256,
+          "anchor": 128,
+          "foot": 210.93398533007334,
+          "torsoDelta154": [
+            0,
+            0
+          ]
+        },
+        {
+          "rect": [
+            262,
+            262,
+            256,
+            256
+          ],
+          "bounds": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "width": 256,
+          "height": 256,
+          "anchor": 128,
+          "foot": 210.93398533007334,
+          "torsoDelta154": [
+            0,
+            0
+          ]
+        },
+        {
+          "rect": [
+            522,
+            262,
+            256,
+            256
+          ],
+          "bounds": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "width": 256,
+          "height": 256,
+          "anchor": 128,
+          "foot": 210.93398533007334,
+          "torsoDelta154": [
+            0,
+            0
+          ]
+        },
+        {
+          "rect": [
+            2,
+            522,
+            256,
+            256
+          ],
+          "bounds": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "width": 256,
+          "height": 256,
+          "anchor": 128,
+          "foot": 210.93398533007334,
+          "torsoDelta154": [
+            0,
+            0
+          ]
+        },
+        {
+          "rect": [
+            262,
+            522,
+            256,
+            256
+          ],
+          "bounds": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "width": 256,
+          "height": 256,
+          "anchor": 128,
+          "foot": 210.93398533007334,
+          "torsoDelta154": [
+            0,
+            0
+          ]
+        }
+      ],
+      "idle": {
+        "rect": [
+          522,
+          522,
+          256,
+          256
+        ],
+        "bounds": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "width": 256,
+        "height": 256,
+        "anchor": 128,
+        "foot": 210.93398533007334,
+        "torsoDelta154": [
+          0,
+          0
+        ]
+      },
+      "source": "edited-whole-body-175",
+      "views": [
+        "indoor",
+        "outdoor"
+      ],
+      "directions": [
+        "left",
+        "right"
+      ],
+      "hind175": true
+    }
+  },
+  "image": "assets/mount-pilot-176/horse-brown.webp",
+  "imageSHA256": "26fe5cae9bbfabc501233139c574d7facdaca85788ca71a6abb5f6236cb5fab6",
+  "template": "docs/mount-trot-template.json",
+  "humanApprovedBaseline": 169
+}

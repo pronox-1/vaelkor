@@ -16,10 +16,12 @@ function vkWildGuardBlocks(nx,ny){
  return ny<2.5&&Math.abs(nx-(exitX+.5))<1.5||Math.hypot(nx-guardian.x,ny-guardian.y)<1.2||townMode&&ny>=H-2.5&&Math.abs(nx-(entryX+.5))<1.1;
 }
 
+let vkHardObjects145=null,vkHardSource145=null,vkHardCount145=-1;
 function vkWildHard(x,y){
  const r=.52;
  if(townMode&&(townBuildings.some(b=>x>=b.x-r&&x<=b.x+b.w+r&&y>=b.y-r&&y<=b.y+b.h+r&&!vkDoorCorridor101(b,x,y))||townProps.some(o=>Math.abs(x-o.x)<o.rx+r&&Math.abs(y-o.y)<o.ry+r)))return true;
- return objects.some(o=>{if(!o.wildHouse102&&!o.chest102)return false;const f=collisionFootprint(o);return Math.abs(x-o.x)<f.rx+r&&Math.abs(y-f.cy)<f.ry+r&&!wildBuildings102.some(b=>b.object102===o&&vkDoorCorridor101(b,x,y));});
+ if(vkHardSource145!==objects||vkHardCount145!==objects.length){vkHardSource145=objects;vkHardCount145=objects.length;vkHardObjects145=objects.filter(o=>o.wildHouse102||o.chest102);}
+ return vkHardObjects145.some(o=>{const f=collisionFootprint(o);return Math.abs(x-o.x)<f.rx+r&&Math.abs(y-f.cy)<f.ry+r&&!wildBuildings102.some(b=>b.object102===o&&vkDoorCorridor101(b,x,y));});
 }
 function vkWildFlood(start){
  const key=(x,y)=>y*W+x,q=[],seen=new Set(),valid=new Map();
@@ -132,6 +134,17 @@ function vkTrailUpgrade(plan){
 
 function vkNormalize136(){if(!townMode)return;for(const o of objects)if(/laterne|lantern/.test(o.asset||'')){o.type='vkDecor';o.asset='abenteuer_laterne';o.w=18/T;}const fountain=townProps.find(o=>o.kind==='fountain')||objects.find(o=>/dorfbrunnen/.test(o.asset||''));if(!fountain)return;objects=objects.filter(o=>!(/laterne|lantern/.test(o.asset||'')&&Math.hypot(o.x-fountain.x,o.y-fountain.y)<7));}
 const vkWildEngine={
+ beginAsync:()=>{vkHold147=true;window.parent.VaelkorGraphics147?.beginScene();},endAsync:()=>{vkHold147=false;requestWorldDraw96();},yieldAsync:()=>vkYield147(),renderAsync:()=>vkRenderScene147(),
+ async generateAsync(spec){vkQualityVersion130=0;vkWildSpec=spec;vkWildCurrentId=spec.id;vkWildExits={};vkTrailVersion=0;vkTrailDecor={};level=spec.level;vkTownVersion=0;vkNatureVersion=0;vkHouseVersion=0;vkLandscapeFeatures=[];if(spec.type==='property')vkBuildProperty(spec.seed);else {wildBuildings102=[];healPoints102=[];await vkRunSteps147(vkBuildSteps147(spec.seed,false));await vkYield147();vkAdventurePopulate102();await vkYield147();invalidateScene();requestWorldDraw96();}if(spec.type==='side'){guardian=null;healPoints102=[];}else if(spec.cleared&&guardian)guardian.defeated=true;await vkYield147();vkTownUpgrade(spec);await vkYield147();vkGenerateLandscape(spec);}, async prepareAsync(plan,restored=false){
+  if(!restored)vkWildExits=vkWildExitGeometry(plan);
+  if(plan.type==='side'){
+   for(const o of objects)if(o.chest102&&!o.chest102.startsWith(plan.id+'|'))o.chest102=plan.id+'|'+o.chest102;
+   for(const b of wildBuildings102)if(!b.lootId102.startsWith(plan.id+'|'))b.lootId102=plan.id+'|'+b.lootId102;
+  }
+  await vkYield147();vkTownUpgrade(plan);await vkYield147();await vkRunSteps147(vkHouseAccessSteps147(plan));await vkYield147();vkEnsureRestStop(plan);await vkYield147();await vkRunSteps147(vkTrailSteps147(plan));vkTownClearRoadPlants();await vkYield147();vkPropertyArena(plan);await vkYield147();vkNPCWorldPrepare134(plan);vkSuppliedTemple127(plan);vkWarmTown129();await vkYield147();vkWorldQuality130(plan);await vkYield147();vkNormalize136();vkWarmScene135();
+  invalidateScene();requestWorldDraw96();
+ },
+ async upgradeAsync(plan){await this.prepareAsync(plan,true);},
  capture(){return{version:1,qualityVersion:vkQualityVersion130,level,seed,map,objects,mapTheme,riverSide,entryX,exitX,roadCells,townMode,townBuildings,guardian,spawn:{...(interior&&returnPoint?returnPoint:p)},exits:vkWildExits,healPoints:healPoints102,townVersion:vkTownVersion,landscapeVersion:vkNatureVersion,houseVersion:vkHouseVersion,landscapeFeatures:vkLandscapeFeatures,facing:heroFacing,transitionVersion:vkTrailVersion,transitionDecor:vkTrailDecor,wildBuildings:wildBuildings102.map(({object102,...b})=>({...b,objectIndex:objects.indexOf(object102)}))};},
  generate(spec){vkQualityVersion130=0;vkWildSpec=spec;vkWildCurrentId=spec.id;vkWildExits={};vkTrailVersion=0;vkTrailDecor={};level=spec.level;vkTownVersion=0;vkNatureVersion=0;vkHouseVersion=0;vkLandscapeFeatures=[];if(spec.type==='property')vkBuildProperty(spec.seed);else vkLegacyBuildWL(spec.seed,false);if(spec.type==='side'){guardian=null;healPoints102=[];}else if(spec.cleared&&guardian)guardian.defeated=true;vkTownUpgrade(spec);vkGenerateLandscape(spec);},
  prepare(plan){

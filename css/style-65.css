@@ -1,0 +1,29 @@
+/* Compact creature care and a distinct, element-filtered storage section. */
+#team .vkMonsterCare144{margin:10px 0 12px;border:1px solid #526b79;border-radius:12px;background:#0d2638;overflow:hidden}
+#team .vkMonsterCare144>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:42px;padding:9px 12px;list-style:none;color:#e9d6a7;font-size:13px;line-height:1.3;cursor:pointer;touch-action:manipulation}
+#team .vkMonsterCare144>summary::-webkit-details-marker{display:none}
+#team .vkMonsterCare144>summary::after{content:'▾';font-size:14px;color:#b6c9d5;flex:0 0 auto}
+#team .vkMonsterCare144[open]>summary::after{content:'▴'}
+#team .vkMonsterCare144[open]>summary{border-bottom:1px solid #405967}
+#team .vkMonsterCare144>summary:focus-visible,#team .vkStorageFilterPanel144 button:focus-visible{outline:2px solid #ffe0a1;outline-offset:-3px}
+#team .vkMonsterCareBody144{padding:10px;display:grid;gap:8px}
+#team .vkMonsterCareBody144 .vkCareXP144{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:0!important}
+#team .vkCareLabel144{grid-column:1/-1;font-size:12px;color:#acc1cf}
+#team .vkMonsterCareBody144 .btn{min-width:0!important;min-height:42px!important;margin:0!important;padding:8px 7px!important;border-radius:9px!important;font-size:12px!important;line-height:1.35!important;white-space:normal;overflow-wrap:anywhere;box-shadow:none!important}
+#team .vkMonsterCareBody144>.btn{width:100%;text-align:left}
+#team .vkStorageSection144{margin-top:30px;padding-top:22px;border-top:2px solid #be9c60;scroll-margin-top:18px}
+#team .vkStorageHeading144{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+#team .vkStorageHeading144 h3{margin:3px 0 7px;font-size:24px;line-height:1.2;color:#ffe0a1}
+#team .vkStorageEyebrow144{margin:0;font-size:10px;letter-spacing:.14em;color:#b8cbd4}
+#team .vkStorageHeading144 .muted{margin:0;font-size:13px}
+#team .vkStorageHeading144>.pill{flex-shrink:0;font-variant-numeric:tabular-nums}
+#team .vkStorageFilterPanel144{padding:12px!important;margin:0 0 16px!important;border:1px solid #6b7b7d;border-radius:13px;background:#142f43}
+#team .vkStorageFilterPanel144>strong{display:block;margin-bottom:9px;font-size:13px;color:#e8d8b5}
+#team #vkStorageFilters144{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+#team #vkStorageFilters144 .fusionFilter{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:7px 10px;font-size:12px;line-height:1.25;border-radius:9px;cursor:pointer}
+#team .vkStorageFilterCount144{min-width:18px;padding:1px 4px;border-radius:6px;background:#071d2b88;color:#d4e3e8;font-size:10px;font-variant-numeric:tabular-nums}
+#team .vkStorageEmpty144{grid-column:1/-1;padding:16px;margin:0;border:1px dashed #5d7888;border-radius:12px;background:#10283a}
+@media(max-width:380px){#team .vkStorageHeading144 h3{font-size:21px}#team .vkMonsterCareBody144 .btn{font-size:11px!important;padding:8px 4px!important}}
+
+/* Long localized notices reserve layout space and stay scrollable on small screens. */
+body>#gameNotice.vkWorldNotice142{max-height:min(28vh,150px)!important;overflow:auto!important;overscroll-behavior:contain}

@@ -18,7 +18,8 @@ function updateInput(){
  pad.querySelectorAll('[data-move]').forEach(b=>{const active=dir===b.dataset.move;b.classList.toggle('vkHeld',active);b.setAttribute('aria-pressed',String(active))});
 }
 function stop(){held.clear();sent=null;command('moveRelease');pad.querySelectorAll('[data-move]').forEach(b=>{b.classList.remove('vkHeld');b.setAttribute('aria-pressed','false')})}
-function sync(){const zl=document.getElementById('zoneLabel');if(zl)zl.textContent=vkRegionForZone(data.zone).label+' · '+(data.zone===1||data.zone%10===0?'Ort / Arena':'Abschnitt '+data.zone);const next=available();if(next){const notice=document.getElementById('gameNotice');if(notice&&notice.parentElement!==map)map.appendChild(notice);}if(next!==exploring){exploring=next;document.body.classList.toggle('vk-exploring',next);stop();if(!next)frame.contentWindow?.postMessage({vkCommand:'moveRelease'},'*')};}
+window.VaelkorWorldControls153={stop};
+function sync(){const zl=document.getElementById('zoneLabel');if(zl)zl.textContent=vkRegionForZone(data.zone).label+' · '+(data.zone===1||data.zone%10===0?'Ort / Arena':'Abschnitt '+data.zone);const next=available();if(next&&!window.VaelkorMobile142){const notice=document.getElementById('gameNotice');if(notice&&notice.parentElement!==map)map.appendChild(notice);}if(next!==exploring){exploring=next;document.body.classList.toggle('vk-exploring',next);stop();if(!next)frame.contentWindow?.postMessage({vkCommand:'moveRelease'},'*')};window.VaelkorMobile142?.positionNotice(next);}
 window.addEventListener('keydown',e=>{
  if(!available()||e.target.closest('input,textarea,select,[contenteditable]')||e.ctrlKey||e.metaKey||e.altKey)return;
  const dir=keys[e.code];if(!dir&&e.code!=='Space'&&e.code!=='KeyE')return;

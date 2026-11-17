@@ -9,5 +9,6 @@
  return out;
  }
 
- return{version:130,clean,limits:{entries:96,pixels:2_000_000}};
+ function cleanNPC(data,w,h,role){const out=role==='cook'?new Uint8ClampedArray(data):clean(data,w,h);if(role!=='cook')return out;for(let n=0;n<w*h;n++){const i=n*4,r=out[i],g=out[i+1],b=out[i+2];if(out[i+3]&&g>50&&g>Math.max(r,b)*1.28&&g-Math.max(r,b)>20)out[i+3]=0;}const alpha=new Uint8Array(w*h);for(let n=0;n<alpha.length;n++)alpha[n]=out[n*4+3];for(let y=1;y<h-1;y++)for(let x=1;x<w-1;x++){const n=y*w+x,i=n*4;if(!alpha[n]||out[i+1]<=Math.max(out[i],out[i+2])+16)continue;if([n-1,n+1,n-w,n+w].some(j=>!alpha[j])){out[i+1]=Math.max(out[i],out[i+2])+10;out[i+3]=Math.min(out[i+3],200);}}return out;}
+ return{version:130,clean,cleanNPC,limits:{entries:96,pixels:2_000_000}};
 });

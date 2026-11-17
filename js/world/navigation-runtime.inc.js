@@ -1,7 +1,7 @@
 // BEGIN VAELKOR NAVIGATION RUNTIME v137
 // A snapshot lasts only for one read-only search. Movement keeps the original
 // collision owner; no rounded coordinates or persistent collision cache.
-let vkCollisionSearch137=null;
+let vkCollisionSearch137=null,vkPassSearch145=null;
 const vkNavigationMetrics137={snapshots:0,queries:0,candidates:0};
 function vkCollisionSnapshot137(){
  const buckets=new Map(),stride=W+8;
@@ -17,6 +17,8 @@ function vkCollisionSnapshot137(){
 }
 function vkWithCollision137(work){const previous=vkCollisionSearch137;vkCollisionSearch137=previous||vkCollisionSnapshot137();try{return work();}finally{vkCollisionSearch137=previous;}}
 const vkObjBlockBefore137=objBlock;objBlock=function(x,y){return vkCollisionSearch137?vkCollisionSearch137(x,y):vkObjBlockBefore137(x,y);};
+function vkWithPassCache145(work){if(vkPassSearch145)return work();const previous=pass;vkPassSearch145=new Map();pass=function(x,y){const key=x+':'+y;if(vkPassSearch145.has(key))return vkPassSearch145.get(key);const result=previous(x,y);vkPassSearch145.set(key,result);return result;};try{return work();}finally{pass=previous;vkPassSearch145=null;}}
+const vkNPCBatchBefore145=vkNPCs127;vkNPCs127=function(){return interior?vkNPCBatchBefore145():vkWithCollision137(()=>vkWithPassCache145(()=>vkNPCBatchBefore145()));};
 const vkFloodBefore137=vkWildFlood;vkWildFlood=function(start){return vkWithCollision137(()=>vkFloodBefore137(start));};
 const vkRouteBefore137=vkNPCRoute127;vkNPCRoute127=function(from,to){const key=[vkWildCurrentId,seed,from.x,from.y,to.x,to.y].join('|');if(vkNPCPaths127.has(key))return vkNPCPaths127.get(key);return vkWithCollision137(()=>vkRouteBefore137(from,to));};
 window.VaelkorPerformance137={navigation:()=>({...vkNavigationMetrics137}),collisionProbe(points){const check=vkCollisionSnapshot137();return points.map(q=>({x:q.x,y:q.y,original:vkObjBlockBefore137(q.x,q.y),indexed:check(q.x,q.y)}));}};

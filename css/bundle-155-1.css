@@ -1,0 +1,140 @@
+/* css/style-26.css */
+
+.f8Battle{max-width:1050px!important}.f8Team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:10px 0}.f8Unit{background:#23354c;border:2px solid #496782;border-radius:13px;color:#eef7ff;padding:7px 4px;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px}.f8Unit.f8Active{border-color:#6be5b1;box-shadow:0 0 0 2px #6be5b144}.f8Unit.f8Dead{opacity:.4;filter:grayscale(1)}.f8Portrait{height:95px;width:100%;display:grid;place-items:center;overflow:hidden;border-radius:10px;background:#111f31}.f8Portrait img{max-width:100%;max-height:100%;object-fit:contain}.f8Unit strong{font-size:12px;overflow-wrap:anywhere}.f8Unit small{font-size:10px}.f8Unit span{font-size:11px;font-weight:bold}.f8Header{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;background:#273e51;border-radius:10px;padding:12px;font-weight:bold}.f8Versus{text-align:center;padding:8px;color:#a8dfd3}.f8Hand{display:flex;justify-content:center;align-items:flex-end;overflow-x:auto;overflow-y:visible;min-height:225px;padding:20px 4px;gap:0}.f8Action{width:clamp(91px,17vw,132px);min-width:91px;flex:0 0 auto;margin-left:-10px;transform:rotate(-2deg);background:#24374d;color:white;border:1px solid #62819a;border-radius:12px;padding:4px;cursor:pointer}.f8Action:nth-child(even){transform:rotate(2deg)}.f8Action .fusionCardFace{min-height:155px}.f8Action .fusionArtwork{max-height:62px;overflow:hidden}.f8Action .fusionCardFace strong{font-size:12px}.f8Action .fusionCardFace small{font-size:9px}.f8Action:hover{transform:translateY(-10px) rotate(0);z-index:5}.f8Action.f8Locked{opacity:.35}.f8Controls{text-align:center}@media(max-width:560px){.f8Portrait{height:65px}.f8Unit{padding:4px 2px}.f8Unit strong{font-size:10px}.f8Unit small,.f8Unit span{font-size:9px}.f8Hand{justify-content:flex-start}.f8Action{width:105px;min-width:105px}}
+
+/* css/style-27.css */
+
+.vaelkorDiscardNotice{padding:10px;background:#61472b;border:1px solid #e9b65b;border-radius:10px;font-weight:700;margin:8px 0}
+.vaelkorShinyArt{height:100%;width:100%;position:relative}
+.vaelkorShinyArt img{filter:none!important}
+.vaelkorShinyArt:after{content:'✦';position:absolute;top:3px;right:9px;color:#ffe579;font-size:30px;text-shadow:0 0 8px #fff,0 0 14px #f8bc35;pointer-events:none}
+
+/* css/style-28.css */
+
+/* v0.9 – klare Monster-/Aktionskarten-Trennung und mobiles Kampflayout */
+.v9Battle{max-width:860px!important;padding:12px!important}
+.v9SectionLabel{margin:12px 0 8px;padding:9px 11px;border-radius:10px;background:#294255;color:#f1fbff;font-size:13px;font-weight:800}
+.v9Encounter{display:grid;grid-template-columns:minmax(105px,37%) 1fr;align-items:center;gap:15px;border:2px solid var(--element-color);border-radius:18px;padding:12px;background:linear-gradient(120deg,#142536,#253b52);min-height:180px;box-shadow:0 4px 22px #0005}
+.v9EncounterArt{height:170px;display:grid;place-items:center;overflow:hidden;border-radius:12px;background:#0e1b2c}
+.v9EncounterArt img{width:100%;height:100%;object-fit:contain}
+.v9Encounter strong{font-size:clamp(18px,4vw,26px);display:block;line-height:1.2;margin-bottom:8px}.v9Encounter div div{margin:7px 0}
+.v9MissingArt{width:100%;height:100%;min-height:90px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;text-align:center;background:radial-gradient(circle at 50% 30%,var(--portrait-element),#102238 78%);padding:8px;color:#fff}
+.v9MissingArt span{font-size:clamp(42px,10vw,85px);filter:drop-shadow(0 4px 7px #0007)}.v9MissingArt b{font-size:13px}.v9MissingArt small{font-size:10px;opacity:.85}
+.v9Team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:8px 0}
+.v9Monster{display:flex;flex-direction:column;align-items:stretch;text-align:center;min-width:0;overflow:hidden;background:#1c3046;color:#fff;border:2px solid #426177;border-radius:12px;padding:4px;gap:3px}
+.v9Monster.v9Active{border-color:#72e8bb;box-shadow:0 0 0 2px #72e8bb44}.v9Monster.v9Dead{opacity:.43;filter:grayscale(1)}
+.v9MonsterArt{height:90px;border-radius:8px;overflow:hidden;background:#102035}.v9MonsterArt img{width:100%;height:100%;object-fit:contain}
+.v9MonsterArt .v9MissingArt{min-height:0}.v9MonsterArt .v9MissingArt span{font-size:30px}.v9MonsterArt .v9MissingArt b,.v9MonsterArt .v9MissingArt small{display:none}
+.v9MonsterData{display:flex;flex-direction:column;gap:3px}.v9MonsterData strong{font-size:11px;overflow-wrap:anywhere}.v9MonsterData small,.v9MonsterData span{font-size:10px;line-height:1.25}
+.v9EnemyTeam{display:none} /* Gegner wird oben bereits als großes Portrait dargestellt */
+.v9Guard{display:inline-block;background:#a96b2b;padding:5px 8px;border-radius:6px;font-weight:800}
+.v9ActionTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;background:#254659;padding:12px;border-radius:10px;margin-top:12px;font-size:14px}.v9ActionTitle span{color:#fff0ad;font-weight:900}
+.v9ActionArea{border:1px solid #44647b;border-radius:13px;padding:10px;margin-top:8px}.v9ActionArea p{font-size:12px;line-height:1.5;margin:2px 0 8px}
+.v9HandScroll{overflow-x:auto;overflow-y:hidden;padding:14px 4px 20px;scrollbar-width:thin;scroll-snap-type:x proximity}
+.v9Hand{display:flex;align-items:stretch;justify-content:flex-start;gap:7px;width:max-content;min-width:100%}
+.v9HandCard{flex:0 0 118px;width:118px;min-height:185px;display:flex;flex-direction:column;align-items:stretch;gap:5px;padding:7px;border:2px solid var(--element-color);border-radius:13px;background:linear-gradient(155deg,#253d57,#111d30);color:#fff;text-align:left;scroll-snap-align:start;box-shadow:0 5px 10px #0004}
+.v9HandCard:active{transform:translateY(-7px)}.v9HandCard.v9Unavailable{opacity:.56;filter:saturate(.5)}
+.v9CardTop{display:flex;justify-content:space-between;gap:3px;font-size:10px}.v9CardTop b{font-size:13px;color:#ffda7e}
+.v9CardSymbol{text-align:center;font-size:29px;padding:3px}.v9HandCard>strong{font-size:13px;min-height:32px;line-height:1.2}.v9HandCard>small{font-size:9px;min-height:24px;opacity:.88}
+.v9CardEffect{font-size:12px;font-weight:800;margin-top:auto;color:#ffe3a0}.v9Controls{text-align:center;padding:8px}
+@media(max-width:600px){.v9Encounter{grid-template-columns:120px 1fr;min-height:150px;padding:8px;gap:9px}.v9EncounterArt{height:145px}.v9MonsterArt{height:65px}.v9MonsterData strong{font-size:10px}.v9MonsterData small,.v9MonsterData span{font-size:9px}.v9HandCard{width:105px;flex-basis:105px;min-height:175px}.v9Battle .fusionTop h2{font-size:20px}}
+
+/* css/style-29.css */
+
+/* v1.0 mobile navigation and cards */
+#fusionNav{z-index:110000!important;bottom:0!important;left:0!important;transform:none!important;width:100%!important;max-width:none!important;border-radius:14px 14px 0 0!important;padding:7px 9px calc(8px + env(safe-area-inset-bottom))!important}
+#fusionOverlay{z-index:100000!important;padding:12px 10px 110px!important;overflow-y:auto!important;overscroll-behavior:contain}
+#fusionOverlay[hidden]{display:none!important}
+#fusionOverlay .fusionShell{max-width:930px!important;margin:0 auto!important;padding:14px!important;border-radius:16px!important;min-height:0!important}
+#fusionOverlay .fusionTop{position:sticky;top:0;z-index:3;background:#192439;padding:8px 2px!important;display:flex;justify-content:space-between;align-items:center;gap:8px}
+#fusionOverlay .fusionTop h2{font-size:clamp(17px,4.4vw,25px)!important;margin:0!important}
+#fusionOverlay .fusionMenuTabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:12px 0 18px}
+#fusionOverlay .fusionMenuTabs button{padding:9px 3px!important;font-size:clamp(10px,2.8vw,14px)!important;min-width:0!important}
+#fusionOverlay .fusionDeckLayout{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+#fusionOverlay .fusionDeckRow{min-height:58px!important}
+#fusionOverlay .fusionMonsterTile img{object-fit:contain}
+#fusionOverlay .v9Battle .v9HandScroll{scrollbar-width:thin}
+#fusionOverlay .v9Battle .v9HandCard{min-width:104px;touch-action:manipulation}
+#fusionOverlay .v9Battle .v9Unavailable{opacity:.42}
+#fusionOverlay .v9Battle .v9SectionLabel{font-size:12px}
+#fusionOverlay .v9Battle .v9EncounterArt img{object-fit:contain}
+@media(max-width:620px){#fusionOverlay .fusionDeckLayout{grid-template-columns:1fr!important}#fusionOverlay .fusionCountGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}#fusionOverlay .fusionMonsterGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#fusionOverlay .v9Battle .v9HandCard{min-width:110px}}
+
+/* css/style-30.css */
+
+#fusionNav{position:fixed!important;top:auto!important;bottom:0!important;left:0!important;right:0!important;width:100%!important;max-width:none!important;margin:0!important;z-index:120020!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;height:auto!important;min-height:58px!important;padding:7px 7px calc(7px + env(safe-area-inset-bottom))!important;background:#12253bfa!important;border:1px solid #47728c!important;border-radius:16px 16px 0 0!important;box-sizing:border-box!important}
+#fusionNav button{display:block!important;min-width:0!important;min-height:46px!important;padding:8px 2px!important;font-size:clamp(10px,2.9vw,16px)!important;white-space:normal!important;line-height:1.25!important;touch-action:manipulation!important}
+#fusionOverlay{z-index:120000!important;padding:10px 8px 100px!important;box-sizing:border-box!important;overflow-y:auto!important;overscroll-behavior:contain}
+#fusionOverlay[hidden]{display:none!important}
+#battleoverlay{z-index:90000!important}
+#battleoverlay.hidden{display:none!important}
+body{padding-bottom:82px!important}
+#fusionOverlay .fusionShell{max-width:900px!important;margin:0 auto!important;padding:12px!important}
+#fusionOverlay .v9HandScroll{display:flex!important;gap:8px!important;overflow-x:auto!important;padding:14px 4px 18px!important;scroll-snap-type:x proximity!important}
+#fusionOverlay .v9HandCard{flex:0 0 112px!important;min-width:112px!important;max-width:112px!important;scroll-snap-align:center!important}
+#fusionOverlay .v9MonsterArt img{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:430px){#fusionOverlay .fusionTop h2{font-size:17px!important}#fusionOverlay .v9HandCard{flex-basis:106px!important;min-width:106px!important;max-width:106px!important}}
+
+/* css/style-31.css */
+
+:root{--vk-gold:#e9b965;--vk-dark:#071324}
+#fusionOverlay{background:linear-gradient(165deg,#091a30,#06101e 80%)!important;color:#f6f2e9!important}
+#fusionOverlay .fusionShell{background:linear-gradient(145deg,#0d2035,#091729 70%)!important;border:2px solid #b18b52!important;box-shadow:0 0 0 3px #08121e,0 0 30px #030912!important}
+#fusionOverlay .fusionTop{background:linear-gradient(90deg,#102b47,#0b192c)!important;border-bottom:1px solid #b68b50!important;padding:9px!important;color:#fff2d6}
+#fusionOverlay .fusionTop h2{font-family:Georgia,serif!important;font-size:clamp(19px,4.4vw,28px)!important;letter-spacing:.25px}
+#fusionOverlay .v9SectionLabel{background:linear-gradient(90deg,#122c44,#0e1d30)!important;border-left:3px solid #b28c55!important;color:#f9e4b9!important;padding:7px 10px!important;margin:8px 0 6px!important}
+#fusionOverlay .v9Encounter{background:radial-gradient(ellipse at 25% 40%,color-mix(in srgb,var(--element-color) 17%,#0d1b2e),#0b182b 80%)!important;border:2px solid var(--element-color)!important;box-shadow:inset 0 0 22px #0006,0 0 13px color-mix(in srgb,var(--element-color) 22%,transparent)!important;min-height:132px!important;padding:8px!important}
+#fusionOverlay .v9EncounterArt{background:#0b1729!important;height:128px!important;border:1px solid color-mix(in srgb,var(--element-color) 55%,#334a60)!important}
+#fusionOverlay .v9EncounterArt img{width:100%;height:100%;object-fit:cover!important}
+#fusionOverlay .vaelkorEyebrow{font-size:10px!important;letter-spacing:.7px;color:#f5d18a!important}
+#fusionOverlay .v9Encounter strong{font-family:Georgia,serif!important;font-size:clamp(18px,4vw,25px)!important;margin:3px 0!important}
+#fusionOverlay .vaelkorFighterInfo>div{margin:3px 0!important}
+#fusionOverlay .vaelkorHp{background:#061322!important;border:1px solid #698a8a!important;height:10px!important}
+#fusionOverlay .vaelkorHp span{background:linear-gradient(90deg,#20a985,#92f6bd)!important}
+#fusionOverlay .vaelkorTeamToggle{background:linear-gradient(90deg,#102940,#1b3a50)!important;border:1px solid #638eae!important;color:#e7f6ff!important;padding:9px!important;margin:7px 0!important}
+#fusionOverlay .v9ActionTitle{background:linear-gradient(90deg,#102a45,#173c4c)!important;border:1px solid #567b9a!important;margin-top:7px!important;padding:8px!important}
+#fusionOverlay .v9ActionArea{border-color:#a57d47!important;background:#081629!important;padding:6px!important}
+#fusionOverlay .v9HandScroll{padding:7px 3px 12px!important}
+#fusionOverlay .v9HandCard{position:relative;overflow:hidden;background:linear-gradient(165deg,color-mix(in srgb,var(--element-color) 28%,#0a1b31),#0b1526 75%)!important;border:2px solid var(--element-color)!important;border-radius:9px!important;box-shadow:inset 0 0 0 1px #ffffff25,0 3px 9px #0009!important;min-height:192px!important;gap:3px!important;padding:5px!important}
+#fusionOverlay .v9HandCard>strong{font-family:Georgia,serif!important;font-size:13px!important;min-height:29px!important;color:#fff4df!important}
+#fusionOverlay .v9CardTop{font-size:10px!important;color:#fff3d8!important}
+#fusionOverlay .v9CardTop b{background:#0b1728;border:1px solid #e7c077;border-radius:50%;padding:2px 4px}
+#fusionOverlay .v9CardSymbol{height:72px!important;padding:0!important;display:grid;place-items:center;background:radial-gradient(ellipse,#ffffff12,transparent 75%);border-top:1px solid #ffffff22;border-bottom:1px solid #ffffff22}
+#fusionOverlay .vkCardArt{height:72px;width:100%;object-fit:contain;filter:drop-shadow(0 0 8px var(--element-color))}
+#fusionOverlay .v9HandCard>small{font-size:9px!important;min-height:18px!important}
+#fusionOverlay .v9CardEffect{font-size:11px!important;color:#ffe0a0!important}
+#fusionOverlay .v9Controls button{background:linear-gradient(160deg,#28ba88,#0b7c72)!important;border:1px solid #8df9d1!important;color:#fff!important;box-shadow:0 0 9px #15a88c55!important}
+#fusionOverlay .v9Controls button:last-child{background:linear-gradient(160deg,#bb5847,#7c2538)!important;border-color:#ff9c7e!important}
+#fusionOverlay .vaelkorCombatLog{background:#0b1d32!important;border:1px solid #6d8caa!important;border-radius:12px!important;margin-top:8px!important}
+#fusionOverlay .vaelkorCombatLog h3{font-family:Georgia,serif!important;color:#f6d698!important}
+#fusionNav{background:linear-gradient(90deg,#0b1c30,#122d43)!important;border:2px solid #ac8650!important;box-shadow:0 -5px 20px #000b!important}
+#fusionNav button{background:linear-gradient(165deg,#1a354c,#0a1b2e)!important;border:1px solid #b78e52!important;border-radius:9px!important;color:#f7e7c9!important;box-shadow:inset 0 1px #ffffff18!important}
+#fusionOverlay .fusionCard{background:linear-gradient(150deg,#1a3149,#0c1a2e)!important;border-color:var(--element-color,#ac8650)!important}
+#fusionOverlay .fusionArtwork{background:radial-gradient(ellipse,#244560,#0c192a)!important}
+#fusionOverlay .fusionSpellArt{filter:drop-shadow(0 0 12px var(--element-color,#e6c07a))}
+#fusionOverlay .fusionMonsterTile{background:linear-gradient(135deg,#1b3048,#0d1c30)!important;border:1px solid var(--element-color)!important}
+#fusionOverlay .fusionMonsterPortrait img{object-fit:cover!important}
+@media(max-width:600px){#fusionOverlay .v9Encounter{grid-template-columns:112px minmax(0,1fr)!important;min-height:116px!important;gap:8px!important}#fusionOverlay .v9EncounterArt{height:116px!important}#fusionOverlay .v9Encounter strong{font-size:18px!important}#fusionOverlay .v9HandCard{min-height:186px!important}#fusionOverlay .v9CardSymbol,#fusionOverlay .vkCardArt{height:65px!important}#fusionOverlay .fusionShell{padding:8px!important}#fusionOverlay .v9SectionLabel{font-size:11px!important}}
+
+/* css/style-32.css */
+
+#fusionOverlay .fusionMonsterGrid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;align-items:stretch!important}
+#fusionOverlay .fusionMonsterTile{display:flex!important;flex-direction:column!important;gap:10px!important;min-width:0!important;min-height:0!important;padding:12px!important;border-radius:17px!important;box-sizing:border-box!important;overflow:hidden!important;box-shadow:inset 0 1px 0 #ffffff20,0 8px 20px #0004!important}
+#fusionOverlay .fusionMonsterTile>div:nth-child(2){min-width:0!important;width:100%!important;display:flex!important;flex-direction:column!important;gap:5px!important;overflow-wrap:anywhere!important;word-break:normal!important}
+#fusionOverlay .fusionMonsterPortrait{width:100%!important;height:130px!important;min-height:130px!important;max-width:none!important;display:flex!important;justify-content:center!important;align-items:center!important;border-radius:13px!important;background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--element-color) 26%,#172c44),#081827 78%)!important;overflow:hidden!important}
+#fusionOverlay .fusionMonsterPortrait svg{width:125px!important;height:125px!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important}
+#fusionOverlay .fusionMonsterTile strong{font-size:clamp(14px,3.7vw,18px)!important;line-height:1.22!important;display:block!important;overflow-wrap:anywhere!important}
+#fusionOverlay .fusionMonsterTile .fusionElementName{font-size:13px!important;line-height:1.35!important}
+#fusionOverlay .fusionMonsterTile small{font-size:12px!important;line-height:1.4!important;color:#e0d7bd!important}
+#fusionOverlay .fusionMonsterTile .fusionStats{font-size:14px!important;font-weight:700!important;line-height:1.4!important;white-space:normal!important}
+@media(min-width:720px){#fusionOverlay .fusionMonsterGrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}#fusionOverlay .fusionMonsterPortrait{height:155px!important}}
+@media(max-width:350px){#fusionOverlay .fusionMonsterGrid{gap:7px!important}#fusionOverlay .fusionMonsterTile{padding:8px!important}#fusionOverlay .fusionMonsterPortrait{height:105px!important;min-height:105px!important}}
+
+/* css/style-33.css */
+
+/* Old MONORA battle modal is replaced by the card-based combat screen. */
+#battleoverlay{display:none!important}
+#fusionOverlay:not([hidden]){display:block!important;z-index:120010!important}
+#fusionOverlay .v9Battle .v9Controls{display:flex!important;flex-wrap:wrap!important;gap:8px!important}
+#fusionOverlay .v9Battle .v9Controls button{min-height:44px!important;touch-action:manipulation!important}
+#fusionOverlay .v9Battle .v9HandScroll{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}

@@ -1,0 +1,15 @@
+/* The notice leaves the clipped map and follows its upper edge in screen space. */
+body>#gameNotice.vkWorldNotice142{position:fixed!important;left:var(--vk-notice-left,8px)!important;top:var(--vk-notice-top,60px)!important;right:auto!important;bottom:auto!important;width:var(--vk-notice-width,calc(100vw - 16px))!important;max-width:none!important;min-height:0!important;transform:none!important;margin:0!important;padding:6px 9px!important;box-sizing:border-box!important;z-index:120030!important;gap:8px!important;align-items:center!important;font-size:12px!important;line-height:1.25!important;white-space:normal!important}
+body>#gameNotice.vkWorldNotice142 #gameNoticeText{flex:1;min-width:0;overflow-wrap:anywhere}body>#gameNotice.vkWorldNotice142 #noticeClose{float:none!important;flex:0 0 auto!important;margin:0!important;padding:3px 7px!important;min-height:28px!important}
+
+/* Battle notices reserve a top strip and stay above the active battle rather than the hidden map. */
+body.vkBattleNotice161 #fusionOverlay:not([hidden]),body.vkBattleNotice161 #battleoverlay:not(.hidden){padding-top:calc(var(--vk-battle-notice-space,60px) + 8px + env(safe-area-inset-top,0px))!important}
+body.vkBattleNotice161>#gameNotice.vkWorldNotice142{z-index:2147483000!important;top:max(var(--vk-notice-top,8px),calc(env(safe-area-inset-top,0px) + 8px))!important}
+
+/* Fullscreen notices get their own strip above the location row, outside the map. */
+body.vk-exploring.vkWorldNotice172 #world>.layout>.panel:first-child{grid-template-rows:calc(28px + var(--vk-world-notice-space,0px)) minmax(0,1fr) 142px!important}
+body.vk-exploring.vkWorldNotice172 #world .hud{align-self:end!important;height:28px!important}
+body.vk-exploring.vkWorldNotice172 #world .mapwrap{width:min(100cqw,calc((100cqh - 188px - var(--vk-world-notice-space,0px))*480/608))!important}
+@media(min-width:850px),(max-height:540px) and (min-width:560px){body.vk-exploring.vkWorldNotice172 #world>.layout>.panel:first-child{grid-template-rows:calc(28px + var(--vk-world-notice-space,0px)) minmax(0,1fr)!important}body.vk-exploring.vkWorldNotice172 #world .mapwrap{width:min(calc(100cqw - 194px),calc((100cqh - 44px - var(--vk-world-notice-space,0px))*480/608),640px)!important}}
+@media(max-height:540px){body.vk-exploring.vkWorldNotice172 #world>.layout>.panel:first-child{grid-template-rows:calc(22px + var(--vk-world-notice-space,0px)) minmax(0,1fr) 142px!important}body.vk-exploring.vkWorldNotice172 #world .hud{height:22px!important}}
+@media(max-height:540px) and (min-width:560px){body.vk-exploring.vkWorldNotice172 #world>.layout>.panel:first-child{grid-template-rows:calc(22px + var(--vk-world-notice-space,0px)) minmax(0,1fr)!important}}

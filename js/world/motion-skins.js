@@ -1,0 +1,23 @@
+/* Explicit semantic bindings. Adding a skin does not add a new animation clock. */
+(function(r,f){const a=f(typeof module==='object'&&module.exports?require('./mount-walk-art.js'):r.VaelkorMountWalkArt165,typeof module==='object'&&module.exports?require('./human-walk-art.js'):r.VaelkorHumanWalk168,typeof module==='object'&&module.exports?require('./mount-vertical-art.js'):r.VaelkorMountVertical169);if(typeof module==='object'&&module.exports)module.exports=a;else r.VaelkorMotionSkins164=a;})(globalThis,(walkArt,humanArt,verticalArt)=>{
+ function create({characters,mounts,legacy,joe,mountRig}){
+  const profiles=[...Object.keys(characters.profiles),...Object.keys(mounts.profiles),'healer','cook','material','traveler','wizard','joe'];
+  function npc(id,inside,facing,slot='stand'){
+   const mode=inside?'indoor':'outdoor',stand=slot==='stand',right=slot==='rightStep',c=characters.profiles[id],m=mounts.profiles[id];let p,model,set,rig=null,sourceIndex=0,mirrored=false;
+   const human=humanArt?.profiles[id]?.[mode];
+   if(human){const p=human.directions[facing]?.[slot]||human.directions[facing]?.stand;if(!p)throw Error('Missing authored human pose '+id+':'+mode+':'+facing+':'+slot);return{...p,set:human.set,referenceHeight:human.referenceHeight,kind:'human',rig:null,sourceIndex:stand?0:right?3:1,phaseMirror:false,mirror:false,delta:[0,0],staticOnly:false,source:{set:human.set,rect:p.rect},slot,authored168:true};}
+   const authored=walkArt?.profiles[id],walk=/^walk[0-7]$/.test(slot),phase=walk?Number(slot.slice(4)):right?6:0;
+   const vertical=verticalArt?.profiles[id]?.[facing];
+   if(vertical){rig=mountRig.rig(id,facing);sourceIndex=stand?8:phase;p=stand?vertical.idle:vertical.frames[phase];return{set:vertical.set,rect:p.rect,bounds:p.bounds,anchor:p.anchor,foot:p.foot,referenceHeight:vertical.referenceHeight,kind:'quadruped',rig,sourceIndex,phaseMirror:false,mirror:false,delta:[0,0],staticOnly:false,source:{set:vertical.set,rect:p.rect},slot,saddle:vertical.saddle,authored165:true,authored169:true,displayScale170:1.08};}
+   if(authored&&['left','right'].includes(facing)){model=authored;rig=mountRig.rig(id,facing);sourceIndex=stand?8:authored.frames.length===4?Math.floor(phase/2):(phase+1)%8;p=stand?authored.idle:authored.frames[sourceIndex];set=authored.set;return{set,rect:p.rect,bounds:p.bounds,anchor:p.anchor,foot:p.foot,referenceHeight:id==='donkey'?180:authored.referenceHeight,kind:'quadruped',rig,sourceIndex,phaseMirror:false,mirror:facing==='right',delta:[0,0],staticOnly:false,source:{set,rect:p.rect},slot,saddle:[facing==='right'?1-authored.saddle[0]:authored.saddle[0],authored.saddle[1]],authored165:true,...(id==='donkey'?{displayScale170:1.08}:{})};}
+   if(c||m){model=m?(m.render155?.[mode]||(m.mount?m:m.views[mode])):c.views[mode];rig=m?.mount?mountRig.rig(id,facing):null;const d=model.directions[rig?.sourceFacing||facing]||model.directions.down;sourceIndex=stand?0:walk?Math.floor(phase/2):right?(id==='zebra'&&['left','right'].includes(facing)?2:3):1;p=stand?(inside||m?.mount?d.idle:d.frames[0]):d.frames[sourceIndex];set=model.set||'mounts150';mirrored=!stand&&['left','right'].includes(facing)&&!!rig?.reverseSideFrames?.includes(sourceIndex);}
+   else if(id==='joe'){model=joe[mode];sourceIndex=stand?0:walk?Math.floor(phase/2):right?3:inside?2:1;p=model.directions[facing][sourceIndex];const[w,h]=p.size;p={...p,rect:[0,0,w,h],bounds:[0,0,w,h],anchor:w/2,foot:h};set='joe134-'+mode+'-'+facing+'-'+sourceIndex;}
+   else{model=legacy[mode][id];if(!model)throw Error('Unbound actor skin '+id);sourceIndex=stand?3:right?2:0;const d=model.directions[facing]||model.directions.down;p=d.frames[sourceIndex];set=model.set||(inside?'npc-large':'npc-small');}
+   const h=p.height||p.size?.[1]||p.rect[3],w=p.width||p.size?.[0]||p.rect[2],bounds=p.bounds||[0,0,w,h],kind=m?.mount?'quadruped':'human';
+   return{set,rect:p.rect,bounds,anchor:p.anchor??p.center??w/2,foot:p.foot??h,referenceHeight:model.referenceHeight,kind,rig,sourceIndex,phaseMirror:mirrored,mirror:!!rig?.mirror,delta:stand?[0,0]:p.torsoDelta154||[0,0],staticOnly:!!model.puppet,source:{set,rect:p.rect},slot};
+  }
+  function skin(id){const views={};for(const inside of[false,true]){const mode=inside?'indoor':'outdoor';views[mode]={};for(const facing of['down','left','right','up']){views[mode][facing]={};for(const slot of(mounts.profiles[id]?.mount?['stand','leftStep','rightStep',...Array.from({length:8},(_,i)=>'walk'+i)]:['stand','leftStep','rightStep']))views[mode][facing][slot]=npc(id,inside,facing,slot);}}return{id,kind:mounts.profiles[id]?.mount?'quadruped':'human',views};}
+  return{npc,skin,profiles:[...new Set(profiles)]};
+ }
+ return{version:164,create};
+});

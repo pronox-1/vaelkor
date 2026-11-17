@@ -1,0 +1,12 @@
+// BEGIN VAELKOR SOFT ENCOUNTER GRASS v146
+const vkGrassTiles146=new Map();
+function vkGrassEdges146(x,y){return(cell(x,y-1)!==types.TALL?1:0)|(cell(x+1,y)!==types.TALL?2:0)|(cell(x,y+1)!==types.TALL?4:0)|(cell(x-1,y)!==types.TALL?8:0);}
+function vkGrassShade146(mask,biome){const key=biome+':'+mask;if(vkGrassTiles146.has(key))return vkGrassTiles146.get(key);const tile=document.createElement('canvas'),scale=2;tile.width=tile.height=T*scale;const g=tile.getContext('2d'),n=tile.width,fade=n*.30;g.fillStyle=biome==='snow'?'rgba(39,83,100,.07)':biome==='desert'?'rgba(116,88,35,.13)':biome==='volcano'?'rgba(85,36,16,.08)':'rgba(8,47,19,.085)';g.fillRect(0,0,n,n);
+ for(const [bit,x1,y1,x2,y2]of[[1,0,0,0,fade],[2,n,0,n-fade,0],[4,0,n,0,n-fade],[8,0,0,fade,0]])if(mask&bit){const gradient=g.createLinearGradient(x1,y1,x2,y2);gradient.addColorStop(0,'rgba(0,0,0,0)');gradient.addColorStop(1,'rgba(0,0,0,1)');g.globalCompositeOperation='destination-in';g.fillStyle=gradient;g.fillRect(0,0,n,n);}g.globalCompositeOperation='source-over';vkGrassTiles146.set(key,tile);while(vkGrassTiles146.size>32)vkGrassTiles146.delete(vkGrassTiles146.keys().next().value);return tile;}
+vkDrawEncounterGrass=function(){const biome=vkWorldBiome(),asset=vkBiomePick([biome.grass,...biome.flowers],0),dry=biome.key==='desert';ctx.save();ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';for(let y=0;y<H;y++)for(let x=0;x<W;x++)if(cell(x,y)===types.TALL){const mask=vkGrassEdges146(x,y);ctx.drawImage(vkGrassShade146(mask,biome.key),x*T,y*T,T,T);
+ for(let i=0;i<(dry?5:2);i++){const fx=.15+hash(x,y,941+i)*.70,fy=.28+hash(x,y,951+i)*.66,edge=Math.min(mask&8?fx:1,mask&2?1-fx:1,mask&1?fy:1,mask&4?1-fy:1);ctx.globalAlpha=.65+Math.min(.35,edge);
+ if(!dry&&asset){vkOldExpansionDraw130({biome:biome.key,asset,x:x+fx,y:y+fy,w:.60+hash(x,y,961+i)*.25});}
+ else{const X=(x+fx)*T,Y=(y+fy)*T;ctx.strokeStyle=dry?'#796334':biome.key==='snow'?'#a8c4bd':'#638b46';ctx.lineWidth=dry?1.1:.8;ctx.beginPath();ctx.moveTo(X,Y);ctx.lineTo(X-1.5,Y-4);ctx.moveTo(X,Y);ctx.lineTo(X+2,Y-5);if(dry){ctx.moveTo(X,Y);ctx.lineTo(X+.2,Y-7);}ctx.stroke();if(dry){ctx.strokeStyle='#ddc481';ctx.lineWidth=.65;ctx.beginPath();ctx.moveTo(X+.6,Y-.5);ctx.lineTo(X+.4,Y-6);ctx.stroke();}}ctx.globalAlpha=1;
+ }}ctx.restore();};
+window.VaelkorGrass146={edges:vkGrassEdges146,cacheSize:()=>vkGrassTiles146.size};
+// END VAELKOR SOFT ENCOUNTER GRASS v146

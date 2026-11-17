@@ -1,18 +1,7 @@
-<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#08172b"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="VAELKOR"><meta name="mobile-web-app-capable" content="yes"><title>VAELKOR · Grünwald</title><link rel="stylesheet" href="css/style-01.css?release=138"><link rel="stylesheet" href="css/style-02.css?release=138"><link rel="stylesheet" href="css/style-03.css?release=138"><link rel="stylesheet" href="css/style-04.css?release=138"><link rel="stylesheet" href="css/style-05.css?release=138"><link rel="stylesheet" href="css/style-06.css?release=138"><link rel="stylesheet" href="css/style-07.css?release=138"><link rel="stylesheet" href="css/style-08.css?release=138"><link rel="stylesheet" href="css/style-09.css?release=138"><link rel="stylesheet" href="css/style-10.css?release=138">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="css/style-11.css?release=138"><link rel="stylesheet" href="css/style-12.css?release=138"><link rel="stylesheet" href="css/style-13.css?release=138"><link rel="stylesheet" href="css/style-14.css?release=138"><link rel="stylesheet" href="css/style-15.css?release=138"><link rel="stylesheet" href="css/style-16.css?release=138"><link rel="stylesheet" href="css/style-17.css?release=138"><link rel="stylesheet" href="css/style-18.css?release=138"><link rel="stylesheet" href="css/style-19.css?release=138"><link rel="stylesheet" href="css/style-20.css?release=138"><link rel="stylesheet" href="css/style-21.css?release=138"><link rel="stylesheet" href="css/style-22.css?release=138">
-<link rel="stylesheet" href="css/style-23.css?release=138"><link rel="stylesheet" href="css/style-24.css?release=138"><link rel="stylesheet" href="css/style-25.css?release=138">
-
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#08172b"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="VAELKOR"><meta name="mobile-web-app-capable" content="yes"><title>VAELKOR · Grünwald</title><link rel="stylesheet" href="css/bundle-155-0.css?release=166">
 </head><body><div class="wrap"><header class="top"><div><div class="logo">✦ VAEL<span>KOR</span> <span style="font-size:12px;color:#b1c6d7">WILDLANDS</span></div><div class="small">VAELKOR · Monster & Cards · Kreaturenatlas · einheitliche Elementsymbole</div></div><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button id="fullscreenBtn" type="button" aria-label="Vollbildmodus umschalten" style="background:#28415a;color:white;border:1px solid #6b8297;border-radius:10px;padding:10px 12px;font-weight:700;cursor:pointer">⛶ Vollbild</button><label class="vkLangLabel" for="vkLanguage">🌐 <span id="vkLangCaption">Sprache</span><select id="vkLanguage" aria-label="Spiel-Sprache"><option value="de">Deutsch</option><option value="en">English</option></select></label><div class="money" id="coins">🪙 0</div></div></header><div id="gameNotice" role="status" aria-live="polite" style="display:none;position:sticky;top:4px;z-index:80;background:#253d54;border:1px solid #7bc6ac;border-radius:12px;padding:12px;color:#fff;box-shadow:0 5px 22px #0008"><span id="gameNoticeText"></span> <button id="noticeClose" type="button" style="float:right;border:0;border-radius:8px;background:#4d6c81;color:white;padding:4px 9px">✕</button></div><nav><button data-tab="world" class="active">🌿 Wildnis</button><button data-tab="team">🐾 Team & Lager</button><button data-tab="shop">🛍️ Shop</button><button data-tab="breeding">🥚 Zucht</button><button data-tab="guide">📖 Monsterbuch</button><button data-tab="base">🏡 Basis</button><button data-tab="quests">🏆 Quests</button></nav>
 <section id="world"><div class="layout"><div class="panel"><div class="hud"><span class="pill">📍 <span id="zoneLabel">Smaragdlichtung</span></span><span class="pill" id="steps">👣 0 Schritte</span></div><div class="mapwrap"><canvas id="map" width="576" height="768" style="display:none!important"></canvas><iframe id="vkIntegratedWorld" title="Grünwald Weltmodus" style="width:100%;height:100%;display:block;border:0;background:#0d2534" scrolling="no"></iframe></div><div class="dpad"><button data-move="up">▲</button><button data-move="left">◀</button><button data-move="center">●</button><button data-move="right">▶</button><button data-move="down">▼</button></div><p class="small" style="text-align:center">Steuerung: WASD / Pfeiltasten oder die Buttons · Im hohen Gras lauern wilde Monster</p></div><aside class="panel"><h2>Dein Abenteuer</h2><div id="worldteam"></div><div class="tip">🏟️ In der Arena wartet ein Trainer mit 1 bis 4 Monstern. Besiege alle Monster, um zu gewinnen. Besiege ihn, um zur nächsten Zone zu reisen. Auf Level 10, 20, 30 … beginnt ein neues Biom mit einem besonderen Ort.</div><div class="tip" id="progressInfo"></div><div class="tip" id="weatherInfo"></div><div class="tip" id="legendInfo"></div><div class="tip">🏅 Nach dem Trainersieg die Medaille in der Arena antippen, um weiterzureisen.</div><h3>🧭 Reisen & Prestige</h3><div id="travelControls"></div><button class="btn" id="prestigeBtn">🌟 Prestige starten</button><div style="margin-top:14px"><button class="btn" id="resetBtn" style="border-color:#d67878;color:#ffd0d0">🗑️ Spielstand komplett zurücksetzen</button></div><h3>Inventar</h3><div id="inventory"></div><div id="chestnotice" class="small"></div><p class="muted">💚 Am blauen Heilbrunnen im Dorf wird dein Team kostenlos geheilt. Tränke kannst du auch außerhalb von Kämpfen im 🎒 Inventar verwenden.</p><button class="btn" id="healbutton">💧 Am Brunnen heilen (nur in der Nähe)</button></aside></div></section>
-<section id="team" class="hidden"><div class="panel"><div class="split"><div><h2>🐾 Team & Monsterlager</h2><p class="muted">Wähle ein aktives Kampfmonster. Bis zu 4 Monster können im Team sein, alle weiteren wohnen im Lager.</p></div><span class="pill" id="teamcount"></span></div><h3>Dein Team</h3><div id="teamlist" class="grid"></div><h3>Monsterlager</h3><div id="storage" class="grid"></div></div></section>
+<section id="team" class="hidden"><div class="panel"><div class="split"><div><h2>🐾 Team & Monsterlager</h2><p class="muted">Wähle ein aktives Kampfmonster. Bis zu 4 Monster können im Team sein, alle weiteren wohnen im Lager.</p></div><span class="pill" id="teamcount"></span></div><p id="vkTeamAccessNotice158" class="muted" role="status" hidden style="padding:10px 12px;border:1px solid #b99a64;border-radius:10px;background:#122d40"></p><h3>Dein Team</h3><div id="teamlist" class="grid"></div><section class="vkStorageSection144" aria-labelledby="vkStorageTitle144"><div class="vkStorageHeading144"><div><p class="vkStorageEyebrow144">DEINE RESERVE</p><h3 id="vkStorageTitle144">📦 Monsterlager</h3><p class="muted">Filtere deine gelagerten Kreaturen nach Element.</p></div><span class="pill" id="vkStorageCount144" aria-live="polite"></span></div><div class="fusionElementFilter vkStorageFilterPanel144"><strong>Element auswählen</strong><div id="vkStorageFilters144" class="fusionFilters" role="group" aria-label="Monsterlager nach Element filtern"></div></div><div id="storage" class="grid"></div></section></div></section>
 <section id="shop" class="hidden"><div class="panel"><h2>🛍️ Waldwinkel-Shop</h2><p class="muted">Wähle eine Kategorie. Sammle Münzen durch Kämpfe und Abenteuer.</p><div class="vkShopNav" id="vkShopNav" aria-label="Shop-Kategorien"></div><div class="vkShopIntro" id="vkShopIntro"></div><div class="grid vkShopGrid" id="shopitems"></div></div></section>
 <section id="breeding" class="hidden"><div class="panel"><h2>🥚 Monsterzucht</h2><p class="muted">Wähle zwei Monster unterschiedlicher Arten aus Team oder Lager. Gleiche Arten dürfen sich nicht paaren; Babys starten auf Level 1. Der Nachwuchs kombiniert Tierform und Element der Eltern und kann als neue Hybridkreation entstehen. Pro Shiny-Elternteil steigt die Shiny-Chance um 40 Prozentpunkte.</p><div id="breedcontrols"></div><div id="breedhistory"></div></div></section><section id="guide" class="hidden"><div class="panel"><h2>📖 Monsterbuch</h2><p class="muted">Entdecke Monster, entwickle sie und finde mit etwas Glück eine schillernde Variante. Die Shiny-Chance in der Wildnis beträgt 1 zu 500 (0,2 %) mit 10 % stärkeren Attributen.</p><p id="dexstats" class="tip"></p><div class="grid" id="dex"></div></div></section><section id="base" class="hidden"><div class="panel"><h2>🏡 Ausbau deiner Basis</h2><p class="muted">Investiere Münzen in dauerhafte Verbesserungen. Deine Basis bleibt auch nach Prestige erhalten.</p><div id="basebuildings" class="grid"></div></div></section><section id="quests" class="hidden"><div class="panel"><h2>🏆 Abenteuer & Erfolge</h2><p class="muted">Erfülle Aufgaben, sammle Belohnungen und schalte legendäre Herausforderungen frei.</p><div id="questboard" class="grid"></div></div></section></div>
 <div id="vkGenderOverlay"><div class="vkGenderPanel"><h2>Wähle deinen Charakter</h2><p>Diese Figur begleitet dich durch die Wildlands. Danach wählst du dein Startermonster.</p><div class="vkGenderChoices"><button type="button" data-vk-gender="male">♂ Männlich</button><button type="button" data-vk-gender="female">♀ Weiblich</button></div></div></div><div class="overlay hidden" id="starteroverlay"><div class="modal"><h1>🌿 Wähle deinen Starter!</h1><p class="muted">Die Wildnis und ihre Trainer warten auf dich. Wähle dein erstes Monster und beginne dein Abenteuer. Dein Spielstand wird automatisch gespeichert.</p><div class="grid" id="starters">
@@ -22,83 +11,103 @@
 <button type="button" class="starter" data-starter="creature020"><strong>Voltmaul</strong><small>Blitz · Level 5</small><span>Auswählen</span></button>
 </div></div></div>
 <div class="overlay hidden" id="battleoverlay"><div class="modal"><div class="split"><h2>⚔️ Monsterkampf!</h2><span class="pill" id="battleturn"></span></div><div class="battlebox"><div><h3>Wildes Monster</h3><div id="enemybox"></div></div><div><h3>Dein Monster</h3><div id="allybox"></div></div></div><div class="message" id="battlelog"></div><div id="trainerProgress" class="small"></div><div class="actions" id="battleactions"></div></div></div>
-<script src="js/script-01.js?release=138"></script><script src="js/script-02.js?release=138"></script><link rel="stylesheet" href="css/style-26.css?release=138"><link rel="stylesheet" href="css/style-27.css?release=138"><link rel="stylesheet" href="css/style-28.css?release=138"><link rel="stylesheet" href="css/style-29.css?release=138"><link rel="stylesheet" href="css/style-30.css?release=138">
-<link rel="stylesheet" href="css/style-31.css?release=138">
-<link rel="stylesheet" href="css/style-32.css?release=138">
-<link rel="stylesheet" href="css/style-33.css?release=138"><script src="js/script-03.js?release=138"></script><script src="js/interface/language-catalog.js?release=138"></script><script id="vaelkor-language-engine" src="js/script-04.js?release=138"></script><script id="vk-starter-battle-card-script" src="js/script-05.js?release=138"></script><link rel="stylesheet" href="css/style-34.css?release=138">
-<script id="vkNavigationV2Script" src="js/script-06.js?release=138"></script><link rel="stylesheet" href="css/style-35.css?release=138"><script id="vkFullscreenModesScript" src="js/script-07.js?release=138"></script>
+<script src="js/runtime/save-journal.js?release=166"></script>
+<script src="js/runtime/graphics-budget.js?release=166"></script>
+<script src="js/script-01.js?release=166"></script><script src="js/script-02.js?release=181"></script><link rel="stylesheet" href="css/bundle-155-1.css?release=166">
+<script src="js/script-03.js?release=166"></script><script src="js/interface/card-names.js?release=182"></script><script src="js/interface/language-catalog.js?release=182"></script><script id="vaelkor-language-engine" src="js/script-04.js?release=166"></script><script id="vk-starter-battle-card-script" src="js/script-05.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-2.css?release=166">
+<script id="vkNavigationV2Script" src="js/script-06.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-3.css?release=166">
+<script id="vkFullscreenModesScript" src="js/script-07.js?release=166"></script>
 
-<script id="vkMobileNavigationFixScript" src="js/script-08.js?release=138"></script>
-
-
-
+<script id="vkMobileNavigationFixScript" src="js/script-08.js?release=166"></script>
 
 
 
 
 
 
-<script src="js/world/supplied-art.js?release=138"></script>
-<script>if(!/^https?:$/.test(location.protocol))document.write('<script src="js/world/offline-loader.js?release=138"><'+'/script>');</script>
-<script src="js/world/day-cycle.js?release=138"></script>
-<script src="js/world/generator-catalog.js?release=138"></script>
-<script src="js/world/breeding-art.js?release=138"></script>
-<script src="js/npc/animux-dialogue.js?release=138"></script>
-<script src="js/npc/npc-rules.js?release=138"></script>
-<script src="js/world/npc-rig.js?release=138"></script>
-<script src="js/world/art-polish.js?release=138"></script>
-<script id="vk-world-integration" src="js/script-09.js?release=138"></script>
 
 
 
-<link rel="stylesheet" href="css/style-36.css?release=138">
+<script src="js/world/supplied-art.js?release=166"></script>
+<script>if(!/^https?:$/.test(location.protocol))document.write('<script src="js/world/offline-loader.js?release=166"><'+'/script>');</script>
+<script src="js/world/day-cycle.js?release=174"></script>
+<script src="js/world/generator-catalog.js?release=166"></script>
+<script src="js/world/breeding-art.js?release=166"></script>
+<script src="js/npc/animux-dialogue.js?release=166"></script>
+<script src="js/npc/npc-rules.js?release=179"></script>
+<script src="js/world/npc-rig.js?release=166"></script>
+<script src="js/world/art-polish.js?release=166"></script>
+<script src="js/interface/performance-monitor.js?release=166"></script><script src="js/interface/image-loader.js?release=178"></script><script src="js/interface/browser-diagnostics.js?release=166"></script>
+<script src="js/interface/asset-scheduler.js?release=166"></script>
+<script src="js/world/quest-items.js?release=166"></script>
+<script src="js/world/characters-149.js?release=166"></script>
+<script src="js/world/mount-rig.js?release=166"></script>
+<script src="js/world/mount-art.js?v=157"></script>
+<script src="js/world/mount-rules.js?v=157"></script>
+<script src="js/world/quadruped-walk.js?release=177"></script>
+<script src="js/world/motion-system.js?release=179"></script>
+<script src="js/world/player-side-art.js?release=179"></script>
+<script src="js/world/mount-walk-art.js?release=177"></script>
+<script src="js/world/human-walk-art.js?release=170"></script>
+<script src="js/world/mount-vertical-art.js?release=173"></script>
+<script src="js/world/motion-skins.js?release=177"></script>
+<script src="js/world/npc-space.js?release=179"></script>
+<script id="vk-world-integration" src="js/script-09.js?release=181"></script>
 
 
 
+<link rel="stylesheet" href="css/bundle-155-4.css?release=166">
+<script id="vk-world-controller-v76" src="js/script-10.js?release=166"></script>
+<link rel="stylesheet" href="css/bundle-155-5.css?release=166">
+<script id="vk-cards81" src="js/script-11.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-6.css?release=166">
+<script id="vk-interface83" src="js/script-12.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-7.css?release=166">
+<script id="vk-creature-audit87" src="js/script-13.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-8.css?release=166">
+<script id="vk-characters87" src="js/script-14.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-9.css?release=166">
+<script src="js/combat/synchro-limit.js?release=166"></script>
+<script src="js/combat/balance-catalog.js?release=166"></script>
+<script id="vk-synchro87-engine" src="js/script-15.js?release=166"></script><script id="vk-synchro87-ui" src="js/script-16.js?release=166"></script><script id="vk-tutorials87" src="js/script-17.js?release=166"></script><script src="js/script-18.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-10.css?release=166">
+<script src="js/script-19.js?release=166"></script><script id="vk-switch94" src="js/script-20.js?release=166"></script></body></html><link rel="stylesheet" href="css/bundle-155-11.css?release=166">
+<script id="vk-adventure102" src="js/script-21.js?release=179"></script>
+<link rel="stylesheet" href="css/bundle-155-12.css?release=166">
+<script src="js/script-22.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-13.css?release=166">
+<script id="vk-fountain104" src="js/script-23.js?release=166"></script>
 
+<script src="js/world/map-registry.js?release=166"></script>
+<script src="js/world/legacy-map-adapter.js?release=166"></script>
 
+<script src="js/world/transition-templates.js?release=166"></script>
+<script src="js/world/wildlands.js?release=166"></script>
 
-<link rel="stylesheet" href="css/style-37.css?release=138">
-
-<link rel="stylesheet" href="css/style-38.css?release=138">
-
-<link rel="stylesheet" href="css/style-39.css?release=138">
-<link rel="stylesheet" href="css/style-40.css?release=138">
-<script id="vk-world-controller-v76" src="js/script-10.js?release=138"></script>
-<link rel="stylesheet" href="css/style-41.css?release=138"><link rel="stylesheet" href="css/style-42.css?release=138"><script id="vk-cards81" src="js/script-11.js?release=138"></script><link rel="stylesheet" href="css/style-43.css?release=138"><link rel="stylesheet" href="css/style-44.css?release=138"><script id="vk-interface83" src="js/script-12.js?release=138"></script><link rel="stylesheet" href="css/style-45.css?release=138"><script id="vk-creature-audit87" src="js/script-13.js?release=138"></script><link rel="stylesheet" href="css/style-46.css?release=138"><script id="vk-characters87" src="js/script-14.js?release=138"></script><link rel="stylesheet" href="css/style-47.css?release=138"><script src="js/combat/synchro-limit.js?release=138"></script>
-<script src="js/combat/balance-catalog.js?release=138"></script>
-<script id="vk-synchro87-engine" src="js/script-15.js?release=138"></script><script id="vk-synchro87-ui" src="js/script-16.js?release=138"></script><script id="vk-tutorials87" src="js/script-17.js?release=138"></script><script src="js/script-18.js?release=138"></script><link rel="stylesheet" href="css/style-48.css?release=138"><script src="js/script-19.js?release=138"></script><script id="vk-switch94" src="js/script-20.js?release=138"></script></body></html><link rel="stylesheet" href="css/style-49.css?release=138"><script id="vk-adventure102" src="js/script-21.js?release=138"></script>
-<link rel="stylesheet" href="css/style-50.css?release=138"><script src="js/script-22.js?release=138"></script><link rel="stylesheet" href="css/style-51.css?release=138"><script id="vk-fountain104" src="js/script-23.js?release=138"></script>
-
-<script src="js/world/map-registry.js?release=138"></script>
-<script src="js/world/legacy-map-adapter.js?release=138"></script>
-
-<script src="js/world/transition-templates.js?release=138"></script>
-<script src="js/world/wildlands.js?release=138"></script>
-
-<link rel="stylesheet" href="css/style-52.css?release=138">
-<script src="js/interface/update-ui.js?release=138"></script>
-<link rel="stylesheet" href="css/style-53.css?release=138">
-<script src="js/interface/fullscreen.js?release=138"></script>
-<link rel="stylesheet" href="css/style-54.css?release=138">
-<script src="js/interface/battle-fit.js?release=138"></script>
-<link rel="stylesheet" href="css/style-55.css?release=138">
-<link rel="stylesheet" href="css/style-56.css?release=138">
-<script src="js/interface/quality-pass.js?release=138"></script>
-<link rel="stylesheet" href="css/style-57.css?release=138">
-<script src="js/interface/portrait-loader.js?release=138"></script>
+<link rel="stylesheet" href="css/bundle-155-14.css?release=166">
+<script src="js/interface/update-ui.js?release=166"></script>
+<link rel="stylesheet" href="css/bundle-155-15.css?release=166">
+<script src="js/interface/fullscreen.js?release=166"></script>
+<link rel="stylesheet" href="css/bundle-155-16.css?release=166">
+<script src="js/interface/battle-fit.js?release=166"></script>
+<link rel="stylesheet" href="css/bundle-155-17.css?release=166">
+<script src="js/interface/quality-pass.js?release=166"></script>
+<link rel="stylesheet" href="css/bundle-155-18.css?release=166">
+<script src="js/interface/portrait-loader.js?release=183"></script>
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><filter id="vkCardEffectAlpha" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1.7008 5.7216 0.5776 0 -0.45"/></filter><filter id="vkCardFrameAlpha" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0.247209 0.831628 0.083953 0 -0.162791"/></filter><mask id="vkCardFrameCut" maskUnits="userSpaceOnUse" x="0" y="0" width="340" height="520" style="mask-type:luminance"><rect width="340" height="520" fill="white"/><rect x="35" y="114" width="268" height="246" rx="10" fill="black"/><circle cx="55" cy="94" r="24" fill="black"/></mask><clipPath id="vkCardCrop-angriff"><rect x="24" y="128" width="224" height="224"/></clipPath><clipPath id="vkCardCrop-schutz"><rect x="244" y="128" width="224" height="224"/></clipPath><clipPath id="vkCardCrop-heilung"><rect x="464" y="128" width="200" height="224"/></clipPath><clipPath id="vkCardCrop-heilung_ueber_zeit"><rect x="682" y="128" width="210" height="224"/></clipPath><clipPath id="vkCardCrop-schaden_ueber_zeit"><rect x="894" y="128" width="195" height="224"/></clipPath><clipPath id="vkCardCrop-schaden"><rect x="1104" y="128" width="206" height="224"/></clipPath><clipPath id="vkCardCrop-schaden_und_dot"><rect x="1316" y="120" width="220" height="240"/></clipPath><clipPath id="vkCardCrop-schutzbruch"><rect x="24" y="395" width="224" height="232"/></clipPath><clipPath id="vkCardCrop-angriff_erhoehen"><rect x="244" y="395" width="212" height="232"/></clipPath><clipPath id="vkCardCrop-angriff_senken"><rect x="464" y="395" width="211" height="232"/></clipPath><clipPath id="vkCardCrop-verteidigung_erhoehen"><rect x="684" y="395" width="200" height="232"/></clipPath><clipPath id="vkCardCrop-verteidigung_senken"><rect x="904" y="395" width="207" height="232"/></clipPath><clipPath id="vkCardCrop-betaeubung"><rect x="1124" y="395" width="193" height="232"/></clipPath><clipPath id="vkCardCrop-fesselung"><rect x="1344" y="395" width="192" height="232"/></clipPath><clipPath id="vkCardView-angriff"><rect x="23" y="127.5" width="217" height="217"/></clipPath><clipPath id="vkCardView-schutz"><rect x="243" y="132.5" width="210" height="210"/></clipPath><clipPath id="vkCardView-heilung"><rect x="462.5" y="142.5" width="189" height="189"/></clipPath><clipPath id="vkCardView-heilung_ueber_zeit"><rect x="670.5" y="132.5" width="204" height="204"/></clipPath><clipPath id="vkCardView-schaden_ueber_zeit"><rect x="877.5" y="136.5" width="200" height="200"/></clipPath><clipPath id="vkCardView-schaden"><rect x="1094.5" y="141" width="192" height="192"/></clipPath><clipPath id="vkCardView-schaden_und_dot"><rect x="1300" y="121.5" width="227" height="227"/></clipPath><clipPath id="vkCardView-schutzbruch"><rect x="19.5" y="399.5" width="217" height="217"/></clipPath><clipPath id="vkCardView-angriff_erhoehen"><rect x="239.5" y="396.5" width="212" height="212"/></clipPath><clipPath id="vkCardView-angriff_senken"><rect x="454.5" y="410" width="198" height="198"/></clipPath><clipPath id="vkCardView-verteidigung_erhoehen"><rect x="674.5" y="392" width="231" height="231"/></clipPath><clipPath id="vkCardView-verteidigung_senken"><rect x="886.5" y="408.5" width="205" height="205"/></clipPath><clipPath id="vkCardView-betaeubung"><rect x="1114.5" y="410" width="189" height="189"/></clipPath><clipPath id="vkCardView-fesselung"><rect x="1327" y="407.5" width="193" height="193"/></clipPath><clipPath id="vkCardCrop-energie_erhoehen"><rect x="0" y="0" width="887" height="887"/></clipPath><clipPath id="vkCardView-energie_erhoehen"><rect x="0" y="0" width="887" height="887"/></clipPath><clipPath id="vkCardCrop-energie_senken"><rect x="887" y="0" width="887" height="887"/></clipPath><clipPath id="vkCardView-energie_senken"><rect x="887" y="0" width="887" height="887"/></clipPath><clipPath id="vkSynAtlas2"><rect width="724" height="1086"/></clipPath><clipPath id="vkSynAtlas3"><rect x="724" width="724" height="1086"/></clipPath><filter id="vkCardFrameContour" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="1" result="expanded"/><feComposite in="expanded" in2="SourceAlpha" operator="out" result="edge"/><feFlood flood-color="#d8d0ba" flood-opacity=".38" result="tint"/><feComposite in="tint" in2="edge" operator="in" result="contour"/><feMerge><feMergeNode in="contour"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="vkSynFrameContour" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="2.13" result="expanded"/><feComposite in="expanded" in2="SourceAlpha" operator="out" result="edge"/><feFlood flood-color="#d8d0ba" flood-opacity=".38" result="tint"/><feComposite in="tint" in2="edge" operator="in" result="contour"/><feMerge><feMergeNode in="contour"/><feMergeNode in="SourceGraphic"/></feMerge></filter><clipPath id="vkStatusClip-lp"><rect x="48" y="48" width="416" height="416"/></clipPath><clipPath id="vkStatusClip-ap"><rect x="560" y="48" width="416" height="416"/></clipPath><clipPath id="vkStatusClip-sp"><rect x="1072" y="48" width="416" height="416"/></clipPath><clipPath id="vkStatusClip-hk"><rect x="48" y="560" width="416" height="416"/></clipPath><clipPath id="vkStatusClip-energy"><rect x="560" y="560" width="416" height="416"/></clipPath></defs></svg>
-<script src="js/interface/card-assets.js?release=138"></script>
-<script src="js/interface/card-design.js?release=138"></script>
-<script src="js/combat/stat-rules.js?release=138"></script>
-<script src="js/combat/stats-integration.js?release=138"></script>
-<script src="js/combat/element-balance.js?release=138"></script>
-<link rel="stylesheet" href="css/style-58.css?release=138">
+<script src="js/interface/card-assets.js?release=166"></script>
+<script src="js/interface/card-design.js?release=183"></script>
+<script src="js/combat/stat-rules.js?release=166"></script>
+<script src="js/combat/stats-integration.js?release=166"></script>
+<script src="js/combat/element-balance.js?release=166"></script>
+<link rel="stylesheet" href="css/bundle-155-19.css?release=182">
+<script src="js/combat/team-access.js?release=181"></script>
+<script src="js/npc/npc-integration.js?release=166"></script><link rel="stylesheet" href="css/bundle-155-20.css?release=166">
+<script src="js/interface/release-polish-136.js?release=166"></script>
 
-<link rel="stylesheet" href="css/style-59.css?release=138">
+<script src="js/combat/arena-rules.js?release=166"></script>
+<script src="js/interface/battle-results.js?release=166"></script>
+<script src="js/combat/arena.js?release=181"></script>
+<link rel="stylesheet" href="css/bundle-155-21.css?release=166">
+<script src="js/interface/monster-sale.js?release=166"></script>
+<link rel="stylesheet" href="css/bundle-155-22.css?release=172">
+<script src="js/interface/mobile-ui.js?release=172"></script>
 
-<link rel="stylesheet" href="css/style-60.css?release=138">
+<link rel="stylesheet" href="css/bundle-155-23.css?release=166">
+<script src="js/npc/travellers-rules.js?release=179"></script><script src="js/npc/travellers.js?release=179"></script>
 
-<script src="js/combat/team-access.js?release=138"></script>
-<script src="js/npc/npc-integration.js?release=138"></script><link rel="stylesheet" href="css/style-61.css?release=138">
-<script src="js/interface/release-polish-136.js?release=138"></script>
+<script src="js/npc/stable.js?v=157"></script>

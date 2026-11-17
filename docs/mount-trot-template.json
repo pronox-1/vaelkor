@@ -1,0 +1,19 @@
+{
+  "id": "mount-trot-4",
+  "version": 1,
+  "approvedReference": {"release": 176, "mount": "horse-brown", "userApproved": true},
+  "sideDirections": ["left", "right"],
+  "movingFrameCount": 4,
+  "sourceGrid": [2, 2],
+  "separateIdle": true,
+  "strideTiles": 4.8,
+  "phaseSlots": ["walk0", "walk2", "walk4", "walk6"],
+  "poses": ["near-front and far-rear forward contact", "near-front and far-rear planted, other pair passing", "opposite diagonal contact", "opposite diagonal passing"],
+  "rightView": "mirror-whole-pose",
+  "oneScalePerSpecies": true,
+  "fixedAnchors": ["foot", "anchor", "saddle"],
+  "limbSplicing": false,
+  "clock": "actual-travel-distance",
+  "verticalArtwork": "separate-approved-eight-phase-atlas",
+  "checks": ["four-complete-distinct-poses", "no-clipping", "constant-scale-and-anchors", "both-views-and-directions", "rider-and-follower", "idle-after-stop", "frame-rate-independent"]
+}

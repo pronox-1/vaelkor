@@ -106,7 +106,7 @@
 #fusionOverlay .vkModularCard .vkCardElement{background-color:#101c22!important;isolation:isolate}
 #fusionOverlay .vkModularDeckCard:focus-visible .vkModularFrame,#fusionOverlay .fusionCard:has(>.vkModularCard):focus-visible .vkModularFrame{filter:brightness(1.2) drop-shadow(0 0 2px #fff0b4)}
 /* Supplied Synchro atlas: two or three material sockets on the same card canvas. */
-#fusionOverlay .vkModularCard.vkDesignCard--synchro .vkModularArt{left:10%;top:26%;width:80%;height:45.5%;mask-image:none;-webkit-mask-image:none}
+#fusionOverlay .vkModularCard.vkDesignCard--synchro .vkModularArt{left:10%;top:14%;width:80%;height:57.5%;mask-image:none;-webkit-mask-image:none}
 #fusionOverlay .vkSynMaterialSockets{position:absolute;inset:0;pointer-events:none}
 #fusionOverlay .vkSynMaterialSocket{position:absolute;left:var(--vk-socket-x);top:var(--vk-socket-y);transform:translate(-50%,-50%);width:14.3%;height:9.35%;display:grid;place-items:center;border-radius:50%;background:#111b29;isolation:isolate}
 #fusionOverlay .vkSynMaterialSocket img{display:block;width:90%;height:90%;object-fit:contain}
@@ -218,3 +218,20 @@ body[data-ui-motion="reduced"] #fusionOverlay .v9HandCard .vkCardEnergy{animatio
 
 /* Keep full source detail in trainer portraits when reducing their size. */
 #fusionOverlay .vkTrainerHeading87 img{image-rendering:auto!important;object-fit:contain}
+
+/* Stable combat anchors: effects never recenter portraits or insert new rows. */
+#fusionOverlay .v9Battle .v9Encounter{align-items:flex-start!important}
+#fusionOverlay .v9Battle .v9EncounterArt{align-self:flex-start!important}
+#fusionOverlay .v9Battle .vkCombatEffects181{display:flex;align-items:center;gap:4px;height:25px;min-height:25px;max-height:25px;overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:thin}
+#fusionOverlay .v9Battle .vkCombatEffects181 .vkCombatStat{flex:0 0 auto}
+
+/* One title layout wins over legacy strong/line-clamp rules in every card view. */
+#fusionOverlay .fusionShell .fusionCardFace.vkDesignCard.vkModularCard>strong.vkCardName{
+ left:26%;top:14.5%;width:55%;height:11%;min-height:0!important;max-height:none!important;
+ display:flex!important;align-items:center;justify-content:center;
+ font:800 clamp(8px,3.8cqw,15px)/1.12 system-ui!important;
+ white-space:normal!important;overflow:visible!important;overflow-wrap:anywhere!important;
+ -webkit-line-clamp:unset!important;line-clamp:unset!important;text-wrap:balance;
+ padding:0!important;margin:0!important;transform:none!important;
+}
+#fusionOverlay .fusionShell .fusionCardFace.vkDesignCard.vkModularCard.vkDesignCard--synchro>strong.vkCardName{left:12%;top:25%;width:68%;height:11%;font-size:clamp(8px,3.8cqw,15px)!important}
